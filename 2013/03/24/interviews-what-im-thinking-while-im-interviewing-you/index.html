@@ -69,9 +69,9 @@
 <p>So now you get the question.  I made the mistake in one of my first interviews of calling the first question easy because I thought it would help calm the person down.  In fact it turned out to be a bit of a challenge for them and I could tell they were even more nervous after that because the got caught up on the &quot;easy&quot; question.  From then on there are no &quot;easy&quot; questions, just technical questions and you should <strong>assume every technical question is non-trivial</strong>.  Approach every question with the same rigor because repeatedly fumbling a technical question under the pretense this is the &quot;easy&quot; question will inevitably look bad.</p>
 <p>I'm going to try to state the question as closely as I actually ask it, and I strongly encourage you the reader to try to solve it before reading through the solution.</p>
 <p>Do you know what an aspect ratio is?  I define the aspect ratio of a box as width over height:  <code>AR = W/H</code>.  We have a bounding box for a set of points, defined by two points, <code>min</code> and <code>max</code>.  <code>min</code> is the bottom left corner of the box, and <code>max</code> is the upper right corner of the box.  Because of how the points were chosen to define the box, <code>max</code> and <code>min</code> have the relationship that all elements in <code>min</code> are less than the corresponding elements in <code>max</code>.  Do you understand how the box is created?  Here is a graphical example (yes I show them this exact image):</p>
-<p><img src="/images/posts/problem-definition.png" alt="graphical example of box"></p>
+<p><img src="/img/problem-definition.png" alt="graphical example of box"></p>
 <p>You will be given a box like this that is already initialized from a valid set of points.  What you need to do is implement the function <code>convertAspectRatio</code> which takes a float representing the desired aspect ratio.  The center of the box should stay the same, and the box should only expand, so either the width or height is guaranteed to stay the same length and the other one will get larger.  Does all this make sense?  A graphical example of one possible change looks like this:</p>
-<p><img src="/images/posts/converted-example.png" alt="graphical example of box"></p>
+<p><img src="/img/converted-example.png" alt="graphical example of box"></p>
 <p>Here is some code in a language I made up just for this interview to get you started:</p>
 <pre><code>point:
     x: float
@@ -151,7 +151,7 @@ box:
 	<a href="/">blog</a>
 </nav>
 			<p>
-				&copy; yyyy
+				&copy; 2016
 			</p>
 		</div>
 	</footer>
