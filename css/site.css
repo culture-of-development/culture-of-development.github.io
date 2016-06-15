@@ -28,3 +28,9 @@ section.page-content {
   text-transform: uppercase;
   font-weight: bold;
 }
+.feed-link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(/img/feed.png);
+}

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Culture of Development</title>
+  <subtitle>The Pit of Success</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://culture-of-development.com/"/>
+  <updated>2016-06-15T14:00:21.939Z</updated>
+  <id>http://culture-of-development.com/</id>
+  
+  <author>
+    <name>Nick Larsen</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Getting past the resume screen</title>
+    <link href="http://culture-of-development.com/blog/getting-past-the-resume-screen/"/>
+    <id>http://culture-of-development.com/blog/getting-past-the-resume-screen/</id>
+    <published>2015-05-27T01:58:00.000Z</published>
+    <updated>2016-06-15T14:00:21.939Z</updated>
+    
+    <content type="html">&lt;p&gt;One of the hardest parts of finding a job is actually applying to it.  It takes quite a bit of work to prepare a resume and the last thing you want is for all that hard work to be immediately thrown in the trash upon arrival.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The perception&lt;/strong&gt;:
+At first you might just think &amp;quot;I&#39;m bad at taking tests&amp;quot; or &amp;quot;I didn&#39;t really want to do that job anyway&amp;quot;.  After waiting for responses from a few more companies that are not going to respond it seems like no one wants you.  Then someone calls back, and wants to talk about your resume.  For a minute you feel great, and they can hear the pep in your voice, but they never ask you to interview and it starts to feel like you&#39;re not good enough.  Eventually you end up thinking you&#39;ll take anything, and after a little while longer you just become a &lt;a href=&quot;http://en.wikipedia.org/wiki/Discouraged_worker&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;discouraged worker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The reality&lt;/strong&gt;:
+There&#39;s good news though!  You&#39;re probably just making simple mistakes in the way you present yourself and your accomplishments, and you can learn how to correct those mistakes.  This series of blog posts is a crash course in getting past the resume screen for most programming jobs.&lt;/p&gt;
+&lt;h2&gt;Understanding the employer perspective&lt;/h2&gt;
+&lt;p&gt;Most companies have a simple set of requirements.  The list is not always exactly the same, and unfortunately the way they go about hiring for these attributes is not consistent, but we will deal with that later.  These attributes are the most globally important to any company who is looking to hire for a full time position.&lt;/p&gt;
+&lt;h4&gt;Someone who can do the job.&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;The perception&lt;/strong&gt;:
+This is often comes across poorly in job listings as long lists of alphabet soup, often accompanied by many years of experience in those technologies.  You think the company is stupid for requiring 10 years of experience in a technology that&#39;s only been in existence for 7 years.  Or worse, you think &amp;quot;shucks, this job would be awesome if I had 3 years of cold fusion experience&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The reality&lt;/strong&gt;:
+Job listings are often not written by people who have much of a clue of what the programming terminology they are using.  The HR person will either wing it from their experience or they will ask someone in the dev management chain for a brief job listing with requirements.  The dev manager (for lack of a better term, HR people tend to be quite intelligent) tries to dumb down the requirements to something the HR person can verify before passing a resume along.&lt;/p&gt;
+&lt;p&gt;In truth, you should only worry about these lists of requirements for jobs that need to be completed tomorrow.  Just about everyone else is willing to train you on the job as long as you show promise and the ability to learn quickly.&lt;/p&gt;
+&lt;h4&gt;Someone who cares about the work this company is doing&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;The perception&lt;/strong&gt;:
+They want power users to work on their product, or industry experts who are pushing the bleeding edge forward with their every commit.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The reality&lt;/strong&gt;:
+Well actually that sounds awesome, and they do want those people.  Unfortunately there just aren&#39;t a lot of those people, they tend to have great jobs they are way happy with already and the company has actually taken those people out to multiple lobster dinners to try to woo them already.&lt;/p&gt;
+&lt;p&gt;For everyone else who can do the job, it&#39;s important that they &lt;em&gt;stick around for a while&lt;/em&gt;.  It costs a lot of effort and money to get someone up to speed on a codebase.  Having someone on board who already understands the thing they are doing makes it a whole lot easier to ramp them up, productivity comes a lot faster and they are less likely to jump ship when the problems get harder.&lt;/p&gt;
+&lt;h4&gt;Someone who can make the team better&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;The perception&lt;/strong&gt;:
+They want people who can come in and solve these problems that they are working on because they already know how to solve them.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The reality&lt;/strong&gt;:
+Most companies have lots of things they want to do, but limited resources (man hours) in which to utilize.  Hiring more developers increases that pool of resources.  With some luck, as the new devs gets ramped up, they will also have some other good ideas for the tools they work on.&lt;/p&gt;
+&lt;p&gt;For most people, being the smartest person in the room gets old pretty quickly because you no longer feel challenged and you feel like too many of your personal resources are being used helping other people accomplish their tasks without getting the same help in return.  Often the catalyst for changing jobs is exactly this and you need to find a new job with smarter people who you can learn from again.&lt;/p&gt;
+&lt;p&gt;At some point in your developer career, you&#39;ll find someone who knows one technology or paradigm far better than you could hope to learn in a good amount of time (say 6 months or a year).  This is when humility starts to set in and it&#39;s a wonderful thing.  It&#39;s especially wonderful when that same person comes to you for help on a topic you are much more familiar with.  This is a very fruitful kind of relationship and good companies try their hardest to foster this kind of diversity on their teams.&lt;/p&gt;
+&lt;h2&gt;What&#39;s next?&lt;/h2&gt;
+&lt;p&gt;That&#39;s pretty much the gist of what most companies are actually looking for.  In the next episode we&#39;re going to take a look at your resume from an employers perspective to make it clear where the problems are.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;One of the hardest parts of finding a job is actually applying to it.  It takes quite a bit of work to prepare a resume and the last thin
+    
+    </summary>
+    
+      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Always Get/Give Interview Feedback, It Matters</title>
+    <link href="http://culture-of-development.com/blog/always-give-interview-feedback/"/>
+    <id>http://culture-of-development.com/blog/always-give-interview-feedback/</id>
+    <published>2015-03-08T18:49:00.000Z</published>
+    <updated>2016-06-15T14:00:32.051Z</updated>
+    
+    <content type="html">&lt;p&gt;Yesterday I received the best email of my life.  It was from someone I interviewed just after I moved back to Atlanta who unfortunately did not get the job.  I think it speaks for itself.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/feedback-is-important.png&quot; alt=&quot;The most amazing email I have ever received.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;One line kind of stood out to me, &lt;code&gt;and that you gave me feedback when most companies absolutely don&#39;t (i really don&#39;t know why)&lt;/code&gt;.  This got me thinking, and all that kept reiterating in my head was, &amp;quot;really?!&amp;quot;.  What follows is why, why companies shouldn&#39;t fuck up this part of the interview and some general advice for candidates who find themselves in the (possibly) unfortunate situation of receiving a rejection letter.&lt;/p&gt;
+&lt;h2&gt;The no-hire&lt;/h2&gt;
+&lt;p&gt;When you interview people, &lt;a href=&quot;http://cultureofdevelopment.com/blog/2013/03/24/interviews-what-im-thinking-while-im-interviewing-you/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;you&#39;re both hoping the interview ends in a hire&lt;/a&gt;.  Unfortunately, that&#39;s not always how things turn out; for one reason or another this interview went downhill and the process is going to end for this candidate.&lt;/p&gt;
+&lt;p&gt;If you as the employer decided the process is over, it&#39;s easy to think about the bad, which is that we&#39;re not hiring this person.  Whatever that reason may be, it&#39;s probably stuck on your brain right now and you start to dread the possibility that the person comes back asking what they did wrong.  You&#39;re sure it&#39;s going to be awkward and they are probably going make a case for a do-over and you really don&#39;t want to deal with that.&lt;/p&gt;
+&lt;h2&gt;The choice is yours&lt;/h2&gt;
+&lt;p&gt;As you suspected, the person was not expecting the process to be over, and they do ask for feedback.  This is your opportunity to really cock things up for your company, or reinforce how amazing it would be to work with you.  And those are the only two options.&lt;/p&gt;
+&lt;h3&gt;Be a shit shack&lt;/h3&gt;
+&lt;p&gt;If you either ignore the feedback request, or send that old &amp;quot;there were a lot of qualified candidates and we had to make tough choices&amp;quot;, you make your company look like the kind of place that thinks they are too good people who don&#39;t work there.  That&#39;s not really the kind of place you most people are comfortable working and it looks terrible.  It&#39;s also pretty disrespectful as we&#39;ll see in a minute.&lt;/p&gt;
+&lt;h3&gt;Be a Palace of Awesomeness&lt;/h3&gt;
+&lt;p&gt;Your other option is to give them the honest, direct and specific feedback they requested.  Having been in this situation more than a few times, I understand how difficult it can be to do that.  The problem is, if you don&#39;t do that, you make the candidate feel like you lied to them.  Because you did lie to them.  It often feels like providing this kind of direct feedback to people is going to be hard to swallow on the candidate&#39;s end and pretty much everyone (especially developers) hate being the bearer of this kind of bad news.  That&#39;s why it&#39;s nice having that HR contact buffer so you don&#39;t have to be responsible to sending the rejection letter in the first place.&lt;/p&gt;
+&lt;p&gt;But think about it for a minute...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;They made it through your company&#39;s resume review&lt;/li&gt;
+&lt;li&gt;They made it through your company&#39;s phone screen&lt;/li&gt;
+&lt;li&gt;They probably solved your easy questions no problem&lt;/li&gt;
+&lt;li&gt;Possibly they made it through other interviews before they even got to a round with you&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That&#39;s &lt;em&gt;a lot&lt;/em&gt; of success.  They were probably not expecting the interview to end when it did and it&#39;s totally reasonable for them to ask what it was that made you make the decision to terminate the application.  &lt;strong&gt;They deserve the feedback they have requested.&lt;/strong&gt;  As reference, here is the feedback I gave Stan when he asked for it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/feedback-given.png&quot; alt=&quot;Feedback as requested.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Since they made it through all the way through this far once... they should be able to make it through at least as much if they were to apply again, and that&#39;s probably further than 90% of people who apply for your job.  Because of this, I have started to encourage everyone I no hire to reapply again in 6 months and tell them exactly how much they have already accomplished.  Basically I want them to think about Stack Exchange like a &lt;a href=&quot;https://www.youtube.com/watch?v=Wno4o1SvI7Q&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Palace of Awesomeness, music and all&lt;/a&gt; and that this isn&#39;t the end of the road, it&#39;s just a bump.&lt;/p&gt;
+&lt;h2&gt;If you are on the receiving end of the rejection letter&lt;/h2&gt;
+&lt;p&gt;It&#39;s heartbreaking to find out the process is over when you really want a job.  It is soul crushing to think the game is over.  First realize that if it the game actually is over, it&#39;s probably a shitty place to work anyway.  I know I wouldn&#39;t want to work somewhere that wasn&#39;t willing to reconsider me after I spend some time developing the skills I need to succeed at their shop.  So if that&#39;s the case, fuck em.  So you can typically assume that&#39;s not the case.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Always ask for feedback from the person who rejected you, even if you think you already know why they rejected you.&lt;/strong&gt;  It is often the case that one thing sticks out in your head as the sole reason why you were turned down, and it&#39;s easy to focus on that one reason alone.  Then you get another interview and think you&#39;ve kicked this one issue you had, and you are completely blindsided by the next rejection.  The mistake you made was assuming you know what was going through the last interviewer&#39;s head.  The only person who knows that, is that person and the only way you&#39;re going to find out what they were thinking is to ask for a brain dump &lt;em&gt;from the person who rejected you&lt;/em&gt;.  Make sure you ask them to point our specific things you said or did which affected their impression of you.&lt;/p&gt;
+&lt;p&gt;Once you have received the feedback, evaluate whether you would ever want to apply there again and if so, be sure to ask your HR contact when the timer runs out for applying again.  Then mark that date on your calendar.  When that time comes, guess what, you already have some contacts inside the company to fast forward your application to.&lt;/p&gt;
+&lt;h3&gt;Should you reapply?&lt;/h3&gt;
+&lt;p&gt;This comes down to why you applied in the first place.  If you just needed a job, you probably found another one already.  If you applied to this job because you are passionate about the problems they solve or you want to work with smart people, then you might have a reason to reapply.&lt;/p&gt;
+&lt;p&gt;It can be exceptionally intimidating to reapply to the same job you were already turned down for.  It&#39;s a natural to avoid the same pain twice, but if you still want to work the people at the company or you&#39;re still passionate about the work you would do there, you pretty much have to apply again when the timer runs out.  Make sure you spend the time in between working out the issues you received in the feedback you were provided.&lt;/p&gt;
+&lt;p&gt;If you do get accepted into the interview process again, request to be interviewed by people who did not interview you the first time if possible.  This is a means of eliminating as much bias as possible and it&#39;s generally easier to sit in front of someone who did not reject you previously.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Yesterday I received the best email of my life.  It was from someone I interviewed just after I moved back to Atlanta who unfortunately d
+    
+    </summary>
+    
+      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Your Developer Toolbox</title>
+    <link href="http://culture-of-development.com/blog/your-developer-toolbox/"/>
+    <id>http://culture-of-development.com/blog/your-developer-toolbox/</id>
+    <published>2013-12-27T15:33:00.000Z</published>
+    <updated>2016-06-15T14:00:06.619Z</updated>
+    
+    <content type="html">&lt;p&gt;As you probably know, when we&#39;re interviewing someone, we&#39;re looking for people who are &lt;a href=&quot;http://www.joelonsoftware.com/articles/fog0000000073.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;smart and gets things done&lt;/a&gt;.  Most interviews that end with a &amp;quot;no hire&amp;quot; fail both of those checks.  Don&#39;t despair however, it&#39;s not that they are bad developers, they just need more time to fill up their developer toolbox.  Having a well stocked developer toolbox typically solves both of these problems.&lt;/p&gt;
+&lt;p&gt;So what&#39;s this developer toolbox you ask?  Your developer toolbox is the set of tools you can reach for when solving a problem.  The languages you know, the algorithms you can readily implement, the frameworks you are familiar with, the paradigms you can map problems to, how you look for solutions to the problems you face and even the people you talk shop with.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/20060513_toolbox.jpg/640px-20060513_toolbox.jpg&quot; alt=&quot;Toolbox, not quite the same, but you get it, right?&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The image above was lifted from &lt;a href=&quot;http://commons.wikimedia.org/wiki/File:20060513_toolbox.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wikipedia&lt;/a&gt; and it&#39;s probably the only image of a non red toolbox on the internet.&lt;/p&gt;
+&lt;h3&gt;Not too much, not too little, but just right&lt;/h3&gt;
+&lt;p&gt;Interviews tend to spiral downward when someone has either an underdeveloped or overdeveloped toolbox to pull from.  In both cases, gets things done tends to be an issue.&lt;/p&gt;
+&lt;p&gt;Underdeveloped toolboxes lack clear evidence of the smart part.  Underdeveloped toolboxes are easy to call out because the interviewee simply doesn&#39;t know enough about a technology or pattern to make the decision to use it or not as a means for solving the problem.  They skip using a tool they know of because they aren&#39;t sure if it will make the solution easier, or they skip using the tool because they don&#39;t know if it will improve performance.  And obviously everyone skips using the tools they don&#39;t know about.&lt;/p&gt;
+&lt;p&gt;Overdeveloped toolboxes are when a person knows a small set of tools really well.  Like... really, really well.  Need to tell if a block of text contains an email address?  They know this regex off the top of their head.  Need to tell if a number is divisible by 3?  Convert number to string to and match against this regex [be damned that you could just actually divide by 3! this regex is much more interesting!].  Need to parse html?  There&#39;s a regex for your case.  Seriously.  And they are right, their solution will work for whatever problem you throw at them.  Unfortunately, these people tend not to stray to find better tools for the job and are generally only interested in  being the guy who has to maintain the code these people wrote is excruciating and demotivating work.&lt;/p&gt;
+&lt;p&gt;So how do you get it just right?  Simple, learn what the tools are intended to be used for, and stick to using them for those things.  You really only stray from that dogma when you can&#39;t find something that fits your situation exactly, and you choose the best thing you can find.&lt;/p&gt;
+&lt;h3&gt;Filling up your developer toolbox&lt;/h3&gt;
+&lt;p&gt;A well stocked developer toolbox goes a long way to at least making you come off as someone who is smart and gets things done.  Although your toolbox includes sites like &lt;a href=&quot;http://stackoverflow.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Stack Overflow&lt;/a&gt; and all the documentation on the internet, the things you know without having to look them up are what make you fast.&lt;/p&gt;
+&lt;p&gt;What you fill your developer toolbox up with is up to you, but you should base it on your interests.  If you love being a web developer, you&#39;ll find a lot of technologies mandatory which a game developer will not.  There are, however, some basics which are (almost entirely) cross cutting and you should know them thoroughly.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Analysis of algorithms: looking at a piece of code, estimate it&#39;s run time and memory needs compared to other algorithms for a given input size&lt;/li&gt;
+&lt;li&gt;Sorting: the various sorting methods and in particular their run time for different input sizes&lt;/li&gt;
+&lt;li&gt;Searching: a handful of various binary search trees, hash structures and string processing... and in particular their run time for different input sizes&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As you can see, analysis of algorithms is pretty important.  &lt;strong&gt;A well developed ability to estimate the run time of an algorithm is one of the primary tools for making smart decisions.&lt;/strong&gt;  Understanding the run time at various input sizes gives you the ability to make better choices for algorithm performance up front when thinking about your solution rather than just implementing the most naive possible solution.  This saves you time, particularly in projects when relying on the built in tools no longer get the job done (e.g. queue implementations tend to optimize for either push or pop, and practically no languages include good implementations of both).&lt;/p&gt;
+&lt;p&gt;Searching and sorting are simply fundamental.  Many practical problems decompose to being exactly a searching problem, a sorting problem or some combination of the two.  For many of these solutions, the computational time spent doing these tasks can easily overwhelm everything else.  Despite often being a single line in your pseudocode, your implementation choice can often make a world of difference in the quality and performance of your solution.  On multiple occasions, two interviewees have come up with the same solution pseudocode, but after implementing it, only one person moves on.&lt;/p&gt;
+&lt;p&gt;Beyond this you want a wide breadth of tools from many different topics and a strong concentration in one area, preferably the area you are most interested in.  It&#39;s impossible to overstate the important of having a wide breadth of tools.  The breadth of your toolbox helps you come up with creative solutions to problems and can often help you find places to look for solutions you wouldn&#39;t have otherwise known of.&lt;/p&gt;
+&lt;h3&gt;Learn the important parts&lt;/h3&gt;
+&lt;p&gt;When you are studying these algorithms and data structures, there are 2 things you need to make sure you commit to memory.  First, you need to understand the various run times for average case and worst case for &lt;em&gt;each operation&lt;/em&gt; in the data structure, and second, you need to actually be able to explain how an implementation would work in order to achieve that run time for each operation.  Thinking a faster solution exists isn&#39;t particularly useful if you cannot implement it.  Often times there are multiple ways to implement a data structure so that it has the exact same run time for each operation but the solutions have different memory requirements and readability concerns.  Knowing more than one implementation can often make your code even faster to implement (or more readable) as long as you know the typical input size up front.&lt;/p&gt;
+&lt;p&gt;Knowing the run times should be enough to make you understand what the data structure or algorithm are useful for, but it still helps to explicitly come up with uses when you are studying.  For any problem, you need to be able to say why you chose the algorithm and why you chose the particular implementation.&lt;/p&gt;
+&lt;h3&gt;This all seems pretty academic&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Academic_Quadrangle.jpg/640px-Academic_Quadrangle.jpg&quot; alt=&quot;learning, and shit&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The above image was lifted from &lt;a href=&quot;http://commons.wikimedia.org/wiki/File:Academic_Quadrangle.jpg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wikipedia&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I know; practicing programming by studying and not just implementing whatever ideas come to mind?  How blasphemous!  Remember, the goal here is to make you not just faster (gets things done), but also to make you smarter.&lt;/p&gt;
+&lt;p&gt;Having an idea of what smarter means and simple steps for how to achieve it will hopefully give you a place to start thinking about how to improve yourself.&lt;/p&gt;
+&lt;p&gt;You save time two ways.  Practicing implementations for and with various tools helps you get better at using them by learning their APIs and giving you experience to reflect on when coming up with new solutions.  You are almost certainly doing this already however.  You also save time by virtue of being smarter.  Since you have a wide range of tools to pull from, you can find something that just right for this problem much faster and you can often skip naive solutions which makes your solution sufficient for much larger input or load as the problem scales.&lt;/p&gt;
+&lt;p&gt;Discussion on &lt;a href=&quot;https://news.ycombinator.com/item?id=6984951&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hacker News&lt;/a&gt;.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;As you probably know, when we&#39;re interviewing someone, we&#39;re looking for people who are &lt;a href=&quot;http://www.joelonsoftware.com/articles/f
+    
+    </summary>
+    
+      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>The correct response to shitty technical arguments</title>
+    <link href="http://culture-of-development.com/blog/the-correct-response-to-shitty-technical-arguments/"/>
+    <id>http://culture-of-development.com/blog/the-correct-response-to-shitty-technical-arguments/</id>
+    <published>2013-08-13T02:13:00.000Z</published>
+    <updated>2016-06-15T14:00:11.002Z</updated>
+    
+    <content type="html">&lt;p&gt;Ohh, why should we do it that way?&lt;/p&gt;
+&lt;p&gt;You know what, our project &lt;em&gt;isn&#39;t&lt;/em&gt; written in node.  I don&#39;t give a shit &lt;em&gt;how&lt;/em&gt; they do in rails.  It&#39;s &lt;em&gt;wonderful&lt;/em&gt; that github and twitter do it like that.  Please explain to me how dhh has &lt;em&gt;anything&lt;/em&gt; to do with this situation.  And sometimes Joel &lt;em&gt;is&lt;/em&gt; wrong.  What Scott Hanselman says is great but he was solving a &lt;strong&gt;totally different problem&lt;/strong&gt;.  So you&#39;d do this serially if this were javascript huh?  &lt;em&gt;Awesome&lt;/em&gt;.  Microsoft best practice?  &lt;em&gt;Hysterical laughter&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The next time you are about to argue what some authority would do, make the case the authority would make by arguing their points instead of their name.  You&#39;ll save everyone a lot of time, it might show that you know when and why it should be done that way and you might just sound like you can think for yourself.&lt;/p&gt;
+&lt;p&gt;I&#39;d love to hear your best responses to these shitty arguments.  Tweet them with the hash tag #ShittyArgument.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Ohh, why should we do it that way?&lt;/p&gt;
+&lt;p&gt;You know what, our project &lt;em&gt;isn&#39;t&lt;/em&gt; written in node.  I don&#39;t give a shit &lt;em&gt;how&lt;/em&gt; th
+    
+    </summary>
+    
+      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Draft your code</title>
+    <link href="http://culture-of-development.com/blog/draft-your-code/"/>
+    <id>http://culture-of-development.com/blog/draft-your-code/</id>
+    <published>2013-06-19T19:42:00.000Z</published>
+    <updated>2016-06-15T14:00:26.932Z</updated>
+    
+    <content type="html">&lt;p&gt;The essence of craftsmanship is skill.  Skill is developed by practicing a task until it is understood as completely as possible.  Ergo, practice your craft.  The act of practicing a task can often be done in many ways, and the methods are comparable by how quickly they improve your understanding of the task.  A craftsman opts to practice in the way that most improves their understanding of the their task.  If you are a software craftsman, &lt;em&gt;draft your code&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;The departure of craftsmanship.&lt;/h2&gt;
+&lt;p&gt;Around the time I entered middle school, computers had gotten into just about every class room and many people had one at home.  We no longer wrote our book reports and three point essays by hand, we typed them up on the computer and printed them out before we turned them in.  I remember prior to this repeatedly being told that we should write rough drafts and then refine them.  In fact, I remember some of my earlier assignments even required me to turn in those rough drafts along side the final paper.  Somewhere in the first few years of writing papers on the computer, that requirement went out the window.  Sure you can just highlight and delete the parts you want to edit out or just add a few modifiers by moving the cursor to the appropriate position to edit it on the fly, but somewhere in there the concept of drafting your thoughts was lost.&lt;/p&gt;
+&lt;p&gt;Back in those days, I was one of the proprietors of this new way of thinking.  I would write the paper all the way through to the end, hand in the rough draft, then my final paper was just copying and pasting sentences in a different order.  I was simply changing it because I was told to, not because I thought it was better how I changed it; I wasn&#39;t even thinking about that.  In the end it turns out I am not a craftsman of the written word.  I leave this post as evidence.&lt;/p&gt;
+&lt;h2&gt;&amp;quot;The best code in the word is meaningless if nobody knows about your product.&amp;quot;&lt;/h2&gt;
+&lt;p&gt;Back in those days, I had already started my career as a hacker.  Unfortunately for me, and the first few people I ever shared my code with, I applied my lack of craftsmanship in writing book reports to my hobby of writing code, and I basically refused to change it once it worked.  I also remember reading every available article on game development and repeatedly seeing the mantra &lt;em&gt;once it works, the code is right&lt;/em&gt;.  No one expects your code to look good when you&#39;re 11 and just learning to program, but it&#39;s a fact that you apply lessons from domains you are more familiar with to new domains as you encounter them.  This is why you say &amp;quot;hello&amp;quot; when introduced to new people instead of punching them in the gut.  Perhaps it&#39;s no coincidence that hello world is such a popular program to implement when learning new languages.&lt;/p&gt;
+&lt;p&gt;The quote in the title of this section is from &lt;a href=&quot;http://www.ianlandsman.com/2006/10/06/10-tips-for-moving-from-programmer-to-entrepreneur&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Ian Landsman&lt;/a&gt; back in 2006 and in context of entrepreneurship it is a great quote.  However, a context shift has occurred through the repeater of the internet and shortening via Twitter over the years reducing this to the more common expression &amp;quot;the code doesn&#39;t matter as much as the product&amp;quot;.  This adjusted and context-less phrase is often used as a defense for neglecting code craftsmanship in favor of product thought.  This is completely analogous to my youthful defense for not writing drafts of my book reports because I could just edit it on the screen.  In both cases, it&#39;s craftsmanship that&#39;s left behind.&lt;/p&gt;
+&lt;h2&gt;There are many so many resources out there.&lt;/h2&gt;
+&lt;p&gt;There are many more software developers out there today then there were when I started programming 20 years ago.  Many of them are entering the field at a later age and are writing code as a bad as I was back then.  Much like I read everything I could on game development back then, people are trying to to connect to more skilled developers through twitter, following blogs and picking up books.  It&#39;s great that all this stuff is available today, I only imagine where I would be today if I had picked up better habits earlier on.  But it occurred to me recently that people naturally trust the ideas of other people they feel are more skilled than them, almost blindly.  I did it back then, and I hear it in much louder voices today.  When an older developer takes a quote out of context to discourage the importance of craftsmanship, it makes me want to punch them in the gut.  When a newer developer uses the same quote to deny the importance of craftsmanship, it makes me want to cry.&lt;/p&gt;
+&lt;p&gt;Luckily today there is a whole library of books, blog posts, youtube videos, presentation slides and other stuff on code craftsmanship, so it&#39;s much easier to right the misunderstanding in the flexible ideas in newer developers minds.  Occasionally this wealth of knowledge gets the best of people, overwhelming them with too many concepts which they do not completely understand.  Most often you can tell when someone is overwhelmed because they will almost tell you outright that they have formed this idea of perfect code in their head and as a result.  The result of this is usually writers block, because they want to write this perfect code, but they don&#39;t understand the concepts enough to know if they are even writing good code when in fact all they really need to be writing is working that meets spec&amp;lt;sup&amp;gt;1&amp;lt;/sup&amp;gt;.&lt;/p&gt;
+&lt;h2&gt;What about refactoring?&lt;/h2&gt;
+&lt;p&gt;Refactoring is one form of code drafting.  Refactoring normally means, we know there is some kind of problem with how the code is now and how we need to the code needs to interact with something else, so let&#39;s adjust it to meet those requirements as well.  When I say &lt;em&gt;draft your code&lt;/em&gt;, I mean write that shit 5 more times immediately after you implement it for the first time.  5 is an arbitrary number; what I really mean is write it enough times to understand it thoroughly.  Verify that it works after each implementation.  Typically I limit the scope of this advice to algorithm and pattern implementation, no higher.  Each time try using different abstractions, write down the memory usage, runtime expectation, then consider the integration points for the rest of your system and the overall readability.&lt;/p&gt;
+&lt;p&gt;I also encourage you to scratch rewrite the code at least once.  It&#39;s easy to fall into the trap of thinking you can just move things around and change the name of your functions to something more readable, but you&#39;re likely to gain a false sense of confidence with this new algorithm or abstraction simply because you were able to make it work in this one system this one time.  For any sufficiently complex algorithm or pattern, you&#39;ll often find the one way it worked in that one system really &lt;em&gt;was&lt;/em&gt; only good for that one system.  When learning new concepts, the craftsman strives for something better; they strive to identify and abstract the core components.&lt;/p&gt;
+&lt;h2&gt;An example.&lt;/h2&gt;
+&lt;p&gt;Recently I started watching the videos for the &lt;a href=&quot;https://class.coursera.org/nlangp-001/class/index&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Natural Language Processing&lt;/a&gt; course on Coursera.  In the first homework you build a language model to identify gene names in a blob of text.  As per normal, the first time I implement a new algorithm, I create a new project in my dev environment and give it a shot.  The first part of the homework was to calculate emission probabilities for a hidden markov model (HMM).  After a couple of hours, I had something that was able to generate the correct solutions so I moved on to part two which was to select word tags trigram probabilities from the same HMM using the Viterbi algorithm.  I hacked this together and then modified it once more for the last part of the homework which was to support different classes of rare words.  All in all this homework took me about 5 hours to get through.&lt;/p&gt;
+&lt;p&gt;Hopefully you&#39;re like me and you&#39;re at most vaguely familiar with the concepts I just listed.  I was able to solve the problem and I was pretty pumped to see the results match the test data.  In the past I would have turned it in and gone to bed.  Instead, I immediately deleted the project I was working in and started a new one.  Then I did the homework a second time.  The first time through, the whole thing was implemented as a small set of functions consisting of about 150-200 lines.  I was doing this in an object oriented language and I didn&#39;t create a single class.  This is pretty typical of a first implementation.  I understood the mathematical concepts of the models before hand, but having never &lt;em&gt;implemented&lt;/em&gt; them, I had no idea what the best abstractions were.  Now I had a better idea, so it was time to find a better way to write it.&lt;/p&gt;
+&lt;p&gt;For the next implementation, I considered how this might be used in an actual application.  Essentially my application would have sentences broken down into word collections and I would want to pass each word collection to a function that returns a collection of equal length with the tags assigned to each word.  The core logic was only to do the tagging, so I created an interface with a single function to do the tagging:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;interface ITagger
+{
+    string[] GetSentenceTags(string[] sentence);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I wrote all of the input parsing logic in my new project, wrote all the functions that use this interface and made sure it compiled.  Now it was time to implement this function.  I remembered implementing the &lt;code&gt;ArgMax&lt;/code&gt; function repeatedly, so the first time I ran into it, I knew to pull it out into a function.  I also remembered the whole structure for holding the word counts was deeply nested generics, so I decided extract a &lt;code&gt;WordInfo&lt;/code&gt; class that also cleaned up the word counting and tag checking code from the first implementation.  I also used a completely new mechanism for storing the back pointers in the Viterbi implementation.  Now this thing was looking a lot better and I had developed some very useful helper classes.  There was a lot more code in this version, but it was much easier to understand and in general I felt like I had identified a couple of useful helper classes.  Additionally, I was able to debug the Viterbi algorithm much easier because I understood what it was doing.&lt;/p&gt;
+&lt;p&gt;Then I deleted my implementation again.  I left all of the junk code for loading up the input data because it wasn&#39;t the core logic I was trying to learn.  This time through I decided to implement the model as it&#39;s own concept.  The idea was to make the literature (i.e. the lecture notes) translate as directly as possible to the concepts implemented in the code so that if you needed to understand what was going on, you&#39;d just have to read the lecture notes and names of ideas there would be the names of classes or functions in code.  This turned out to be a great idea because it left only the Viterbi algorithm implemented in the &lt;code&gt;ITagger&lt;/code&gt; implementation and moved all of the data functions to a separate class.  This really cleaned up the responsibilities in the code as well.  Again I decided to use yet another storage mechanism for the recursive values in the Viterbi algorithm and as a bonus, I only had one off by one bug in the implementation this time despite the changes; it was clear I was really starting to understand it.&lt;/p&gt;
+&lt;p&gt;Now I was happy with the abstractions and comfortable with implementing the hard parts.  At this point I moved into refactoring mode.  In the first pass I broke apart the remaining multipurpose functions.  In the second pass I renamed everything to be specific as necessary and more closely match the names used in the lecture notes.  At the end I DRYed up some obvious duplication.&lt;/p&gt;
+&lt;h2&gt;Conclusion.&lt;/h2&gt;
+&lt;p&gt;In the end I spent a full day doing something I could have finished in 5 hours.  Instead of just getting the homework finished, I now have experience writing the actual code to implement this in a real system, implemented the solution in 3 distinct ways and have a clear idea of how the important parts work together because I&#39;ve stepped through the code debugging them multiple times.  The resulting code is more readable, more testable and DRYer than the original implementation.  I stress however, this code is not perfect.  I&#39;m not even sure what the perfect code would be, but I&#39;m certain the result meets the spec and would be much easier for someone else to understand (or me to understand months from now when it breaks).&lt;/p&gt;
+&lt;p&gt;You might argue that all of what I have done could also have been achieved through refactoring.  I firmly believe you can be influenced by the existence of a working solution to only make trivial changes, particularly if you are a newer developer with a smaller toolbox.  As soon as you envision a change, use that as your starting point for the next clean slate implementation.  This can be just the inspiration you need to come up with a better ideas for other parts of the solution.  Restated simply again, &lt;em&gt;draft your code&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;Make it a life goal&lt;/h3&gt;
+&lt;p&gt;I didn&#39;t realize it until it was pointed out recently, but the idea of drafting has been ironed into my day everyday thinking for some time.  Not just in regards to writing code or writing book reports, but &lt;strong&gt;my entire life and everything I do&lt;/strong&gt;.  For my first wedding anniversary, my wife made us picture formed from the words of our wedding vows.  It&#39;s a picture of a rocket flying to the moon because I have a huge hobby of making high power rockets and my life goal is to go to the moon.  In the image, the words of my vows make up the rocket and my wife&#39;s vows make up the moon.  The background is made up of the words to the song we danced to for our first dance.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/vows.jpg&quot; alt=&quot;rocket vows&quot;&gt;&lt;/p&gt;
+&lt;p&gt;If you zoom in on the part surrounded by the red box, the words in my vows read:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When I realized I had fallen in love with you, I wanted so much for everything to be perfect for you from that day forward for the rest of your life.  I have since learned that perfection is built; it is not something that exists in the beginning when we barely know each other only to be foiled in a single moment, never again to be obtained.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;lt;sup&amp;gt;1&amp;lt;/sup&amp;gt;: Thank you to this &lt;a href=&quot;http://stackoverflow.com/questions/16735588/applying-clean-code-and-solid-principle-take-me-so-much-time-normal/16736954&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Stack Overflow question&lt;/a&gt; for providing the motivation for this blog post.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The essence of craftsmanship is skill.  Skill is developed by practicing a task until it is understood as completely as possible.  Ergo, 
+    
+    </summary>
+    
+      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Interviews: what I&#39;m thinking while I&#39;m interviewing you</title>
+    <link href="http://culture-of-development.com/blog/interviews-what-im-thinking-while-im-interviewing-you/"/>
+    <id>http://culture-of-development.com/blog/interviews-what-im-thinking-while-im-interviewing-you/</id>
+    <published>2013-03-24T20:01:00.000Z</published>
+    <updated>2016-06-15T14:00:17.827Z</updated>
+    
+    <content type="html">&lt;p&gt;As an interviewee, I always wished I could know what the interviewer was looking for in the interview.  I wish I could see in their mind at exactly what they are looking for and tailor my responses directly to them.  Are they looking for me to write comments?  Do they want me to start with tests?  Are they just looking for a description of the solution?  I&#39;ve come to realize that&#39;s only part of it, but knowing and applying that extra information still sets you noticeably apart from the competition.&lt;/p&gt;
+&lt;p&gt;Today I&#39;m mostly on the side of interviewing people.  When I started interviewing people, I did my research; I asked people in my company what the key components to look for were, I read a few books and I looked around the internet.  Most importantly I studied the question I was going to ask until I thought I knew the most likely ways to solve it, every detail of production quality code for each of those solutions and every mistake the interviewee would likely make.  Truth be told I had been in exactly 2 technical interviews in my life, one from my previous company and one from my current company.  Going into the first interview as the interviewer, I was at least as nervous as the person I was interviewing.&lt;/p&gt;
+&lt;p&gt;About 5 minutes into the interview that nervousness all went away.  It was about that time I realized &lt;strong&gt;we both want this interview to end with a hire&lt;/strong&gt;.  Knowing that, I didn&#39;t care about any mistakes I might make because one of three things would happen:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;the interviewee thinks I&#39;m stupid and doesn&#39;t correct my mistakes, thinking he doesn&#39;t want to work with people like me&lt;/li&gt;
+&lt;li&gt;the interviewee corrects my mistake, or his perceived mistake and we have a conversation to come up with a solution&lt;/li&gt;
+&lt;li&gt;the interviewee does not correct me and just rolls with it (either thinking I was right or just being too timid to correct me)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I make unintentional mistakes all. the. time.  In case 1, well... I don&#39;t really want to work with someone who just lets me be stupid all the time either, and this will probably end up in a no hire because they would decline an offer anyway.  In case 3, well... I really don&#39;t want to work with someone who rolls with mistakes as facts or is too timid to correct them either. I can&#39;t trust that person to give me critical feedback and that&#39;s almost certainly enough for me to say no hire.  But in case 2, we end up having a conversation about a misunderstanding.  This grants me an opportunity to explore this person&#39;s ability to quickly examine and unravel a misunderstanding.  That is a truly valuable skill.&lt;/p&gt;
+&lt;p&gt;Because of this, I intentionally made false claims to interviewees a few times.  I haven&#39;t done that since those first few interviews however because I&#39;m not a great actor and it came off as obviously scripted in the cases when the person did correct me.  Also, I never ended up having that amazing conversation when I did this, but it almost always happens when the mistake is unintentional.  There is also a much better way to make mistakes, just ask new questions almost all the time.  I&#39;m still going to study my question before asking it and know a few ways to solve it, but I don&#39;t want to be so familiar with the question I&#39;m asking that I know everything about it and me asking you to explain your answer is just a formality.  I want your explanation to be more of a discussion than me making sure you dotted all the T&#39;s and crossed all the I&#39;s.&lt;/p&gt;
+&lt;h2&gt;What I&#39;m looking for in an interview&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;requirements and clarification&lt;/li&gt;
+&lt;li&gt;thought process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I state explicitly at the beginning of every technical question, &amp;quot;you can make any assumptions you&#39;d like and ask me for clarification about anything you don&#39;t understand&amp;quot;.  What I&#39;m really saying is &amp;quot;for every ambiguity, state an assumption or ask for clarification from me&amp;quot;.  Notice that both of those involve telling me what you are thinking.  This is wildly important because I cannot read your mind and more importantly &lt;em&gt;I cannot clarify your solution&lt;/em&gt;!&lt;/p&gt;
+&lt;p&gt;A lot of times interviewees start by writing down the few requirements I give them and they think about it for a little bit, then start writing on some paper (which I cannot see remotely), and then they write some lines of code which are often difficult for me to understand if they make any sense at all.  At the end they try to explain their solution and almost undoubtedly I find an issue within the first 2 sentences by stating a requirement contrary to an assumption they chose but didn&#39;t state or clarify.  They probably made the correct assumption in the first place, but since that requirement wasn&#39;t set in stone earlier by stating an assumption or clarifying a decision point with me, I&#39;m going to take this opportunity to switch things up and then I&#39;m going to be more critical that they state their assumptions early for the remainder of the interview.&lt;/p&gt;
+&lt;p&gt;Assumptions need to be clear, and clarification needs to happen early.  It has actually been the case on a big project I worked on for Careers where we made assumptions when we should have clarified requirements, then spent a couple months building out this huge new feature only to find out that some of those early assumptions were incorrect.  This wastes a lot of very valuable time.  In an interview if you state an assumption, I will generally let you roll with it as fact unless I know for certain it will lead you down a long path to eventual failure.  In that case I&#39;ll stop you right there and talk about it in hopes of swaying you to an alternative solution.  As long as you state it out loud or write it down, I have the opportunity to clarify my understanding of your solution along the way.  If you don&#39;t, that turns out to be a costly problem in an interview and on the actual job.&lt;/p&gt;
+&lt;p&gt;You might think it&#39;s stupid not to give a rigidly defined question in an interview because it&#39;s only about an hour and you don&#39;t want to waste time determining unmentioned requirements.  I do this because on our team this is closely mimics the actual work you will be doing.  You&#39;re going to get projects as ideas, and then you&#39;re going to have to make all the assumptions and clarify requirements with the team.  It would be extra special if you come up with multiple solutions in your head, determine why each might be better, ask me questions about how this going to be used and then make your implementation decision from my answers.&lt;/p&gt;
+&lt;p&gt;I might ask questions differently if the team dynamics were different, but as an interviewee, it&#39;s a good assumption that the manner in which you answer technical questions &lt;em&gt;will&lt;/em&gt; be closely related to how you will actually be working on their team.  This is very important to recognize when making your decision to continue the hiring process or accept any possible offer.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;speed&lt;/li&gt;
+&lt;li&gt;quality&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We&#39;re going to spend roughly half the time in the interview talking about things that have nothing to do with technical questions.  At least I hope that&#39;s how it will work out.  You probably know we hire people who are smart and get things done.  Quite frankly, &lt;strong&gt;it&#39;s better to have something that can be improved upon than trying to get the &amp;quot;best&amp;quot; answer on the first try&lt;/strong&gt;.  Get something we can talk about rather than getting upset staring at a blank page while trying to think of the &amp;quot;best&amp;quot; answer.  Honestly, I don&#39;t know what the best answer is to most questions I ask, so I won&#39;t even be able to help you get there.  I&#39;m looking for a sufficient answer, fast enough.  In most cases the 90% solution is good enough, and if you want the other 90% of the credit, you have to really blow me away with something completely elegant.  Even still, that&#39;s only one part of the whole package of the interview, not a guaranteed hire.&lt;/p&gt;
+&lt;p&gt;The speed at which I expect each question to be answered is different and generally pretty fuzzy, but it&#39;s important to understand that dead air, the time where you are thinking and not talking out loud or time when you are doing something I cannot see needs to be kept to a minimum.  I try to give people ample time to work things out in their head, but by the time you start writing a solution, you should have at least given me a brief overview of the approach you are about to take.&lt;/p&gt;
+&lt;p&gt;When it comes to quality, I am looking for the candidate to answer 2 questions: 1) does it do everything it&#39;s supposed to do for all possible input? and 2) is there a more algorithmically efficient way to solve the problem?  In general you&#39;ll solve a question faster if you just solve the happy path first, and then look for edge cases.  If you try to think of edge cases up front, you&#39;ll likely get bogged down trying to come up with a solution for everything all at once.  Get an answer down, then search for edge cases on your own, make appropriate changes and when you&#39;re done I&#39;ll give you some hints for any you might have missed.  Why will I give you hints?  Because that&#39;s how our team works.  I&#39;ll run things by you all the time to help me identify edge cases I might have missed, and I&#39;ll expect you to do the same to me if you&#39;re hired.&lt;/p&gt;
+&lt;p&gt;For most of the day to day quality concerns, clean code, style, etc, I am extremely relaxed about in an interview.  I do prefer well named variables so I can follow along with your code more easily, but outside of that, don&#39;t waste too much time on what the code looks like as long as you can still understand it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;testing&lt;/li&gt;
+&lt;li&gt;explanation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hopefully you&#39;ve been talking out loud the whole time, clarifying requirements and stating assumptions, explaining formulas you choose, etc.  If you&#39;ve been doing this, the explanation is probably already taken care of.  Some people do work through problems better in their heads however and in those cases, I want to see a very detailed explanation of your code at the end, initiated by you.  I really like self explanatory code, but you probably didn&#39;t write that in your hour long interview unless the question was trivial.  Make sure that I understand every detail of your solution, especially the reasons for your assumptions.&lt;/p&gt;
+&lt;p&gt;At the end of a technical interview question I&#39;m going to ask you if it&#39;s correct.  Now I want a different kind of explanation of your code, I want you to convince me you believe it is correct.  If applicable to the problem, remember the phrase &lt;em&gt;&amp;quot;convince me with numbers&amp;quot;&lt;/em&gt;.  Write some actual input and the expected output, then walk through the solution line by line making sure that the result is the correct.  When you do this, don&#39;t choose the same numbers you used when you were determining the solution, of course it works for that case.  Choose a different set of numbers this time for us to walk through and you will be more convinced than you were and you will likely convince me as well.  In the case of design problems, take the list of requirements as given, enumerate through them and show the exact part of the solution which addresses each requirement.&lt;/p&gt;
+&lt;h2&gt;An example from a question I am now retiring&lt;/h2&gt;
+&lt;p&gt;Landing an interview for a team you really want to be a part of is very nerve racking.  You&#39;ll probably go into the phone screen and first couple of interviews as a complete mess, barely able to think about the questions you&#39;re being asked and completely anxious about the technical part.  It is our goal to get you to &lt;a href=&quot;http://www.youtube.com/watch?v=QPPN_gkj_gk&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;be cool&lt;/a&gt;, and one of the most powerful ways to do that is to get you to talk.  Coincidently it&#39;s a great way to tell the interviewer enough information for them to make a hiring decision.  &lt;strong&gt;Be prepared to talk&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;When I&#39;m very anxious or very relaxed, everything is funny and I can&#39;t stop telling jokes.  There is a level in between very anxious and very relaxes where I don&#39;t even understand why jokes are funny, but that&#39;s where I perform my best.  One of my tricks before an interview was to tell myself jokes and laugh out loud for a few minutes.  Laughing to me is very relaxing, and this was my way of getting in the zone.&lt;/p&gt;
+&lt;p&gt;As soon as the interview starts, my number one goal is to get to a point where you feel comfortable talking out loud, and that means we&#39;re going to talk about whatever &lt;em&gt;you&lt;/em&gt; want to talk about.  You need to take this opportunity to do whatever it is that will calm you down because within 15 minutes we&#39;re going to have to move on to the technical questions if we&#39;re going to keep this interview to a reasonable length.  I&#39;ve even gone as far as outright asking &amp;quot;so what do you want to talk about&amp;quot; as my first question.&lt;/p&gt;
+&lt;p&gt;Generally speaking, I don&#39;t care what we talk about at this point, I just want it to be something you are intimately familiar with so you can teach me a thing or two.  I want to learn details about the interesting hobby you spend half your free time doing, an amazing feat you&#39;re proud of, an awesome idea you implemented or just about anything where you feel like you could interview me about it.  Keep it professional of course, and show me how passionate you are about &lt;em&gt;something&lt;/em&gt;.  I&#39;ll be asking you questions along the way to see how much knowledge you have and how well you can explain to me things I actually don&#39;t know about.&lt;/p&gt;
+&lt;h3&gt;The question&lt;/h3&gt;
+&lt;p&gt;So now you get the question.  I made the mistake in one of my first interviews of calling the first question easy because I thought it would help calm the person down.  In fact it turned out to be a bit of a challenge for them and I could tell they were even more nervous after that because the got caught up on the &amp;quot;easy&amp;quot; question.  From then on there are no &amp;quot;easy&amp;quot; questions, just technical questions and you should &lt;strong&gt;assume every technical question is non-trivial&lt;/strong&gt;.  Approach every question with the same rigor because repeatedly fumbling a technical question under the pretense this is the &amp;quot;easy&amp;quot; question will inevitably look bad.&lt;/p&gt;
+&lt;p&gt;I&#39;m going to try to state the question as closely as I actually ask it, and I strongly encourage you the reader to try to solve it before reading through the solution.&lt;/p&gt;
+&lt;p&gt;Do you know what an aspect ratio is?  I define the aspect ratio of a box as width over height:  &lt;code&gt;AR = W/H&lt;/code&gt;.  We have a bounding box for a set of points, defined by two points, &lt;code&gt;min&lt;/code&gt; and &lt;code&gt;max&lt;/code&gt;.  &lt;code&gt;min&lt;/code&gt; is the bottom left corner of the box, and &lt;code&gt;max&lt;/code&gt; is the upper right corner of the box.  Because of how the points were chosen to define the box, &lt;code&gt;max&lt;/code&gt; and &lt;code&gt;min&lt;/code&gt; have the relationship that all elements in &lt;code&gt;min&lt;/code&gt; are less than the corresponding elements in &lt;code&gt;max&lt;/code&gt;.  Do you understand how the box is created?  Here is a graphical example (yes I show them this exact image):&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/problem-definition.png&quot; alt=&quot;graphical example of box&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You will be given a box like this that is already initialized from a valid set of points.  What you need to do is implement the function &lt;code&gt;convertAspectRatio&lt;/code&gt; which takes a float representing the desired aspect ratio.  The center of the box should stay the same, and the box should only expand, so either the width or height is guaranteed to stay the same length and the other one will get larger.  Does all this make sense?  A graphical example of one possible change looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/converted-example.png&quot; alt=&quot;graphical example of box&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here is some code in a language I made up just for this interview to get you started:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;point:
+    x: float
+    y: float
+
+box:
+    min: point
+    max: point
+    
+    void convertAspectRatio(float desiredAR):
+        // your code here
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can make any assumptions you want to and ask me for clarification about anything you don&#39;t understand.  I&#39;ll answer every question to the best of my ability.&lt;/p&gt;
+&lt;p&gt;That&#39;s it.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;If you&#39;d like to try it out, I highly recommend doing that now before you read through the solution.&lt;/p&gt;
+&lt;h3&gt;The solution&lt;/h3&gt;
+&lt;p&gt;First you should clarify anything you don&#39;t understand, and come up with a basic idea of your approach.  If you can, say what you are thinking out loud, even just snippets is better than anything.  Even if you think you understand the question, just saying what you are thinking out loud gives me an opportunity to correct any obvious misunderstandings, which I will gladly do before I allow you to go off on an hour long adventure solving a different problem.  One person who solved this question initially wrote the idea down in comments and deleted the comments as he implemented them.  This turned out to be very effective and I was able to point out a few details missed and he didn&#39;t have to think out loud as much.&lt;/p&gt;
+&lt;p&gt;At the end of this part of the solution, I want a clear indication of how you break down a problem into parts and solve each part.  This is the thought process bullet I&#39;m looking for in every interview.  Often times you will get stuck thinking about a particular aspect of the problem and I will help you along just to get you over the hump.   A couple of great examples:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You have already determined the existing aspect ratio and you are now trying to figure out whether the height or width needs to be adjusted.  I&#39;ll let you stew on this for a minute or two, before I&#39;ll ask you what you&#39;re thinking.  Most of the time getting stuck here is the person trying to figure out which pieces of information are useful in determining which side needs to expand, so with that in mind I&#39;ll give a hint like &amp;quot;so you know what the current aspect ratio is and you know what the desired aspect ratio is, there are 3 possible comparisons to those, what are they?&amp;quot;.  I knew the problem you were having is figuring out which information is useful, and so I&#39;m more than happy to give you that information along with a hint as to how to use it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;and:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You now have the code broken into 2 if statements, one for converting to a smaller aspect ratio, and one for converting to a bigger aspect ratio.  You say out loud that since the side that changes is always getting larger, we just need to figure out what to multiply each side by.  I&#39;ll let you have fun trying to derive that equation for a few minutes.  Once you get sufficiently wrapped up in that charlie foxtrot I&#39;ll remind you that we know the desired aspect ratio and one side that isn&#39;t going to change.  Hopefully at this point you look back to the definition of aspect ratio I gave at the beginning and realize you just need to solve for the equation for either W or H, whichever side is going to change.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There are a number of small problems to solve in an interview question and I want to see how you handle as many of them as possible.  Assuming you were hired and ran into a situation where you get stuck while working on a feature, I&#39;d hope you&#39;d ask a question to get you over the next hump rather than waste hours on something that might be obvious to someone else.  Don&#39;t take this for granted though, if you just start looking for help from me at every turn that&#39;s a clear indication of a no hire.  Try diligently to solve the problem, and don&#39;t be afraid to tell me you can figure it out if you feel like you&#39;re close and I&#39;ll give you a little more time.  Make it clear which problem you are working on at all times.&lt;/p&gt;
+&lt;p&gt;When it comes to speed, I can only re-iterate what I said earlier: it&#39;s better to have something that can be improved upon than trying to get the &amp;quot;best&amp;quot; answer on the first try.   For any 2 interviews, it could take the exact same amount of time to complete a question.  In the case that one is filled with dead air for the first 50% of the time, it will feel like it took much longer.  I try to mitigate this effect by writing down the start and end times for each question, but the effect on me is notable and I have no way to help you clarify the problem for the first 50% of the time.&lt;/p&gt;
+&lt;p&gt;This is a case where remembering &lt;em&gt;&amp;quot;convince me with numbers&amp;quot;&lt;/em&gt; is completely applicable.  You should create input for all 3 cases of the comparisons for the aspect ratios and walk through each branch of your code out loud or plop a table in the document we&#39;re working on.&lt;/p&gt;
+&lt;p&gt;At this point you probably have the happy path code written and it looks something like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;point:
+    x: float
+    y: float
+    
+box:
+    min: point
+    max: point
+    
+    void convertAspectRatio(float desiredAR):
+        height: max.y - min.y
+        width: max.x - min.x
+        currentAR: width / height
+        
+        if: currentAR &amp;lt; desiredAR // gets wider
+            newWidth: height * desiredAR
+            offset: newWidth - width / 2
+            max.x += offset
+            min.x -= offset
+            
+        if: currentAR &amp;gt; desiredAR // gets taller
+            newHeight: width / desiredAR
+            offset: newHeight - height / 2
+            max.y += offset
+            min.y -= offset
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is sort of ideal.  Solving for the easy case first gives you something you can now improve upon.  Now I say &amp;quot;Looks great!  This definitely covers the happy path, how would you change this if it were actually production code?&amp;quot;  Now you&#39;re looking for edge cases, and there are some important ones here, which I will once again give you time to come up with before pointing them out.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What happens if the box is initialized with an empty set?  (a valid clarification to ask is whether that is valid or not since I told you it would already be a valid box)&lt;/li&gt;
+&lt;li&gt;What happens if the box is initialized with exactly 1 point?&lt;/li&gt;
+&lt;li&gt;What happens if the box has a height of 0?&lt;/li&gt;
+&lt;li&gt;What happens if the box has a width of 0?&lt;/li&gt;
+&lt;li&gt;What happens if the desiredAR is 0?&lt;/li&gt;
+&lt;li&gt;What happens if the desiredAR is negative?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are the simple cases based on the structure of the data.  Depending on how much time I want to spend on this question, all but one of these changes would require a code change to my example code and I&#39;d ask you to make the necessary modifications if you hadn&#39;t already identified and adjusted for them.  If there is time after this, I&#39;d change the requirement that I made up this fictional language and ask you what other edge cases are there if were to implement this in language with defined bit sizes for floats?  That opens up a whole other collection of discussion worthy topics.&lt;/p&gt;
+&lt;h3&gt;Ask me anything&lt;/h3&gt;
+&lt;p&gt;The last part of the interview I will give you the opportunity to ask me anything and I will try my damnedest to answer it.  Even if you blew me out of the water with the technical part, you can still bone yourself here by simply not asking anything.  Why?  It means you just want to work here, and that&#39;s not what we want.  We want people who are passionate about the product and who want to know more about the internals of the company.  Right now you have more access than most people will ever have to dive deep into what it&#39;s like working here, take advantage of that.&lt;/p&gt;
+&lt;p&gt;I really look forward to this part of every interview in hopes that it will give me a change to sell my product and my team to you.  I love discussing features with candidates and crazy ideas for improving the product because it shows me that you might be able to succeed in a place where you&#39;ll be responsible for coming up with most of your own work.  I want you to pry deep into some aspect about working here that would affect your decision to accept an offer. I am very passionate about the work I do and I hope you force me to share some of that with you through your questions.&lt;/p&gt;
+&lt;p&gt;I hope this information helps you prepare better for interviews by knowing what interviewers are looking for and makes interviews seem a bit less overwhelming.  If you&#39;re currently in the market for a new job, &lt;a href=&quot;http://careers.stackoverflow.com/jobs/28723/web-developer-stack-exchange-stack-exchange&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;we&#39;re hiring&lt;/a&gt;.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;As an interviewee, I always wished I could know what the interviewer was looking for in the interview.  I wish I could see in their mind 
+    
+    </summary>
+    
+      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Open source and the ability to modify code</title>
+    <link href="http://culture-of-development.com/blog/open-source-and-the-ability-to-modify-code/"/>
+    <id>http://culture-of-development.com/blog/open-source-and-the-ability-to-modify-code/</id>
+    <published>2013-02-28T14:29:00.000Z</published>
+    <updated>2016-06-15T14:00:14.387Z</updated>
+    
+    <content type="html">&lt;p&gt;If you google for the &lt;a href=&quot;https://www.google.com/webhp?sourceid=chrome-instant&amp;amp;ion=1&amp;amp;ie=UTF-8#hl=en&amp;amp;sclient=psy-ab&amp;amp;q=advantages%20of%20open%20source%20software&amp;amp;oq=&amp;amp;gs_l=&amp;amp;pbx=1&amp;amp;fp=abb3d512a9f598c1&amp;amp;ion=1&amp;amp;bav=on.2,or.r_gc.r_pw.r_cp.r_qf.&amp;amp;bvm=bv.43148975,d.eWU&amp;amp;biw=1264&amp;amp;bih=1487&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;advantages of open source software&lt;/a&gt;, you will get results that enumerate a few ideas like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It&#39;s cheaper!&lt;/li&gt;
+&lt;li&gt;It&#39;s more secure!&lt;/li&gt;
+&lt;li&gt;No vendor lock!&lt;/li&gt;
+&lt;li&gt;Better quality!&lt;/li&gt;
+&lt;li&gt;Auditability!&lt;/li&gt;
+&lt;li&gt;Customizability!&lt;/li&gt;
+&lt;li&gt;???&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And if you read what they write under customizability, what they mean is that you can modify the code for your own system.   Modifying open source software for your own system is &lt;em&gt;highly inadvisable&lt;/em&gt;.  As soon as you make a change, you have forked the project and forked projects are often difficult or impossible to keep up to date with changes in the master branch.&lt;/p&gt;
+&lt;h3&gt;So open source software is just for using, not for editing?&lt;/h3&gt;
+&lt;p&gt;No, of course not.  If you need to make tweaks or other changes to the code of an open source project, you should be &lt;strong&gt;contributing&lt;/strong&gt; your code to those projects, and integrating the new features to your system once your code is merged.&lt;/p&gt;
+&lt;p&gt;On the &lt;a href=&quot;http://careers.stackoverflow.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Careers 2.0&lt;/a&gt; project I write code for, all of our open source dependencies are maintained through &lt;a href=&quot;http://nuget.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;nuget&lt;/a&gt;, even the ones Stack Exchange &lt;a href=&quot;https://github.com/ServiceStack&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;employees&lt;/a&gt; &lt;a href=&quot;https://github.com/emmettnicholas/StacMan&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;have&lt;/a&gt; &lt;a href=&quot;https://github.com/NickCraver/StackExchange.Exceptional&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;contributor&lt;/a&gt; &lt;a href=&quot;https://github.com/ServiceStack/Bundler&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;access&lt;/a&gt; &lt;a href=&quot;https://github.com/StackExchange/MiniProfiler&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;to&lt;/a&gt;.  If you want to make a change, submit a pull request, have it accepted, publish the updated nuget package and update the nuget reference in the project.  It sounds like a long path, but it keeps your system up to date and makes all of your contributions public.&lt;/p&gt;
+&lt;h3&gt;But what if there is a bug or a critical vulnerability?&lt;/h3&gt;
+&lt;p&gt;There are exactly 1 situations I can think of when it is acceptable to modify an open source project, compile it and deploy it within your system:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You need an immediate fix for a vulnerability that must go live until the fix is merged into the master.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When the project has a vulnerability, I&#39;m not going to argue taking anything but the shortest line approach to fixing it.  If it&#39;s just a bug, that&#39;s just code for no better time to submit a pull request!&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;If you google for the &lt;a href=&quot;https://www.google.com/webhp?sourceid=chrome-instant&amp;amp;ion=1&amp;amp;ie=UTF-8#hl=en&amp;amp;sclient=psy-ab&amp;amp;q
+    
+    </summary>
+    
+      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+</feed>
