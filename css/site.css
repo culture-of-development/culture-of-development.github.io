@@ -1,0 +1,30 @@
+body {
+  background-color: #E7E7E7;
+}
+.container {
+  max-width: 750px;
+}
+.page-header {
+  border-width: 3px;
+}
+.page-header .title {
+  font-variant: small-caps;
+  text-transform: uppercase;
+}
+section.page-content {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.site-nav a {
+  margin-right: 15px;
+}
+.page-footer {
+  border-top: 3px solid #eee;
+  padding-top: 9px;
+  padding-bottom: 100px;
+}
+.post-link {
+  font-variant: small-caps;
+  text-transform: uppercase;
+  font-weight: bold;
+}

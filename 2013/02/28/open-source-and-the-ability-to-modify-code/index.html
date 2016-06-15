@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Open source and the ability to modify code - Culture of Development</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="container">
+			<div class="h3 title">
+				Culture of Development
+				<small>The Pit of Success</small>
+			</div>
+			<nav class="site-nav">
+	<a href="/">blog</a>
+</nav>
+		</div>
+	</header>
+	<section class="page-content">
+		<div class="container">
+			<h1>Open source and the ability to modify code</h1>
+<p class="text-muted">
+    2013-02-28 
+    Nick Larsen
+</p>
+<section class="article">
+	<p>If you google for the <a href="https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;ie=UTF-8#hl=en&amp;sclient=psy-ab&amp;q=advantages%20of%20open%20source%20software&amp;oq=&amp;gs_l=&amp;pbx=1&amp;fp=abb3d512a9f598c1&amp;ion=1&amp;bav=on.2,or.r_gc.r_pw.r_cp.r_qf.&amp;bvm=bv.43148975,d.eWU&amp;biw=1264&amp;bih=1487" target="_blank" rel="external">advantages of open source software</a>, you will get results that enumerate a few ideas like this:</p>
+<ol>
+<li>It's cheaper!</li>
+<li>It's more secure!</li>
+<li>No vendor lock!</li>
+<li>Better quality!</li>
+<li>Auditability!</li>
+<li>Customizability!</li>
+<li>???</li>
+<li>...</li>
+</ol>
+<p>And if you read what they write under customizability, what they mean is that you can modify the code for your own system.   Modifying open source software for your own system is <em>highly inadvisable</em>.  As soon as you make a change, you have forked the project and forked projects are often difficult or impossible to keep up to date with changes in the master branch.</p>
+<h3>So open source software is just for using, not for editing?</h3>
+<p>No, of course not.  If you need to make tweaks or other changes to the code of an open source project, you should be <strong>contributing</strong> your code to those projects, and integrating the new features to your system once your code is merged.</p>
+<p>On the <a href="http://careers.stackoverflow.com/" target="_blank" rel="external">Careers 2.0</a> project I write code for, all of our open source dependencies are maintained through <a href="http://nuget.org/" target="_blank" rel="external">nuget</a>, even the ones Stack Exchange <a href="https://github.com/ServiceStack" target="_blank" rel="external">employees</a> <a href="https://github.com/emmettnicholas/StacMan" target="_blank" rel="external">have</a> <a href="https://github.com/NickCraver/StackExchange.Exceptional" target="_blank" rel="external">contributor</a> <a href="https://github.com/ServiceStack/Bundler" target="_blank" rel="external">access</a> <a href="https://github.com/StackExchange/MiniProfiler" target="_blank" rel="external">to</a>.  If you want to make a change, submit a pull request, have it accepted, publish the updated nuget package and update the nuget reference in the project.  It sounds like a long path, but it keeps your system up to date and makes all of your contributions public.</p>
+<h3>But what if there is a bug or a critical vulnerability?</h3>
+<p>There are exactly 1 situations I can think of when it is acceptable to modify an open source project, compile it and deploy it within your system:</p>
+<ol>
+<li>You need an immediate fix for a vulnerability that must go live until the fix is merged into the master.</li>
+</ol>
+<p>When the project has a vulnerability, I'm not going to argue taking anything but the shortest line approach to fixing it.  If it's just a bug, that's just code for no better time to submit a pull request!</p>
+
+</section>
+		</div>
+	</section>
+	<footer class="page-footer">
+		<div class="container">
+			<nav class="site-nav">
+	<a href="/">blog</a>
+</nav>
+			<p>
+				&copy; yyyy
+			</p>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
