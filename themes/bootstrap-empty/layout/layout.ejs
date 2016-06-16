@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title><%= page.title || "Blog" %> - <%= config.title %></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<%- css("css/site") %>
+</head>
+<body>
+	<header class="page-header">
+		<div class="container">
+			<div class="h3 title">
+				<%= config.title %>
+				<small><%= config.subtitle %></small>
+			</div>
+			<%- partial('_partial/site-nav') %>
+		</div>
+	</header>
+	<section class="page-content">
+		<div class="container">
+			<%- body %>
+		</div>
+	</section>
+	<footer class="page-footer">
+		<div class="container">
+			<%- partial('_partial/site-nav') %>
+			<p>
+				&copy; <%= date(Date.now(), "YYYY") %> Nick Larsen, cultureofdevelopment.com
+			</p>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-38493266-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>
+</html>

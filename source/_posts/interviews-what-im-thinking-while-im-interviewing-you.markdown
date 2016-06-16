@@ -1,0 +1,161 @@
+---
+title: "Interviews: what I'm thinking while I'm interviewing you"
+author: Nick Larsen
+date: 2013-03-24 16:01
+categories: blog
+---
+As an interviewee, I always wished I could know what the interviewer was looking for in the interview.  I wish I could see in their mind at exactly what they are looking for and tailor my responses directly to them.  Are they looking for me to write comments?  Do they want me to start with tests?  Are they just looking for a description of the solution?  I've come to realize that's only part of it, but knowing and applying that extra information still sets you noticeably apart from the competition.
+
+Today I'm mostly on the side of interviewing people.  When I started interviewing people, I did my research; I asked people in my company what the key components to look for were, I read a few books and I looked around the internet.  Most importantly I studied the question I was going to ask until I thought I knew the most likely ways to solve it, every detail of production quality code for each of those solutions and every mistake the interviewee would likely make.  Truth be told I had been in exactly 2 technical interviews in my life, one from my previous company and one from my current company.  Going into the first interview as the interviewer, I was at least as nervous as the person I was interviewing.
+
+About 5 minutes into the interview that nervousness all went away.  It was about that time I realized **we both want this interview to end with a hire**.  Knowing that, I didn't care about any mistakes I might make because one of three things would happen:
+
+1. the interviewee thinks I'm stupid and doesn't correct my mistakes, thinking he doesn't want to work with people like me
+2. the interviewee corrects my mistake, or his perceived mistake and we have a conversation to come up with a solution
+3. the interviewee does not correct me and just rolls with it (either thinking I was right or just being too timid to correct me)
+
+I make unintentional mistakes all. the. time.  In case 1, well... I don't really want to work with someone who just lets me be stupid all the time either, and this will probably end up in a no hire because they would decline an offer anyway.  In case 3, well... I really don't want to work with someone who rolls with mistakes as facts or is too timid to correct them either. I can't trust that person to give me critical feedback and that's almost certainly enough for me to say no hire.  But in case 2, we end up having a conversation about a misunderstanding.  This grants me an opportunity to explore this person's ability to quickly examine and unravel a misunderstanding.  That is a truly valuable skill.
+
+Because of this, I intentionally made false claims to interviewees a few times.  I haven't done that since those first few interviews however because I'm not a great actor and it came off as obviously scripted in the cases when the person did correct me.  Also, I never ended up having that amazing conversation when I did this, but it almost always happens when the mistake is unintentional.  There is also a much better way to make mistakes, just ask new questions almost all the time.  I'm still going to study my question before asking it and know a few ways to solve it, but I don't want to be so familiar with the question I'm asking that I know everything about it and me asking you to explain your answer is just a formality.  I want your explanation to be more of a discussion than me making sure you dotted all the T's and crossed all the I's.
+
+## What I'm looking for in an interview
+
+- requirements and clarification
+- thought process
+
+I state explicitly at the beginning of every technical question, "you can make any assumptions you'd like and ask me for clarification about anything you don't understand".  What I'm really saying is "for every ambiguity, state an assumption or ask for clarification from me".  Notice that both of those involve telling me what you are thinking.  This is wildly important because I cannot read your mind and more importantly _I cannot clarify your solution_!  
+
+A lot of times interviewees start by writing down the few requirements I give them and they think about it for a little bit, then start writing on some paper (which I cannot see remotely), and then they write some lines of code which are often difficult for me to understand if they make any sense at all.  At the end they try to explain their solution and almost undoubtedly I find an issue within the first 2 sentences by stating a requirement contrary to an assumption they chose but didn't state or clarify.  They probably made the correct assumption in the first place, but since that requirement wasn't set in stone earlier by stating an assumption or clarifying a decision point with me, I'm going to take this opportunity to switch things up and then I'm going to be more critical that they state their assumptions early for the remainder of the interview.
+
+Assumptions need to be clear, and clarification needs to happen early.  It has actually been the case on a big project I worked on for Careers where we made assumptions when we should have clarified requirements, then spent a couple months building out this huge new feature only to find out that some of those early assumptions were incorrect.  This wastes a lot of very valuable time.  In an interview if you state an assumption, I will generally let you roll with it as fact unless I know for certain it will lead you down a long path to eventual failure.  In that case I'll stop you right there and talk about it in hopes of swaying you to an alternative solution.  As long as you state it out loud or write it down, I have the opportunity to clarify my understanding of your solution along the way.  If you don't, that turns out to be a costly problem in an interview and on the actual job.
+
+You might think it's stupid not to give a rigidly defined question in an interview because it's only about an hour and you don't want to waste time determining unmentioned requirements.  I do this because on our team this is closely mimics the actual work you will be doing.  You're going to get projects as ideas, and then you're going to have to make all the assumptions and clarify requirements with the team.  It would be extra special if you come up with multiple solutions in your head, determine why each might be better, ask me questions about how this going to be used and then make your implementation decision from my answers.
+
+I might ask questions differently if the team dynamics were different, but as an interviewee, it's a good assumption that the manner in which you answer technical questions _will_ be closely related to how you will actually be working on their team.  This is very important to recognize when making your decision to continue the hiring process or accept any possible offer.
+
+- speed
+- quality
+
+We're going to spend roughly half the time in the interview talking about things that have nothing to do with technical questions.  At least I hope that's how it will work out.  You probably know we hire people who are smart and get things done.  Quite frankly, **it's better to have something that can be improved upon than trying to get the "best" answer on the first try**.  Get something we can talk about rather than getting upset staring at a blank page while trying to think of the "best" answer.  Honestly, I don't know what the best answer is to most questions I ask, so I won't even be able to help you get there.  I'm looking for a sufficient answer, fast enough.  In most cases the 90% solution is good enough, and if you want the other 90% of the credit, you have to really blow me away with something completely elegant.  Even still, that's only one part of the whole package of the interview, not a guaranteed hire.
+
+The speed at which I expect each question to be answered is different and generally pretty fuzzy, but it's important to understand that dead air, the time where you are thinking and not talking out loud or time when you are doing something I cannot see needs to be kept to a minimum.  I try to give people ample time to work things out in their head, but by the time you start writing a solution, you should have at least given me a brief overview of the approach you are about to take.
+
+When it comes to quality, I am looking for the candidate to answer 2 questions: 1) does it do everything it's supposed to do for all possible input? and 2) is there a more algorithmically efficient way to solve the problem?  In general you'll solve a question faster if you just solve the happy path first, and then look for edge cases.  If you try to think of edge cases up front, you'll likely get bogged down trying to come up with a solution for everything all at once.  Get an answer down, then search for edge cases on your own, make appropriate changes and when you're done I'll give you some hints for any you might have missed.  Why will I give you hints?  Because that's how our team works.  I'll run things by you all the time to help me identify edge cases I might have missed, and I'll expect you to do the same to me if you're hired.
+
+For most of the day to day quality concerns, clean code, style, etc, I am extremely relaxed about in an interview.  I do prefer well named variables so I can follow along with your code more easily, but outside of that, don't waste too much time on what the code looks like as long as you can still understand it.
+
+- testing
+- explanation
+
+Hopefully you've been talking out loud the whole time, clarifying requirements and stating assumptions, explaining formulas you choose, etc.  If you've been doing this, the explanation is probably already taken care of.  Some people do work through problems better in their heads however and in those cases, I want to see a very detailed explanation of your code at the end, initiated by you.  I really like self explanatory code, but you probably didn't write that in your hour long interview unless the question was trivial.  Make sure that I understand every detail of your solution, especially the reasons for your assumptions.
+
+At the end of a technical interview question I'm going to ask you if it's correct.  Now I want a different kind of explanation of your code, I want you to convince me you believe it is correct.  If applicable to the problem, remember the phrase _"convince me with numbers"_.  Write some actual input and the expected output, then walk through the solution line by line making sure that the result is the correct.  When you do this, don't choose the same numbers you used when you were determining the solution, of course it works for that case.  Choose a different set of numbers this time for us to walk through and you will be more convinced than you were and you will likely convince me as well.  In the case of design problems, take the list of requirements as given, enumerate through them and show the exact part of the solution which addresses each requirement.
+
+## An example from a question I am now retiring
+
+Landing an interview for a team you really want to be a part of is very nerve racking.  You'll probably go into the phone screen and first couple of interviews as a complete mess, barely able to think about the questions you're being asked and completely anxious about the technical part.  It is our goal to get you to [be cool](http://www.youtube.com/watch?v=QPPN_gkj_gk), and one of the most powerful ways to do that is to get you to talk.  Coincidently it's a great way to tell the interviewer enough information for them to make a hiring decision.  **Be prepared to talk**.
+
+When I'm very anxious or very relaxed, everything is funny and I can't stop telling jokes.  There is a level in between very anxious and very relaxes where I don't even understand why jokes are funny, but that's where I perform my best.  One of my tricks before an interview was to tell myself jokes and laugh out loud for a few minutes.  Laughing to me is very relaxing, and this was my way of getting in the zone.
+
+As soon as the interview starts, my number one goal is to get to a point where you feel comfortable talking out loud, and that means we're going to talk about whatever _you_ want to talk about.  You need to take this opportunity to do whatever it is that will calm you down because within 15 minutes we're going to have to move on to the technical questions if we're going to keep this interview to a reasonable length.  I've even gone as far as outright asking "so what do you want to talk about" as my first question.  
+
+Generally speaking, I don't care what we talk about at this point, I just want it to be something you are intimately familiar with so you can teach me a thing or two.  I want to learn details about the interesting hobby you spend half your free time doing, an amazing feat you're proud of, an awesome idea you implemented or just about anything where you feel like you could interview me about it.  Keep it professional of course, and show me how passionate you are about _something_.  I'll be asking you questions along the way to see how much knowledge you have and how well you can explain to me things I actually don't know about.
+
+### The question
+
+So now you get the question.  I made the mistake in one of my first interviews of calling the first question easy because I thought it would help calm the person down.  In fact it turned out to be a bit of a challenge for them and I could tell they were even more nervous after that because the got caught up on the "easy" question.  From then on there are no "easy" questions, just technical questions and you should **assume every technical question is non-trivial**.  Approach every question with the same rigor because repeatedly fumbling a technical question under the pretense this is the "easy" question will inevitably look bad.
+
+I'm going to try to state the question as closely as I actually ask it, and I strongly encourage you the reader to try to solve it before reading through the solution.
+
+Do you know what an aspect ratio is?  I define the aspect ratio of a box as width over height:  `AR = W/H`.  We have a bounding box for a set of points, defined by two points, `min` and `max`.  `min` is the bottom left corner of the box, and `max` is the upper right corner of the box.  Because of how the points were chosen to define the box, `max` and `min` have the relationship that all elements in `min` are less than the corresponding elements in `max`.  Do you understand how the box is created?  Here is a graphical example (yes I show them this exact image):
+
+![graphical example of box](/img/problem-definition.png)
+
+You will be given a box like this that is already initialized from a valid set of points.  What you need to do is implement the function `convertAspectRatio` which takes a float representing the desired aspect ratio.  The center of the box should stay the same, and the box should only expand, so either the width or height is guaranteed to stay the same length and the other one will get larger.  Does all this make sense?  A graphical example of one possible change looks like this:
+
+![graphical example of box](/img/converted-example.png)
+
+Here is some code in a language I made up just for this interview to get you started:
+
+    point:
+        x: float
+        y: float
+    
+    box:
+        min: point
+        max: point
+        
+        void convertAspectRatio(float desiredAR):
+            // your code here
+
+You can make any assumptions you want to and ask me for clarification about anything you don't understand.  I'll answer every question to the best of my ability.
+
+That's it.
+
+---
+
+If you'd like to try it out, I highly recommend doing that now before you read through the solution.
+
+### The solution
+
+First you should clarify anything you don't understand, and come up with a basic idea of your approach.  If you can, say what you are thinking out loud, even just snippets is better than anything.  Even if you think you understand the question, just saying what you are thinking out loud gives me an opportunity to correct any obvious misunderstandings, which I will gladly do before I allow you to go off on an hour long adventure solving a different problem.  One person who solved this question initially wrote the idea down in comments and deleted the comments as he implemented them.  This turned out to be very effective and I was able to point out a few details missed and he didn't have to think out loud as much.
+
+At the end of this part of the solution, I want a clear indication of how you break down a problem into parts and solve each part.  This is the thought process bullet I'm looking for in every interview.  Often times you will get stuck thinking about a particular aspect of the problem and I will help you along just to get you over the hump.   A couple of great examples:
+
+> You have already determined the existing aspect ratio and you are now trying to figure out whether the height or width needs to be adjusted.  I'll let you stew on this for a minute or two, before I'll ask you what you're thinking.  Most of the time getting stuck here is the person trying to figure out which pieces of information are useful in determining which side needs to expand, so with that in mind I'll give a hint like "so you know what the current aspect ratio is and you know what the desired aspect ratio is, there are 3 possible comparisons to those, what are they?".  I knew the problem you were having is figuring out which information is useful, and so I'm more than happy to give you that information along with a hint as to how to use it.
+
+and:
+
+> You now have the code broken into 2 if statements, one for converting to a smaller aspect ratio, and one for converting to a bigger aspect ratio.  You say out loud that since the side that changes is always getting larger, we just need to figure out what to multiply each side by.  I'll let you have fun trying to derive that equation for a few minutes.  Once you get sufficiently wrapped up in that charlie foxtrot I'll remind you that we know the desired aspect ratio and one side that isn't going to change.  Hopefully at this point you look back to the definition of aspect ratio I gave at the beginning and realize you just need to solve for the equation for either W or H, whichever side is going to change.
+
+There are a number of small problems to solve in an interview question and I want to see how you handle as many of them as possible.  Assuming you were hired and ran into a situation where you get stuck while working on a feature, I'd hope you'd ask a question to get you over the next hump rather than waste hours on something that might be obvious to someone else.  Don't take this for granted though, if you just start looking for help from me at every turn that's a clear indication of a no hire.  Try diligently to solve the problem, and don't be afraid to tell me you can figure it out if you feel like you're close and I'll give you a little more time.  Make it clear which problem you are working on at all times.
+
+When it comes to speed, I can only re-iterate what I said earlier: it's better to have something that can be improved upon than trying to get the "best" answer on the first try.   For any 2 interviews, it could take the exact same amount of time to complete a question.  In the case that one is filled with dead air for the first 50% of the time, it will feel like it took much longer.  I try to mitigate this effect by writing down the start and end times for each question, but the effect on me is notable and I have no way to help you clarify the problem for the first 50% of the time.
+
+This is a case where remembering _"convince me with numbers"_ is completely applicable.  You should create input for all 3 cases of the comparisons for the aspect ratios and walk through each branch of your code out loud or plop a table in the document we're working on.
+
+At this point you probably have the happy path code written and it looks something like this:
+
+    point:
+        x: float
+        y: float
+        
+    box:
+        min: point
+        max: point
+        
+        void convertAspectRatio(float desiredAR):
+            height: max.y - min.y
+            width: max.x - min.x
+            currentAR: width / height
+            
+            if: currentAR < desiredAR // gets wider
+                newWidth: height * desiredAR
+                offset: newWidth - width / 2
+                max.x += offset
+                min.x -= offset
+                
+            if: currentAR > desiredAR // gets taller
+                newHeight: width / desiredAR
+                offset: newHeight - height / 2
+                max.y += offset
+                min.y -= offset
+
+This is sort of ideal.  Solving for the easy case first gives you something you can now improve upon.  Now I say "Looks great!  This definitely covers the happy path, how would you change this if it were actually production code?"  Now you're looking for edge cases, and there are some important ones here, which I will once again give you time to come up with before pointing them out.
+
+- What happens if the box is initialized with an empty set?  (a valid clarification to ask is whether that is valid or not since I told you it would already be a valid box)
+- What happens if the box is initialized with exactly 1 point?
+- What happens if the box has a height of 0?
+- What happens if the box has a width of 0?
+- What happens if the desiredAR is 0?
+- What happens if the desiredAR is negative?
+
+These are the simple cases based on the structure of the data.  Depending on how much time I want to spend on this question, all but one of these changes would require a code change to my example code and I'd ask you to make the necessary modifications if you hadn't already identified and adjusted for them.  If there is time after this, I'd change the requirement that I made up this fictional language and ask you what other edge cases are there if were to implement this in language with defined bit sizes for floats?  That opens up a whole other collection of discussion worthy topics.
+
+### Ask me anything
+
+The last part of the interview I will give you the opportunity to ask me anything and I will try my damnedest to answer it.  Even if you blew me out of the water with the technical part, you can still bone yourself here by simply not asking anything.  Why?  It means you just want to work here, and that's not what we want.  We want people who are passionate about the product and who want to know more about the internals of the company.  Right now you have more access than most people will ever have to dive deep into what it's like working here, take advantage of that.
+
+I really look forward to this part of every interview in hopes that it will give me a change to sell my product and my team to you.  I love discussing features with candidates and crazy ideas for improving the product because it shows me that you might be able to succeed in a place where you'll be responsible for coming up with most of your own work.  I want you to pry deep into some aspect about working here that would affect your decision to accept an offer. I am very passionate about the work I do and I hope you force me to share some of that with you through your questions.
+
+I hope this information helps you prepare better for interviews by knowing what interviewers are looking for and makes interviews seem a bit less overwhelming.  If you're currently in the market for a new job, [we're hiring](http://careers.stackoverflow.com/jobs/28723/web-developer-stack-exchange-stack-exchange).

@@ -1,0 +1,18 @@
+<h1>
+	<%- page.category %>
+	<% if (page.category === "blog") { %>
+		<a href="/atom.xml" class="feed-link pull-right"></a>
+	<% } %>
+</h1>
+<div class="category-list <%- page.category %>">
+<% page.posts.each(function(post){ %>
+    <p>
+        <span class="text-muted pull-right">
+            <%= date(post.date, config.date_format) %> 
+        </span>
+        <a class="post-link" href="<%- url_for(post.path) %>">
+            <%= post.title %>
+        </a>
+    </p>
+<% }) %>
+</div>

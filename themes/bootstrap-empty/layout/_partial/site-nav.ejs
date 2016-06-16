@@ -1,0 +1,6 @@
+<nav class="site-nav">
+	<a href="<%= url_for() %>">about</a>
+	<% site.categories.each(function(category){ %>
+	<a href="<%= url_for(category.path) %>"><%- category.name %></a>
+	<% }) %>
+</nav>
