@@ -79,12 +79,12 @@ for(var i = 0; i &lt; 5; i++) {
 <p>And if you got all that correct, the output should look something like this:</p>
 <p><img src="/img/asmjs-success.png" alt="asm.js success"></p>
 <h3>Get to the WebAssembly already</h3>
-<p>Now that we have a working piece of asm.js, we can use the tools provided by the <a href="https://github.com/WebAssembly/binaryen" target="_blank" rel="external">WebAssembly github page</a> to compile it to wasm.  Now you have to clone the repo and build the tools yourself.  This is the worst part.  These tools under constant development and it's a common occurrence that they break from time to time, especially if you're on Windows.</p>
+<p>Now that we have a working piece of asm.js, we can use the tools provided by the <a href="https://github.com/WebAssembly/binaryen" target="_blank" rel="external">WebAssembly github page</a> to compile it to wasm.  Now you have to clone the repo and build the tools yourself.  This is the worst part.  These tools are under constant development and it's a common occurrence that they break from time to time, especially if you're on windows.</p>
 <p>You're definitely going to need make and cmake with commandline tools installed on your system regardless of whether you're on windows or mac.  If you're on windows, you'll also need a version of visual studio 2015 installed.  If you're on a mac, follow <a href="https://github.com/WebAssembly/binaryen#building" target="_blank" rel="external">these instructions</a>, and if you're on windows, follow <a href="https://github.com/brakmic/brakmic/blob/master/webassembly/COMPILING_WIN32.md" target="_blank" rel="external">these instructions</a>.</p>
 <p><img src="/img/binaryen-windows-build.png" alt="building binaryen">
 <em>Building binaryen on windows</em></p>
 <p>Distributing working binaries would be a huge step in the right direction for the WebAssembly team.</p>
-<p>If you managed to get through this successfully, a bin folder was created in the binaryen directory with some tools we can use to convert our asm.js to wasm.  The first tool is asm2wasm.  This tool compiles the asm.js code to s format code, which is a textual representation of the abstract syntax tree (AST) for the wasm output.  Once you run the utility, you end up with something that looks like this:</p>
+<p>If you managed to get through this successfully, a bin folder was created in the binaryen directory with some tools we can use to convert our asm.js to wasm.  The first tool is <code>asm2wasm.exe</code>.  This tool compiles the asm.js code to <code>.s</code> format code, which is a textual representation of the abstract syntax tree (AST) for the wasm output.  Once you run the utility, you end up with something that looks like this:</p>
 <pre><code>(module
   (memory 256 256)
   (export &quot;memory&quot; memory)
@@ -101,8 +101,8 @@ for(var i = 0; i &lt; 5; i++) {
   )
 )
 </code></pre>
-<p>In the future we can disect this line by line, but for now I just want to show it to you and mention that since wasm is a binary format, right clicking and viewing source like you can do for any javascript today, just doesn't work; it would look a lot like that byte code up top.  The current plan is that when you view source on a wasm module, it would disassemble to this format to make it human readable.</p>
-<p>The next thing we need to do is convert this <code>.s</code> format code to a wasm binary, and to do that we use wasm-as, for wasm assembler.  Once you run this file, you'll end up with the actual wasm bytecode we need for the browser.</p>
+<p>In the future we can disect this line by line, but for now I just want to show it to you and mention that since wasm is a binary format, right clicking and viewing source like you can do for any javascript today just doesn't work; it would look a lot like that byte code up top.  The current plan is that when you view source on a wasm module, it would disassemble to this format to make it human readable.</p>
+<p>The next thing we need to do is convert this <code>.s</code> format code to a wasm binary, and to do that we use <code>wasm-as.exe</code>, for wasm assembler.  Once you run this file, you'll end up with the actual wasm bytecode we need for the browser.</p>
 <p><img src="/img/binaryen-transform.png" alt="building wasm from asm.js">
 <em>transforming asm.js to a wasm binary</em></p>
 <p><img src="/img/wasm-bytecode.png" alt="wasm bytecode">
@@ -130,13 +130,13 @@ for(var i = 0; i &lt; 5; i++) {
         }
     });
 </code></pre>
-<p>Toss that in an html file, fire up a server in your local folder (I highly recommend <a href="https://www.npmjs.com/package/local-web-server" target="_blank" rel="external">local-web-server</a>, works on windows and mac) and load it up.  Here's what it looks like in both browsers:</p>
+<p>Toss that in an html file, <a href="https://www.npmjs.com/package/local-web-server" target="_blank" rel="external">fire up a server in your local folder</a> and load it up.  Here's what it looks like in both browsers:</p>
 <p><img src="/img/wasm-in-browser.png" alt="wasm in a browser">
 <em>wasm running in a browser (or trying to at least)</em></p>
 <p>Time to go file a bug report I guess.  Remember, it's all experimental technology and very unstable, so try not to get overly frustrated when things like this happen.</p>
 <p><img src="/img/keep-calm-and-file-bug-reports.png" alt="keep calm and file bug reports"></p>
 <h3>Congratulations!</h3>
-<p>You've created your first WebAssembly component.  What's next?  We're really just cracking the surface here.  Writing asm.js by hand was pretty cruical to this example, but doing anything non trivial in it takes a long time and lot of patience.  I highly suggest reading up on the asm.js specification, especially the memory model, because a lot of the concepts from there carry over to WebAssembly.  Another quirk is that right now you cannot directly pass arrays as function arguments.  There is some agreement that that should change, but nothing has made it in the spec yet.  Go brush up on your pointer logic.</p>
+<p>You've created your first WebAssembly component.  What's next?  We're really just cracking the surface here.  Writing asm.js by hand was pretty cruical to this example, but doing anything non trivial in it takes a long time and lot of patience.  Using emscripten to compile non trivial apps to asm.js is much easier.  On that note, I highly suggest reading up on the asm.js specification, especially the memory model, because a lot of the concepts from there carry over to WebAssembly.  Another quirk is that right now you cannot directly pass arrays as function arguments.  There is some agreement that that should change, but nothing has made it in the spec yet.  Go brush up on your pointer logic.</p>
 <p>Another note, when you start doing non trivial things in wasm, you might find that it actually performs slower in WebAssembly than plain old javascript.  Just remember that modern javascript engines are highly optimized for compiling javascript and it will take time for wasm compilation to catch up.  WebAssembly is not ready for production usage.</p>
 <p>If you have any questions regarding wasm or the tooling described here, please ask on <a href="http://stackoverflow.com" target="_blank" rel="external">Stack Overflow</a> and tag appropriately.</p>
 
