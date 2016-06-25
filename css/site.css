@@ -64,3 +64,6 @@ section.page-content .category-list p {
 .social-icons a:hover {
   color: inherit;
 }
+img + em {
+  font-size: 0.8em;
+}

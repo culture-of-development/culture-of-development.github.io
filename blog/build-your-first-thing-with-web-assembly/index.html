@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Build Your First Thing With WebAssembly - Culture of Development</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="container">
+			<div class="h3 title">
+				Culture of Development
+				<small>The Pit of Success</small>
+			</div>
+			<nav class="site-nav">
+	<a href="/">about</a>
+	
+	<a href="/blog/">blog</a>
+	
+</nav>
+		</div>
+	</header>
+	<section class="page-content">
+		<div class="container">
+			<h1>Build Your First Thing With WebAssembly</h1>
+<p class="text-muted">
+    2016-06-24 
+    Nick Larsen
+</p>
+<section class="article">
+	<p>When I first heard of <a href="https://webassembly.github.io/" target="_blank" rel="external">WebAssembly</a> it sure sounded cool and I was super excited to start trying it out.  As soon as I tried to get start however, it got a lot more frustrating.  My goal here is to save you some of that frustration.</p>
+<p><img src="/img/cliff.jpg" alt="beware of cliff"></p>
+<h3>Reader beware</h3>
+<p>This post was written in June 24th, 2016.  WebAssembly is a very new and unstable technology and everything in this post might be wrong as the process continues to standardize it for all browsers.</p>
+<p>With that out of the way....</p>
+<h3>What is WebAssembly?</h3>
+<p>Well the official website describes it as:</p>
+<blockquote>
+<blockquote>
+<p>WebAssembly or wasm is a new portable, size- and load-time-efficient format suitable for compilation to the web.</p>
+</blockquote>
+</blockquote>
+<p>Uhh... wat?  Format what?  Text?  Binary?  Frankly this is just a bad description.  So instead, get out your buzzword bingo cards and I'll wrap up all my experience with wasm and come up with my own description:</p>
+<blockquote>
+<blockquote>
+<p>WebAssembly or wasm is a bytecode specification for writing performant, browser agnostic web components.</p>
+</blockquote>
+</blockquote>
+<p>So we're still not quite to the point of sounding totally awesome with a quip, but here comes's the rest of the elevator pitch.  WebAssembly realizes performance gains by using statically typed variables which are much more efficient to reference than dynamically typed varaibles at runtime.  WebAssembly is being developed by a <a href="https://www.w3.org/community/webassembly/" target="_blank" rel="external">W3C Community Group</a> to eventually be supported by all spec compliant browsers.  And the killer feature, <em>eventually</em> you'll be able to write these web components in <em>any</em> language.</p>
+<p>Sounds a lot cooler now, doesn't it?</p>
+<h3>Let's get started</h3>
+<p>When it's time to learn a new thing, I usually look for the smallest possible example to see it working.  Unfortunately for us all, that's not a reality with WebAssembly.  In it's current state, wasm is basically a specification for bytecode.  Imagine if back in 1996, some engineers from Sun Microsystems introduced the JVM... but no Java.  I imagine that conversation going a little like: &quot;Hey y'all, come check out this bytecode executing virtual machine we made!&quot; &quot;Cool! How do we write code for it?&quot;</p>
+<p><img src="/img/jvm-bytecode.png" alt="HelloWorld.class">
+<em>HelloWorld in bytecode</em></p>
+<p>&quot;Uhh.. cool man.  I'll check it out sometime.&quot; &quot;Awesome, let us know what you think and drop us a line on our github page if you run into any trouble.&quot; &quot;You got it, we're gonna check out some of the other projects over here now.&quot;</p>
+<p>And even that's a bad example because the JVM is based on the Java language, but hopefully you get the point.  If your byte code doesn't show up on the scene with tools that compile to it, you're gonna have a hard time getting off the ground.  So how do we actually get started then?</p>
+<h3>What came before WebAssembly</h3>
+<p>Most technology is the result of innovation, especially when a reasonable attempt is being made to make it a formal specification.  Wasm is no different, it is effectively a continuation of the work done on <a href="http://asmjs.org/" target="_blank" rel="external">asm.js</a>, a specification for writing javascript components in a way that can be compiled with static typing.  Wasm extends those ideas by writing a specification for bytecode that can be targeted by a compiler of any language, sent over the wire as a binary file instead of text encoding and developed over time by representatives from many of the major browsers instead of just Mozilla.</p>
+<p>asm.js is just a specification for writing javascript using a minimal subset of the language features.  You can write simple asm.js by hand, and if you just want to get your hands dirty, it's definitely the way to start.  (it's best to put this in it's own file for later on, and the convention is to use <code>your-module-name.asm.js</code>)</p>
+<pre><code>function MyMathModule(global) {
+    &quot;use asm&quot;;
+    var exp = global.Math.exp;
+    function doubleExp(value) {
+        value = +value;
+        return +(+exp(+value) * 2.0);
+    }
+    return { doubleExp: doubleExp };
+}
+</code></pre>
+<p>This isn't a particularly useful function, but it is to spec.  If it looks silly to you, you're not alone, but almost every character there is necessary.  All of those unary <code>+</code> operators act as type annotations for the compiler so it knows that they are doubles and doesn't have to figure out what they are at runtime.  It's super finicky but if you mess something up, the console in firefox will give you a reasonable error message to work off of.</p>
+<p>If you want to use it in a browser, something like this works:</p>
+<pre><code>var myMath = new MyMathModule(window);
+for(var i = 0; i &lt; 5; i++) {
+    console.log(myMath.doubleExp(i));
+}
+</code></pre>
+<p>And if you got all that correct, the output should look something like this:</p>
+<p><img src="/img/asmjs-success.png" alt="asm.js success"></p>
+<h3>Get to the WebAssembly already</h3>
+<p>Now that we have a working piece of asm.js, we can use the tools provided by the <a href="https://github.com/WebAssembly/binaryen" target="_blank" rel="external">WebAssembly github page</a> to compile it to wasm.  Now you have to clone the repo and build the tools yourself.  This is the worst part.  These tools under constant development and it's a common occurrence that they break from time to time, especially if you're on Windows.</p>
+<p>You're definitely going to need make and cmake with commandline tools installed on your system regardless of whether you're on windows or mac.  If you're on windows, you'll also need a version of visual studio 2015 installed.  If you're on a mac, follow <a href="https://github.com/WebAssembly/binaryen#building" target="_blank" rel="external">these instructions</a>, and if you're on windows, follow <a href="https://github.com/brakmic/brakmic/blob/master/webassembly/COMPILING_WIN32.md" target="_blank" rel="external">these instructions</a>.</p>
+<p><img src="/img/binaryen-windows-build.png" alt="building binaryen">
+<em>Building binaryen on windows</em></p>
+<p>Distributing working binaries would be a huge step in the right direction for the WebAssembly team.</p>
+<p>If you managed to get through this successfully, a bin folder was created in the binaryen directory with some tools we can use to convert our asm.js to wasm.  The first tool is asm2wasm.  This tool compiles the asm.js code to s format code, which is a textual representation of the abstract syntax tree (AST) for the wasm output.  Once you run the utility, you end up with something that looks like this:</p>
+<pre><code>(module
+  (memory 256 256)
+  (export &quot;memory&quot; memory)
+  (type $FUNCSIG$dd (func (param f64) (result f64)))
+  (import $exp &quot;global.Math&quot; &quot;exp&quot; (param f64) (result f64))
+  (export &quot;doubleExp&quot; $doubleExp)
+  (func $doubleExp (param $0 f64) (result f64)
+    (f64.mul
+      (call_import $exp
+        (get_local $0)
+      )
+      (f64.const 2)
+    )
+  )
+)
+</code></pre>
+<p>In the future we can disect this line by line, but for now I just want to show it to you and mention that since wasm is a binary format, right clicking and viewing source like you can do for any javascript today, just doesn't work; it would look a lot like that byte code up top.  The current plan is that when you view source on a wasm module, it would disassemble to this format to make it human readable.</p>
+<p>The next thing we need to do is convert this <code>.s</code> format code to a wasm binary, and to do that we use wasm-as, for wasm assembler.  Once you run this file, you'll end up with the actual wasm bytecode we need for the browser.</p>
+<p><img src="/img/binaryen-transform.png" alt="building wasm from asm.js">
+<em>transforming asm.js to a wasm binary</em></p>
+<p><img src="/img/wasm-bytecode.png" alt="wasm bytecode">
+<em>wasm bytecode</em></p>
+<p>Next, grab yourself the latest copy of <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank" rel="external">Firefox</a> or <a href="https://www.google.com/chrome/browser/canary.html" target="_blank" rel="external">Chrome Canary</a> and enable WebAssembly.</p>
+<p>For Firefox, you'll need to go to <code>about:config</code> in the url bar, and then tell it you'll be careful.  After that, type <code>wasm</code> in the search bar and double click <code>javascript.options.wasm</code> until the value is set to <code>true</code> and then completely restart the browser.</p>
+<p>For Chrome Canary, you'll need to go to <code>chrome://flags</code> and scroll down until you find <code>Experimental WebAssembly</code>, click the enable link and completely restart the browser.</p>
+<p>The last step is get the module running in the browser.  This was another pain point when I first started because it's totally hidden.  I couldn't anything in the spec related to the javascript API for using wasm modules.  I ended up just opening up a console in Chrome Canary and typing <code>WebAsse</code> and nothing popped up.  Next I tried typing <code>Was</code> and then it popped up!  Looking at that object in the inspector was about the poorest documentation ever, but then it occurred to me to use some other tools (emscripten) that compiles to wasm.  How I did that is the topic of another blog post, but after doing that I was able to create a working example.</p>
+<p>Some time later I was clicking around and eventually ended up in the design repo for WebAssembly.  There I saw a file named <a href="https://github.com/WebAssembly/design/blob/master/JS.md" target="_blank" rel="external">JS.md</a> so I clicked on it and sure as shit, there was an actual javascript API with documentation.  Pay close attention to the italic note at the top.  The best part of this page however was the snippet at the very bottom which shows you how to load up a module very minimally.  All I had to do was switch out the relevant parts and try it out.</p>
+<pre><code>fetch(&quot;my-math-module.wasm&quot;)
+    .then(function(response) {
+        return response.arrayBuffer();
+    })
+    .then(function(buffer) {
+        var dependencies = {
+            &quot;global&quot;: {},
+            &quot;env&quot;: {}
+        };
+        dependencies[&quot;global.Math&quot;] = window.Math;
+        var moduleBufferView = new Uint8Array(buffer);
+        var myMathModule = Wasm.instantiateModule(moduleBufferView, dependencies);
+        console.log(myMathModule.exports.doubleExp);
+        for(var i = 0; i &lt; 5; i++) {
+            console.log(myMathModule.exports.doubleExp(i));
+        }
+    });
+</code></pre>
+<p>Toss that in an html file, fire up a server in your local folder (I highly recommend <a href="https://www.npmjs.com/package/local-web-server" target="_blank" rel="external">local-web-server</a>, works on windows and mac) and load it up.  Here's what it looks like in both browsers:</p>
+<p><img src="/img/wasm-in-browser.png" alt="wasm in a browser">
+<em>wasm running in a browser (or trying to at least)</em></p>
+<p>Time to go file a bug report I guess.  Remember, it's all experimental technology and very unstable, so try not to get overly frustrated when things like this happen.</p>
+<p><img src="/img/keep-calm-and-file-bug-reports.png" alt="keep calm and file bug reports"></p>
+<h3>Congratulations!</h3>
+<p>You've created your first WebAssembly component.  What's next?  We're really just cracking the surface here.  Writing asm.js by hand was pretty cruical to this example, but doing anything non trivial in it takes a long time and lot of patience.  I highly suggest reading up on the asm.js specification, especially the memory model, because a lot of the concepts from there carry over to WebAssembly.  Another quirk is that right now you cannot directly pass arrays as function arguments.  There is some agreement that that should change, but nothing has made it in the spec yet.  Go brush up on your pointer logic.</p>
+<p>Another note, when you start doing non trivial things in wasm, you might find that it actually performs slower in WebAssembly than plain old javascript.  Just remember that modern javascript engines are highly optimized for compiling javascript and it will take time for wasm compilation to catch up.  WebAssembly is not ready for production usage.</p>
+<p>If you have any questions regarding wasm or the tooling described here, please ask on <a href="http://stackoverflow.com" target="_blank" rel="external">Stack Overflow</a> and tag appropriately.</p>
+
+</section>
+		</div>
+	</section>
+	<footer class="page-footer">
+		<div class="container">
+			<nav class="site-nav">
+	<a href="/">about</a>
+	
+	<a href="/blog/">blog</a>
+	
+</nav>
+			<p>
+				&copy; 2016 Nick Larsen, cultureofdevelopment.com
+			</p>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-38493266-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>
+</html>
