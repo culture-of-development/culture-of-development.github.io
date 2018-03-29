@@ -31,7 +31,7 @@ new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
-filename_case: 0
+filename_case: 1
 render_drafts: false
 post_asset_folder: false
 relative_link: false
@@ -43,7 +43,7 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: blog
 category_map:
 tag_map:
 
@@ -68,7 +68,8 @@ theme: bootstrap-empty
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:culture-of-development/culture-of-development.github.io.git
+  repo: https://github.com/culture-of-development/culture-of-development.github.io.git
+  branch: master
 
 
 # feeds

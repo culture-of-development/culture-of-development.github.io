@@ -1,10 +1,20 @@
 <h1><%- page.title %></h1>
 <p class="text-muted">
     <%= date(page.date, config.date_format) %> 
-    <%- page.author %>
+	<%- page.author %>
 </p>
 <section class="article">
+	<% if (page.youtube_embed) { %>
+		<iframe class="stream-embed" width="720" height="405" src="<%= page.youtube_embed %>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<% } %>
 	<%- page.content %>
+	<% if (page.youtube_embed) { %>
+		<p class="watch-my-stream">
+			Please share <a href="<%= page.youtube_url %>">this content</a> with everyone!  
+			<a href="https://www.twitch.tv/fody_nick">Watch the stream live</a> Fridays from 1:00-3:00 PM EST.
+			Vote for the next topic on my weekly twitter poll (<a href="https://twitter.com/fody">@fody</a>) the day before the show!
+		</p>
+	<% } %>
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
 	    var disqus_config = function () {
