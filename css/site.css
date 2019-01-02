@@ -1,5 +1,4 @@
 body {
-  background-color: #EEEEEE;
   font-size: 18px;
 }
 .container {
@@ -37,9 +36,11 @@ section.page-content .category-list p {
   margin-right: 15px;
 }
 .page-footer {
+  padding-bottom: 100px;
+}
+.page-footer .container {
   border-top: 1px solid #ccc;
   padding-top: 9px;
-  padding-bottom: 100px;
 }
 .post-link {
   font-variant: small-caps;
@@ -77,4 +78,5 @@ img + em {
   border: 2px solid #337ab7;
   background-color: #ccc;
   padding: 15px;
+  list-style: none;
 }
