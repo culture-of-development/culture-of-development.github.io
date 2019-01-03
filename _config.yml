@@ -10,6 +10,13 @@ author: Nick Larsen
 language: 
 timezone:
 
+social:
+  twitch_url: https://www.twitch.tv/nick_larsen
+  twitter_url: https://twitter.com/fody
+  stackoverflow_url: https://stackoverflow.com/users/178082/nick-larsen
+  github_url: https://github.com/NickLarsen
+  youtube_url: https://www.youtube.com/channel/UCt3hAVnKCdzdKcc3o6SUDgw
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://culture-of-development.com
