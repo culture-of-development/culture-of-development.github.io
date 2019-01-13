@@ -68,6 +68,408 @@
   </entry>
   
   <entry>
+    <title>How Developers Can Best Negotiate Their Salary</title>
+    <link href="http://culture-of-development.com/blog/how-developers-can-best-negotiate-their-salary/"/>
+    <id>http://culture-of-development.com/blog/how-developers-can-best-negotiate-their-salary/</id>
+    <published>2017-10-16T14:47:08.000Z</published>
+    <updated>2019-01-13T16:14:22.064Z</updated>
+    
+    <content type="html">&lt;p&gt;Whether it’s your first position out of college or a more advanced, senior role, receiving a job offer in development is an exciting accomplishment. It can be easy to get wrapped up in the excitement, but you need to keep your wits about you for just a little bit longer so you can get through the process of negotiating your salary. While your salary is one part of the package, it’s important to understand that it is probably the only part of your package that changes when you get a raise (assuming equity is not part of the compensation package). It’s crucial for long term happiness to negotiate a salary that represents your own self worth.&lt;/p&gt;
+&lt;h2&gt;The Basics&lt;/h2&gt;
+&lt;p&gt;Software development is not unskilled labor. You’re not going to be working on an assembly line, adding one screw to each cog that passes. You’re not going to be swiping groceries past a barcode reader. Each line of code that you write has concerns that come with it, from whether or not it actually accomplishes the goal that needs to be accomplished, to how well it handles edge cases, to how easy it is to make changes to when requirements get updated.&lt;/p&gt;
+&lt;p&gt;This is important to understand because it means companies are not simply setting a price to have screw put in a cog. The &lt;em&gt;quality&lt;/em&gt; of the work is a concern in how companies price developer salaries. Companies with more challenging problems are willing to pay more for developers with the skills to solve their problems.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/value-overlap-situations.png&quot; alt=&quot;Crappy Venn Diagram&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The presentation above shows your own self worth on the top and how much the company values your ability to solve their problems at the bottom. The scale from bottom of page to top of page is the package they offer you, of which your salary makes up the largest component.&lt;/p&gt;
+&lt;p&gt;You should strive to work for companies that value you at least as much as you value yourself. In the image above, you should strive to work for companies where your self worth overlaps the worth the company places on your skills.&lt;/p&gt;
+&lt;h2&gt;Determining Company Worth&lt;/h2&gt;
+&lt;p&gt;The first step to successfully negotiating your salary is to do your homework. You need to have a realistic idea of what the talent market looks like that the company is competing for a share of. There are many factors that go into calculating the going rate for a developers: the location of the job, the problems the company needs solved, the financial well being of the company, and the full employee package that includes vacation/insurance/etc.&lt;/p&gt;
+&lt;p&gt;It’s difficult to say with certainty what a specific company should be paying for a specific job, but you can estimate what a reasonable range is using tools like Stack Overflow’s new &lt;a href=&quot;https://stackoverflow.com/jobs/salary?utm_source=so-owned&amp;amp;utm_medium=blog&amp;amp;utm_campaign=sal-calc&amp;amp;utm_content=silge-article&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Salary Calculator&lt;/a&gt;. You can put in some basic information about the job to determine what salary developers doing similar work are earning right now. Once you feel like you have a pretty good idea of the range that company you are interviewing with should be hiring at, store that information somewhere that you won’t lose it.&lt;/p&gt;
+&lt;h2&gt;Determining Self Worth&lt;/h2&gt;
+&lt;p&gt;When I say self worth here, I don’t mean your self esteem, I mean where your income should be relative to others in the same market. Should you be paid more than the average for your market, about at the average or a little less than the average? This has a lot to do with your experience and more so with your accomplishments. If you have no accomplishments to show, expect to be a little below average. If you have some accomplishments, expect to be around average and if you’ve had significant ownership of big projects with positive results, expect to be paid more than average.&lt;/p&gt;
+&lt;p&gt;There is a lot of nuance here, but in general previous success in software development is indicative of future success in software development and the amount and difficulty of your prior work act as multipliers in the expectation that your prospective employer builds for you. Increased expectation of your productivity leads to higher salary offers.&lt;/p&gt;
+&lt;p&gt;The trick here is to find the lower bound for what you think your salary should be relative to others in your market. Take a toll of all the things you’ve done (more specifically all the things on your resume because that’s probably all the company will know about you to begin with) and how difficult they were for you. I stress thinking about how hard they were for you because if you get into the trap of comparing your accomplishments to others you’ll make two big mistakes. The first is that you think everything you have done is easy after you’ve done it, and everything you haven’t done is much harder because you haven’t done it. The second is, it’s not your job to determine how important something is, it’s the company’s job because each company needs different work done and needs to fill the gaps they have in their current collection of devs.&lt;/p&gt;
+&lt;p&gt;When you’ve got an idea of how hard the challenges are that you have solved and how much work you’ve gotten done successfully, it’s time to find out about where in the range you should be.&lt;/p&gt;
+&lt;p&gt;If you’re a new grad or not classically trained and have never had a developer position before, put your finger on the 25th percentile. If you demonstrably outperformed your classmates in terms of score (GPA or some other widely accepted measure), move your finger up a little. If you have a masters degree, move your finger up a little. If you have public artifacts showing the work you’ve done or the things you know (blog posts, live on the internet working projects, etc), move your finger up a little. That’s it. That’s about where you should be, maybe as low as the 25th percentile, never below it and very likely below the 50th percentile.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/skill-percentiles.png&quot; alt=&quot;Percentile bars&quot;&gt;&lt;/p&gt;
+&lt;p&gt;If you’ve done some solid dev work such that people would consider you intermediate (professionally or not) and built things that people rely on, or you are a fresh grad with a Ph.D., then you start out at the 50th percentile. This implies that your developer tooling is mature enough to solve problems quickly and evaluate multiple solutions. If you feel like your collection of work is difficult on the relative scale of your field, nudge your finger up a little. If the success rate of the projects you have worked on is 60% or less, nudge your finger down a little. Greater than 80%, nudge your finger up a little. Be honest about this one, and notice I didn’t say &lt;em&gt;your&lt;/em&gt; projects, because we pretty much all work on teams and projects can fail beyond your control. Also be aware that this failure rate doesn’t have to be on your resume; this is a method you are using to help guide your own thought process only.&lt;/p&gt;
+&lt;p&gt;If you’ve done a lot of professional dev work with significant project ownership over primary features of your products, start with your finger on the 75th percentile. How you should move your finger here has a lot more to do with how well you can make your case.&lt;/p&gt;
+&lt;h2&gt;Making The Case&lt;/h2&gt;
+&lt;p&gt;The basic process companies use when making an offer is pretty simple. You pass all the interviews, they want to hire you. All of your resume information is sent to a specific person whose job it is to rate you much like the process I described above for rating yourself. They are using the materials you provided, resume, cover letter, etc as well as the write ups from each of your interviewers and they plot you somewhere in their range. This person comes up with a salary and then passes it back to HR who writes up the offer. The HR person sends you the offer with this amount. At smaller companies, the person who decides your salary might also send you the offer.&lt;/p&gt;
+&lt;p&gt;Once you have received the offer, you have the opportunity to review and initiate salary negotiations if necessary. The most important thing to remember during this process is that any respectable company that has made you an offer won’t rescind it if you ask if the salary is negotiable. If they do, there is a strong likelihood will you not enjoy compensation review season at that company and them rescinding it is actually doing you a favor. You won’t get a better offer if you don’t ask for one and you won’t lose a good job by initiating salary negotiations. It’s still not easy to talk about for a lot of people and I get that. Just realize that the salary you agree to now will guide your raises for the rest of your time at this company and maybe even the next. It gets easier to talk about the more you practice and it can make a huge difference on your long term income.&lt;/p&gt;
+&lt;p&gt;Once you decide to initiate salary negotiations, the big mistake many people make here is to simply ask if the salary is negotiable. This is a mistake because they can easily respond with a “no” and you have forfeited your opportunity to reiterate your qualifications. When you wrote your resume and &lt;a href=&quot;/blog/the-developer-cover-letter/&quot;&gt;cover letter&lt;/a&gt;, you had no idea what the company was looking for, what skills they needed to bring in an what kinds of problems they were facing with their products. If you used your interview Q&amp;amp;A periods wisely, you now know the answers to all these things. You may have only addressed these things in a single bullet point on your resume (or maybe not at all) but now is the time to make these things shine. It shows a deep interest in the company to talk about their problems and how you are the answer, so when you ask to negotiate your salary, specifically include your relevant qualifications.  This will often be enough to get you a bump.&lt;/p&gt;
+&lt;p&gt;One last thing of note: the most influential leverage you can have in salary negotiations is competing offers. If you already have an offer in hand that is competitive with or better than the offer you just received, do not waste time, just tell them about it immediately along with a note letting them know you would still like an offer from them.&lt;/p&gt;
+&lt;p&gt;If a company refuses to budge on an offer that doesn’t meet your expectations, &lt;strong&gt;it’s okay to walk away&lt;/strong&gt;. There are other companies that you may find are a better fit and offer compensation you’d be happier making.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Whether it’s your first position out of college or a more advanced, senior role, receiving a job offer in development is an exciting acco
+    
+    </summary>
+    
+      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>How to Talk About Yourself in an Interview</title>
+    <link href="http://culture-of-development.com/blog/how-to-talk-about-yourself-in-an-interview/"/>
+    <id>http://culture-of-development.com/blog/how-to-talk-about-yourself-in-an-interview/</id>
+    <published>2017-04-27T16:00:00.000Z</published>
+    <updated>2019-01-13T16:18:56.391Z</updated>
+    
+    <content type="html">&lt;p&gt;When people ask me what they should know first about going into technical interviews, they get the same answer: &lt;strong&gt;be prepared to talk&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Interviews are stressful situations, and that stress can impact how well you communicate. You don’t think things through entirely. You don’t always make complete sentences. You laugh at really inappropriate times.  You get lost in tangents so far removed from the topic you can’t even remember what the topic is. And sometimes you just drop all your cards on the table in a show of desperation.&lt;/p&gt;
+&lt;p&gt;Preparing to talk isn’t about filling up time; it’s about prioritizing &lt;a href=&quot;https://www.fastcompany.com/40404120/three-habits-of-the-best-job-candidates-ive-ever-interviewed&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;what they need to know about you&lt;/a&gt;. Flip the problem around and imagine you are hiring someone; what would you want to know about them? Here’s my list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What have you built?&lt;/li&gt;
+&lt;li&gt;What is the hardest technical problem you have run into?&lt;/li&gt;
+&lt;li&gt;How did you solve it?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That’s it; those are the only types of questions that matter. Notice that all these questions are about the person being interviewed, specifically what they have done and how they did it. If you’ve been through interviews at some companies that are not as good at interviewing, then you probably had some questions on your list such as&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Where do you see yourself in 5 years?&lt;/li&gt;
+&lt;li&gt;Why do you want to work here?&lt;/li&gt;
+&lt;li&gt;How do you handle disagreements with coworkers?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are all worthless questions from the company’s perspective because predicting things is hard, especially when it’s the future. In all likelihood, the interviewer doesn’t know what they are looking for with these questions, and they are just being used to fill time. There is a caveat here however; I work for a company with an HR department that is responsible for taking care of some of the “would you actually work here if given an offer” questions (e.g. “are our benefits sufficient for you?”). If you’re applying for a very small company, you’re probably going to get asked these types of questions during the main interview.&lt;/p&gt;
+&lt;h2&gt;How to Prepare&lt;/h2&gt;
+&lt;p&gt;Get a stack of notecards.  On each notecard, write a title for a feature you worked on or a project you managed. Under the title you want a one sentence description of your main objective. Under that you want to list the most important tools that enabled the solution. Think of this as tags you’d put under a question on Stack Overflow. Under this, write down as many things you can think of that you tried and that &lt;em&gt;failed&lt;/em&gt;; you can limit the list to 5 but don’t stop before you reach that number unless you actually tried fewer things (and that’s okay).  Underneath that, write down the thing that ended up working.&lt;/p&gt;
+&lt;p&gt;Now flip the card over. On the top, write down the single most valuable thing you learned from this project in a single phrase. You should list only the most critical insight to finding the solution to the problem. If you haven’t solved this problem yet, it should be the &lt;em&gt;most recent&lt;/em&gt; insight you’ve had from it. Underneath this, write down one line about where this idea came from. Underneath that, repeat this process until the card is full.&lt;/p&gt;
+&lt;p&gt;I often hear people tell me they don’t know which features and projects their interviewers are going to want to hear about. They are going to want to hear about something in the materials that you gave them.  If you give them a resume, expect questions about stuff you worked on at your past jobs. If you gave them a link to your &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Github&lt;/a&gt; profile, expect questions about your projects.  If you gave them a link to your Stack Overflow account, expect questions about some of your answers. Make sure you have at least one card for each job experience you have listed, and ideally one for each bullet point you have listed for each job experience. Make sure you have one for each Github project that you have worked on in the last year. For Stack Overflow questions, just make sure you’re familiar with your most popular questions and answers (no need to write whole cards for them). That about covers everything you might be asked about.&lt;/p&gt;
+&lt;p&gt;Here’s an example card for a project from &lt;a href=&quot;https://stackoverflow.com/users/story/178082&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;my Developer Story&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/resume-card.png&quot; alt=&quot;Example Resume Card: Localizing the Careers Site&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;The Anatomy of a Good Developer Tale&lt;/h2&gt;
+&lt;p&gt;Now that you have the Spark Notes for everything you might talk about, it’s time to practice actually saying what you’re going to say in the interview. Even with all the knowledge you have on these cards, it’s crucial that you can channel that knowledge into an engaging story. Luckily, there’s a recipe for that too.&lt;/p&gt;
+&lt;h2&gt;Be Specific&lt;/h2&gt;
+&lt;p&gt;Good developer tales are conversation-based. It’s about transferring knowledge from me to you that you might find interesting or useful in your own work. Conversations tend to die when there are no more holes to plug, so preventing that is extremely important. While broad insights sound intriguing and might make you sound really intelligent, it’s important to remember the goal that we should be encouraging the interviewer to ask us more questions at every step along the way. The best way to do this is to be specific.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/waynes-world-i-love-you-man.gif&quot; alt=&quot;Wayne&#39;s World Meme&quot;&gt;&lt;/p&gt;
+&lt;p&gt;^ This scene from Wayne’s World sums up exactly why you don’t want to say generic things. The person doesn’t know how to respond because you’ve given them no holes to try to plug.  If instead of saying “I love you, man,” he had said “I love your shirt, man!” then Garth could have easily continued the conversation knowing exactly what to talk about next. “Ohh yeah I got this at the concert in Reno where the drummer was on this crazy…” —you get the idea. Focus on specific insights, not general insights. Especially say what set of circumstances led you to that insight.&lt;/p&gt;
+&lt;h2&gt;Start with a Punchline&lt;/h2&gt;
+&lt;p&gt;Good developer tales start off with a punch line.  The point of the first sentence is to get the other person interested and hopefully guessing what’s coming next.&lt;/p&gt;
+&lt;p&gt;“I built a web interface for running developer insights reports,” is a bad punch line. There are basically two directions the interviewer can go here: “What’s developer insights?” or “What technologies did you use to build the interface?” Neither of those questions lead to interesting things that you have done. Developer insights is a whole group of people and now we’re not talking about you, and tons of people have used the front end web framework you built it with, but the interesting parts about the project are probably not related to the framework you used.&lt;/p&gt;
+&lt;p&gt;“I put 7 data sets on a Google Maps interface that allows a team of salespeople to get real-time reports about developer populations around the globe.” Now you’re probably wondering to yourself a lot of things, and they are all about the project work I did. We’re about to have a conversation because I used specific information that clearly identifies 3 to 4 interesting aspects of the project. That’s the difference between a punchline and any old way to talk about yourself.&lt;/p&gt;
+&lt;h2&gt;Talk Backwards&lt;/h2&gt;
+&lt;p&gt;In general, real stories are told chronologically backwards. This is why we start off with a punchline.  In contrast, practiced stories are told chronologically forwards.  It’s a solid indication as the interviewer that the person is reciting something they have committed to memory if they tell the story forwards, and in turn it’s significantly more likely that the story isn’t entirely true. &lt;a href=&quot;https://www.stackoverflowbusiness.com/talent/resources/guide-to-interviewing-developers?utm_source=so-owned&amp;amp;utm_medium=blog&amp;amp;utm_campaign=dev-c4al&amp;amp;utm_content=c4al-link&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Good interviewers&lt;/a&gt; will force you to tell the story backwards because they will constantly ask you to expand on the parts they are interested in. If you actually know what happened and why it happened, this is not a problem for you because you are intimately familiar with the problem you are talking about. All you have to remember is where you left off in the main story so you can come back to it later.&lt;/p&gt;
+&lt;p&gt;If, however, the interviewer asks you to expand on something you have just said and you try to continue moving the story forwards, it’s a dead giveaway that you’re not being truthful with them. You might be talking about a decision someone else made in a manner that sounds like you made it, or you may have given the impression you know more about the inner workings of the tools you use than you actually do. These are not necessarily lies, but miscommunication isn’t fully truthful either. Not being truthful in an interview is not a good idea and it is extremely likely you will be caught if the company is any good at interviewing at all. I also want to point out that if you do get caught in this situation, it’s not a guaranteed failure of the interview. When you’re caught, the point is that you should feel encouraged to spend a little more time on your answers from then on out making sure you only talk about the stuff you have done. If you get caught twice that’s pretty much it.&lt;/p&gt;
+&lt;p&gt;So you’ve already given away the punchline, what do you say next? Your interviewer should lead you to the next thing, and they should lead you to expand on one of the 2-4 interesting things you packed into your punchline. Once they ask about some particular part, you refer back to your card and you only talk about the stuff that you tried that didn’t work. In large part, no one cares what the actual solution is; the journey matters so much more as a job skill than knowing the answer. It’s the difference between you being able to work through a problem vs. you just knowing the answer. In the case that you just knew the answer, the best thing to talk about is the components of the solution and how they all work together. But in large part, you’re being hired to work through problems, and that’s why you have to talk about the stuff you tried that didn’t work.&lt;/p&gt;
+&lt;p&gt;There is another side benefit of talking about the things you tried.  As soon as you say the punchline, the interviewer is going to start guessing how you solved this problem. You might have taken a different path than what the interviewer is thinking and because you talked about the path, now you get that all important knowledge transfer happening right there. Talk about their ideas, especially if you tried them. Make sure you focus on the key insights that led you to each next option. As the interviewer and as a developer, I genuinely enjoy learning a couple things in the interviews which leads to the next point…&lt;/p&gt;
+&lt;h2&gt;Don’t Guess What the Interviewer Knows&lt;/h2&gt;
+&lt;p&gt;In most cases you will have no idea what the interviewer knows. You have no idea what languages they are familiar with, what kinds of problems they are accustomed to solving, or what tools they have in their toolbox. There is a bit of a balancing act here. In order to use your time wisely, you have to assume they know some things. Assume they know what developers do for a living and that they know how to solve problems. Very regularly stop in the middle of your tale to make sure the interviewer is still following along. This can be done via body language, listening for sounds of agreement (the typical “yep” every so often from them while you are talking), or blatantly stopping to ask them if it all makes sense or if they would like you to expand on something.&lt;/p&gt;
+&lt;p&gt;If you get too far into a story without making sure they are still with you, it comes off to the interviewer that you cannot explain things well. Show an active interest in making sure the interviewer is understanding what you are talking about, and you will likely feel a lot more comfortable, and the interviewer will feel like they learned something.&lt;/p&gt;
+&lt;p&gt;A similar point here is not to make assumptions about what the interviewer finds interesting. Don’t talk negatively about any of the stuff that you have done because it might be the thing they think is interesting. Just because you think it’s simple or naive or whatever, you can still have a great conversation about it. Developers have hundreds of specializations these days and just because you’re applying to work at web dev position doesn’t mean the interviewer knows CSS or some javascript feature as well as you do. If the interviewer ever gets excited about something when talking to you, talk more about that in a very inviting manner.&lt;/p&gt;
+&lt;h2&gt;Force It to be a Conversation&lt;/h2&gt;
+&lt;p&gt;If it’s not obvious yet, force the interview to be a conversation. The reality is that you don’t actually know what your interviewer is going to find interesting in the materials you gave them or anything you might say, and I can’t tell you either. Do your best to make them excited about something you have done, and if they don’t bite, turn it around and ask them what they would like you to talk about. This is another case where being specific helps. “What do you want me to talk about?” is bad here;  “Is there something from my resume you thought was interesting?” is much better. It forces them to show their hand about their preparation for the interview as well. And if their answer is along the lines of “I didn’t see anything interesting,” then your immediate follow up question should be “then why I am in this interview to begin with?” Constantly trying to guess what the interviewer finds interesting is a waste of your time; it’s much more effective to just ask. If they don’t want to talk to you about specific things, they probably didn’t prepare for the interview themselves.&lt;/p&gt;
+&lt;h2&gt;Practicing&lt;/h2&gt;
+&lt;p&gt;Practicing for interviews is my favorite part. Just go talk to other developers about the stuff that you’ve done. Start with the punchline. Be specific, and when they ask you questions, talk about the things you tried in reverse chronological order.&lt;/p&gt;
+&lt;p&gt;Some things to remember: When you are talking to people, make sure you talk about 5-10 different note cards; one is not enough! You will have to go through 3-5 interviews for most companies; make sure you are not repeating the same stuff to different people because they will compare notes. Listen to the questions people ask you &lt;a href=&quot;https://www.themuse.com/advice/how-to-prep-for-your-technical-interview-advice-from-a-hiring-manager&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;when you’re practicing&lt;/a&gt;. The questions you get during real interviews will be much the same and you basically train yourself to respond naturally by answering them a few different times. You should also pick up on the emotions of the people you’re talking to when you say things. Train your conversational muscle memory to say the things that make people excited and most eager to hear more.&lt;/p&gt;
+&lt;p&gt;Interest in the company hiring you is directly proportional to the interest the interviewers have in what you say. Telling stories is a very compelling way to build an interesting conversation with people you’ve just met. Hopefully you’ll find this recipe an effective way to practice telling stories and get a better response from your interview experiences.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;When people ask me what they should know first about going into technical interviews, they get the same answer: &lt;strong&gt;be prepared to ta
+    
+    </summary>
+    
+      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>A Developer’s First Steps to Finding a New Job: Part 4, Managing Imposter Syndrome</title>
+    <link href="http://culture-of-development.com/blog/a-developers-first-steps-to-finding-a-new-job-part-4-managing-imposter-syndrome/"/>
+    <id>http://culture-of-development.com/blog/a-developers-first-steps-to-finding-a-new-job-part-4-managing-imposter-syndrome/</id>
+    <published>2017-03-02T17:00:00.000Z</published>
+    <updated>2019-01-13T15:45:30.941Z</updated>
+    
+    <content type="html">&lt;p&gt;We’ve discussed &lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-1-know-yourself/&quot;&gt;knowing what it is you truly need&lt;/a&gt; in your career, &lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-2-working-with-recruiters/&quot;&gt;working with recruiters&lt;/a&gt;, and &lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-3-how-companies-view-developers/&quot;&gt;understanding cost centers vs profit centers&lt;/a&gt;. This brings us to what I see as1 the final “first step” any developer should take in looking for a new job: overcoming imposter syndrome.&lt;/p&gt;
+&lt;h2&gt;Imposter syndrome&lt;/h2&gt;
+&lt;p&gt;The absolute hardest part of being a developer is the constant feeling that you aren’t good enough. Impostor syndrome, the tendency to devalue your own work and become overwhelmed with the fear that you’ll be exposed as a “fraud,” is probably the single largest mental roadblock across all developers. It tends to exacerbate any other anxiety related issues you might have and can send you to some dark places from time to time. I don’t have good news here; it’s simply part of the game. You have to be able to manage your own self image of failure.&lt;/p&gt;
+&lt;p&gt;The idea of imposter syndrome is vital to understand as you begin your job search; you need to know that &lt;strong&gt;it’s not your job to decide whether or not you can fill the role, it’s the company’s job to determine if you can fill the role&lt;/strong&gt;. Keep that fact at the top of your mind every time you find yourself hesitating to apply for a job you’d really love to do, but are afraid you’re not good enough for.&lt;/p&gt;
+&lt;p&gt;Find the Source
+The first step in getting a grasp on this issue is to identify the source of it. In my experience the feeling that you don’t know what you’re doing comes from two places: you see someone do something, and you can’t figure out how they did it, or you set an expectation for yourself and fail to meet it. Once you’ve established the source of your imposter syndrome, the second step is to set up a plan for overcoming the feeling.&lt;/p&gt;
+&lt;p&gt;When you see someone do something and you can’t figure out how they did it, you have to devote yourself to figuring it out. One of my most effective means of this is to simply email the person who did it and ask them how they did it. One of the greatest things about being a developer is that knowledge is not usually seen as something to conceal, but rather something to share. You’ll be surprised how often there is a blog post detailing the thing, the reason it came to be needed, and the process that was used to figure out the solution. Or the person will just email you the equivalent because &lt;em&gt;being asked&lt;/em&gt; to share your knowledge is also one of the most empowering feelings you can have as a developer. And after all—developers sharing their knowledge is what Stack Overflow is built on.&lt;/p&gt;
+&lt;p&gt;In any case, don’t stop at knowing the high level details; make sure you actually implement it. Practicing the craft is the only way to truly know that you can do it. Just knowing the details of how it was done isn’t enough. Be ready to devote yourself to a life of learning.&lt;/p&gt;
+&lt;p&gt;The more devastating form of feeling like you’re not good enough is when you set expectations for yourself and fail to meet them. In all likelihood your expectations of yourself were influenced by your boss or coworkers or teachers. Failing to meet their standards is extremely frightful because they are the ones responsible for judging your ability and awarding your compensation accordingly. It is extremely difficult to temper expectations in others without feeling like you’re actually still failing.&lt;/p&gt;
+&lt;p&gt;In my experience, most of my anxiety from this form is due to assumptions I made about what the expectations were, and those assumptions turned out to be false. Either &lt;img src=&quot;/img/Rubber_duck_assisting_with_debugging-300x300.jpg&quot; class=&quot;inline-content-image-left&quot; title=&quot;Rubber duck on laptop&quot;&gt; my assumptions about the order to build things in was rubber ducky debugging wrong or my guess as to what issues would come up when changing a system were wrong. Sometimes it’s that I simply can’t debug a problem because my expectation about the output is wrong, and I can’t figure out why.&lt;/p&gt;
+&lt;p&gt;The first thing I do in every case is try to explicitly state my assumptions and double check that I’m on the same page with anyone else who should share these expectations. In the case that it’s just me, I’m a practitioner of &lt;a href=&quot;https://en.wikipedia.org/wiki/Rubber_duck_debugging&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;rubber ducky debugging&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This process is by no means a complete solution, however, and I still regularly go through the highs and lows of meeting and missing my own expectations.&lt;/p&gt;
+&lt;h2&gt;Don’t cut yourself off at the knees&lt;/h2&gt;
+&lt;p&gt;Remember: &lt;strong&gt;it’s not your job to decide whether or not you can fill the role, it’s the company’s job to determine if you can fill the role&lt;/strong&gt;. We tend to avoid any job we perceive as being above our skill set, without even giving the company a chance to evaluate us.&lt;/p&gt;
+&lt;p&gt;Don’t cut yourself off at the knees by only applying to jobs with titles that don’t trigger imposter syndrome. Especially don’t let insecurity limit you to only searching for “entry level” or “junior” jobs. Often times jobs listed as entry level are not even actual developer jobs; they are analyst jobs (writing functional specs) or recruiter spam looking for new candidates to pass on to other companies. It’s okay to apply to junior or entry level jobs, but don’t limit your search to &lt;em&gt;just&lt;/em&gt; those jobs-—whatever your skill level.&lt;/p&gt;
+&lt;p&gt;Take stock of your own self-evaluation and its inherent flaws, and remember that your only job is to represent yourself clearly and honestly, the best you can. If you’re truly not qualified for a position, the company or recruiter will let you know that and you can move on.&lt;/p&gt;
+&lt;p&gt;That concludes the foundation for finding a job that’s a good fit for you. It’s incredibly important to know yourself and what you’re getting into. I cannot ignore the benefit of having two years of experience in this field, so if you’re looking for your first job, I do encourage you to prioritize getting the experience over getting a lifelong job. But as soon as you have the experience, make sure you’re constantly updating the &lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-1-know-yourself/&quot;&gt;answers to your questions&lt;/a&gt; and &lt;a href=&quot;https://stackoverflow.com/jobs?utm_source=so-owned&amp;amp;utm_medium=blog&amp;amp;utm_campaign=dev-c4al&amp;amp;utm_content=c4al-link&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;start the search&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I hope you’ve enjoyed this 4-part series and that it’s given you some new tools in your job search. I’ve worked with a lot of developers in job hunting and these are the steps that I’ve determined are the most effective and important things any developer should do in looking for a new job.&lt;/p&gt;
+&lt;p&gt;Ready to start your search? Kick it off today at &lt;a href=&quot;http://stackoverflow.com/jobs&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Stack Overflow Jobs&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Read the full series:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-1-know-yourself/&quot;&gt;Part 1: Know Yourself&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-2-working-with-recruiters/&quot;&gt;Part 2: Working With Recruiters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-3-how-companies-view-developers/&quot;&gt;Part 3: How Companies View Developers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-4-managing-imposter-syndrome/&quot;&gt;Part 4: Managing Imposter Syndrome&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;We’ve discussed &lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-1-know-yourself/&quot;&gt;knowing what it is you truly need&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>A Developer’s First Steps to Finding a New Job: Part 3, How Companies View Developers</title>
+    <link href="http://culture-of-development.com/blog/a-developers-first-steps-to-finding-a-new-job-part-3-how-companies-view-developers/"/>
+    <id>http://culture-of-development.com/blog/a-developers-first-steps-to-finding-a-new-job-part-3-how-companies-view-developers/</id>
+    <published>2017-02-27T17:00:00.000Z</published>
+    <updated>2019-01-13T15:59:45.083Z</updated>
+    
+    <content type="html">&lt;p&gt;In parts 1 and 2 of this series we explored &lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-1-know-yourself/&quot;&gt;knowing what it is you really want&lt;/a&gt; and &lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-2-working-with-recruiters/&quot;&gt;working with recruiters&lt;/a&gt;. This week’s is a little bit of an extension of part 1: do you want to work in a cost center or a profit center?&lt;/p&gt;
+&lt;p&gt;In accounting, every department within a company is classified as either a cost center or a profit center. A &lt;strong&gt;cost center&lt;/strong&gt; is a department that’s primarily identified by its costs to the company; a &lt;strong&gt;profit center&lt;/strong&gt;, naturally, is one that’s primarily identified by the revenue it brings in.&lt;/p&gt;
+&lt;p&gt;If you work for a software company, developers are building the product that makes the company money — they’re a profit center.&lt;/p&gt;
+&lt;p&gt;But what if you don’t work in software? What if you build software for a banking company, or an insurance company? These days developers are working in all kinds of fields, and that’s great. But you need to be aware if your company isn’t seeing you as driving profit, but rather as sucking resources — a cost center.&lt;/p&gt;
+&lt;p&gt;Does this mean you can’t be happy working in a non-software company? Of course not. But this is something you need to take into consideration when you’re searching for a new job. Are you ok working somewhere where you’re seen as overhead? Or do you need to be driving revenue and building a product that is the backbone of the business?&lt;/p&gt;
+&lt;h2&gt;Cost Centers Versus Profit Centers&lt;/h2&gt;
+&lt;p&gt;The difference is in the mindset of decision makers answering questions when developers need something to get their job done. If a developer wants a second monitor, cost center logic says, “Well, once that person gets a second monitor, everyone is going to want a second monitor, and that’s going to cost us more than we budgeted for developers this year.” So no, you can’t have a second monitor; but they might consider it for the budget for next year. By contrast, profit center logic says, “Will a second monitor help you work faster or more efficiently? Will you be a more effective driver of revenue? Great. Here’s your tracking number; it’ll be here in 2 days.”&lt;/p&gt;
+&lt;p&gt;While it might sound crazy to ever think working in a cost center could be enjoyable, just remember that the number of times this kind of situation comes up is typically only once or twice a year because you’ll get used to working on whatever you’ve got before too long anyway. Equipment does go bad and upgrades do need to happen, and licensing for tooling does need to be updated regularly, but most cost centers are aware of those kinds of things. It’s when you want a new book or a special piece of hardware or an event ticket when these kinds of situations come up. People can be happy under both methodologies, &lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-1-know-yourself/&quot;&gt;just be aware of your needs&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Read the full series:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-1-know-yourself/&quot;&gt;Part 1: Know Yourself&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-2-working-with-recruiters/&quot;&gt;Part 2: Working With Recruiters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-3-how-companies-view-developers/&quot;&gt;Part 3: How Companies View Developers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-4-managing-imposter-syndrome/&quot;&gt;Part 4: Managing Imposter Syndrome&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In parts 1 and 2 of this series we explored &lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-1-know-yourself/&quot;&gt;knowing w
+    
+    </summary>
+    
+      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>A Developer’s First Steps To Finding a New Job: Part 2, Working with Recruiters</title>
+    <link href="http://culture-of-development.com/blog/a-developers-first-steps-to-finding-a-new-job-part-2-working-with-recruiters/"/>
+    <id>http://culture-of-development.com/blog/a-developers-first-steps-to-finding-a-new-job-part-2-working-with-recruiters/</id>
+    <published>2017-02-21T17:00:00.000Z</published>
+    <updated>2019-01-13T15:14:52.625Z</updated>
+    
+    <content type="html">&lt;p&gt;Last week I kicked off a series on a developer’s first steps to finding a new job. My first post was about examining your own needs before you start looking—an obvious-sounding first step that so many of us unwittingly skip. You can read that &lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-1-know-yourself/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Today we’re looking at Step 2: Working with Recruiters.&lt;/p&gt;
+&lt;p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Microsoft acquired LinkedIn for $26B. The synergies are endless! &lt;a href=&quot;https://t.co/h4GY25XLHw&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;pic.twitter.com/h4GY25XLHw&lt;/a&gt;&lt;/p&gt;&amp;mdash; DEV Community 👩‍💻👨‍💻 (@ThePracticalDev) &lt;a href=&quot;https://twitter.com/ThePracticalDev/status/742343361483448320?ref_src=twsrc%5Etfw&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;June 13, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;If you’re a developer, you probably don’t get warm fuzzy feelings when you hear the word “recruiter.” Just look at the top results from a Google search for “developers and recruiters”:&lt;/p&gt;
+&lt;p&gt;…along with this useful “related searches” gem:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/devs-and-recruiters-related-searches.png&quot; alt=&quot;Google related searches showing &amp;amp;quot;recruiters are scumbags&amp;amp;quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Inevitably you will end up dealing with recruiters as part of your job search. Contrary to the aforementioned Google results, this isn’t a bad thing; recruiters are actually quite helpful in most cases with helping you get some of your early questions answered.&lt;/p&gt;
+&lt;p&gt;But to make the most of your interactions with recruiters, what you really need to know is the difference between retained recruiters and contingency recruiters as well as how you can expect to work with each. Learning this will save you time and a lot of anxiety.&lt;/p&gt;
+&lt;h2&gt;Retained Recruiters&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Retained recruiters&lt;/strong&gt; are employed by a company to hire people for that company. They’re generally salaried employees who have the company’s best interests in mind and want to find the best possible match for a given role.&lt;/p&gt;
+&lt;p&gt;When you work with a company that uses retained recruiters, they will often make themselves a barrier between you and the people you will end up working with. It’s their job to make sure the constraints of an offer don’t include obvious blockers for candidates they screen. If they can see upfront it wouldn’t be a fit, they will prevent the company from wasting time and money interviewing you.&lt;/p&gt;
+&lt;p&gt;Do you need to bring your dog to work? If they don’t allow dogs because some of your potential coworkers have allergic reactions to even the sight of dogs, the recruiter will likely screen you out. The policy isn’t going to change just because they want to hire you. Want to wear sandals and shorts to the office, but they require business casual? Well, that’s not likely to change for you either. Want to work in a private office, but they use an open floor plan? Certainly not going to change. You get the point: The recruiter has constraints in that they can only offer you what the company has to offer.&lt;/p&gt;
+&lt;p&gt;This is a positive thing because it keeps you from wasting your time as well. When you move forward in the hiring process, you can be relatively confident that you and the company are on the same page in terms of what they can offer you. Have you ever gone through round after round of interviews only to be offered a job you can’t accept because the salary’s too low, the benefits don’t fit your needs, or you’re not willing to relocate? Yeah. Retained recruiters are there to prevent that from happening. And when you are hired by a company using retained recruiters, it’s generally a long term investment on their part because they want you to be successful there in order to make the company more successful.&lt;/p&gt;
+&lt;h2&gt;Contingency Recruiters&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Contingency recruiters&lt;/strong&gt; are people hired by companies to send candidates to the company. They are contractors, not salaried employees, and they do not get paid unless the company hires one of the candidates they send in. The amount they get paid is typically a percentage of the hire’s yearly salary, due upon six months of continuous employment. They are, essentially, salespeople working on commission, and you are the product. For the most part, all those articles above about why developers hate recruiters are about contingency recruiters.&lt;/p&gt;
+&lt;p&gt;Some signs that you’re working with a contingency recruiter:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;They ask for your resume in Word doc form because they are going to edit it.&lt;/li&gt;
+&lt;li&gt;They don’t mention the name of the company they want to hire you for because you could simply go straight to that company, and they could miss out on the fee.&lt;/li&gt;
+&lt;li&gt;They simply won’t work with you if you’re going to be hard to sell, so if you have less than two years of experience, belong to certain (tech industry) minority groups, have location issues, etc, you are going to be told they don’t have any clients looking for your skills.&lt;/li&gt;
+&lt;li&gt;They don’t ask you about yourself; they just send spam with job descriptions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Contingency recruiters have their own best interests in mind. To them, a placement is the primary goal, not whether you’re the best fit, and not whether the company is the best fit for you. Simply getting a candidate placed in a job is far more important than the salary, for example, because they are going to only get a slightly bigger check in six months if they fight for a larger salary for you. Instead they will often tell you to take whatever offer you get the first time and don’t take risks that might possibly lose you the job (and them their commission).&lt;/p&gt;
+&lt;p&gt;This isn’t to say you should not work with contingency recruiters; you can still find a good long term job that satisfies all of your needs through this type of recruiter. Just be aware of what you’re getting yourself into when you choose to work with one, and tread carefully.&lt;/p&gt;
+&lt;p&gt;The fact is, you can’t escape recruiters. Companies are looking for talent, and recruiters help them find it. If the company you want to work for doesn’t have full-time retained recruiters on staff, you may have to work through a contingency recruiter. But being informed and educated about what that means can help you keep your own best interests in mind throughout the process.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Read the full series:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-1-know-yourself/&quot;&gt;Part 1: Know Yourself&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-2-working-with-recruiters/&quot;&gt;Part 2: Working With Recruiters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-3-how-companies-view-developers/&quot;&gt;Part 3: How Companies View Developers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-4-managing-imposter-syndrome/&quot;&gt;Part 4: Managing Imposter Syndrome&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Last week I kicked off a series on a developer’s first steps to finding a new job. My first post was about examining your own needs befor
+    
+    </summary>
+    
+      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>A Developer’s First Steps To Finding a New Job: Part 1, Know Yourself</title>
+    <link href="http://culture-of-development.com/blog/a-developers-first-steps-to-finding-a-new-job-part-1-know-yourself/"/>
+    <id>http://culture-of-development.com/blog/a-developers-first-steps-to-finding-a-new-job-part-1-know-yourself/</id>
+    <published>2017-02-14T17:00:00.000Z</published>
+    <updated>2019-01-13T14:57:00.936Z</updated>
+    
+    <content type="html">&lt;p&gt;When a developer first begins to consider moving jobs, most of us start by firing up some job boards and checking out the options. The thing is, most of us don’t actually know what we’re looking for. When I looked for my first job, I thought, “Hey, I’m just looking to see what’s out there.” Eventually I took one of the offers, but I was soon disappointed with my situation. My needs were not being fulfilled, and my most effective work style was not an option at that company. I loved the people that I worked with there and still keep in touch with a few, but outside of that it was basically a waste of my time and ability.&lt;/p&gt;
+&lt;p&gt;That’s why I believe it’s really important to take a few basic steps before charging ahead into the job hunt. A little planning will always bring better results in the long run, especially if you’re looking for a role that you can grow in and enjoy for years to come. It’s well worth taking a little time upfront to prepare.&lt;/p&gt;
+&lt;p&gt;I’ll be writing a four-part series starting this week about what steps all developers should take before &lt;a href=&quot;https://stackoverflow.com/jobs/front-end-developer-jobs?utm_source=so-owned&amp;amp;utm_medium=blog&amp;amp;utm_campaign=dev-c4al&amp;amp;utm_content=c4al-link&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;applying for a new job&lt;/a&gt;. Today we’re going to look at what I see as Step 1: Know Yourself.&lt;/p&gt;
+&lt;h2&gt;Know Yourself&lt;/h2&gt;
+&lt;p&gt;Understanding your needs is the real first step in finding a job. I know this sounds obvious, but the reality is that you’re probably not thinking about all of your needs; you’re probably just thinking about the ones that most desperately need to change. If you hate your boss, that can cloud everything else until all you care about is finding a new boss. But ignoring other needs will typically lead you right back down that same path, making one thing better but still leaving you in a situation in need of major improvement.&lt;/p&gt;
+&lt;p&gt;There are lots of kinds of needs: emotional needs, security needs, respect/acknowledgement needs, autonomy needs, etc. Many of these overlap, but when you’re looking for a job there are basically two buckets you need to evaluate: Will you be satisfied with the work you will be doing, and will you be satisfied with the benefits you’ll receive? If either of these is unsatisfied, you can expect to find yourself dissatisfied in short order.&lt;/p&gt;
+&lt;h2&gt;Will the work satisfy my needs?&lt;/h2&gt;
+&lt;p&gt;The following are questions you should be able to answer about yourself at any point in time, in priority order, so that you can determine whether or not a prospective company fulfills your needs.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What tools am I confident in using?&lt;/li&gt;
+&lt;li&gt;What kinds of problems do I want to work on?&lt;/li&gt;
+&lt;li&gt;What kinds of problems are challenging to me?&lt;/li&gt;
+&lt;li&gt;How much responsibility do I want in the full product chain for my features?&lt;/li&gt;
+&lt;li&gt;What size team do I work best with?&lt;/li&gt;
+&lt;li&gt;What kind of environment do I work best in? (e.g. open floor or private office)&lt;/li&gt;
+&lt;li&gt;How much time do I need to explore new stuff?&lt;/li&gt;
+&lt;li&gt;How often do I need feedback?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Will the benefits satisfy my needs?&lt;/h2&gt;
+&lt;p&gt;You should also be able to answer and prioritize the following questions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How much money do I need (not want) to make?&lt;/li&gt;
+&lt;li&gt;What kind of health benefits do I need?&lt;/li&gt;
+&lt;li&gt;How do I learn new things effectively?&lt;/li&gt;
+&lt;li&gt;How much time do I need to myself?&lt;/li&gt;
+&lt;li&gt;What’s the furthest I can be separated from my spouse/kids/dog/etc and for how long?&lt;/li&gt;
+&lt;li&gt;What kinds of tools do I need to get things done efficiently?&lt;/li&gt;
+&lt;li&gt;What am I comfortable wearing when I work?&lt;/li&gt;
+&lt;li&gt;What time of day do I work most effectively?&lt;/li&gt;
+&lt;li&gt;How many side projects do I need to maintain?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Write it down&lt;/h2&gt;
+&lt;p&gt;Note that all of these questions are introspective. You should answer these questions before you start your search, not mold your answers to your available options. When you’re looking to fix one thing about your current job — working for literally anybody but your current boss — you might not take care of the core issue. Perhaps there are other, institutional and cultural problems that have led you to feel this way that you’re overlooking. Or you might give up a previously satisfied need in the process. You might miss out on the bigger picture. Changing jobs is a life changing decision and life changing decisions should get extra attention. It might not be easy, but perhaps &lt;a href=&quot;http://stackoverflow.blog/2017/01/Benefits-for-Developers-from-San-Francisco-to-Sweden/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;changing cities, for example, &lt;em&gt;is&lt;/em&gt; the best thing for you&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As you read through these lists, I hope you find a thing or two you would not have previously thought about, and I hope that you thought about a thing or two that’s not on these lists. The way to go about developing your own list is straightforward. Start by writing down specific events that either boosted your satisfaction greatly or reduced your satisfaction greatly. &lt;strong&gt;Actually write them down in a notebook that you keep somewhere safe and readily available.&lt;/strong&gt; Write down these experiences when they happen. Occasionally, say every month when you’re just getting started and every six months once you have a good baseline, go through your experiences and use them to update your answers to these questions. When one of your experiences makes you think of a new question to answer, just add it to the list and answer it.&lt;/p&gt;
+&lt;p&gt;Your answers to these questions are going to change over time, and that’s good because it means you’re developing a greater understanding of your needs, and your life is probably changing as well. Getting older might mean finding a partner, adding kids or other dependents to your life, needing more space to store all the stuff you accumulate, changing priorities in terms of what you want to accomplish in this world and whatever else; you do you.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Read the full series:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-1-know-yourself/&quot;&gt;Part 1: Know Yourself&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-2-working-with-recruiters/&quot;&gt;Part 2: Working With Recruiters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-3-how-companies-view-developers/&quot;&gt;Part 3: How Companies View Developers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/blog/a-developers-first-steps-to-finding-a-new-job-part-4-managing-imposter-syndrome/&quot;&gt;Part 4: Managing Imposter Syndrome&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;When a developer first begins to consider moving jobs, most of us start by firing up some job boards and checking out the options. The th
+    
+    </summary>
+    
+      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>The Developer Cover Letter</title>
+    <link href="http://culture-of-development.com/blog/the-developer-cover-letter/"/>
+    <id>http://culture-of-development.com/blog/the-developer-cover-letter/</id>
+    <published>2016-11-11T17:00:00.000Z</published>
+    <updated>2019-01-13T14:35:00.571Z</updated>
+    
+    <content type="html">&lt;p&gt;Your cover letter is usually the first impression you make to the people at a company. Even if you got your foot in the door with one person, a bunch of people are going to see your cover letter and resume before you actually get hired, and that’s going to be your first impression with many of those people. First impressions matter a lot.&lt;/p&gt;
+&lt;h2&gt;First impressions matter&lt;/h2&gt;
+&lt;p&gt;For instance, as a developer, you have probably opened up your email at one point or another and found a message that looks like this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Subject: Exciting Startup-Full Stack Developer Needed&lt;/p&gt;
+&lt;p&gt;Hi [perhaps your name but maybe someone else’s],&lt;/p&gt;
+&lt;p&gt;I came across your profile and feel with your background you would be a great fit for an exciting Full Stack Developer position I have available with one of my top clients. It is a well funded company in a lucrative space, with an exciting and challenging work environment. I would love to chat with you about this opportunity a bit more.&lt;/p&gt;
+&lt;p&gt;I can be reached at j.doe@recruiters-r-us.com or at 555-123-4567.&lt;/p&gt;
+&lt;p&gt;Jane Doe&lt;/p&gt;
+&lt;p&gt;555-765-4321 | jane.doe@gmail.com&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I remember the first time I got an email like this I was actually pretty excited; it felt like a bit of validation for me as a developer and so I called them back. I was immediately told I didn’t have the required work experience that they were looking for.&lt;/p&gt;
+&lt;p&gt;Today I know better, because I know what to look for. So what are the problems with this first impression?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The biggest problem is that this message could be sent to anyone. It is not specific to me in any way, shape, or form.&lt;/li&gt;
+&lt;li&gt;It doesn’t tell me what I’d be doing if I got this job.&lt;/li&gt;
+&lt;li&gt;It doesn’t address my individual needs at all.&lt;/li&gt;
+&lt;li&gt;Does this recruiter have non-top clients? To whom do they send those jobs? Why am I even thinking about this?&lt;/li&gt;
+&lt;li&gt;I’d like to look up some more information about this client to see if I’m interested… but I can’t because it doesn’t say who the client is.&lt;/li&gt;
+&lt;li&gt;Why are there conflicting pieces of contact information?&lt;/li&gt;
+&lt;li&gt;And (to a lesser degree of importance) it comes off as “we so bad, if you wanna be bad come try to join us.”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This small email is full problems; it makes a horrible first impression, and I never want to hear from Jane Doe again. If Jane wants to do a better job, she needs to start fixing those problems. First impressions are important, and this works both ways.&lt;/p&gt;
+&lt;p&gt;When you reach out to a company, you want to tell a story about how you are going to fulfill their needs. The resume alone usually doesn’t do this because it’s all about you, and the cover letter alone doesn’t do this because there’s nothing to back it up. Resumes have a fairly standard format that makes them easy to scan and consume, but they don’t always tell the right story for the company by themselves. The cover letter is the best place to start the story you want to tell to each specific company.&lt;/p&gt;
+&lt;h2&gt;Figuring out what to say&lt;/h2&gt;
+&lt;p&gt;So what goes into a cover letter and how do you start to tell a story with it? This comes down to understanding the needs of the company. Why are they hiring? What skills are they lacking in? What problems are they trying to solve? Painting a picture where you are the answer to any of these questions is much more likely to get you a call back than a generic cover letter that says the exact same thing as your resume. Let’s look at each question a little more in depth to help you get an idea of the direction we might take.&lt;/p&gt;
+&lt;h2&gt;Why are they hiring?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Did someone quit and they need to replace them?&lt;/li&gt;
+&lt;li&gt;Are they always hiring so they don’t miss out when smart people come around?&lt;/li&gt;
+&lt;li&gt;Do they have too many ideas and need more people to implement them?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;What skills are they lacking in? What problems are they trying to solve?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Do you know some tools that you could teach their team?&lt;/li&gt;
+&lt;li&gt;Do you have domain knowledge related to their problems?&lt;/li&gt;
+&lt;li&gt;Are you passionate about their mission?&lt;/li&gt;
+&lt;li&gt;Do you have leadership experience?&lt;/li&gt;
+&lt;li&gt;Can you add a new perspective to their team makeup?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is the part that most people find the hardest. You cannot tell a story where you solve the company’s problems without knowing the company’s problem, and that means &lt;em&gt;you have to do research&lt;/em&gt;—at the very least you have to know what products they have and what they are hiring for—&lt;em&gt;on every company you send an application to&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;What bad cover letters look like&lt;/h2&gt;
+&lt;p&gt;Many of the cover letters we see look like this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dear Sir or Madam:&lt;/p&gt;
+&lt;p&gt;I would like to submit my resume for your consideration regarding the position of Site Reliability Engineer (SRE). I feel that my experience will be a great fit for Stack Overflow. In addition to many years of experience with the Microsoft .NET stack, I also have experience in a variety of other languages. This background makes we a well rounded developer, and enables me to bring fresh perspectives to problems and tasks.&lt;/p&gt;
+&lt;p&gt;Thank you,&lt;/p&gt;
+&lt;p&gt;Nick Larsen&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Hopefully by now you are starting to understand why this is not a good first impression. If I replace the name of the company and the name of the job, I can use this cover letter to apply for just about any developer job, which makes my first impression that of “any developer.” This lacks personalization to the company; it does not address their problems, it does not indicate that I actually want to work there, and the only thing it tells the company about me is that I know the Microsoft stack and some other unspecified languages which may or may not be applicable to what they are working on.&lt;/p&gt;
+&lt;p&gt;Basically this is just benign. This doesn’t trigger a negative response from the reader but it does not trigger a positive response, either. This is just another resume I’d toss on the maybe pile—or just throw in the trash if the maybe pile was full today.&lt;/p&gt;
+&lt;h2&gt;An outline for a good cover letter&lt;/h2&gt;
+&lt;p&gt;Let’s get back to the good stuff. Once you know the story you want to tell, you have to materialize it into words. This is typically not that hard, but it can be frustrating figuring out where to start. The solution is that all cover letters need to follow &lt;strong&gt;a simple two paragraph format&lt;/strong&gt;:&lt;/p&gt;
+&lt;h2&gt;The first paragraph tells the company why you want to work for them.&lt;/h2&gt;
+&lt;p&gt;You have one of two options: you either want to work with the people who work there, or you want to work on the problems they are solving. If you’re truly in love with both, mention both, but only one is necessary. Once you have written down that you want to work there, back it up with a single &lt;strong&gt;specific&lt;/strong&gt; reason why.&lt;/p&gt;
+&lt;p&gt;Why a &lt;strong&gt;specific&lt;/strong&gt; reason? Because it tailors the resume to them, showing you have done some amount of research on the company and decided that you actually want to work there. It’s much more impactful than just applying because you saw a job listing. When a company thinks you want to work there, it really eases their decision because all else being equal between two candidates, they are going to go with the one who wants to be there. And wanting to be there can often outweigh even stronger candidates because you have shown shared goals.&lt;/p&gt;
+&lt;h2&gt;The second paragraph tells the company why they want to hire you.&lt;/h2&gt;
+&lt;p&gt;This is where you start telling the story you want to tell, and you have to keep it short, around three sentences maximum, regardless if you’re applying for junior or senior positions. The real goal of your story is to convince the company you can fulfill their needs. Highlight the exact things you want to bring to the company, whether it’s knowledge of some tech, domain knowledge, a process you follow, or whatever else you think might work to help solve their problems. And again, back it up with a &lt;strong&gt;specific&lt;/strong&gt; example. These specifics are important because they demonstrate capability early in the hiring process instead of leaving it up to the reader to figure it out for themselves.&lt;/p&gt;
+&lt;p&gt;Here’s an example cover letter that hits all of these points. It clearly states why I want to work there and backs that up with a specific example. It addresses the company’s needs by showing a specific example of how I proactively addressed some major problems at my previous job that are applicable to the job I’m applying for. It keeps it short and to the point.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hello Stack Overflow,&lt;/p&gt;
+&lt;p&gt;I’ve used Stack Overflow for as long as I’ve been a developer, and I recently came across a post about the architecture of your products on Nick Craver’s blog. It made me think, “I really want to work with these people who care so much about what they do.” I’m super excited to hear about all the tools you have built to make developer processes more streamlined; that’s right up my alley.&lt;/p&gt;
+&lt;p&gt;At my current job I started out as a web dev, but I was constantly blocked by broken builds and the multi-step process for getting code out to production. I took it upon myself to fix this by prototyping a continuous integration system that eventually turned into the system our team still uses today. As we’ve started to grow, I’m focusing a lot more of my time on monitoring systems and currently evaluating some possible solutions.&lt;/p&gt;
+&lt;p&gt;I look forward to hearing from you soon,&lt;/p&gt;
+&lt;p&gt;Nick Larsen&lt;/p&gt;
+&lt;p&gt;[contact email] [contact phone number]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If we’re supposed to tell a story, why does the cover letter need to be short? The reality is that recruiters are not looking at just your resume today. They are probably looking at 100 resumes today and optimistically that gives you about 2-3 minutes to make your impression strong enough to get added to the call back pile. If it takes longer than that for them to read your cover letter, they will never look at your resume or anything else that you included with your application. Keep it short.&lt;/p&gt;
+&lt;p&gt;To recap, yes, it takes a lot longer to write a good cover letter than to write a cover letter template that allows you to just replace the name of the company and the job. Will you get a call back on every application you send following this template? No, but you will see a significant increase in the percentage of companies that call you back when following the personalized template I have outlined here.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Your cover letter is usually the first impression you make to the people at a company. Even if you got your foot in the door with one per
+    
+    </summary>
+    
+      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Build Your First Thing With WebAssembly</title>
     <link href="http://culture-of-development.com/blog/build-your-first-thing-with-web-assembly/"/>
     <id>http://culture-of-development.com/blog/build-your-first-thing-with-web-assembly/</id>

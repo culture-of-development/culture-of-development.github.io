@@ -80,3 +80,17 @@ img + em {
   padding: 15px;
   list-style: none;
 }
+blockquote {
+  background-color: #DDEDFF;
+  border-left: none;
+}
+.category-list > p > span.pull-right {
+  margin-left: 50px;
+}
+.inline-content-image-left {
+  float: left;
+  margin-right: 1em;
+}
+.article > p {
+  margin-bottom: 1.5em;
+}
