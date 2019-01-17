@@ -3,8 +3,8 @@ title: Teleprompter for Google Hangouts
 categories: streams
 date: 2018-03-16 13:00:00
 author: Nick Larsen
-youtube_url: https://youtu.be/RuNTdfq7GPo?t=1h29m45s
-youtube_embed: https://www.youtube.com/embed/RuNTdfq7GPo?t=1h29m45s
+youtube_url: https://youtu.be/RuNTdfq7GPo
+youtube_embed: https://www.youtube.com/embed/RuNTdfq7GPo
 ---
 
 {% raw %}
