@@ -1,6 +1,7 @@
 ---
 title: {{ title }}
-author: {{ author }}
+author: Nick Larsen
 date: {{ date }}
 categories: talks
 ---
+

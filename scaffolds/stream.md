@@ -1,13 +1,11 @@
 ---
 title: {{ title }}
-author: {{ author }}
+author: Nick Larsen
 date: {{ date }}
 categories: streams
 youtube_url: 
 youtube_embed: 
 ---
 
-{% raw %}
-Twitter poll embed should go here.
-{% endraw %}
+
 
