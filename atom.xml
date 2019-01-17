@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://culture-of-development.com/"/>
-  <updated>2018-03-29T02:45:12.775Z</updated>
+  <updated>2019-01-17T13:23:34.875Z</updated>
   <id>http://culture-of-development.com/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>I&#39;m starting a new book on software performance</title>
+    <link href="http://culture-of-development.com/streams/i-am-starting-a-new-book-on-software-performance/"/>
+    <id>http://culture-of-development.com/streams/i-am-starting-a-new-book-on-software-performance/</id>
+    <published>2019-01-17T13:07:42.000Z</published>
+    <updated>2019-01-17T13:23:34.875Z</updated>
+    
+    <content type="html">&lt;p&gt;Hello everyone!  Just a quick note that I&#39;m getting back to streaming and big news, I&#39;m writing a book on how to be a software developer with a performance mindset!  When it comes to software development, whether on premesis or in the cloud, computing resources cost real money.  By adopting a performance mindset you can make your work more valuable to your company by saving them real money.&lt;/p&gt;
+&lt;p&gt;I started off the stream in classic fashion by forgetting to turn my mic on and was only alerted to it 45 minutes into the broadcast, but I&#39;ve cleaned that up for youtube video.  I hope to use this stream as a way to start conversations on each of the topics I intend to cover to help me find ways to present the topics in easier ways than I could by myself.  Today I started off doing a first pass on explaining how to select algorithms, showing an example of how different runtimes compare with a simple algorithm of finding if any value from one list is in another list.  We see that even simple problems like this &lt;em&gt;need&lt;/em&gt; performance to be considered in order to avoid excessively long runtimes.&lt;/p&gt;
+&lt;p&gt;The first 8 minutes or so of today&#39;s stream do a good introduction of the topics I intend to cover in the book and the rest starts to dive into algorithm selection.  Let me know what makes sense to you, or what could be improved, in the comments below!&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Hello everyone!  Just a quick note that I&#39;m getting back to streaming and big news, I&#39;m writing a book on how to be a software developer 
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Full Mock Technical Interview</title>
@@ -46,7 +69,7 @@
     <link href="http://culture-of-development.com/streams/teleprompter-for-google-hangouts/"/>
     <id>http://culture-of-development.com/streams/teleprompter-for-google-hangouts/</id>
     <published>2018-03-16T17:00:00.000Z</published>
-    <updated>2018-03-29T02:35:48.537Z</updated>
+    <updated>2019-01-17T13:08:52.036Z</updated>
     
     <content type="html">&lt;p&gt;
 &lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Gonna try out this streaming while coding thing this weekend, what should I code?&lt;/p&gt;&amp;mdash; Nick Larsen (@fody) &lt;a href=&quot;https://twitter.com/fody/status/974418016745197569?ref_src=twsrc%5Etfw&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;March 15, 2018&lt;/a&gt;&lt;/blockquote&gt;
