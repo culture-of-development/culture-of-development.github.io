@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://culture-of-development.com/"/>
-  <updated>2019-01-18T01:44:40.899Z</updated>
+  <updated>2019-01-18T19:26:31.520Z</updated>
   <id>http://culture-of-development.com/</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cleaning up my Stack Overflow comment history</title>
+    <link href="http://culture-of-development.com/streams/cleaning-up-my-stack-overflow-comment-history/"/>
+    <id>http://culture-of-development.com/streams/cleaning-up-my-stack-overflow-comment-history/</id>
+    <published>2019-01-18T19:25:52.000Z</published>
+    <updated>2019-01-18T19:26:31.520Z</updated>
+    
+    <content type="html">&lt;p&gt;&amp;lt;iframe width=&amp;quot;560&amp;quot; height=&amp;quot;315&amp;quot; src=&amp;quot;https://www.youtube.com/embed/EQ5zCeAnICU&amp;quot; frameborder=&amp;quot;0&amp;quot; allow=&amp;quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&amp;quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;lt;iframe width=&amp;quot;560&amp;quot; height=&amp;quot;315&amp;quot; src=&amp;quot;https://www.youtube.com/embed/EQ5zCeAnICU&amp;quot; frameborder=&amp;quot;0&amp;quo
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Fast Matrix Multiplication Attempt #1</title>
