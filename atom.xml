@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://culture-of-development.com/"/>
-  <updated>2019-01-18T19:44:24.055Z</updated>
+  <updated>2019-01-23T19:35:09.997Z</updated>
   <id>http://culture-of-development.com/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Stack Overflow Dev Survey 2019 + more</title>
+    <link href="http://culture-of-development.com/streams/stack-overflow-dev-survey-2019-more/"/>
+    <id>http://culture-of-development.com/streams/stack-overflow-dev-survey-2019-more/</id>
+    <published>2019-01-23T19:23:13.000Z</published>
+    <updated>2019-01-23T19:35:09.997Z</updated>
+    
+    <content type="html">&lt;p&gt;Today we started off with me filling out the 2019 Stack Overflow Developer Survey and talking a little bit about myself when answering the questions.  Not all of them make perfect sense and there was a little ambiguity which was fun, and I got talked a little about some of my crazy artificial intelligence predictions for the future.&lt;/p&gt;
+&lt;p&gt;After that we moved on to a little infrastructure work for some search algorithms, in particular implementing the &lt;a href=&quot;https://en.wikipedia.org/wiki/15_puzzle&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;N-Puzzle&lt;/a&gt;, that we&#39;re going to use as our test bed to learn about some more advanced search techniques.&lt;/p&gt;
+&lt;p&gt;In the closing few minutes I explain the long term goal, which is to reframe the matrix multiplication problem from last week as a search problem in order to write a program that can find the optimal way to do dense matrix multiplication and beat the speed we initially set as a target by doing a 2048x2048 multiplication in python that finishes in like 25 ms.  The python implementation is delegating out to MKL on my machine which means if we can beat this, we beat the implementation by the people who build the chips, and that sounds like a lot of fun to me.&lt;/p&gt;
+&lt;p&gt;Thanks again to everyone who joined us today, see you all soon!&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Today we started off with me filling out the 2019 Stack Overflow Developer Survey and talking a little bit about myself when answering th
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Cleaning up my Stack Overflow comment history</title>

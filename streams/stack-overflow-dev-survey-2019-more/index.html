@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+	<meta charset="utf-8">
+	<title>Stack Overflow Dev Survey 2019 + more - Culture of Development</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+	<link rel="manifest" href="/img/site.webmanifest">
+	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="/img/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="container">
+			<a href="/" id="header-logo-link"></a>
+			<div class="h3 title">
+				Culture of Development
+				<small>The Pit of Success</small>
+			</div>
+			<nav class="site-nav">
+	<a href="/">about</a>
+	
+	<a href="/blog/">blog</a>
+	
+	<a href="/streams/">streams</a>
+	
+</nav>
+		</div>
+	</header>
+	<section class="page-content">
+		<div class="container">
+			<h1>Stack Overflow Dev Survey 2019 + more</h1>
+<p class="text-muted">
+    2019-01-23 
+	Nick Larsen
+</p>
+<section class="article">
+	
+		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/F_Dc-LUnmg8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>Today we started off with me filling out the 2019 Stack Overflow Developer Survey and talking a little bit about myself when answering the questions.  Not all of them make perfect sense and there was a little ambiguity which was fun, and I got talked a little about some of my crazy artificial intelligence predictions for the future.</p>
+<p>After that we moved on to a little infrastructure work for some search algorithms, in particular implementing the <a href="https://en.wikipedia.org/wiki/15_puzzle" target="_blank" rel="noopener">N-Puzzle</a>, that we're going to use as our test bed to learn about some more advanced search techniques.</p>
+<p>In the closing few minutes I explain the long term goal, which is to reframe the matrix multiplication problem from last week as a search problem in order to write a program that can find the optimal way to do dense matrix multiplication and beat the speed we initially set as a target by doing a 2048x2048 multiplication in python that finishes in like 25 ms.  The python implementation is delegating out to MKL on my machine which means if we can beat this, we beat the implementation by the people who build the chips, and that sounds like a lot of fun to me.</p>
+<p>Thanks again to everyone who joined us today, see you all soon!</p>
+
+	
+		<ul class="watch-my-stream">
+			<li>Please share <a href="https://www.youtube.com/watch?v=F_Dc-LUnmg8">this content</a> with everyone!</li>
+			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
+		</ul>
+	
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_config = function () {
+	        this.page.url = 'http://culture-of-development.com/streams/stack-overflow-dev-survey-2019-more/';
+	        this.page.identifier = 'http://culture-of-development.com/streams/stack-overflow-dev-survey-2019-more/';
+	    };
+	    (function() {
+	        var d = document, s = d.createElement('script');
+	        s.src = '//cultureofdevelopment.disqus.com/embed.js';
+	        s.setAttribute('data-timestamp', +new Date());
+	        (d.head || d.body).appendChild(s);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</section>
+		</div>
+	</section>
+	<footer class="page-footer">
+		<div class="container">
+			<nav class="site-nav">
+	<a href="/">about</a>
+	
+	<a href="/blog/">blog</a>
+	
+	<a href="/streams/">streams</a>
+	
+</nav>
+			<p>
+				&copy; 2019 Nick Larsen, cultureofdevelopment.com
+			</p>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-38493266-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>
+</html>
