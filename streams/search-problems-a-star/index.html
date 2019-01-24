@@ -47,7 +47,11 @@
 	
 	<p>Today we continued out trek on search problems.  We implemented <a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank" rel="noopener">breadth first search</a> and <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank" rel="noopener">A*</a> using <a href="https://en.wikipedia.org/wiki/Hamming_distance" target="_blank" rel="noopener">Hamming distance</a> as the heuristic which we applied to the 8 puzzle problem.  We verified the correctness of finding the optimal solution by solving problems with only a few moves to reach the goal.  Once that was done, we ramped up to the hardest problem for the 8 problem and saw that even my beefy ass computer with 128 GB of ram was still easily resource exhausted using both of these techniques.</p>
 <p>For reference, the harest 8 puzzle problem is (<code>0</code> is the blank) (<a href="http://w01fe.com/blog/2009/01/the-hardest-eight-puzzle-instances-take-31-moves-to-solve/" target="_blank" rel="noopener">source</a>):</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">8 6 7</span><br><span class="line">2 5 4</span><br><span class="line">3 0 1</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>8 6 7
+2 5 4
+3 0 1</p>
+</blockquote>
 <p>Try to solve that in 31 moves by hand!</p>
 <p>The last 5 minutes really sums up how incredible of a challenge it is going to be to find the optimal way to solve matrix multiplication using search techniques.  This game only has 9! solvable states (362,880 / 2) and somehow we managed to use a technique which explores 10&lt;sup&gt;12&lt;/sup&gt; states.  That's 7 order of magnitude too many!  Finding good heuristics is going to be key if we're going to have any chance of completing our goal of finding a new state of the art way to do dense matrix multiplication.</p>
 <p>The todo list for tomorrow is:</p>
