@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://culture-of-development.com/"/>
-  <updated>2019-01-24T19:34:05.373Z</updated>
+  <updated>2019-01-24T19:37:40.929Z</updated>
   <id>http://culture-of-development.com/</id>
   
   <author>
@@ -20,13 +20,13 @@
     <link href="http://culture-of-development.com/streams/search-problems-a-star/"/>
     <id>http://culture-of-development.com/streams/search-problems-a-star/</id>
     <published>2019-01-24T19:07:35.000Z</published>
-    <updated>2019-01-24T19:34:05.373Z</updated>
+    <updated>2019-01-24T19:37:40.929Z</updated>
     
     <content type="html">&lt;p&gt;Today we continued out trek on search problems.  We implemented &lt;a href=&quot;https://en.wikipedia.org/wiki/Breadth-first_search&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;breadth first search&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/A*_search_algorithm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;A*&lt;/a&gt; using &lt;a href=&quot;https://en.wikipedia.org/wiki/Hamming_distance&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hamming distance&lt;/a&gt; as the heuristic which we applied to the 8 puzzle problem.  We verified the correctness of finding the optimal solution by solving problems with only a few moves to reach the goal.  Once that was done, we ramped up to the hardest problem for the 8 problem and saw that even my beefy ass computer with 128 GB of ram was still easily resource exhausted using both of these techniques.&lt;/p&gt;
-&lt;p&gt;For reference, the harest 8 puzzle problem is (&lt;code&gt;0&lt;/code&gt; is the blank) (&lt;a href=&quot;http://w01fe.com/blog/2009/01/the-hardest-eight-puzzle-instances-take-31-moves-to-solve/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;source&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;For reference, the harest 8 puzzle problem is (0 is the blank) (&lt;a href=&quot;http://w01fe.com/blog/2009/01/the-hardest-eight-puzzle-instances-take-31-moves-to-solve/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;source&lt;/a&gt;):&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;8 6 7
-2 5 4
+&lt;p&gt;8 6 7&lt;br&gt;
+2 5 4&lt;br&gt;
 3 0 1&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Try to solve that in 31 moves by hand!&lt;/p&gt;
