@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+	<meta charset="utf-8">
+	<title>Search Problems: A* - Culture of Development</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+	<link rel="manifest" href="/img/site.webmanifest">
+	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="/img/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="container">
+			<a href="/" id="header-logo-link"></a>
+			<div class="h3 title">
+				Culture of Development
+				<small>The Pit of Success</small>
+			</div>
+			<nav class="site-nav">
+	<a href="/">about</a>
+	
+	<a href="/blog/">blog</a>
+	
+	<a href="/streams/">streams</a>
+	
+</nav>
+		</div>
+	</header>
+	<section class="page-content">
+		<div class="container">
+			<h1>Search Problems: A*</h1>
+<p class="text-muted">
+    2019-01-24 
+	Nick Larsen
+</p>
+<section class="article">
+	
+		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/c2rR3jbxj0c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>Today we continued out trek on search problems.  We implemented <a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank" rel="noopener">breadth first search</a> and <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank" rel="noopener">A*</a> using <a href="https://en.wikipedia.org/wiki/Hamming_distance" target="_blank" rel="noopener">Hamming distance</a> as the heuristic which we applied to the 8 puzzle problem.  We verified the correctness of finding the optimal solution by solving problems with only a few moves to reach the goal.  Once that was done, we ramped up to the hardest problem for the 8 problem and saw that even my beefy ass computer with 128 GB of ram was still easily resource exhausted using both of these techniques.</p>
+<p>For reference, the harest 8 puzzle problem is (<code>0</code> is the blank) (<a href="http://w01fe.com/blog/2009/01/the-hardest-eight-puzzle-instances-take-31-moves-to-solve/" target="_blank" rel="noopener">source</a>):</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">8 6 7</span><br><span class="line">2 5 4</span><br><span class="line">3 0 1</span><br></pre></td></tr></table></figure></p>
+<p>Try to solve that in 31 moves by hand!</p>
+<p>The last 5 minutes really sums up how incredible of a challenge it is going to be to find the optimal way to solve matrix multiplication using search techniques.  This game only has 9! solvable states (362,880 / 2) and somehow we managed to use a technique which explores 10&lt;sup&gt;12&lt;/sup&gt; states.  That's 7 order of magnitude too many!  Finding good heuristics is going to be key if we're going to have any chance of completing our goal of finding a new state of the art way to do dense matrix multiplication.</p>
+<p>The todo list for tomorrow is:</p>
+<ul>
+<li>redfine the goal state to match what's common in the literature</li>
+<li>add some performance tooling, counters for explored nodes and a regular pulsing of performance info</li>
+<li>improve the nodes explored per sec by orders of magnitude</li>
+<li>implement the manhattan distance metric</li>
+<li><strong>actually find the optimal solution to the hardest 8 puzzle problem!</strong></li>
+</ul>
+
+	
+		<ul class="watch-my-stream">
+			<li>Please share <a href="https://www.youtube.com/watch?v=c2rR3jbxj0c">this content</a> with everyone!</li>
+			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
+		</ul>
+	
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_config = function () {
+	        this.page.url = 'http://culture-of-development.com/streams/search-problems-a-star/';
+	        this.page.identifier = 'http://culture-of-development.com/streams/search-problems-a-star/';
+	    };
+	    (function() {
+	        var d = document, s = d.createElement('script');
+	        s.src = '//cultureofdevelopment.disqus.com/embed.js';
+	        s.setAttribute('data-timestamp', +new Date());
+	        (d.head || d.body).appendChild(s);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</section>
+		</div>
+	</section>
+	<footer class="page-footer">
+		<div class="container">
+			<nav class="site-nav">
+	<a href="/">about</a>
+	
+	<a href="/blog/">blog</a>
+	
+	<a href="/streams/">streams</a>
+	
+</nav>
+			<p>
+				&copy; 2019 Nick Larsen, cultureofdevelopment.com
+			</p>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-38493266-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>
+</html>

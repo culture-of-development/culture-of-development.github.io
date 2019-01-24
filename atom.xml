@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://culture-of-development.com/"/>
-  <updated>2019-01-23T19:35:09.997Z</updated>
+  <updated>2019-01-24T19:30:11.393Z</updated>
   <id>http://culture-of-development.com/</id>
   
   <author>
@@ -14,6 +14,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Search Problems: A*</title>
+    <link href="http://culture-of-development.com/streams/search-problems-a-star/"/>
+    <id>http://culture-of-development.com/streams/search-problems-a-star/</id>
+    <published>2019-01-24T19:07:35.000Z</published>
+    <updated>2019-01-24T19:30:11.393Z</updated>
+    
+    <content type="html">&lt;p&gt;Today we continued out trek on search problems.  We implemented &lt;a href=&quot;https://en.wikipedia.org/wiki/Breadth-first_search&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;breadth first search&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/A*_search_algorithm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;A*&lt;/a&gt; using &lt;a href=&quot;https://en.wikipedia.org/wiki/Hamming_distance&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hamming distance&lt;/a&gt; as the heuristic which we applied to the 8 puzzle problem.  We verified the correctness of finding the optimal solution by solving problems with only a few moves to reach the goal.  Once that was done, we ramped up to the hardest problem for the 8 problem and saw that even my beefy ass computer with 128 GB of ram was still easily resource exhausted using both of these techniques.&lt;/p&gt;
+&lt;p&gt;For reference, the harest 8 puzzle problem is (&lt;code&gt;0&lt;/code&gt; is the blank) (&lt;a href=&quot;http://w01fe.com/blog/2009/01/the-hardest-eight-puzzle-instances-take-31-moves-to-solve/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;source&lt;/a&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;8 6 7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2 5 4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3 0 1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Try to solve that in 31 moves by hand!&lt;/p&gt;
+&lt;p&gt;The last 5 minutes really sums up how incredible of a challenge it is going to be to find the optimal way to solve matrix multiplication using search techniques.  This game only has 9! solvable states (362,880 / 2) and somehow we managed to use a technique which explores 10&amp;lt;sup&amp;gt;12&amp;lt;/sup&amp;gt; states.  That&#39;s 7 order of magnitude too many!  Finding good heuristics is going to be key if we&#39;re going to have any chance of completing our goal of finding a new state of the art way to do dense matrix multiplication.&lt;/p&gt;
+&lt;p&gt;The todo list for tomorrow is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;redfine the goal state to match what&#39;s common in the literature&lt;/li&gt;
+&lt;li&gt;add some performance tooling, counters for explored nodes and a regular pulsing of performance info&lt;/li&gt;
+&lt;li&gt;improve the nodes explored per sec by orders of magnitude&lt;/li&gt;
+&lt;li&gt;implement the manhattan distance metric&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;actually find the optimal solution to the hardest 8 puzzle problem!&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Today we continued out trek on search problems.  We implemented &lt;a href=&quot;https://en.wikipedia.org/wiki/Breadth-first_search&quot; target=&quot;_bla
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Stack Overflow Dev Survey 2019 + more</title>
