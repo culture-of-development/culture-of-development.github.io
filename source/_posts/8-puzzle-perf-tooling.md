@@ -2,7 +2,7 @@
 title: 8 Puzzle Perf Tooling
 author: Nick Larsen
 categories: streams
-date: 2019-01-26 08:35:03
+date: 2019-01-25 14:35:03
 youtube_url: https://youtu.be/LukIOA1JuA0
 youtube_embed: https://www.youtube.com/embed//LukIOA1JuA0
 ---
