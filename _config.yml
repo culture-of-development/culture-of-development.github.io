@@ -75,7 +75,7 @@ theme: bootstrap-empty
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/culture-of-development/culture-of-development.github.io.git
+  repo: git@github.com:culture-of-development/culture-of-development.github.io.git
   branch: master
 
 
