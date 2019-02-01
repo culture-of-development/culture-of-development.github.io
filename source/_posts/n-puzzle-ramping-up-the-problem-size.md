@@ -1,5 +1,5 @@
 ---
-title: 'N-Puzzle: Ramping up the problem size'
+title: 'N-Puzzle: Ramping up the problem size (day 9)'
 author: Nick Larsen
 categories: streams
 date: 2019-02-01 17:15:58
