@@ -2,7 +2,7 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
 	<meta charset="utf-8">
-	<title>Blog - Culture of Development</title>
+	<title>8 Puzzle Perf Tooling - Culture of Development</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
@@ -36,85 +36,47 @@
 	</header>
 	<section class="page-content">
 		<div class="container">
-			<h1>
-	streams
+			<h1>8 Puzzle Perf Tooling</h1>
+<p class="text-muted">
+    2019-01-25 
+	Nick Larsen
+</p>
+<section class="article">
 	
-</h1>
-<div class="category-list streams">
+		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed//LukIOA1JuA0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>Today we set out to achieve the 5 goals listed on yesterday's stream:</p>
+<ul>
+<li><s>redfine the goal state to match what's common in the literature</s></li>
+<li><s>add some performance tooling, counters for explored nodes and a regular pulsing of performance info</s></li>
+<li><s>improve the nodes explored per sec by orders of magnitude</s></li>
+<li>implement the manhattan distance metric</li>
+<li><strong>actually find the optimal solution to the hardest 8 puzzle problem!</strong></li>
+</ul>
+<p>We didn't get quite as far as I had hoped, but we did make good progress and now we can see that using A* with Hamming distance heuristic does infact search deeper than breadth first search.  Overall this is important to convincing us this trek might be worthwhile.</p>
+<p>Next week we'll start using a more Github friendly workflow of using issues and pull requests to track progress which will be a learning experience for me and I'll love your input.  On that note, <a href="https://github.com/culture-of-development/fast" target="_blank" rel="noopener">check out the code the on github</a> and feel free to contribute; I'll highlight your work on stream!</p>
 
-    <p>
-        <span class="text-muted pull-right">
-            2019-01-25 
-        </span>
-        <a class="post-link" href="/streams/8-puzzle-perf-tooling/">
-            8 Puzzle Perf Tooling
-        </a>
-    </p>
-
-    <p>
-        <span class="text-muted pull-right">
-            2019-01-24 
-        </span>
-        <a class="post-link" href="/streams/search-problems-a-star/">
-            Search Problems: A*
-        </a>
-    </p>
-
-    <p>
-        <span class="text-muted pull-right">
-            2019-01-23 
-        </span>
-        <a class="post-link" href="/streams/stack-overflow-dev-survey-2019-more/">
-            Stack Overflow Dev Survey 2019 + more
-        </a>
-    </p>
-
-    <p>
-        <span class="text-muted pull-right">
-            2019-01-18 
-        </span>
-        <a class="post-link" href="/streams/cleaning-up-my-stack-overflow-comment-history/">
-            Cleaning up my Stack Overflow comment history
-        </a>
-    </p>
-
-    <p>
-        <span class="text-muted pull-right">
-            2019-01-17 
-        </span>
-        <a class="post-link" href="/streams/fast-matrix-multiplication-attempt-1/">
-            Fast Matrix Multiplication Attempt #1
-        </a>
-    </p>
-
-    <p>
-        <span class="text-muted pull-right">
-            2019-01-17 
-        </span>
-        <a class="post-link" href="/streams/i-am-starting-a-new-book-on-software-performance/">
-            I&#39;m starting a new book on software performance
-        </a>
-    </p>
-
-    <p>
-        <span class="text-muted pull-right">
-            2018-03-23 
-        </span>
-        <a class="post-link" href="/streams/full-mock-technical-interview/">
-            Full Mock Technical Interview
-        </a>
-    </p>
-
-    <p>
-        <span class="text-muted pull-right">
-            2018-03-16 
-        </span>
-        <a class="post-link" href="/streams/teleprompter-for-google-hangouts/">
-            Teleprompter for Google Hangouts
-        </a>
-    </p>
-
-</div>
+	
+		<ul class="watch-my-stream">
+			<li>Please share <a href="https://youtu.be/LukIOA1JuA0">this content</a> with everyone!</li>
+			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
+		</ul>
+	
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_config = function () {
+	        this.page.url = 'http://culture-of-development.com/streams/8-puzzle-perf-tooling/';
+	        this.page.identifier = 'http://culture-of-development.com/streams/8-puzzle-perf-tooling/';
+	    };
+	    (function() {
+	        var d = document, s = d.createElement('script');
+	        s.src = '//cultureofdevelopment.disqus.com/embed.js';
+	        s.setAttribute('data-timestamp', +new Date());
+	        (d.head || d.body).appendChild(s);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</section>
 		</div>
 	</section>
 	<footer class="page-footer">
