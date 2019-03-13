@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://culture-of-development.com/"/>
-  <updated>2019-03-13T13:57:01.917Z</updated>
+  <updated>2019-03-13T13:58:22.610Z</updated>
   <id>http://culture-of-development.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://culture-of-development.com/streams/building-a-slack-bot-part-2-we-learn-better-together/"/>
     <id>http://culture-of-development.com/streams/building-a-slack-bot-part-2-we-learn-better-together/</id>
     <published>2019-03-08T14:37:15.000Z</published>
-    <updated>2019-03-13T13:57:01.917Z</updated>
+    <updated>2019-03-13T13:58:22.610Z</updated>
     
     <content type="html"><![CDATA[<p>Todays goals were to get our slack bot to respond to messages of the right type, handle the <code>needz moar help</code> request and send actual images to slack in reply to the correct <code>needz moar {something}</code> request.</p><p>Today right at the beginning <a href="https://twitter.com/a1ph4g33k" target="_blank" rel="noopener">@a1ph4g33k</a> stopped by with a suggestion to make something better.  We fired up a VS Code live share and the next three hours were an amazing experience of watching two people learn from each other and accomplish something at the same time.  This was hands down my favorite day streaming to date and I'm extremely thankful there are people like him in this community.</p><p>If you would like to jump on a project, I'm open arms accepting pair programming partners indefinitely, just reach out to me at my <a href="https://twitter.com/fody" target="_blank" rel="noopener">twitter</a> page.</p>]]></content>
     
@@ -44,7 +44,7 @@
     <link href="http://culture-of-development.com/streams/building-a-slack-bot-part-1-i-know-nothing-about-this/"/>
     <id>http://culture-of-development.com/streams/building-a-slack-bot-part-1-i-know-nothing-about-this/</id>
     <published>2019-03-07T14:26:02.000Z</published>
-    <updated>2019-03-13T13:36:36.462Z</updated>
+    <updated>2019-03-13T13:58:22.609Z</updated>
     
     <content type="html"><![CDATA[<p>At Stack Overflow we have a few bots in our bespoke chat app that really make it a lot of fun to use.  Due to the pressures of not maintaining something that isn't our bread and butter (i.e. Q&amp;A), we've slowly but surely been moving everything over to Slack.  One of the tools that's the most fun is something called the pic bot.  When you reply to an image with the phrase &quot;needz moar {something}&quot; and then replace the something with the thing you want, it modifies the image to add some extra flare to it which normally results in hilarity and a good laugh for everyone.</p><p><img src="/img/slack-bot-before.png" alt="boring screenshot"></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">needz moar jorts</span><br></pre></td></tr></table></figure></p><p><img src="/img/slack-bot-after.jpeg" alt="amazing screenshot"></p><p>And that's essentially the effect we're after.</p><p>Starting today, I know nothing about how to build Slack bots, watch me get up to speed and get a bot running that actually responds to messages.</p>]]></content>
     
@@ -67,7 +67,7 @@
     <link href="http://culture-of-development.com/streams/graph-reduction-intersections-only-road-map/"/>
     <id>http://culture-of-development.com/streams/graph-reduction-intersections-only-road-map/</id>
     <published>2019-03-05T14:08:08.000Z</published>
-    <updated>2019-03-13T13:36:48.294Z</updated>
+    <updated>2019-03-13T13:58:22.610Z</updated>
     
     <content type="html"><![CDATA[<p>After taking yesterday off to <em>finally</em> fix a bug I've been looking into for three days (narrator: it was a typo), I'm back at it today for a double length stream!  The goal is to reduce the number of map nodes by eliminating all the points between intersections.</p><p>In real life, many roads are windy and curved.  To make sure that these roads can plot correctly when drawn, the map data contains numerous points for each road segment so that the tool that draws the map can draw them correctly.  From the standpoint of the directions finding problem, the only thing that matters, however, is decision points, i.e. which direction should I go next from this intersection.</p><p>All those little bitty road segments are not decision points, in fact, most of the time you have to keep driving the same direction though many of them.  This is especially easy to see in the case of interstate highways where the exits are miles apart and the roads can have a lot of curves between the exits.  The concept here is that be eliminating those false decision points, we can improve the speed of our search.</p><p>Follow along as we work though this a few times, run into lots of difficult to understand bugs and ultimately reduce the size of the graph by roughly 40%.  After the stream ended I realized how much smaller we can make this as well, so hopefully we'll have time to come back and work on that soon.</p>]]></content>
     
@@ -76,6 +76,75 @@
       
       
         &lt;p&gt;After taking yesterday off to &lt;em&gt;finally&lt;/em&gt; fix a bug I&#39;ve been looking into for three days (narrator: it was a typo), I&#39;m back at it 
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Using landmark search in the map demo and shrink reducing the map size (day 19)</title>
+    <link href="http://culture-of-development.com/streams/using-landmark-search-in-the-map-demo-and-shrink-reducing-the-map-size/"/>
+    <id>http://culture-of-development.com/streams/using-landmark-search-in-the-map-demo-and-shrink-reducing-the-map-size/</id>
+    <published>2019-02-28T04:13:28.000Z</published>
+    <updated>2019-03-13T13:58:22.490Z</updated>
+    
+    <content type="html"><![CDATA[<p>Over the weekend I put considerable effort into trying to prove that landmark heuristics were inadmissible and I came up with an example that clearly showed there is a pathalogical graph which the method we had implemented for the landmark heuristic is inadmissible because it overestimates the actual distance to the goal.  I was fairly certain that landmarks were supposed to be addmissible so I revisited the original paper to give it a more critical eye and sure enough the method we used was only correct for undirected graphs, but it fails misterably for directed graphs.  It took a few tries to get it all right but I finally got all the tests to go green again.</p><p>On stream the plan was to get this all hooked into the demo map and see if we accomplished our goal from last time of getting the time it takes to run a search down significantly.  What we were able to verify is that this was reducing the number of nodes explored however it was not doing so dramatically enough to reduce the time a noticable amount.  So basically the grand plan was not quite achieved, but that's not the end of the road of course.  There's still bidirectional A* and there are other options as well.</p><p>The first thing I tried to tackle today was to reduce the graph to only contain intersections.  Along many of the roadways, especially the highways, there are long stretches of points that are necessary to build correctly show the curve of the road, however the points only have one way in and one way out.  Think about an interstate.  There are long sections of windy road where you realistically cannot change direction.  The only real place to change direction is when you reach an exit, which only happens every so often.  In more rural aread it might be as much as 10 or 20 miles between exits, but there are still going to be tons of twists and turns that need lots of points to correct show on the map.  The idea is to reduce the map so that all of the non intersection points are removed and it's just a map that consists only of intersections.  I ran out of time while working on this and had to set it aside.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Over the weekend I put considerable effort into trying to prove that landmark heuristics were inadmissible and I came up with an example 
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Quick performance wins for the map demo (days 17 and 18)</title>
+    <link href="http://culture-of-development.com/streams/quick-performance-wins-for-the-map-demo/"/>
+    <id>http://culture-of-development.com/streams/quick-performance-wins-for-the-map-demo/</id>
+    <published>2019-02-23T03:27:17.000Z</published>
+    <updated>2019-03-13T13:58:22.490Z</updated>
+    
+    <content type="html"><![CDATA[<p>Yesterday life came up and I had to bail unexpectedly on the stream, so today I went for a double length and tried to get 2 things done instead of one.  I'd say we made it through roughly 1.5 things :).  In case you're curious what came up, my son decided to administer my daughter's first ever haircut using some kitchen shears he found on the counter.  My wife was overcome with a large number of emotions; I had to run interference since it's my job as a parent first and foremost to keep everyone alive.</p><p>Today's tasks were to improve the time it takes to find the nearest points to the locations clicked on the map for the start and end of the directions and to improve the time it takes for the search to complete.  The first task I knew would be fairly easy because it's a well documentated problem, but the second problem was going to be more difficult and it turns out I was correct on both counts.</p><p>Improving the speed of finding the closest location is called a <a href="https://en.wikipedia.org/wiki/Nearest_neighbor_search" target="_blank" rel="noopener">nearest neighbor search</a> and there are lots of ways to accomplish this task.  One of the simplest approaches, and probably the most prominent technique, is to use a <a href="https://en.wikipedia.org/wiki/K-d_tree" target="_blank" rel="noopener">K-D tree</a>.  In the average case a K-D tree can find the single nearest neighbor in <code>O(log n)</code> compared to the <code>O(n)</code> time full scan we were doing.  In the New York dataset there are roughly 708,000 nodes, and the log base 2 of that is roughly 20.  You can see how even with a little bit of overhead this is a huge peformance improvement and it showed in the numbers where the scan was taking roughly 330 milliseconds, the K-D tree takes only 0.2 milliseconds on average.  That was a huge win.</p><p>Improving the speed of the search is a much more difficult problem and there are lots of ways to do it.  The approach I decided to take was to improve the heuristic that the search used to estimate the remaining path length.  The simple approach we used previously was the straight-line havesine distance.  This works well for small area graphs like the one's we've been using, however when you expand the graph to say the entire United States, all of a sudden you're searching way too many nodes for each search.  I decided to use the ALT algorithm, as outlined in <a href="http://www.academia.edu/download/5622730/10.1.1.136.1062.pdf" target="_blank" rel="noopener">Computing the shortest path: A search meets graph theory (Goldberg and Harrelson 2005)</a>.</p><p>ALT stands for A* search, landmarks heuristic, triangle inequality which are the main components of the algorithm.  Additionally one other major component from the paper is bidirectional A* search, which we have not yet attempted.  In this stream I worked on the landmarks portion of this paper and holy cow did we run into some problems.  Have a look and watch the highs and the lows as we learn a ton in this 4 hour stretch.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Yesterday life came up and I had to bail unexpectedly on the stream, so today I went for a double length and tried to get 2 things done i
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>A little documentation goes a long way (day 16)</title>
+    <link href="http://culture-of-development.com/streams/a-little-documentation-goes-a-long-way/"/>
+    <id>http://culture-of-development.com/streams/a-little-documentation-goes-a-long-way/</id>
+    <published>2019-02-21T03:18:36.000Z</published>
+    <updated>2019-03-13T13:58:22.490Z</updated>
+    
+    <content type="html"><![CDATA[<p>Today we started by paying down a little of the &quot;works on my machine&quot;-only debt by adding a script to pull in the map data from open street map and removing the hardcoded paths in the project so that they are now relative paths.  You can see the simple documentation for getting the demo up and running on the <a href="https://github.com/culture-of-development/fast" target="_blank" rel="noopener">readme.md in the root of the repo</a>.</p><p>It's important to add little bits like this so that other people can make use of your work and it's also a great idea to include a little graphic of the thing working, either a short video, a gif or just a static image.  Not everyone is going to download your project and get it running just to see what it's like and making it as easy as possible to get a glimpse is a great way to build excitement for your project or convince a would-be new employer that your project has merit.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Today we started by paying down a little of the &amp;quot;works on my machine&amp;quot;-only debt by adding a script to pull in the map data from
       
     
     </summary>
