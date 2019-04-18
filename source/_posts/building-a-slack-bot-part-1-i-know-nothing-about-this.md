@@ -2,8 +2,8 @@
 title: 'Building a slack bot, part 1: I know nothing about this (day 22)'
 author: Nick Larsen
 categories: streams
-youtube_url: 'https://www.youtube.com/watch?v=OUFMi7TZ55o'
-youtube_embed: 'https://www.youtube.com/embed/OUFMi7TZ55o'
+youtube_url: 'https://www.youtube.com/watch?v=gzhmWGTBXTg'
+youtube_embed: 'https://www.youtube.com/embed/gzhmWGTBXTg'
 date: 2019-03-07 09:26:02
 ---
 
