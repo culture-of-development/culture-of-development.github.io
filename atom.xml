@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://culture-of-development.com/"/>
-  <updated>2019-03-13T13:58:22.610Z</updated>
+  <updated>2019-04-18T14:57:00.335Z</updated>
   <id>http://culture-of-development.com/</id>
   
   <author>
@@ -17,11 +17,173 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>js13k competition practice, part 5 of 12: adding some emoji graphics, a menu screen and a dialog interface (day 32)</title>
+    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-5-of-12-adding-some-emoji-graphics-a-menu-screen-and-a-dialog-interface/"/>
+    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-5-of-12-adding-some-emoji-graphics-a-menu-screen-and-a-dialog-interface/</id>
+    <published>2019-04-18T14:40:11.000Z</published>
+    <updated>2019-04-18T14:57:00.335Z</updated>
+    
+    <content type="html"><![CDATA[<p>Today blew my mind!  We started off really easy by swapping out a lot of the color filled blocks that represented items with emoji graphics, largely because emojis are essentially free graphics for your game instead of trying to compress those assets.  We'd like to swap them out for something more consistent across browsers later on, but for now it makes it easier for us to reason about the game interactions as we keep working on them.</p><p>The second major thing we wanted to tackle was adding in a &quot;leaderboard&quot; page.  As you play the game multiple times, it should record your score and you can compete with yourself as you play multiple times.  It also helps to have this because we need to force interaction with the page in order to get the sound to start.  For today we left off the leaderboard widget and just added a giant &quot;play new game&quot; button to start a new game.  To support the leaderboard eventually, we also added a move counter to the game page to track how many moves you have made.</p><p>Next we added a dialog view.  This will be used to drive the story as we progress through the game and it will act as a tutorial interface at the very beginning.  It was a lot of fun building this out and we made a lot of progress today on making this feel like a fully fleshed out game.</p><p>I'd like to give a HUGE shout out to <a href="https://www.twitch.tv/clarkio" target="_blank" rel="noopener">@ClarkIO</a> for the biggest raid I've ever gotten!  This easily put me over the top on my metrics for hitting affiliate and I'm really looking forward to getting that email when I'm back from my trip next week.  Please check out his stream when you have a chance, he's made some great tools for the streamer community and he's a lot of fun to chat with as well!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Today blew my mind!  We started off really easy by swapping out a lot of the color filled blocks that represented items with emoji graphi
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>js13k competition practice, part 3 of 12: item interactions, inventory and a win condition (day 30)</title>
+    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-3-of-12-item-interactions-inventory-and-a-win-condition/"/>
+    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-3-of-12-item-interactions-inventory-and-a-win-condition/</id>
+    <published>2019-04-12T14:13:19.000Z</published>
+    <updated>2019-04-18T14:26:55.071Z</updated>
+    
+    <content type="html"><![CDATA[<p>We're making solid progress so far and after today it really started to feel like &quot;a game&quot; in the sense that most of the component you would expect for a game are there in some minimal form.  This is also the furtherest I've ever really gotten into a game in which you interact with the environment; most games in my past have been psuedo-games where the computer part doesn't actually have knowledge of the rules of the game, it's more just a board in which you manipulate pieces (think like a chess game that doesn't know when you have won or lost).</p><p>It has become clear to me that the super-ad-hoc way this game has been developing has some serious flaws which we will address at some point before we get to the end.  Most notably when one thing needs to change, everything needs to change.  We have also hard baked in the idea of how rendering happens to most objects which is going to make it a huge task to switch should we decide to move to canvas rendering or something else other than manual DOM manipulation.</p><p>Picking up items was quite a bit of fun.  Moving them from their cell to our inventory was quite a challenge but seeing them disappear from the world was really cool.  Making the winning condition check for items in your inventory also really cool.  Time to start thinking more about how objects interact with other objects in the world.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;We&#39;re making solid progress so far and after today it really started to feel like &amp;quot;a game&amp;quot; in the sense that most of the compon
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>js13k competition practice, part 2 of 12: a movable player character (day 29)</title>
+    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-2-of-12-a-movable-player-character/"/>
+    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-2-of-12-a-movable-player-character/</id>
+    <published>2019-04-11T14:06:23.000Z</published>
+    <updated>2019-04-18T14:14:09.502Z</updated>
+    
+    <content type="html"><![CDATA[<p>Now that we have a simple grid world, it's time to make some sort of interaction so we can start playing with it and feel out what works and what doesn't with our ideas so far.  We make a simple way of interacting with the game by moving a purple box around the grid world we have created.  Since this didn't take too long we also added some items to the world and wrote enough code to place them where we want them and give them custom attributes.</p><p>In addition to that, this competition is about building assets that total to less than 13 kb, so we constructed a rudimentary build pipeline that collects the assets, passes it through <a href="https://www.npmjs.com/package/uglify-es" target="_blank" rel="noopener">uglify-es</a>, zips it all up and reports the total size.  We're barely at 2 kb so far!</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Now that we have a simple grid world, it&#39;s time to make some sort of interaction so we can start playing with it and feel out what works 
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>js13k competition practice, part 1 of 12: research and building a grid world (day 28)</title>
+    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-1-of-12-research-and-building-a-grid-world/"/>
+    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-1-of-12-research-and-building-a-grid-world/</id>
+    <published>2019-04-10T13:40:28.000Z</published>
+    <updated>2019-04-18T13:50:24.193Z</updated>
+    
+    <content type="html"><![CDATA[<p>Just got back from vacation and it was amazing.  Feeling very re-energized and ready to start a new project.</p><p>I got started with programming like a lot of other people, wanting to make games to play.  I have built some toy games at various points throughout my life and decided that once I graduate from grad school I want to commit to making an actual game that I release to the world.  Before that I'd like to practice, and so I was reminded of a small competition called <a href="https://js13kgames.com/" target="_blank" rel="noopener">js13k</a>.</p><p>The point of js13k is to build a complete game based on a theme that runs in a browser, from scratch, in one month.  And the kicker, <em>all</em> of the games assets must be no larger than 13 kb when zipped up.  There have been some astonishing works of art that have come from this competition; take some time and browse through the winners of previous years competitions.</p><p>I decided that I will enter this competition in 2019, which starts August 13th, 2019, and now is as great a time as any to practice.  I stream 3 days per week and for roughly 2 hours a day, so total I should be able to get around 24 hours into this game.</p><p>In this first episode, I break down how I prepare for competitions like these, decide some high level ideas about the game and get started implementing a simple grid world which is going to be the basis for the world that my game will take place in.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Just got back from vacation and it was amazing.  Feeling very re-energized and ready to start a new project.&lt;/p&gt;
+&lt;p&gt;I got started with pr
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Building a slack bot, part 5: almost there, just a few more bugs (day 27)</title>
+    <link href="http://culture-of-development.com/streams/building-a-slack-bot-part-5-almost-there-just-a-few-more-bugs/"/>
+    <id>http://culture-of-development.com/streams/building-a-slack-bot-part-5-almost-there-just-a-few-more-bugs/</id>
+    <published>2019-03-15T13:35:43.000Z</published>
+    <updated>2019-04-18T13:39:03.335Z</updated>
+    
+    <content type="html"><![CDATA[<p>After some much needed progress yesterday, we realized there were just two major problems to overcome before we could call it an MVP (minimum viable product), just that we need to get all the image manipulation done in memory so we can avoid writing to disk and we need to figure out why the image manipulation pipeline fails the second time you try to run an image through it.</p><p>We don't actually solve either of these issues today, but we make a lot of progress on what doesn't work and why.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;After some much needed progress yesterday, we realized there were just two major problems to overcome before we could call it an MVP (min
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Building a slack bot, part 4: I slept on it, got my head right, let&#39;s give it another go (day 26)</title>
+    <link href="http://culture-of-development.com/streams/building-a-slack-bot-part-4-i-slept-on-it-got-my-head-right-let-s-give-it-another-go/"/>
+    <id>http://culture-of-development.com/streams/building-a-slack-bot-part-4-i-slept-on-it-got-my-head-right-let-s-give-it-another-go/</id>
+    <published>2019-03-14T13:22:11.000Z</published>
+    <updated>2019-04-18T13:32:03.387Z</updated>
+    
+    <content type="html"><![CDATA[<p>Sleep on it.  Your brain does amazing things when you go to sleep that improve your ability to learn and solve problems; just give it the opportunity to do it's thing and over time you'll be a much happier person.  I was having significant troubles with this slack bot and a little sleep and a recharge got me over a big challenge by rethinking where the problem might lie.  By using someone else's slack integration library we are now at the point of being able to collect images from slack and do the modifications we want to them using another library.</p><p>Of course this is still software development, so eventually we run into another problem...  time to go back to sleep.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Sleep on it.  Your brain does amazing things when you go to sleep that improve your ability to learn and solve problems; just give it the
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Building a slack bot, part 3: this is much harder than expected (day 25)</title>
+    <link href="http://culture-of-development.com/streams/building-a-slack-bot-part-3-this-is-much-harder-than-expected/"/>
+    <id>http://culture-of-development.com/streams/building-a-slack-bot-part-3-this-is-much-harder-than-expected/</id>
+    <published>2019-03-13T13:15:27.000Z</published>
+    <updated>2019-04-18T13:32:29.813Z</updated>
+    
+    <content type="html"><![CDATA[<p>We managed to send images to slack, but we hit the struggle bus when it came to collecting images from slack.  The error messages are not helpful, my understanding of what's going on is lacking, my google-fu isn't finding anything, do we just give up?</p><p>This is an example of something I feel like happens all the time when you're learning on your own and it was a large part of the reason why I joined grad school and what I hope to get out of streaming, that is, learning with other people.  The amount of frustration I experience in this episode is unfortunately quite common and I hope this video and the next serve as an example of how we improve ourselves and how we might find better ways of learning new things.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;We managed to send images to slack, but we hit the struggle bus when it came to collecting images from slack.  The error messages are not
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Building a slack bot, part 2: we learn better together (day 23 &amp; 24)</title>
     <link href="http://culture-of-development.com/streams/building-a-slack-bot-part-2-we-learn-better-together/"/>
     <id>http://culture-of-development.com/streams/building-a-slack-bot-part-2-we-learn-better-together/</id>
     <published>2019-03-08T14:37:15.000Z</published>
-    <updated>2019-03-13T13:58:22.610Z</updated>
+    <updated>2019-04-18T13:08:18.214Z</updated>
     
     <content type="html"><![CDATA[<p>Todays goals were to get our slack bot to respond to messages of the right type, handle the <code>needz moar help</code> request and send actual images to slack in reply to the correct <code>needz moar {something}</code> request.</p><p>Today right at the beginning <a href="https://twitter.com/a1ph4g33k" target="_blank" rel="noopener">@a1ph4g33k</a> stopped by with a suggestion to make something better.  We fired up a VS Code live share and the next three hours were an amazing experience of watching two people learn from each other and accomplish something at the same time.  This was hands down my favorite day streaming to date and I'm extremely thankful there are people like him in this community.</p><p>If you would like to jump on a project, I'm open arms accepting pair programming partners indefinitely, just reach out to me at my <a href="https://twitter.com/fody" target="_blank" rel="noopener">twitter</a> page.</p>]]></content>
     
@@ -44,7 +206,7 @@
     <link href="http://culture-of-development.com/streams/building-a-slack-bot-part-1-i-know-nothing-about-this/"/>
     <id>http://culture-of-development.com/streams/building-a-slack-bot-part-1-i-know-nothing-about-this/</id>
     <published>2019-03-07T14:26:02.000Z</published>
-    <updated>2019-03-13T13:58:22.609Z</updated>
+    <updated>2019-04-18T13:09:30.872Z</updated>
     
     <content type="html"><![CDATA[<p>At Stack Overflow we have a few bots in our bespoke chat app that really make it a lot of fun to use.  Due to the pressures of not maintaining something that isn't our bread and butter (i.e. Q&amp;A), we've slowly but surely been moving everything over to Slack.  One of the tools that's the most fun is something called the pic bot.  When you reply to an image with the phrase &quot;needz moar {something}&quot; and then replace the something with the thing you want, it modifies the image to add some extra flare to it which normally results in hilarity and a good laugh for everyone.</p><p><img src="/img/slack-bot-before.png" alt="boring screenshot"></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">needz moar jorts</span><br></pre></td></tr></table></figure></p><p><img src="/img/slack-bot-after.jpeg" alt="amazing screenshot"></p><p>And that's essentially the effect we're after.</p><p>Starting today, I know nothing about how to build Slack bots, watch me get up to speed and get a bot running that actually responds to messages.</p>]]></content>
     
@@ -53,6 +215,30 @@
       
       
         &lt;p&gt;At Stack Overflow we have a few bots in our bespoke chat app that really make it a lot of fun to use.  Due to the pressures of not mainta
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Building a slack bot, part 1.5: I still know nothing about this (day 22)</title>
+    <link href="http://culture-of-development.com/streams/building-a-slack-bot-part-1-5-i-still-know-nothing-about-this/"/>
+    <id>http://culture-of-development.com/streams/building-a-slack-bot-part-1-5-i-still-know-nothing-about-this/</id>
+    <published>2019-03-07T14:10:10.000Z</published>
+    <updated>2019-04-18T13:11:13.079Z</updated>
+    
+    <content type="html"><![CDATA[<p>This is simply a continuation of yesterday's video because there was a hiccup in the feed and I had to restart the recording.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;This is simply a continuation of yesterday&#39;s video because there was a hiccup in the feed and I had to restart the recording.&lt;/p&gt;
+
       
     
     </summary>

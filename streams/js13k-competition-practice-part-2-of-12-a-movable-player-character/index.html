@@ -2,7 +2,7 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
 	<meta charset="utf-8">
-	<title>Building a slack bot, part 1: I know nothing about this (day 22) - Culture of Development</title>
+	<title>js13k competition practice, part 2 of 12: a movable player character (day 29) - Culture of Development</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
@@ -36,33 +36,29 @@
 	</header>
 	<section class="page-content">
 		<div class="container">
-			<h1>Building a slack bot, part 1: I know nothing about this (day 22)</h1>
+			<h1>js13k competition practice, part 2 of 12: a movable player character (day 29)</h1>
 <p class="text-muted">
-    2019-03-07 
+    2019-04-11 
 	Nick Larsen
 </p>
 <section class="article">
 	
-		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/gzhmWGTBXTg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/sGjJD4E-yQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	
-	<p>At Stack Overflow we have a few bots in our bespoke chat app that really make it a lot of fun to use.  Due to the pressures of not maintaining something that isn't our bread and butter (i.e. Q&amp;A), we've slowly but surely been moving everything over to Slack.  One of the tools that's the most fun is something called the pic bot.  When you reply to an image with the phrase &quot;needz moar {something}&quot; and then replace the something with the thing you want, it modifies the image to add some extra flare to it which normally results in hilarity and a good laugh for everyone.</p>
-<p><img src="/img/slack-bot-before.png" alt="boring screenshot"></p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">needz moar jorts</span><br></pre></td></tr></table></figure></p>
-<p><img src="/img/slack-bot-after.jpeg" alt="amazing screenshot"></p>
-<p>And that's essentially the effect we're after.</p>
-<p>Starting today, I know nothing about how to build Slack bots, watch me get up to speed and get a bot running that actually responds to messages.</p>
+	<p>Now that we have a simple grid world, it's time to make some sort of interaction so we can start playing with it and feel out what works and what doesn't with our ideas so far.  We make a simple way of interacting with the game by moving a purple box around the grid world we have created.  Since this didn't take too long we also added some items to the world and wrote enough code to place them where we want them and give them custom attributes.</p>
+<p>In addition to that, this competition is about building assets that total to less than 13 kb, so we constructed a rudimentary build pipeline that collects the assets, passes it through <a href="https://www.npmjs.com/package/uglify-es" target="_blank" rel="noopener">uglify-es</a>, zips it all up and reports the total size.  We're barely at 2 kb so far!</p>
 
 	
 		<ul class="watch-my-stream">
-			<li>Please share <a href="https://www.youtube.com/watch?v=gzhmWGTBXTg">this content</a> with everyone!</li>
+			<li>Please share <a href="https://www.youtube.com/watch?v=sGjJD4E-yQo">this content</a> with everyone!</li>
 			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
 		</ul>
 	
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
 	    var disqus_config = function () {
-	        this.page.url = 'http://culture-of-development.com/streams/building-a-slack-bot-part-1-i-know-nothing-about-this/';
-	        this.page.identifier = 'http://culture-of-development.com/streams/building-a-slack-bot-part-1-i-know-nothing-about-this/';
+	        this.page.url = 'http://culture-of-development.com/streams/js13k-competition-practice-part-2-of-12-a-movable-player-character/';
+	        this.page.identifier = 'http://culture-of-development.com/streams/js13k-competition-practice-part-2-of-12-a-movable-player-character/';
 	    };
 	    (function() {
 	        var d = document, s = d.createElement('script');

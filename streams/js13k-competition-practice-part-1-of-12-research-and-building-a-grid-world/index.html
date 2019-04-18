@@ -2,7 +2,7 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
 	<meta charset="utf-8">
-	<title>Building a slack bot, part 1: I know nothing about this (day 22) - Culture of Development</title>
+	<title>js13k competition practice, part 1 of 12: research and building a grid world (day 28) - Culture of Development</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
@@ -36,33 +36,32 @@
 	</header>
 	<section class="page-content">
 		<div class="container">
-			<h1>Building a slack bot, part 1: I know nothing about this (day 22)</h1>
+			<h1>js13k competition practice, part 1 of 12: research and building a grid world (day 28)</h1>
 <p class="text-muted">
-    2019-03-07 
+    2019-04-10 
 	Nick Larsen
 </p>
 <section class="article">
 	
-		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/gzhmWGTBXTg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/TT22bjovVfc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	
-	<p>At Stack Overflow we have a few bots in our bespoke chat app that really make it a lot of fun to use.  Due to the pressures of not maintaining something that isn't our bread and butter (i.e. Q&amp;A), we've slowly but surely been moving everything over to Slack.  One of the tools that's the most fun is something called the pic bot.  When you reply to an image with the phrase &quot;needz moar {something}&quot; and then replace the something with the thing you want, it modifies the image to add some extra flare to it which normally results in hilarity and a good laugh for everyone.</p>
-<p><img src="/img/slack-bot-before.png" alt="boring screenshot"></p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">needz moar jorts</span><br></pre></td></tr></table></figure></p>
-<p><img src="/img/slack-bot-after.jpeg" alt="amazing screenshot"></p>
-<p>And that's essentially the effect we're after.</p>
-<p>Starting today, I know nothing about how to build Slack bots, watch me get up to speed and get a bot running that actually responds to messages.</p>
+	<p>Just got back from vacation and it was amazing.  Feeling very re-energized and ready to start a new project.</p>
+<p>I got started with programming like a lot of other people, wanting to make games to play.  I have built some toy games at various points throughout my life and decided that once I graduate from grad school I want to commit to making an actual game that I release to the world.  Before that I'd like to practice, and so I was reminded of a small competition called <a href="https://js13kgames.com/" target="_blank" rel="noopener">js13k</a>.</p>
+<p>The point of js13k is to build a complete game based on a theme that runs in a browser, from scratch, in one month.  And the kicker, <em>all</em> of the games assets must be no larger than 13 kb when zipped up.  There have been some astonishing works of art that have come from this competition; take some time and browse through the winners of previous years competitions.</p>
+<p>I decided that I will enter this competition in 2019, which starts August 13th, 2019, and now is as great a time as any to practice.  I stream 3 days per week and for roughly 2 hours a day, so total I should be able to get around 24 hours into this game.</p>
+<p>In this first episode, I break down how I prepare for competitions like these, decide some high level ideas about the game and get started implementing a simple grid world which is going to be the basis for the world that my game will take place in.</p>
 
 	
 		<ul class="watch-my-stream">
-			<li>Please share <a href="https://www.youtube.com/watch?v=gzhmWGTBXTg">this content</a> with everyone!</li>
+			<li>Please share <a href="https://www.youtube.com/watch?v=TT22bjovVfc">this content</a> with everyone!</li>
 			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
 		</ul>
 	
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
 	    var disqus_config = function () {
-	        this.page.url = 'http://culture-of-development.com/streams/building-a-slack-bot-part-1-i-know-nothing-about-this/';
-	        this.page.identifier = 'http://culture-of-development.com/streams/building-a-slack-bot-part-1-i-know-nothing-about-this/';
+	        this.page.url = 'http://culture-of-development.com/streams/js13k-competition-practice-part-1-of-12-research-and-building-a-grid-world/';
+	        this.page.identifier = 'http://culture-of-development.com/streams/js13k-competition-practice-part-1-of-12-research-and-building-a-grid-world/';
 	    };
 	    (function() {
 	        var d = document, s = d.createElement('script');
