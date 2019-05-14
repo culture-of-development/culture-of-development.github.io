@@ -2,7 +2,7 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
 	<meta charset="utf-8">
-	<title>AI and chatting (day 7) - Culture of Development</title>
+	<title>js13k competition practice, part 9 of 12: lighting up the world - Culture of Development</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
@@ -36,30 +36,32 @@
 	</header>
 	<section class="page-content">
 		<div class="container">
-			<h1>AI and chatting (day 7)</h1>
+			<h1>js13k competition practice, part 9 of 12: lighting up the world</h1>
 <p class="text-muted">
-    2019-01-30 
+    2019-05-01 
 	Nick Larsen
 </p>
 <section class="article">
 	
-		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/Ep9ec1jHkNs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/tmkBz8HAW5U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	
-	<p>Today we went over some things I took care of off stream, namely refocusing the code to more closely match what you see when you visit wikipedia.  This big change came about when I showed some friends what we have been working on and their first complaint was &quot;wow, that's really hard to follow&quot;.  Thanks y'all.  That's double speak because at the end of the day they were right, it was hard to follow and most notably I left out the closed set, which is what makes BFS act like BFS and not search the same node multiple times.</p>
-<p>On that note turns out we have a bug with the <code>OpenSet</code> where we still are exploring the same nodes multiple times.  That basically means the set isn't respecting the set property.  To make this easier to see, we added a test project and change the fast.search project into a class lib instead.  Overall the code is cleaner and easier to run small little segments of code at a time.</p>
-<p>Thanks to everyone who joined and I look forward to seeing you all tomorrow!</p>
+	<p>Today's big goal was to get the lighting done.  The last critical element of the story is that it's dark in this office and you have to look around.  Around the windows there should be some dim, ambient lighting and there is a flashlight you can find that will make the area around you light up as well.  And don't forget that light should respect walls as well.  Prior to today, I had absolutely no idea how I was going to achieve any of these goals.</p>
+<p>First things first, just make it dark.  First idea was to just put a giant div over the whole thing and have the background be all black, except make it transparent where there was light.  Unfortunately I could not figure out how to do this using multiple backgrounds with CSS, and I didn't want to have one super huge mega image covering the whole board because I felt like that would cause significant resource issues.  The image alone would have been over 10 MB and it would have been manually redrawn on nearly every move.</p>
+<p>My second thought was to just have set levels of light that were available, and do a cell by cell lighting.  I decided to roll with it.  We ran into some CSS issues with the walls, which were set directly on the cell itself.  Instead I moved the walls to their own layer, nested inside of each cell and appended an additional layer for the lights on each cell.  This appears to work and boom, we have some darkness on top of everything.</p>
+<p>Adding in the ambient lighting happened first, which was not particularly difficult, we just defined some cells as windows and then did a once over pass after building the grid to set the ambient light level and after fudging around with the levels a bit, I landed on something that sort of met my expectation.</p>
+<p>The flashlight was a bit more challenging.  The interaction system already had a function that could handle player movement, and took in the previous location and the new location.  I thought to myself, simple enough, we'll just reset the old location lighting, then we'll set the new location lighting.  Yea... not so easy. :)  Watch the video to see how we work through that one.</p>
 
 	
 		<ul class="watch-my-stream">
-			<li>Please share <a href="https://www.youtube.com/watch?v=Ep9ec1jHkNs">this content</a> with everyone!</li>
+			<li>Please share <a href="https://www.youtube.com/watch?v=tmkBz8HAW5U">this content</a> with everyone!</li>
 			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
 		</ul>
 	
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
 	    var disqus_config = function () {
-	        this.page.url = 'http://culture-of-development.com/streams/ai-and-chatting/';
-	        this.page.identifier = 'http://culture-of-development.com/streams/ai-and-chatting/';
+	        this.page.url = 'http://culture-of-development.com/streams/js13k-competition-practice-part-9-of-12-lighting-up-the-world/';
+	        this.page.identifier = 'http://culture-of-development.com/streams/js13k-competition-practice-part-9-of-12-lighting-up-the-world/';
 	    };
 	    (function() {
 	        var d = document, s = d.createElement('script');

@@ -2,7 +2,7 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
 	<meta charset="utf-8">
-	<title>AI and chatting (day 7) - Culture of Development</title>
+	<title>js13k competition practice, part 11 of 12: constructing the world and camera control - Culture of Development</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
@@ -36,30 +36,31 @@
 	</header>
 	<section class="page-content">
 		<div class="container">
-			<h1>AI and chatting (day 7)</h1>
+			<h1>js13k competition practice, part 11 of 12: constructing the world and camera control</h1>
 <p class="text-muted">
-    2019-01-30 
+    2019-05-09 
 	Nick Larsen
 </p>
 <section class="article">
 	
-		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/Ep9ec1jHkNs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/EoXEvQ8rRJY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	
-	<p>Today we went over some things I took care of off stream, namely refocusing the code to more closely match what you see when you visit wikipedia.  This big change came about when I showed some friends what we have been working on and their first complaint was &quot;wow, that's really hard to follow&quot;.  Thanks y'all.  That's double speak because at the end of the day they were right, it was hard to follow and most notably I left out the closed set, which is what makes BFS act like BFS and not search the same node multiple times.</p>
-<p>On that note turns out we have a bug with the <code>OpenSet</code> where we still are exploring the same nodes multiple times.  That basically means the set isn't respecting the set property.  To make this easier to see, we added a test project and change the fast.search project into a class lib instead.  Overall the code is cleaner and easier to run small little segments of code at a time.</p>
-<p>Thanks to everyone who joined and I look forward to seeing you all tomorrow!</p>
+	<p>The first half of today was all about using the world data we loaded up yesterday and constructing the world from it.  This was almost an hour and a half straight of coding and you should see the expression on my face when it rendered on the first try after fixing one minor typo.</p>
+<p>We identified quite a few bugs as we worked after this, e.g. there was some funkyness around walls not being blocking and we planned some game mechanics in the world editor that didn't actually exist in the game... wishful thinking I guess. :)  The world was also HUGE!  Definitely did not fit on the screen so we had to fix up some CSS to even find the player.  There were also some interaction bugs on account of not having exactly one of things like doors.  All doors try to check for a terminal state which clearly isn't correct in an office with lots of doors.</p>
+<p>The other major project for today was the camera controller.  Since the world was so big, the camera needed to follow the player in some way so that we could always see the player.  We went with the most simple solution I could think of, just keep the player in the middle of the screen and move the world around the player.  This worked well enough to move on so we wrote down a bunch of quirks that still need to be ironed out and wrapped up.</p>
+<p>Only one thing left to do, get this whole thing to cram into 13 kb.</p>
 
 	
 		<ul class="watch-my-stream">
-			<li>Please share <a href="https://www.youtube.com/watch?v=Ep9ec1jHkNs">this content</a> with everyone!</li>
+			<li>Please share <a href="https://www.youtube.com/watch?v=EoXEvQ8rRJY">this content</a> with everyone!</li>
 			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
 		</ul>
 	
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
 	    var disqus_config = function () {
-	        this.page.url = 'http://culture-of-development.com/streams/ai-and-chatting/';
-	        this.page.identifier = 'http://culture-of-development.com/streams/ai-and-chatting/';
+	        this.page.url = 'http://culture-of-development.com/streams/js13k-competition-practice-part-11-of-12-constructing-the-world-and-camera-control/';
+	        this.page.identifier = 'http://culture-of-development.com/streams/js13k-competition-practice-part-11-of-12-constructing-the-world-and-camera-control/';
 	    };
 	    (function() {
 	        var d = document, s = d.createElement('script');

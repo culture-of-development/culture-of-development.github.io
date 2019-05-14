@@ -2,7 +2,7 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
 	<meta charset="utf-8">
-	<title>AI and chatting (day 7) - Culture of Development</title>
+	<title>js13k competition practice, part 8 of 12: finishing up the game mechanics - Culture of Development</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
@@ -36,30 +36,37 @@
 	</header>
 	<section class="page-content">
 		<div class="container">
-			<h1>AI and chatting (day 7)</h1>
+			<h1>js13k competition practice, part 8 of 12: finishing up the game mechanics</h1>
 <p class="text-muted">
-    2019-01-30 
+    2019-04-26 
 	Nick Larsen
 </p>
 <section class="article">
 	
-		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/Ep9ec1jHkNs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/qBfVR2scQQ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	
-	<p>Today we went over some things I took care of off stream, namely refocusing the code to more closely match what you see when you visit wikipedia.  This big change came about when I showed some friends what we have been working on and their first complaint was &quot;wow, that's really hard to follow&quot;.  Thanks y'all.  That's double speak because at the end of the day they were right, it was hard to follow and most notably I left out the closed set, which is what makes BFS act like BFS and not search the same node multiple times.</p>
-<p>On that note turns out we have a bug with the <code>OpenSet</code> where we still are exploring the same nodes multiple times.  That basically means the set isn't respecting the set property.  To make this easier to see, we added a test project and change the fast.search project into a class lib instead.  Overall the code is cleaner and easier to run small little segments of code at a time.</p>
-<p>Thanks to everyone who joined and I look forward to seeing you all tomorrow!</p>
+	<p>The path was set, we need to wrap up the game mechanics so we can work on polish and getting this all to fit in 13 kb.</p>
+<p>Today we wrapped up a ton of small stuff like:</p>
+<ul>
+<li>collecting items from containers such as filing cabinets</li>
+<li>locked doors</li>
+<li>the actual system that you need to restart as the primary objective</li>
+<li>making things disappear from your inventory once used</li>
+<li>and a few others.</li>
+</ul>
+<p>The big thing I was hoping to accomplish was to get the idea of a desk implemented, but that turned out to be much more difficult than original expected.  We could not find any suitable emojis for a desk, implementing it in CSS was going to require a fair amount of work and new popup interface.  After fumbling around in dead end after dead end for almost an hour, we bailed.  If we have any hope of completing this project on the timeline we originally set forth, this is going to have to be dropped on the floor.  And so that's what we did.</p>
 
 	
 		<ul class="watch-my-stream">
-			<li>Please share <a href="https://www.youtube.com/watch?v=Ep9ec1jHkNs">this content</a> with everyone!</li>
+			<li>Please share <a href="https://www.youtube.com/watch?v=qBfVR2scQQ4">this content</a> with everyone!</li>
 			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
 		</ul>
 	
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
 	    var disqus_config = function () {
-	        this.page.url = 'http://culture-of-development.com/streams/ai-and-chatting/';
-	        this.page.identifier = 'http://culture-of-development.com/streams/ai-and-chatting/';
+	        this.page.url = 'http://culture-of-development.com/streams/js13k-competition-practice-part-8-of-12-finishing-up-the-game-mechanics/';
+	        this.page.identifier = 'http://culture-of-development.com/streams/js13k-competition-practice-part-8-of-12-finishing-up-the-game-mechanics/';
 	    };
 	    (function() {
 	        var d = document, s = d.createElement('script');
