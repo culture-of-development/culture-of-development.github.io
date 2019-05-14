@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://culture-of-development.com/"/>
-  <updated>2019-04-18T14:57:00.335Z</updated>
+  <updated>2019-05-14T02:01:14.634Z</updated>
   <id>http://culture-of-development.com/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>js13k competition practice, part 7 of 12: playability improvements</title>
+    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-7-of-12-playability-improvements/"/>
+    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-7-of-12-playability-improvements/</id>
+    <published>2019-04-26T01:50:40.000Z</published>
+    <updated>2019-05-14T02:01:14.634Z</updated>
+    
+    <content type="html"><![CDATA[<p>Today we focused almost entirely on adding in the final playability features and improvements to make certain things more obvious.</p><p>These improvements include things like...</p><ul><li>not walking through walls</li><li>collecting items from containers such as filing cabinets</li><li>making the dialog screen capture the user input</li><li>showing allowed paths</li><li>making the move counter respect only real actions</li><li>...and a few other quick ones!</li></ul><p>A lot of progress was made in cleaning things up along the way.  This is a good one full of lots of short, impactful changes and we identified a few poor design choices from earlier on as well.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Today we focused almost entirely on adding in the final playability features and improvements to make certain things more obvious.&lt;/p&gt;
+&lt;p
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>js13k competition practice, part 6 of 12: a bit of a day off</title>
+    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-6-of-12-a-bit-of-a-day-off/"/>
+    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-6-of-12-a-bit-of-a-day-off/</id>
+    <published>2019-04-25T01:33:00.000Z</published>
+    <updated>2019-05-14T01:52:10.905Z</updated>
+    
+    <content type="html"><![CDATA[<p>Today was a bit of an off day.  A good day none the less however.</p><p>Minutes before the stream I was notified that the research project I was a part of had been accepted to the <a href="https://learningatscale.acm.org/las2019/" target="_blank" rel="noopener">Learning @Scale 2019 conference</a> and needless to say I was really excited.  In a few months I will officially be able to say &quot;I'm published&quot; in the classical sense.  I spend about 15 minutes at the beginning of the stream describing the work we did and highlighting my contributions to that work.  I think it's pretty fascinating and if you have plans of going back to college, or having kids who might be on their way to college, you might want to give it a once over.</p><p>A few minutes before I got that email, a got a pack in the mail!  A few weeks prior I had won a pack of the <a href="https://www.etsy.com/listing/688771117/heroines-of-javascript-trading-cards" target="_blank" rel="noopener">Heroines of JavaScript trading cards</a> in a raffle on <a href="https://www.twitch.tv/roberttables" target="_blank" rel="noopener">roberttables</a> stream.  I love trading cards, and I read through each and every one of them and noted a few stories along the way.</p><p>After about an hour we finally got to the js13k project and I focused almost entirely on trying to get some CSS cleaned up and working.  We made a solid TODO list for the next before we ended.  There are 5 sessions remaining and we set up a plan on how to spend each day if we had any chance of finishing.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Today was a bit of an off day.  A good day none the less however.&lt;/p&gt;
+&lt;p&gt;Minutes before the stream I was notified that the research proje
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>js13k competition practice, part 5 of 12: adding some emoji graphics, a menu screen and a dialog interface (day 32)</title>
