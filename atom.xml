@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://culture-of-development.com/"/>
-  <updated>2019-05-14T15:03:05.154Z</updated>
+  <updated>2019-05-26T13:13:59.346Z</updated>
   <id>http://culture-of-development.com/</id>
   
   <author>
@@ -17,11 +17,107 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>js13k competition practice, part 12 of 12: finishing the build pipeline and compressing the audio (day 39)</title>
-    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-12-of-12-finishing-the-build-pipeline-and-compressing-the-audio/"/>
-    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-12-of-12-finishing-the-build-pipeline-and-compressing-the-audio/</id>
+    <title>S0045 - AI &amp; Chatting - Decision Trees performance improvements</title>
+    <link href="http://culture-of-development.com/streams/s0045-ai-chatting-decision-trees-performance-improvements/"/>
+    <id>http://culture-of-development.com/streams/s0045-ai-chatting-decision-trees-performance-improvements/</id>
+    <published>2019-05-24T13:13:48.000Z</published>
+    <updated>2019-05-26T13:13:59.346Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0044 - AI &amp; Chatting - XGBoost code</title>
+    <link href="http://culture-of-development.com/streams/s0044-ai-chatting-xgboost-code/"/>
+    <id>http://culture-of-development.com/streams/s0044-ai-chatting-xgboost-code/</id>
+    <published>2019-05-23T13:13:10.000Z</published>
+    <updated>2019-05-26T13:13:24.112Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0043 - AI &amp; Chatting - Decision Trees code</title>
+    <link href="http://culture-of-development.com/streams/s0043-ai-chatting-decision-trees-code/"/>
+    <id>http://culture-of-development.com/streams/s0043-ai-chatting-decision-trees-code/</id>
+    <published>2019-05-22T13:12:28.000Z</published>
+    <updated>2019-05-26T13:12:48.343Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0042 - Mentorship Monday! cover letters and psuedopolynomial</title>
+    <link href="http://culture-of-development.com/streams/s0042-mentorship-monday-cover-letters-and-psuedopolynomial/"/>
+    <id>http://culture-of-development.com/streams/s0042-mentorship-monday-cover-letters-and-psuedopolynomial/</id>
+    <published>2019-05-20T13:11:28.000Z</published>
+    <updated>2019-05-26T13:11:43.258Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0041 - Updating Stream Theme - making a list of what needs to be done</title>
+    <link href="http://culture-of-development.com/streams/s0041-updating-stream-theme-making-a-list-of-what-needs-to-be-done/"/>
+    <id>http://culture-of-development.com/streams/s0041-updating-stream-theme-making-a-list-of-what-needs-to-be-done/</id>
+    <published>2019-05-15T13:09:36.000Z</published>
+    <updated>2019-05-26T13:10:49.954Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0040 - Mentorship Monday!</title>
+    <link href="http://culture-of-development.com/streams/s0040-mentorship-monday/"/>
+    <id>http://culture-of-development.com/streams/s0040-mentorship-monday/</id>
+    <published>2019-05-13T13:05:24.000Z</published>
+    <updated>2019-05-26T13:05:56.962Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0039 - js13k competition practice, part 12 of 12: finishing the build pipeline and compressing the audio</title>
+    <link href="http://culture-of-development.com/streams/s0039-js13k-competition-practice-part-12-of-12-finishing-the-build-pipeline-and-compressing-the-audio/"/>
+    <id>http://culture-of-development.com/streams/s0039-js13k-competition-practice-part-12-of-12-finishing-the-build-pipeline-and-compressing-the-audio/</id>
     <published>2019-05-10T13:20:01.000Z</published>
-    <updated>2019-05-14T15:03:05.154Z</updated>
+    <updated>2019-05-26T13:33:58.710Z</updated>
     
     <content type="html"><![CDATA[<p>I saved the most important requirement for this entire project for last, compressing everything into 13 kb.  That's why it's called JS13K after all.  I knew this was going to be difficult because of the audio.  I had looked at how many other competitors had implemented audio in the past and frankly it's still really complicated to me.  I decided to take the bail route and just record some sound effects when we reached that step to save some time.</p><p>For the first part of today I fixed up the build script that combines all the files into the correct folder, zips them up and then spits out the size.  This was a bit frustrating honestly because I rarely use the commandline and basically everything I expected to work did not succeed on the first try.  After looking at tons of documentation, Stack Overflow questions and a little help from chat, I finally got it performing all the necessary steps.  Where are we at?  Something like 230 kb.  A good bit off.</p><p>Next I took the bail route again on the audio.  I knew we didn't need the fully sampled audio, so I looked to audio compressors I could find online with the idea of compressing it until I couldn't stand the quality loss.  This was super powerful; after converting all my audio to 16k sample rate instead of the original 192k sample rate the size was down to just under 30 kb total.  Still not quite there, but at this point I'm out of time and this was as good as I was going to get.</p><p>At the end of the video I take some time to recount all the things I learned throughout this project as well as a bunch of stuff I want to try out before the next competition starts in August!  Look for a blog post on that soon.</p>]]></content>
     
@@ -40,11 +136,11 @@
   </entry>
   
   <entry>
-    <title>js13k competition practice, part 11 of 12: constructing the world and camera control (day 38)</title>
-    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-11-of-12-constructing-the-world-and-camera-control/"/>
-    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-11-of-12-constructing-the-world-and-camera-control/</id>
+    <title>S0038 - js13k competition practice, part 11 of 12: constructing the world and camera control</title>
+    <link href="http://culture-of-development.com/streams/s0038-js13k-competition-practice-part-11-of-12-constructing-the-world-and-camera-control/"/>
+    <id>http://culture-of-development.com/streams/s0038-js13k-competition-practice-part-11-of-12-constructing-the-world-and-camera-control/</id>
     <published>2019-05-09T13:08:10.000Z</published>
-    <updated>2019-05-14T15:02:54.614Z</updated>
+    <updated>2019-05-26T13:33:43.317Z</updated>
     
     <content type="html"><![CDATA[<p>The first half of today was all about using the world data we loaded up yesterday and constructing the world from it.  This was almost an hour and a half straight of coding and you should see the expression on my face when it rendered on the first try after fixing one minor typo.</p><p>We identified quite a few bugs as we worked after this, e.g. there was some funkyness around walls not being blocking and we planned some game mechanics in the world editor that didn't actually exist in the game... wishful thinking I guess. :)  The world was also HUGE!  Definitely did not fit on the screen so we had to fix up some CSS to even find the player.  There were also some interaction bugs on account of not having exactly one of things like doors.  All doors try to check for a terminal state which clearly isn't correct in an office with lots of doors.</p><p>The other major project for today was the camera controller.  Since the world was so big, the camera needed to follow the player in some way so that we could always see the player.  We went with the most simple solution I could think of, just keep the player in the middle of the screen and move the world around the player.  This worked well enough to move on so we wrote down a bunch of quirks that still need to be ironed out and wrapped up.</p><p>Only one thing left to do, get this whole thing to cram into 13 kb.</p>]]></content>
     
@@ -63,11 +159,11 @@
   </entry>
   
   <entry>
-    <title>js13k competition practice, part 10 of 12: building a world designer (day 37)</title>
-    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-10-of-12-building-a-world-designer/"/>
-    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-10-of-12-building-a-world-designer/</id>
+    <title>S0037 - js13k competition practice, part 10 of 12: building a world designer</title>
+    <link href="http://culture-of-development.com/streams/s0037-js13k-competition-practice-part-10-of-12-building-a-world-designer/"/>
+    <id>http://culture-of-development.com/streams/s0037-js13k-competition-practice-part-10-of-12-building-a-world-designer/</id>
     <published>2019-05-08T12:52:18.000Z</published>
-    <updated>2019-05-14T15:02:48.782Z</updated>
+    <updated>2019-05-26T13:33:24.546Z</updated>
     
     <content type="html"><![CDATA[<p>If we're going to build a large and engaging world, we need some sort of level designer.  This of course all has to fit in a reasonably small size as well so I figured I would start by looking at what other people have done in the past.  Many of them use images where each pixel's color represents a particular set of features about that location.  Sounds like a good idea, so off we go building out a nice big office building in Paint.NET.</p><p>The fun really starts when we try to get this image data in the browser.  Thanks to roberttables for numerous ideas today.  At the very we get the data loaded up and verify that all of the values we have loaded are known values, then I have a hard stop for other obligations so we'll have to delay the actual building of the new game world until tomorrow.</p><p>After today, the level designer definitely feels like one of the most important parts of the game design process.  The ability to quickly prototype ideas is largely based on how quickly you can build out a level and play through them.  Prior to today the only means we had to build out levels was a manual process of deciding exactly where everything should go, having a constant world size and moving things around was very painstaking.  This dramatically improved my overall experience with that aspect of the game and I want to spend some more time thinking about how to do this better for future projects.</p>]]></content>
     
@@ -86,11 +182,11 @@
   </entry>
   
   <entry>
-    <title>js13k competition practice, part 9 of 12: lighting up the world (day 36)</title>
-    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-9-of-12-lighting-up-the-world/"/>
-    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-9-of-12-lighting-up-the-world/</id>
+    <title>S0036 - js13k competition practice, part 9 of 12: lighting up the world</title>
+    <link href="http://culture-of-development.com/streams/s0036-js13k-competition-practice-part-9-of-12-lighting-up-the-world/"/>
+    <id>http://culture-of-development.com/streams/s0036-js13k-competition-practice-part-9-of-12-lighting-up-the-world/</id>
     <published>2019-05-01T12:16:06.000Z</published>
-    <updated>2019-05-14T15:02:41.681Z</updated>
+    <updated>2019-05-26T13:33:08.807Z</updated>
     
     <content type="html"><![CDATA[<p>Today's big goal was to get the lighting done.  The last critical element of the story is that it's dark in this office and you have to look around.  Around the windows there should be some dim, ambient lighting and there is a flashlight you can find that will make the area around you light up as well.  And don't forget that light should respect walls as well.  Prior to today, I had absolutely no idea how I was going to achieve any of these goals.</p><p>First things first, just make it dark.  First idea was to just put a giant div over the whole thing and have the background be all black, except make it transparent where there was light.  Unfortunately I could not figure out how to do this using multiple backgrounds with CSS, and I didn't want to have one super huge mega image covering the whole board because I felt like that would cause significant resource issues.  The image alone would have been over 10 MB and it would have been manually redrawn on nearly every move.</p><p>My second thought was to just have set levels of light that were available, and do a cell by cell lighting.  I decided to roll with it.  We ran into some CSS issues with the walls, which were set directly on the cell itself.  Instead I moved the walls to their own layer, nested inside of each cell and appended an additional layer for the lights on each cell.  This appears to work and boom, we have some darkness on top of everything.</p><p>Adding in the ambient lighting happened first, which was not particularly difficult, we just defined some cells as windows and then did a once over pass after building the grid to set the ambient light level and after fudging around with the levels a bit, I landed on something that sort of met my expectation.</p><p>The flashlight was a bit more challenging.  The interaction system already had a function that could handle player movement, and took in the previous location and the new location.  I thought to myself, simple enough, we'll just reset the old location lighting, then we'll set the new location lighting.  Yea... not so easy. :)  Watch the video to see how we work through that one.</p>]]></content>
     
@@ -109,11 +205,11 @@
   </entry>
   
   <entry>
-    <title>js13k competition practice, part 8 of 12: finishing up the game mechanics (day 35)</title>
-    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-8-of-12-finishing-up-the-game-mechanics/"/>
-    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-8-of-12-finishing-up-the-game-mechanics/</id>
+    <title>S0035 - js13k competition practice, part 8 of 12: finishing up the game mechanics</title>
+    <link href="http://culture-of-development.com/streams/s0035-js13k-competition-practice-part-8-of-12-finishing-up-the-game-mechanics/"/>
+    <id>http://culture-of-development.com/streams/s0035-js13k-competition-practice-part-8-of-12-finishing-up-the-game-mechanics/</id>
     <published>2019-04-26T12:38:33.000Z</published>
-    <updated>2019-05-14T15:02:34.613Z</updated>
+    <updated>2019-05-26T13:32:55.565Z</updated>
     
     <content type="html"><![CDATA[<p>The path was set, we need to wrap up the game mechanics so we can work on polish and getting this all to fit in 13 kb.</p><p>Today we wrapped up a ton of small stuff like:</p><ul><li>collecting items from containers such as filing cabinets</li><li>locked doors</li><li>the actual system that you need to restart as the primary objective</li><li>making things disappear from your inventory once used</li><li>and a few others.</li></ul><p>The big thing I was hoping to accomplish was to get the idea of a desk implemented, but that turned out to be much more difficult than original expected.  We could not find any suitable emojis for a desk, implementing it in CSS was going to require a fair amount of work and new popup interface.  After fumbling around in dead end after dead end for almost an hour, we bailed.  If we have any hope of completing this project on the timeline we originally set forth, this is going to have to be dropped on the floor.  And so that's what we did.</p>]]></content>
     
@@ -133,11 +229,11 @@
   </entry>
   
   <entry>
-    <title>js13k competition practice, part 7 of 12: playability improvements (day 34)</title>
-    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-7-of-12-playability-improvements/"/>
-    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-7-of-12-playability-improvements/</id>
+    <title>S0034 - js13k competition practice, part 7 of 12: playability improvements</title>
+    <link href="http://culture-of-development.com/streams/s0034-js13k-competition-practice-part-7-of-12-playability-improvements/"/>
+    <id>http://culture-of-development.com/streams/s0034-js13k-competition-practice-part-7-of-12-playability-improvements/</id>
     <published>2019-04-26T01:50:40.000Z</published>
-    <updated>2019-05-14T15:02:27.624Z</updated>
+    <updated>2019-05-26T13:32:39.852Z</updated>
     
     <content type="html"><![CDATA[<p>Today we focused almost entirely on adding in the final playability features and improvements to make certain things more obvious.</p><p>These improvements include things like...</p><ul><li>not walking through walls</li><li>making the dialog screen capture the user input</li><li>showing allowed paths</li><li>making the move counter respect only real actions</li><li>...and a few other quick ones!</li></ul><p>A lot of progress was made in cleaning things up along the way.  This is a good one full of lots of short, impactful changes and we identified a few poor design choices from earlier on as well.  At the very end, we made a solid TODO list for the next before we ended.  There are 5 sessions remaining and we set up a plan on how to spend each day if we had any chance of finishing.</p>]]></content>
     
@@ -157,11 +253,11 @@
   </entry>
   
   <entry>
-    <title>js13k competition practice, part 6 of 12: a bit of a day off (day 33)</title>
-    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-6-of-12-a-bit-of-a-day-off/"/>
-    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-6-of-12-a-bit-of-a-day-off/</id>
+    <title>S0033 - js13k competition practice, part 6 of 12: a bit of a day off</title>
+    <link href="http://culture-of-development.com/streams/s0033-js13k-competition-practice-part-6-of-12-a-bit-of-a-day-off/"/>
+    <id>http://culture-of-development.com/streams/s0033-js13k-competition-practice-part-6-of-12-a-bit-of-a-day-off/</id>
     <published>2019-04-25T01:33:00.000Z</published>
-    <updated>2019-05-14T15:02:20.169Z</updated>
+    <updated>2019-05-26T13:32:23.988Z</updated>
     
     <content type="html"><![CDATA[<p>Today was a bit of an off day.  A good day none the less however.</p><p>Minutes before the stream I was notified that the research project I was a part of had been accepted to the <a href="https://learningatscale.acm.org/las2019/" target="_blank" rel="noopener">Learning @Scale 2019 conference</a> and needless to say I was really excited.  In a few months I will officially be able to say &quot;I'm published&quot; in the classical sense.  I spend about 15 minutes at the beginning of the stream describing the work we did and highlighting my contributions to that work.  I think it's pretty fascinating and if you have plans of going back to college, or having kids who might be on their way to college, you might want to give it a once over.</p><p>A few minutes before I got that email, a got a pack in the mail!  A few weeks prior I had won a pack of the <a href="https://www.etsy.com/listing/688771117/heroines-of-javascript-trading-cards" target="_blank" rel="noopener">Heroines of JavaScript trading cards</a> in a raffle on <a href="https://www.twitch.tv/roberttables" target="_blank" rel="noopener">roberttables</a> stream.  I love trading cards, and I read through each and every one of them and noted a few stories along the way.</p><p>After about an hour we finally got to the js13k project and I focused almost entirely on trying to get some CSS cleaned up and working.</p>]]></content>
     
@@ -181,11 +277,11 @@
   </entry>
   
   <entry>
-    <title>js13k competition practice, part 5 of 12: adding some emoji graphics, a menu screen and a dialog interface (day 32)</title>
-    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-5-of-12-adding-some-emoji-graphics-a-menu-screen-and-a-dialog-interface/"/>
-    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-5-of-12-adding-some-emoji-graphics-a-menu-screen-and-a-dialog-interface/</id>
+    <title>S0032 - js13k competition practice, part 5 of 12: adding some emoji graphics, a menu screen and a dialog interface</title>
+    <link href="http://culture-of-development.com/streams/s0032-js13k-competition-practice-part-5-of-12-adding-some-emoji-graphics-a-menu-screen-and-a-dialog-interface/"/>
+    <id>http://culture-of-development.com/streams/s0032-js13k-competition-practice-part-5-of-12-adding-some-emoji-graphics-a-menu-screen-and-a-dialog-interface/</id>
     <published>2019-04-18T14:40:11.000Z</published>
-    <updated>2019-04-18T14:57:00.335Z</updated>
+    <updated>2019-05-26T13:32:06.618Z</updated>
     
     <content type="html"><![CDATA[<p>Today blew my mind!  We started off really easy by swapping out a lot of the color filled blocks that represented items with emoji graphics, largely because emojis are essentially free graphics for your game instead of trying to compress those assets.  We'd like to swap them out for something more consistent across browsers later on, but for now it makes it easier for us to reason about the game interactions as we keep working on them.</p><p>The second major thing we wanted to tackle was adding in a &quot;leaderboard&quot; page.  As you play the game multiple times, it should record your score and you can compete with yourself as you play multiple times.  It also helps to have this because we need to force interaction with the page in order to get the sound to start.  For today we left off the leaderboard widget and just added a giant &quot;play new game&quot; button to start a new game.  To support the leaderboard eventually, we also added a move counter to the game page to track how many moves you have made.</p><p>Next we added a dialog view.  This will be used to drive the story as we progress through the game and it will act as a tutorial interface at the very beginning.  It was a lot of fun building this out and we made a lot of progress today on making this feel like a fully fleshed out game.</p><p>I'd like to give a HUGE shout out to <a href="https://www.twitch.tv/clarkio" target="_blank" rel="noopener">@ClarkIO</a> for the biggest raid I've ever gotten!  This easily put me over the top on my metrics for hitting affiliate and I'm really looking forward to getting that email when I'm back from my trip next week.  Please check out his stream when you have a chance, he's made some great tools for the streamer community and he's a lot of fun to chat with as well!</p>]]></content>
     
@@ -204,11 +300,11 @@
   </entry>
   
   <entry>
-    <title>js13k competition practice, part 4 of 12: adding sound effects to interactions (day 31)</title>
-    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-4-of-12-adding-sound-effects-to-interactions/"/>
-    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-4-of-12-adding-sound-effects-to-interactions/</id>
+    <title>S0031 - js13k competition practice, part 4 of 12: adding sound effects to interactions</title>
+    <link href="http://culture-of-development.com/streams/s0031-js13k-competition-practice-part-4-of-12-adding-sound-effects-to-interactions/"/>
+    <id>http://culture-of-development.com/streams/s0031-js13k-competition-practice-part-4-of-12-adding-sound-effects-to-interactions/</id>
     <published>2019-04-16T14:27:56.000Z</published>
-    <updated>2019-04-18T14:59:53.298Z</updated>
+    <updated>2019-05-26T13:31:47.938Z</updated>
     
     <content type="html"><![CDATA[<p>This stream was at an unusual time because I unexpectedly have to leave this weekend and don't want to get too far behind on the one month aspect of this practice.</p><p>Today we worked exclusively on adding sound effects to interactions using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" target="_blank" rel="noopener">web audio api</a>.  There are essentially two ways to incorporate audio, either from a buffer of recorded audio data, or by manipulating a source wave from an oscillator.  Recorded audio gets to be quite large depending on the sample rate used to record the audio (recording 1s of uncompressed audio at 44k samples/sec eats up 44 kb) so the eventual audio we use will almost certainly be generated from an oscillator.</p><p>In looking at how js13k projects incorporate interesting audio from past years, I've noticed that many of them generate sound, but record it to a buffer, and then play the buffer on demand instead of doing all the calculations to generate the audio waves repeatedly.  This helps a lot with performance and also simplifies the playing code a fair amount.  Since we're going to be playing from buffers anyway later on, I decided for this first iteration to just record some audio and then load it up in the browser, focusing mostly on getting the sound effects to trigger at the right times.</p><p>Today was a lot of fun and <a href="https://www.twitch.tv/themichaeljolley" target="_blank" rel="noopener">theMichaelJolley</a> showed up to help me work through some ideas and spit ball what we should do next.</p>]]></content>
     
@@ -227,11 +323,11 @@
   </entry>
   
   <entry>
-    <title>js13k competition practice, part 3 of 12: item interactions, inventory and a win condition (day 30)</title>
-    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-3-of-12-item-interactions-inventory-and-a-win-condition/"/>
-    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-3-of-12-item-interactions-inventory-and-a-win-condition/</id>
+    <title>S0030 - js13k competition practice, part 3 of 12: item interactions, inventory and a win condition</title>
+    <link href="http://culture-of-development.com/streams/s0030-js13k-competition-practice-part-3-of-12-item-interactions-inventory-and-a-win-condition/"/>
+    <id>http://culture-of-development.com/streams/s0030-js13k-competition-practice-part-3-of-12-item-interactions-inventory-and-a-win-condition/</id>
     <published>2019-04-12T14:13:19.000Z</published>
-    <updated>2019-04-18T14:26:55.071Z</updated>
+    <updated>2019-05-26T13:31:30.990Z</updated>
     
     <content type="html"><![CDATA[<p>We're making solid progress so far and after today it really started to feel like &quot;a game&quot; in the sense that most of the component you would expect for a game are there in some minimal form.  This is also the furtherest I've ever really gotten into a game in which you interact with the environment; most games in my past have been psuedo-games where the computer part doesn't actually have knowledge of the rules of the game, it's more just a board in which you manipulate pieces (think like a chess game that doesn't know when you have won or lost).</p><p>It has become clear to me that the super-ad-hoc way this game has been developing has some serious flaws which we will address at some point before we get to the end.  Most notably when one thing needs to change, everything needs to change.  We have also hard baked in the idea of how rendering happens to most objects which is going to make it a huge task to switch should we decide to move to canvas rendering or something else other than manual DOM manipulation.</p><p>Picking up items was quite a bit of fun.  Moving them from their cell to our inventory was quite a challenge but seeing them disappear from the world was really cool.  Making the winning condition check for items in your inventory also really cool.  Time to start thinking more about how objects interact with other objects in the world.</p>]]></content>
     
@@ -250,11 +346,11 @@
   </entry>
   
   <entry>
-    <title>js13k competition practice, part 2 of 12: a movable player character (day 29)</title>
-    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-2-of-12-a-movable-player-character/"/>
-    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-2-of-12-a-movable-player-character/</id>
+    <title>S0029 - js13k competition practice, part 2 of 12: a movable player character</title>
+    <link href="http://culture-of-development.com/streams/s0029-js13k-competition-practice-part-2-of-12-a-movable-player-character/"/>
+    <id>http://culture-of-development.com/streams/s0029-js13k-competition-practice-part-2-of-12-a-movable-player-character/</id>
     <published>2019-04-11T14:06:23.000Z</published>
-    <updated>2019-04-18T14:14:09.502Z</updated>
+    <updated>2019-05-26T13:31:07.284Z</updated>
     
     <content type="html"><![CDATA[<p>Now that we have a simple grid world, it's time to make some sort of interaction so we can start playing with it and feel out what works and what doesn't with our ideas so far.  We make a simple way of interacting with the game by moving a purple box around the grid world we have created.  Since this didn't take too long we also added some items to the world and wrote enough code to place them where we want them and give them custom attributes.</p><p>In addition to that, this competition is about building assets that total to less than 13 kb, so we constructed a rudimentary build pipeline that collects the assets, passes it through <a href="https://www.npmjs.com/package/uglify-es" target="_blank" rel="noopener">uglify-es</a>, zips it all up and reports the total size.  We're barely at 2 kb so far!</p>]]></content>
     
@@ -273,11 +369,11 @@
   </entry>
   
   <entry>
-    <title>js13k competition practice, part 1 of 12: research and building a grid world (day 28)</title>
-    <link href="http://culture-of-development.com/streams/js13k-competition-practice-part-1-of-12-research-and-building-a-grid-world/"/>
-    <id>http://culture-of-development.com/streams/js13k-competition-practice-part-1-of-12-research-and-building-a-grid-world/</id>
+    <title>S0028 - js13k competition practice, part 1 of 12: research and building a grid world</title>
+    <link href="http://culture-of-development.com/streams/s0028-js13k-competition-practice-part-1-of-12-research-and-building-a-grid-world/"/>
+    <id>http://culture-of-development.com/streams/s0028-js13k-competition-practice-part-1-of-12-research-and-building-a-grid-world/</id>
     <published>2019-04-10T13:40:28.000Z</published>
-    <updated>2019-04-18T13:50:24.193Z</updated>
+    <updated>2019-05-26T13:30:45.216Z</updated>
     
     <content type="html"><![CDATA[<p>Just got back from vacation and it was amazing.  Feeling very re-energized and ready to start a new project.</p><p>I got started with programming like a lot of other people, wanting to make games to play.  I have built some toy games at various points throughout my life and decided that once I graduate from grad school I want to commit to making an actual game that I release to the world.  Before that I'd like to practice, and so I was reminded of a small competition called <a href="https://js13kgames.com/" target="_blank" rel="noopener">js13k</a>.</p><p>The point of js13k is to build a complete game based on a theme that runs in a browser, from scratch, in one month.  And the kicker, <em>all</em> of the games assets must be no larger than 13 kb when zipped up.  There have been some astonishing works of art that have come from this competition; take some time and browse through the winners of previous years competitions.</p><p>I decided that I will enter this competition in 2019, which starts August 13th, 2019, and now is as great a time as any to practice.  I stream 3 days per week and for roughly 2 hours a day, so total I should be able to get around 24 hours into this game.</p><p>In this first episode, I break down how I prepare for competitions like these, decide some high level ideas about the game and get started implementing a simple grid world which is going to be the basis for the world that my game will take place in.</p>]]></content>
     
@@ -297,11 +393,11 @@
   </entry>
   
   <entry>
-    <title>Building a slack bot, part 5: almost there, just a few more bugs (day 27)</title>
-    <link href="http://culture-of-development.com/streams/building-a-slack-bot-part-5-almost-there-just-a-few-more-bugs/"/>
-    <id>http://culture-of-development.com/streams/building-a-slack-bot-part-5-almost-there-just-a-few-more-bugs/</id>
+    <title>S0027 - Building a slack bot, part 5: almost there, just a few more bugs</title>
+    <link href="http://culture-of-development.com/streams/s0027-building-a-slack-bot-part-5-almost-there-just-a-few-more-bugs/"/>
+    <id>http://culture-of-development.com/streams/s0027-building-a-slack-bot-part-5-almost-there-just-a-few-more-bugs/</id>
     <published>2019-03-15T13:35:43.000Z</published>
-    <updated>2019-04-18T13:39:03.335Z</updated>
+    <updated>2019-05-26T13:19:26.728Z</updated>
     
     <content type="html"><![CDATA[<p>After some much needed progress yesterday, we realized there were just two major problems to overcome before we could call it an MVP (minimum viable product), just that we need to get all the image manipulation done in memory so we can avoid writing to disk and we need to figure out why the image manipulation pipeline fails the second time you try to run an image through it.</p><p>We don't actually solve either of these issues today, but we make a lot of progress on what doesn't work and why.</p>]]></content>
     
@@ -320,11 +416,11 @@
   </entry>
   
   <entry>
-    <title>Building a slack bot, part 4: I slept on it, got my head right, let&#39;s give it another go (day 26)</title>
-    <link href="http://culture-of-development.com/streams/building-a-slack-bot-part-4-i-slept-on-it-got-my-head-right-let-s-give-it-another-go/"/>
-    <id>http://culture-of-development.com/streams/building-a-slack-bot-part-4-i-slept-on-it-got-my-head-right-let-s-give-it-another-go/</id>
+    <title>S0026 - Building a slack bot, part 4: I slept on it, got my head right, let&#39;s give it another go</title>
+    <link href="http://culture-of-development.com/streams/s0026-building-a-slack-bot-part-4-i-slept-on-it-got-my-head-right-let-s-give-it-another-go/"/>
+    <id>http://culture-of-development.com/streams/s0026-building-a-slack-bot-part-4-i-slept-on-it-got-my-head-right-let-s-give-it-another-go/</id>
     <published>2019-03-14T13:22:11.000Z</published>
-    <updated>2019-04-18T13:32:03.387Z</updated>
+    <updated>2019-05-26T13:19:05.301Z</updated>
     
     <content type="html"><![CDATA[<p>Sleep on it.  Your brain does amazing things when you go to sleep that improve your ability to learn and solve problems; just give it the opportunity to do it's thing and over time you'll be a much happier person.  I was having significant troubles with this slack bot and a little sleep and a recharge got me over a big challenge by rethinking where the problem might lie.  By using someone else's slack integration library we are now at the point of being able to collect images from slack and do the modifications we want to them using another library.</p><p>Of course this is still software development, so eventually we run into another problem...  time to go back to sleep.</p>]]></content>
     
@@ -343,11 +439,11 @@
   </entry>
   
   <entry>
-    <title>Building a slack bot, part 3: this is much harder than expected (day 25)</title>
-    <link href="http://culture-of-development.com/streams/building-a-slack-bot-part-3-this-is-much-harder-than-expected/"/>
-    <id>http://culture-of-development.com/streams/building-a-slack-bot-part-3-this-is-much-harder-than-expected/</id>
+    <title>S0025 - Building a slack bot, part 3: this is much harder than expected</title>
+    <link href="http://culture-of-development.com/streams/s0025-building-a-slack-bot-part-3-this-is-much-harder-than-expected/"/>
+    <id>http://culture-of-development.com/streams/s0025-building-a-slack-bot-part-3-this-is-much-harder-than-expected/</id>
     <published>2019-03-13T13:15:27.000Z</published>
-    <updated>2019-04-18T13:32:29.813Z</updated>
+    <updated>2019-05-26T13:18:43.580Z</updated>
     
     <content type="html"><![CDATA[<p>We managed to send images to slack, but we hit the struggle bus when it came to collecting images from slack.  The error messages are not helpful, my understanding of what's going on is lacking, my google-fu isn't finding anything, do we just give up?</p><p>This is an example of something I feel like happens all the time when you're learning on your own and it was a large part of the reason why I joined grad school and what I hope to get out of streaming, that is, learning with other people.  The amount of frustration I experience in this episode is unfortunately quite common and I hope this video and the next serve as an example of how we improve ourselves and how we might find better ways of learning new things.</p>]]></content>
     
@@ -366,11 +462,11 @@
   </entry>
   
   <entry>
-    <title>Building a slack bot, part 2: we learn better together (day 23 &amp; 24)</title>
-    <link href="http://culture-of-development.com/streams/building-a-slack-bot-part-2-we-learn-better-together/"/>
-    <id>http://culture-of-development.com/streams/building-a-slack-bot-part-2-we-learn-better-together/</id>
+    <title>S0023 - Building a slack bot, part 2: we learn better together</title>
+    <link href="http://culture-of-development.com/streams/s0023-building-a-slack-bot-part-2-we-learn-better-together/"/>
+    <id>http://culture-of-development.com/streams/s0023-building-a-slack-bot-part-2-we-learn-better-together/</id>
     <published>2019-03-08T14:37:15.000Z</published>
-    <updated>2019-04-18T13:08:18.214Z</updated>
+    <updated>2019-05-26T13:18:26.019Z</updated>
     
     <content type="html"><![CDATA[<p>Todays goals were to get our slack bot to respond to messages of the right type, handle the <code>needz moar help</code> request and send actual images to slack in reply to the correct <code>needz moar {something}</code> request.</p><p>Today right at the beginning <a href="https://twitter.com/a1ph4g33k" target="_blank" rel="noopener">@a1ph4g33k</a> stopped by with a suggestion to make something better.  We fired up a VS Code live share and the next three hours were an amazing experience of watching two people learn from each other and accomplish something at the same time.  This was hands down my favorite day streaming to date and I'm extremely thankful there are people like him in this community.</p><p>If you would like to jump on a project, I'm open arms accepting pair programming partners indefinitely, just reach out to me at my <a href="https://twitter.com/fody" target="_blank" rel="noopener">twitter</a> page.</p>]]></content>
     
@@ -389,11 +485,11 @@
   </entry>
   
   <entry>
-    <title>Building a slack bot, part 1: I know nothing about this (day 22)</title>
-    <link href="http://culture-of-development.com/streams/building-a-slack-bot-part-1-i-know-nothing-about-this/"/>
-    <id>http://culture-of-development.com/streams/building-a-slack-bot-part-1-i-know-nothing-about-this/</id>
+    <title>S0022 - Building a slack bot, part 1: I know nothing about this</title>
+    <link href="http://culture-of-development.com/streams/s0022-building-a-slack-bot-part-1-i-know-nothing-about-this/"/>
+    <id>http://culture-of-development.com/streams/s0022-building-a-slack-bot-part-1-i-know-nothing-about-this/</id>
     <published>2019-03-07T14:26:02.000Z</published>
-    <updated>2019-04-18T13:09:30.872Z</updated>
+    <updated>2019-05-26T13:17:54.642Z</updated>
     
     <content type="html"><![CDATA[<p>At Stack Overflow we have a few bots in our bespoke chat app that really make it a lot of fun to use.  Due to the pressures of not maintaining something that isn't our bread and butter (i.e. Q&amp;A), we've slowly but surely been moving everything over to Slack.  One of the tools that's the most fun is something called the pic bot.  When you reply to an image with the phrase &quot;needz moar {something}&quot; and then replace the something with the thing you want, it modifies the image to add some extra flare to it which normally results in hilarity and a good laugh for everyone.</p><p><img src="/img/slack-bot-before.png" alt="boring screenshot"></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">needz moar jorts</span><br></pre></td></tr></table></figure></p><p><img src="/img/slack-bot-after.jpeg" alt="amazing screenshot"></p><p>And that's essentially the effect we're after.</p><p>Starting today, I know nothing about how to build Slack bots, watch me get up to speed and get a bot running that actually responds to messages.</p>]]></content>
     
@@ -412,11 +508,11 @@
   </entry>
   
   <entry>
-    <title>Building a slack bot, part 1.5: I still know nothing about this (day 22)</title>
-    <link href="http://culture-of-development.com/streams/building-a-slack-bot-part-1-5-i-still-know-nothing-about-this/"/>
-    <id>http://culture-of-development.com/streams/building-a-slack-bot-part-1-5-i-still-know-nothing-about-this/</id>
+    <title>S0022 - Building a slack bot, part 1.5: I still know nothing about this</title>
+    <link href="http://culture-of-development.com/streams/s0022-building-a-slack-bot-part-1-5-i-still-know-nothing-about-this/"/>
+    <id>http://culture-of-development.com/streams/s0022-building-a-slack-bot-part-1-5-i-still-know-nothing-about-this/</id>
     <published>2019-03-07T14:10:10.000Z</published>
-    <updated>2019-04-18T13:11:13.079Z</updated>
+    <updated>2019-05-26T13:17:24.442Z</updated>
     
     <content type="html"><![CDATA[<p>This is simply a continuation of yesterday's video because there was a hiccup in the feed and I had to restart the recording.</p>]]></content>
     
@@ -436,11 +532,11 @@
   </entry>
   
   <entry>
-    <title>Graph reduction: intersections only road map (day 20 &amp; 21)</title>
-    <link href="http://culture-of-development.com/streams/graph-reduction-intersections-only-road-map/"/>
-    <id>http://culture-of-development.com/streams/graph-reduction-intersections-only-road-map/</id>
+    <title>S0020 - Graph reduction: intersections only road map</title>
+    <link href="http://culture-of-development.com/streams/s0020-graph-reduction-intersections-only-road-map/"/>
+    <id>http://culture-of-development.com/streams/s0020-graph-reduction-intersections-only-road-map/</id>
     <published>2019-03-05T14:08:08.000Z</published>
-    <updated>2019-03-13T13:58:22.610Z</updated>
+    <updated>2019-05-26T13:28:56.939Z</updated>
     
     <content type="html"><![CDATA[<p>After taking yesterday off to <em>finally</em> fix a bug I've been looking into for three days (narrator: it was a typo), I'm back at it today for a double length stream!  The goal is to reduce the number of map nodes by eliminating all the points between intersections.</p><p>In real life, many roads are windy and curved.  To make sure that these roads can plot correctly when drawn, the map data contains numerous points for each road segment so that the tool that draws the map can draw them correctly.  From the standpoint of the directions finding problem, the only thing that matters, however, is decision points, i.e. which direction should I go next from this intersection.</p><p>All those little bitty road segments are not decision points, in fact, most of the time you have to keep driving the same direction though many of them.  This is especially easy to see in the case of interstate highways where the exits are miles apart and the roads can have a lot of curves between the exits.  The concept here is that be eliminating those false decision points, we can improve the speed of our search.</p><p>Follow along as we work though this a few times, run into lots of difficult to understand bugs and ultimately reduce the size of the graph by roughly 40%.  After the stream ended I realized how much smaller we can make this as well, so hopefully we'll have time to come back and work on that soon.</p>]]></content>
     
@@ -459,11 +555,11 @@
   </entry>
   
   <entry>
-    <title>Using landmark search in the map demo and shrink reducing the map size (day 19)</title>
-    <link href="http://culture-of-development.com/streams/using-landmark-search-in-the-map-demo-and-shrink-reducing-the-map-size/"/>
-    <id>http://culture-of-development.com/streams/using-landmark-search-in-the-map-demo-and-shrink-reducing-the-map-size/</id>
+    <title>S0019 - Using landmark search in the map demo and shrink reducing the map size</title>
+    <link href="http://culture-of-development.com/streams/s0019-using-landmark-search-in-the-map-demo-and-shrink-reducing-the-map-size/"/>
+    <id>http://culture-of-development.com/streams/s0019-using-landmark-search-in-the-map-demo-and-shrink-reducing-the-map-size/</id>
     <published>2019-02-28T04:13:28.000Z</published>
-    <updated>2019-03-13T13:58:22.490Z</updated>
+    <updated>2019-05-26T13:35:25.986Z</updated>
     
     <content type="html"><![CDATA[<p>Over the weekend I put considerable effort into trying to prove that landmark heuristics were inadmissible and I came up with an example that clearly showed there is a pathalogical graph which the method we had implemented for the landmark heuristic is inadmissible because it overestimates the actual distance to the goal.  I was fairly certain that landmarks were supposed to be addmissible so I revisited the original paper to give it a more critical eye and sure enough the method we used was only correct for undirected graphs, but it fails misterably for directed graphs.  It took a few tries to get it all right but I finally got all the tests to go green again.</p><p>On stream the plan was to get this all hooked into the demo map and see if we accomplished our goal from last time of getting the time it takes to run a search down significantly.  What we were able to verify is that this was reducing the number of nodes explored however it was not doing so dramatically enough to reduce the time a noticable amount.  So basically the grand plan was not quite achieved, but that's not the end of the road of course.  There's still bidirectional A* and there are other options as well.</p><p>The first thing I tried to tackle today was to reduce the graph to only contain intersections.  Along many of the roadways, especially the highways, there are long stretches of points that are necessary to build correctly show the curve of the road, however the points only have one way in and one way out.  Think about an interstate.  There are long sections of windy road where you realistically cannot change direction.  The only real place to change direction is when you reach an exit, which only happens every so often.  In more rural aread it might be as much as 10 or 20 miles between exits, but there are still going to be tons of twists and turns that need lots of points to correct show on the map.  The idea is to reduce the map so that all of the non intersection points are removed and it's just a map that consists only of intersections.  I ran out of time while working on this and had to set it aside.</p>]]></content>
     
@@ -482,11 +578,11 @@
   </entry>
   
   <entry>
-    <title>Quick performance wins for the map demo (days 17 and 18)</title>
-    <link href="http://culture-of-development.com/streams/quick-performance-wins-for-the-map-demo/"/>
-    <id>http://culture-of-development.com/streams/quick-performance-wins-for-the-map-demo/</id>
+    <title>S0017 - Quick performance wins for the map demo</title>
+    <link href="http://culture-of-development.com/streams/s0017-quick-performance-wins-for-the-map-demo/"/>
+    <id>http://culture-of-development.com/streams/s0017-quick-performance-wins-for-the-map-demo/</id>
     <published>2019-02-23T03:27:17.000Z</published>
-    <updated>2019-03-13T13:58:22.490Z</updated>
+    <updated>2019-05-26T13:34:53.124Z</updated>
     
     <content type="html"><![CDATA[<p>Yesterday life came up and I had to bail unexpectedly on the stream, so today I went for a double length and tried to get 2 things done instead of one.  I'd say we made it through roughly 1.5 things :).  In case you're curious what came up, my son decided to administer my daughter's first ever haircut using some kitchen shears he found on the counter.  My wife was overcome with a large number of emotions; I had to run interference since it's my job as a parent first and foremost to keep everyone alive.</p><p>Today's tasks were to improve the time it takes to find the nearest points to the locations clicked on the map for the start and end of the directions and to improve the time it takes for the search to complete.  The first task I knew would be fairly easy because it's a well documentated problem, but the second problem was going to be more difficult and it turns out I was correct on both counts.</p><p>Improving the speed of finding the closest location is called a <a href="https://en.wikipedia.org/wiki/Nearest_neighbor_search" target="_blank" rel="noopener">nearest neighbor search</a> and there are lots of ways to accomplish this task.  One of the simplest approaches, and probably the most prominent technique, is to use a <a href="https://en.wikipedia.org/wiki/K-d_tree" target="_blank" rel="noopener">K-D tree</a>.  In the average case a K-D tree can find the single nearest neighbor in <code>O(log n)</code> compared to the <code>O(n)</code> time full scan we were doing.  In the New York dataset there are roughly 708,000 nodes, and the log base 2 of that is roughly 20.  You can see how even with a little bit of overhead this is a huge peformance improvement and it showed in the numbers where the scan was taking roughly 330 milliseconds, the K-D tree takes only 0.2 milliseconds on average.  That was a huge win.</p><p>Improving the speed of the search is a much more difficult problem and there are lots of ways to do it.  The approach I decided to take was to improve the heuristic that the search used to estimate the remaining path length.  The simple approach we used previously was the straight-line havesine distance.  This works well for small area graphs like the one's we've been using, however when you expand the graph to say the entire United States, all of a sudden you're searching way too many nodes for each search.  I decided to use the ALT algorithm, as outlined in <a href="http://www.academia.edu/download/5622730/10.1.1.136.1062.pdf" target="_blank" rel="noopener">Computing the shortest path: A search meets graph theory (Goldberg and Harrelson 2005)</a>.</p><p>ALT stands for A* search, landmarks heuristic, triangle inequality which are the main components of the algorithm.  Additionally one other major component from the paper is bidirectional A* search, which we have not yet attempted.  In this stream I worked on the landmarks portion of this paper and holy cow did we run into some problems.  Have a look and watch the highs and the lows as we learn a ton in this 4 hour stretch.</p>]]></content>
     
@@ -505,11 +601,11 @@
   </entry>
   
   <entry>
-    <title>A little documentation goes a long way (day 16)</title>
-    <link href="http://culture-of-development.com/streams/a-little-documentation-goes-a-long-way/"/>
-    <id>http://culture-of-development.com/streams/a-little-documentation-goes-a-long-way/</id>
+    <title>S0016 - A little documentation goes a long way</title>
+    <link href="http://culture-of-development.com/streams/s0016-a-little-documentation-goes-a-long-way/"/>
+    <id>http://culture-of-development.com/streams/s0016-a-little-documentation-goes-a-long-way/</id>
     <published>2019-02-21T03:18:36.000Z</published>
-    <updated>2019-03-13T13:58:22.490Z</updated>
+    <updated>2019-05-26T13:15:43.149Z</updated>
     
     <content type="html"><![CDATA[<p>Today we started by paying down a little of the &quot;works on my machine&quot;-only debt by adding a script to pull in the map data from open street map and removing the hardcoded paths in the project so that they are now relative paths.  You can see the simple documentation for getting the demo up and running on the <a href="https://github.com/culture-of-development/fast" target="_blank" rel="noopener">readme.md in the root of the repo</a>.</p><p>It's important to add little bits like this so that other people can make use of your work and it's also a great idea to include a little graphic of the thing working, either a short video, a gif or just a static image.  Not everyone is going to download your project and get it running just to see what it's like and making it as easy as possible to get a glimpse is a great way to build excitement for your project or convince a would-be new employer that your project has merit.</p>]]></content>
     
@@ -528,11 +624,11 @@
   </entry>
   
   <entry>
-    <title>Implementing a demo front end for the finding directions problem (day 15)</title>
-    <link href="http://culture-of-development.com/streams/implementing-a-demo-front-end-for-the-finding-directions-problem-day-15/"/>
-    <id>http://culture-of-development.com/streams/implementing-a-demo-front-end-for-the-finding-directions-problem-day-15/</id>
+    <title>S0015 - Implementing a demo front end for the finding directions problem</title>
+    <link href="http://culture-of-development.com/streams/s0015-implementing-a-demo-front-end-for-the-finding-directions-problem-day-15/"/>
+    <id>http://culture-of-development.com/streams/s0015-implementing-a-demo-front-end-for-the-finding-directions-problem-day-15/</id>
     <published>2019-02-15T18:56:26.000Z</published>
-    <updated>2019-02-27T19:23:25.770Z</updated>
+    <updated>2019-05-26T13:29:48.513Z</updated>
     
     <content type="html"><![CDATA[<p>Today we built out a webapi app the load up the model and let us get direction instantly on a Google maps interface.  Using this we did some really basic profiling and found that the majority of the time is spent finding the closest node to the click location and not the actual search itself.  I guess we know what to fix before we ramp up the problem size again.</p>]]></content>
     
@@ -551,11 +647,11 @@
   </entry>
   
   <entry>
-    <title>Building a roadways graph from OpenStreetMap data (day 14)</title>
-    <link href="http://culture-of-development.com/streams/building-a-roadways-graph-from-openstreetmap-data-day-14/"/>
-    <id>http://culture-of-development.com/streams/building-a-roadways-graph-from-openstreetmap-data-day-14/</id>
+    <title>S0014 - Building a roadways graph from OpenStreetMap data</title>
+    <link href="http://culture-of-development.com/streams/s0014-building-a-roadways-graph-from-openstreetmap-data-day-14/"/>
+    <id>http://culture-of-development.com/streams/s0014-building-a-roadways-graph-from-openstreetmap-data-day-14/</id>
     <published>2019-02-14T18:48:31.000Z</published>
-    <updated>2019-02-27T19:23:25.767Z</updated>
+    <updated>2019-05-26T13:16:53.631Z</updated>
     
     <content type="html"><![CDATA[<p>Today we extracted a graph of roadways from the <a href="https://wiki.openstreetmap.org/wiki/Planet.osm#Country_and_area_extracts" target="_blank" rel="noopener">OpenStreetMap data dump</a> for the city of <a href="https://www.google.com/maps/place/Lima,+Peru/@-12.0262676,-77.1278649,11z/data=!3m1!4b1!4m5!3m4!1s0x9105c5f619ee3ec7:0x14206cb9cc452e4a!8m2!3d-12.0463731!4d-77.042754" target="_blank" rel="noopener">Lima, Peru</a>.  Why Lima?  It's fairly large but not whole world so we can ramp up the problem size.  This process turned out to be pretty straightforward and after cleaning up a few minor mistakes we got the problem running.</p><p>First we tried IDA* and that turned out to be really slow to make progress because there are a lot of very minor improvements in the distance with this larger dataset.  We'll have to consider some alternatives to that in the future but in order to keep making progress today we just switched over to vanilla A*.  There are roughly 800,000 edges in this final graph so A* shouldn't take very long even if it has to explore a large number of them.  For the heuristic we used <a href="https://www.movable-type.co.uk/scripts/latlong.html" target="_blank" rel="noopener">Haversine formula</a> to calculate straight line distance on the surface of a sphere.</p><p>Guess what? IT WORKED!  And we plotted the route on Google Maps!  This felt like such an accomplishment and it was really incredible, so thanks to everyone who joined me on this journey so far.  &lt;3</p>]]></content>
     
@@ -574,11 +670,11 @@
   </entry>
   
   <entry>
-    <title>Mostly chatting about pattern databases (day 13)</title>
-    <link href="http://culture-of-development.com/streams/mostly-chatting-about-pattern-databases-day-13/"/>
-    <id>http://culture-of-development.com/streams/mostly-chatting-about-pattern-databases-day-13/</id>
+    <title>S0013 - Mostly chatting about pattern databases</title>
+    <link href="http://culture-of-development.com/streams/s0013-mostly-chatting-about-pattern-databases-day-13/"/>
+    <id>http://culture-of-development.com/streams/s0013-mostly-chatting-about-pattern-databases-day-13/</id>
     <published>2019-02-13T18:51:53.000Z</published>
-    <updated>2019-02-27T19:23:25.771Z</updated>
+    <updated>2019-05-26T13:34:16.078Z</updated>
     
     <content type="html"><![CDATA[<p>Today was a lot of fun!  We recapped a lot of what I accomplished off-stream and then we got into a discussion about heuristics for the NPuzzle problem.  This went from linear conflict to pattern databases and took a deviation into admissibility of heuristics for a bit.</p><p>At the end we decided to switch gears and collect some data for scaling up the finding directions problem.  We didn't get too far but we did find a library to help make loading the data much easier.</p>]]></content>
     
@@ -597,11 +693,11 @@
   </entry>
   
   <entry>
-    <title>Implementing the finding directions problem (day 12)</title>
-    <link href="http://culture-of-development.com/streams/implementing-the-finding-directions-problem/"/>
-    <id>http://culture-of-development.com/streams/implementing-the-finding-directions-problem/</id>
+    <title>S0012 - Implementing the finding directions problem</title>
+    <link href="http://culture-of-development.com/streams/s0012-implementing-the-finding-directions-problem/"/>
+    <id>http://culture-of-development.com/streams/s0012-implementing-the-finding-directions-problem/</id>
     <published>2019-02-09T02:37:42.000Z</published>
-    <updated>2019-02-27T19:23:25.771Z</updated>
+    <updated>2019-05-26T13:30:18.639Z</updated>
     
     <content type="html"><![CDATA[<p>Yesterday we abstracted away the concept of a problem to be solved by a search algorithm and today I decided we should go ahead and test our theory that it was successful by implementing a second problem.  I decided to choose the problem of finding driving directions because it's a hard problem with a sufficiently large amount of states.  It's also just kinda cool to think we can implement the same kind of algorithm used by Google Maps and at the same scale.</p><p>We spent a lot of time designing the problem definition first and working our way backward to the actual data.  Check out the video for a short explanation of exactly why we designed things that way instead of trying to find a bunch of data first and working forward to the actual problem definition from that (spoiler alert: the code came out really clean and readable).</p><p>As time was running out I tried to get a test up and running so I grabbed the classic Romania map problem from <a href="https://amzn.to/2GiSiPg" target="_blank" rel="noopener"><em>the</em> AI book</a>.  I ran out of time before setting up a test for this, but we'll get to that next week.  In the meantime, please check out <a href="https://github.com/culture-of-development/fast" target="_blank" rel="noopener">the code</a> and we'll see you all next week!</p>]]></content>
     
@@ -620,11 +716,11 @@
   </entry>
   
   <entry>
-    <title>Abstracting away the problem (day 11)</title>
-    <link href="http://culture-of-development.com/streams/abstracting-away-the-problem/"/>
-    <id>http://culture-of-development.com/streams/abstracting-away-the-problem/</id>
+    <title>S0011 - Abstracting away the problem</title>
+    <link href="http://culture-of-development.com/streams/s0011-abstracting-away-the-problem/"/>
+    <id>http://culture-of-development.com/streams/s0011-abstracting-away-the-problem/</id>
     <published>2019-02-08T02:24:46.000Z</published>
-    <updated>2019-02-27T19:23:25.766Z</updated>
+    <updated>2019-05-26T13:16:07.087Z</updated>
     
     <content type="html"><![CDATA[<p>Today we started off by updating the goal state to <em>actually</em> match the literature, then we fixed a couple of bugs that popped up once we reran the tests and finally we wrapped up by abstracting out the concept of a problem and making the search solver interface generic.</p><p>One key idea for the search algorithms is that they can solve a plethera of problems.  Our implementation up to this point had the actually problem we were trying to solve baked in pretty hard.  I knew if we wanted to make it generic, now was a better time than not because each time we add a new search technique, all we do is increase the time it would take to solve a second problem later on.</p><p>This process turned out to be a little complicated and really tested the extent of my C# knowledge.  We had to deal with co/contra-variance, figuring out exactly what the abstraction should look like and some really non descriptive error messages.  Amazingly I wrapped up this code after a marathon 1.5 hour session and IT RAN before the end of the stream!</p><p>The result of this was that the NPuzzle problem had been completely eliminated from all files in the search project except for where it was defined.  Now we should be ready to add a second problem... or maybe we'll keep grinding on improving the heuristics for this problem a bit.  In the end we'll need to do both.</p>]]></content>
     
@@ -643,11 +739,11 @@
   </entry>
   
   <entry>
-    <title>Dealing with really subtle problems and math (day 10)</title>
-    <link href="http://culture-of-development.com/streams/dealing-with-really-subtle-problems-and-math/"/>
-    <id>http://culture-of-development.com/streams/dealing-with-really-subtle-problems-and-math/</id>
+    <title>S0010 - Dealing with really subtle problems and math</title>
+    <link href="http://culture-of-development.com/streams/s0010-dealing-with-really-subtle-problems-and-math/"/>
+    <id>http://culture-of-development.com/streams/s0010-dealing-with-really-subtle-problems-and-math/</id>
     <published>2019-02-07T02:05:21.000Z</published>
-    <updated>2019-02-27T19:23:25.769Z</updated>
+    <updated>2019-05-26T13:27:55.602Z</updated>
     
     <content type="html"><![CDATA[<p>Today was amazing!  Streaming is so much more fun when there are a ton of people hanging out and making it interesting and really the best part of it is the learning experience for me.  A while back we had changed the goal state for the NPuzzle problem to have the blank in the bottom left hand corner.  Turns out this does <em>not match</em> the literature... opps my bad.  Also this led to a really long and drawn out debugging process.</p><p>The hardest debugging sessions are the ones where you expect one thing to be true so much that when it turns out to not be true, you spend the majority of the time questioning your method for determining whether it was true or not instead of accepting it and considering how to find the actual source of the problem.  And you do all this despite the multitude of obvious evidence to the contrary.</p><p>In this case, I had previously implemented the NPuzzle problem following the literature (<a href="https://github.com/NickLarsen/heuristic-search" target="_blank" rel="noopener">which you can play with here</a>), and I <em>knew</em> that the states were solvable... because I mean I had done it already.  First we noticed that I was exploring too deep into the search for a particular 4x4 puzzle which I had lifted directly from <a href="https://cse.sc.edu/~mgv/csce580f12/gradPres/korf_IDAStar_1985.pdf" target="_blank" rel="noopener">the paper</a>.  Clearly there was a bug.</p><p>I started looking for it in so many places, essentially everything I had implemented this time around.  Then one of my viewers chimed in and asked if I had tested if it was solvable or not.  And of course I was like... it's from the paper, it's solvable.  I assumed I'd be able to find my bug if I checked solvability after each swap to see which state it came from, so I implemented the solvability check and low and behold it was saying not solvable right from the start.</p><p>Naturally, I must have implemented the check incorrectly.  This is where things got interesting.  Take a peek at the video today and watch me go through round after round of slowly realizing the truth.</p>]]></content>
     
@@ -666,11 +762,11 @@
   </entry>
   
   <entry>
-    <title>N-Puzzle: Ramping up the problem size (day 9)</title>
-    <link href="http://culture-of-development.com/streams/n-puzzle-ramping-up-the-problem-size/"/>
-    <id>http://culture-of-development.com/streams/n-puzzle-ramping-up-the-problem-size/</id>
+    <title>S0009 - N-Puzzle: Ramping up the problem size</title>
+    <link href="http://culture-of-development.com/streams/s0009-n-puzzle-ramping-up-the-problem-size/"/>
+    <id>http://culture-of-development.com/streams/s0009-n-puzzle-ramping-up-the-problem-size/</id>
     <published>2019-02-01T22:15:58.000Z</published>
-    <updated>2019-02-27T19:23:25.772Z</updated>
+    <updated>2019-05-26T13:34:31.148Z</updated>
     
     <content type="html"><![CDATA[<p>Today we started off with the goal of trying to ramp up the problem size for the N-Puzzle problem.  Under our previous implementation, we would have had to go from a state space size of 9! to a statespace size of 16!, or roughly an 8 orders of magnitude increase.  That's a little too baller for where things are right now, so instead I wanted a way to ramp up the problem size a bit less.  To do this, we relaxed the constraint that the board must be square an instead let there be differing height and width.</p><p>This conversion turned out to be a good bit easier than expected and after we were done we ran the full test suite... which highlighted a bug in <code>OpenSet</code>.  Yea, another bug in that thing.  This one turned out to be easier to fix because I had just left out one condition where were not correctly removing states from the set.</p><p>After this we were able to solve the 3x4 puzzle problem with manhattan distance very quickly.  We ramped it right up to one of the easier 4x4 grids and then it did not complete... and eventually we killed it.  We spent some time tooling it to see the output heartbeat and what we noticed was that the speed was quickly dropping off after the first 100,000 or so states made it in the system.  This just became our TODO for next week.</p>]]></content>
     
@@ -689,11 +785,11 @@
   </entry>
   
   <entry>
-    <title>Implementing an OpenSet for AI search algorithms (day 8)</title>
-    <link href="http://culture-of-development.com/streams/implementing-an-openset-for-ai-search-algorithms/"/>
-    <id>http://culture-of-development.com/streams/implementing-an-openset-for-ai-search-algorithms/</id>
+    <title>S0008 - Implementing an OpenSet for AI search algorithms</title>
+    <link href="http://culture-of-development.com/streams/s0008-implementing-an-openset-for-ai-search-algorithms/"/>
+    <id>http://culture-of-development.com/streams/s0008-implementing-an-openset-for-ai-search-algorithms/</id>
     <published>2019-01-31T22:07:58.000Z</published>
-    <updated>2019-02-27T19:23:25.770Z</updated>
+    <updated>2019-05-26T13:30:02.977Z</updated>
     
     <content type="html"><![CDATA[<p>Today we fixed our <code>OpenSet</code> implementation and chatted a bit about some myths about AI in general.  We had a fair amount of dicussion today and it was blast!  Sorting out the details of the open set required using two collections, one to quickly load up the min item, and another to maintain a fast lookup of state costs.  This class ended up being a fairly typical programming exercise and you can watch me go through various phases of frustration and raw joy as we finally got it working.</p><p>With this done, we spent a fair amount of time grinding through some example problems to see how the heuristics affect the number of nodes you have to explore in order to find the goal.  Tomorrow we'll see if we can ramp up the difficulty by increasing the size of the board.</p>]]></content>
     
@@ -712,11 +808,11 @@
   </entry>
   
   <entry>
-    <title>AI and chatting (day 7)</title>
-    <link href="http://culture-of-development.com/streams/ai-and-chatting/"/>
-    <id>http://culture-of-development.com/streams/ai-and-chatting/</id>
+    <title>S0007 - AI and chatting</title>
+    <link href="http://culture-of-development.com/streams/s0007-ai-and-chatting/"/>
+    <id>http://culture-of-development.com/streams/s0007-ai-and-chatting/</id>
     <published>2019-01-30T21:55:33.000Z</published>
-    <updated>2019-02-27T19:23:25.767Z</updated>
+    <updated>2019-05-26T13:16:22.119Z</updated>
     
     <content type="html"><![CDATA[<p>Today we went over some things I took care of off stream, namely refocusing the code to more closely match what you see when you visit wikipedia.  This big change came about when I showed some friends what we have been working on and their first complaint was &quot;wow, that's really hard to follow&quot;.  Thanks y'all.  That's double speak because at the end of the day they were right, it was hard to follow and most notably I left out the closed set, which is what makes BFS act like BFS and not search the same node multiple times.</p><p>On that note turns out we have a bug with the <code>OpenSet</code> where we still are exploring the same nodes multiple times.  That basically means the set isn't respecting the set property.  To make this easier to see, we added a test project and change the fast.search project into a class lib instead.  Overall the code is cleaner and easier to run small little segments of code at a time.</p><p>Thanks to everyone who joined and I look forward to seeing you all tomorrow!</p>]]></content>
     
@@ -735,11 +831,11 @@
   </entry>
   
   <entry>
-    <title>8 Puzzle Perf Tooling</title>
-    <link href="http://culture-of-development.com/streams/8-puzzle-perf-tooling/"/>
-    <id>http://culture-of-development.com/streams/8-puzzle-perf-tooling/</id>
+    <title>S0006 - 8 Puzzle Perf Tooling</title>
+    <link href="http://culture-of-development.com/streams/s0006-8-puzzle-perf-tooling/"/>
+    <id>http://culture-of-development.com/streams/s0006-8-puzzle-perf-tooling/</id>
     <published>2019-01-25T19:35:03.000Z</published>
-    <updated>2019-01-26T19:00:46.972Z</updated>
+    <updated>2019-05-26T13:15:35.409Z</updated>
     
     <content type="html"><![CDATA[<p>Today we set out to achieve the 5 goals listed on yesterday's stream:</p><ul><li><s>redfine the goal state to match what's common in the literature</s></li><li><s>add some performance tooling, counters for explored nodes and a regular pulsing of performance info</s></li><li><s>improve the nodes explored per sec by orders of magnitude</s></li><li>implement the manhattan distance metric</li><li><strong>actually find the optimal solution to the hardest 8 puzzle problem!</strong></li></ul><p>We didn't get quite as far as I had hoped, but we did make good progress and now we can see that using A* with Hamming distance heuristic does infact search deeper than breadth first search.  Overall this is important to convincing us this trek might be worthwhile.</p><p>Next week we'll start using a more Github friendly workflow of using issues and pull requests to track progress which will be a learning experience for me and I'll love your input.  On that note, <a href="https://github.com/culture-of-development/fast" target="_blank" rel="noopener">check out the code the on github</a> and feel free to contribute; I'll highlight your work on stream!</p>]]></content>
     
@@ -760,11 +856,11 @@
   </entry>
   
   <entry>
-    <title>Search Problems: A*</title>
-    <link href="http://culture-of-development.com/streams/search-problems-a-star/"/>
-    <id>http://culture-of-development.com/streams/search-problems-a-star/</id>
+    <title>S0005 - Search Problems: A*</title>
+    <link href="http://culture-of-development.com/streams/s0005-search-problems-a-star/"/>
+    <id>http://culture-of-development.com/streams/s0005-search-problems-a-star/</id>
     <published>2019-01-24T19:07:35.000Z</published>
-    <updated>2019-01-24T19:37:40.929Z</updated>
+    <updated>2019-05-26T13:36:08.082Z</updated>
     
     <content type="html"><![CDATA[<p>Today we continued out trek on search problems.  We implemented <a href="https://en.wikipedia.org/wiki/Breadth-first_search" target="_blank" rel="noopener">breadth first search</a> and <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank" rel="noopener">A*</a> using <a href="https://en.wikipedia.org/wiki/Hamming_distance" target="_blank" rel="noopener">Hamming distance</a> as the heuristic which we applied to the 8 puzzle problem.  We verified the correctness of finding the optimal solution by solving problems with only a few moves to reach the goal.  Once that was done, we ramped up to the hardest problem for the 8 problem and saw that even my beefy ass computer with 128 GB of ram was still easily resource exhausted using both of these techniques.</p><p>For reference, the harest 8 puzzle problem is (0 is the blank) (<a href="http://w01fe.com/blog/2009/01/the-hardest-eight-puzzle-instances-take-31-moves-to-solve/" target="_blank" rel="noopener">source</a>):</p><blockquote><p>8 6 7<br>2 5 4<br>3 0 1</p></blockquote><p>Try to solve that in 31 moves by hand!</p><p>The last 5 minutes really sums up how incredible of a challenge it is going to be to find the optimal way to solve matrix multiplication using search techniques.  This game only has 9! solvable states (362,880 / 2) and somehow we managed to use a technique which explores 10&lt;sup&gt;12&lt;/sup&gt; states.  That's 7 order of magnitude too many!  Finding good heuristics is going to be key if we're going to have any chance of completing our goal of finding a new state of the art way to do dense matrix multiplication.</p><p>The todo list for tomorrow is:</p><ul><li>redfine the goal state to match what's common in the literature</li><li>add some performance tooling, counters for explored nodes and a regular pulsing of performance info</li><li>improve the nodes explored per sec by orders of magnitude</li><li>implement the manhattan distance metric</li><li><strong>actually find the optimal solution to the hardest 8 puzzle problem!</strong></li></ul>]]></content>
     
@@ -783,11 +879,11 @@
   </entry>
   
   <entry>
-    <title>Stack Overflow Dev Survey 2019 + more</title>
-    <link href="http://culture-of-development.com/streams/stack-overflow-dev-survey-2019-more/"/>
-    <id>http://culture-of-development.com/streams/stack-overflow-dev-survey-2019-more/</id>
+    <title>S0004 - Stack Overflow Dev Survey 2019 + more</title>
+    <link href="http://culture-of-development.com/streams/s0004-stack-overflow-dev-survey-2019-more/"/>
+    <id>http://culture-of-development.com/streams/s0004-stack-overflow-dev-survey-2019-more/</id>
     <published>2019-01-23T19:23:13.000Z</published>
-    <updated>2019-01-23T19:35:09.997Z</updated>
+    <updated>2019-05-26T13:35:50.766Z</updated>
     
     <content type="html"><![CDATA[<p>Today we started off with me filling out the 2019 Stack Overflow Developer Survey and talking a little bit about myself when answering the questions.  Not all of them make perfect sense and there was a little ambiguity which was fun, and I got talked a little about some of my crazy artificial intelligence predictions for the future.</p><p>After that we moved on to a little infrastructure work for some search algorithms, in particular implementing the <a href="https://en.wikipedia.org/wiki/15_puzzle" target="_blank" rel="noopener">N-Puzzle</a>, that we're going to use as our test bed to learn about some more advanced search techniques.</p><p>In the closing few minutes I explain the long term goal, which is to reframe the matrix multiplication problem from last week as a search problem in order to write a program that can find the optimal way to do dense matrix multiplication and beat the speed we initially set as a target by doing a 2048x2048 multiplication in python that finishes in like 25 ms.  The python implementation is delegating out to MKL on my machine which means if we can beat this, we beat the implementation by the people who build the chips, and that sounds like a lot of fun to me.</p><p>Thanks again to everyone who joined us today, see you all soon!</p>]]></content>
     
@@ -806,11 +902,11 @@
   </entry>
   
   <entry>
-    <title>Cleaning up my Stack Overflow comment history</title>
-    <link href="http://culture-of-development.com/streams/cleaning-up-my-stack-overflow-comment-history/"/>
-    <id>http://culture-of-development.com/streams/cleaning-up-my-stack-overflow-comment-history/</id>
+    <title>S0003 - Cleaning up my Stack Overflow comment history</title>
+    <link href="http://culture-of-development.com/streams/s0003-cleaning-up-my-stack-overflow-comment-history/"/>
+    <id>http://culture-of-development.com/streams/s0003-cleaning-up-my-stack-overflow-comment-history/</id>
     <published>2019-01-18T19:25:52.000Z</published>
-    <updated>2019-01-18T19:44:24.055Z</updated>
+    <updated>2019-05-26T13:27:36.127Z</updated>
     
     <content type="html"><![CDATA[<p>Today I cleaned up my comment history on Stack Overflow.  It's amazing/fun/disappointing/frustrating and a few other feelings right now.  I definitely said some not nice things, defended my answers as opposed to lifting up others and use notable sarcasm in some posts.  Most of my comments were fine, many of them just needed to be cleaned up because the person provided the details I asked for and overall I feel good that I left the site better today and then I showed up.  It was fun looking at some of my old posts, the good, the bad and the ugly.  I have clearly grown as a developer and this was a nice reminder of that.</p><p>Today I focused mainly on the newest comments and the oldest comments.  I noticed a few patterns which were very common.  Plain and simple, the site <em>looks</em> better as someone looking for an answer when <em>there are no comments</em>.  In truth the comments on Stack Overflow are primarily outdated and not useful within minutes of being posted.  There were some notable exceptions where people pointed out critical improvements, but in almost every case it would have been better to simply update the answer or question text.  My off-the-cuff estimate is that a solid 90% of comments are a waste of space on the Stack Overflow proper for people who landed there from Google.  Maybe in future I'll try to explore some mock ups without the clutter.</p><p>Next time I grind through comment cleanup I intend to focus on the comments on questions that get viewed the most and the ones that get viewed the least.  Those on the questions that are viewed the most have large impact but the ones on questions that are viewed the least are usually the result of really poor questions which need cleanup anyway.</p><p>See you all next week!</p>]]></content>
     
@@ -829,11 +925,11 @@
   </entry>
   
   <entry>
-    <title>Fast Matrix Multiplication Attempt #1</title>
-    <link href="http://culture-of-development.com/streams/fast-matrix-multiplication-attempt-1/"/>
-    <id>http://culture-of-development.com/streams/fast-matrix-multiplication-attempt-1/</id>
+    <title>S0002 - Fast Matrix Multiplication Attempt #1</title>
+    <link href="http://culture-of-development.com/streams/s0002-fast-matrix-multiplication-attempt-1/"/>
+    <id>http://culture-of-development.com/streams/s0002-fast-matrix-multiplication-attempt-1/</id>
     <published>2019-01-18T01:40:32.000Z</published>
-    <updated>2019-01-18T01:44:40.899Z</updated>
+    <updated>2019-05-26T13:28:15.173Z</updated>
     
     <content type="html"><![CDATA[<p>Today I took a stab at showing how writing some processor cache aware code can vastly improve the speed of matrix multiplication in .NET, only it didn't.  I'm still not sure why but watch the utter surprise on my face as it happens live!</p><p>I plan to revisit this in the future, but for the time being check out <a href="https://akkadia.org/drepper/cpumemory.pdf" target="_blank" rel="noopener">this paper</a> where I learned most of what I know on this topic.  Perhaps some of those ideas are outdated?  We'll find out as we explore this futher in the future, but for now we'll move on to other topics.</p><p>One big thing I noticed today is that the stream got a lot more interesting when it switched from &quot;me trying to teach stuff&quot; to &quot;me trying to learn stuff&quot; so I think starting next week I'm going to change the way I frame these sessions into me learning something new every day.</p>]]></content>
     
@@ -852,11 +948,11 @@
   </entry>
   
   <entry>
-    <title>I&#39;m starting a new book on software performance</title>
-    <link href="http://culture-of-development.com/streams/i-am-starting-a-new-book-on-software-performance/"/>
-    <id>http://culture-of-development.com/streams/i-am-starting-a-new-book-on-software-performance/</id>
+    <title>S0001 - I&#39;m starting a new book on software performance</title>
+    <link href="http://culture-of-development.com/streams/s0001-i-am-starting-a-new-book-on-software-performance/"/>
+    <id>http://culture-of-development.com/streams/s0001-i-am-starting-a-new-book-on-software-performance/</id>
     <published>2019-01-17T13:07:42.000Z</published>
-    <updated>2019-01-17T13:23:34.875Z</updated>
+    <updated>2019-05-26T13:37:23.271Z</updated>
     
     <content type="html"><![CDATA[<p>Hello everyone!  Just a quick note that I'm getting back to streaming and big news, I'm writing a book on how to be a software developer with a performance mindset!  When it comes to software development, whether on premesis or in the cloud, computing resources cost real money.  By adopting a performance mindset you can make your work more valuable to your company by saving them real money.</p><p>I started off the stream in classic fashion by forgetting to turn my mic on and was only alerted to it 45 minutes into the broadcast, but I've cleaned that up for youtube video.  I hope to use this stream as a way to start conversations on each of the topics I intend to cover to help me find ways to present the topics in easier ways than I could by myself.  Today I started off doing a first pass on explaining how to select algorithms, showing an example of how different runtimes compare with a simple algorithm of finding if any value from one list is in another list.  We see that even simple problems like this <em>need</em> performance to be considered in order to avoid excessively long runtimes.</p><p>The first 8 minutes or so of today's stream do a good introduction of the topics I intend to cover in the book and the rest starts to dive into algorithm selection.  Let me know what makes sense to you, or what could be improved, in the comments below!</p>]]></content>
     

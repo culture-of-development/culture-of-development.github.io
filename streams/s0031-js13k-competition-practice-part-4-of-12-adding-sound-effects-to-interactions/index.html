@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+	<meta charset="utf-8">
+	<title>S0031 - js13k competition practice, part 4 of 12: adding sound effects to interactions - Culture of Development</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+	<link rel="manifest" href="/img/site.webmanifest">
+	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="/img/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="container">
+			<a href="/" id="header-logo-link"></a>
+			<div class="h3 title">
+				Culture of Development
+				<small>The Pit of Success</small>
+			</div>
+			<nav class="site-nav">
+	<a href="/">about</a>
+	
+	<a href="/blog/">blog</a>
+	
+	<a href="/streams/">streams</a>
+	
+</nav>
+		</div>
+	</header>
+	<section class="page-content">
+		<div class="container">
+			<h1>S0031 - js13k competition practice, part 4 of 12: adding sound effects to interactions</h1>
+<p class="text-muted">
+    2019-04-16 
+	Nick Larsen
+</p>
+<section class="article">
+	
+		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/qSy2jUtZjcI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>This stream was at an unusual time because I unexpectedly have to leave this weekend and don't want to get too far behind on the one month aspect of this practice.</p>
+<p>Today we worked exclusively on adding sound effects to interactions using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" target="_blank" rel="noopener">web audio api</a>.  There are essentially two ways to incorporate audio, either from a buffer of recorded audio data, or by manipulating a source wave from an oscillator.  Recorded audio gets to be quite large depending on the sample rate used to record the audio (recording 1s of uncompressed audio at 44k samples/sec eats up 44 kb) so the eventual audio we use will almost certainly be generated from an oscillator.</p>
+<p>In looking at how js13k projects incorporate interesting audio from past years, I've noticed that many of them generate sound, but record it to a buffer, and then play the buffer on demand instead of doing all the calculations to generate the audio waves repeatedly.  This helps a lot with performance and also simplifies the playing code a fair amount.  Since we're going to be playing from buffers anyway later on, I decided for this first iteration to just record some audio and then load it up in the browser, focusing mostly on getting the sound effects to trigger at the right times.</p>
+<p>Today was a lot of fun and <a href="https://www.twitch.tv/themichaeljolley" target="_blank" rel="noopener">theMichaelJolley</a> showed up to help me work through some ideas and spit ball what we should do next.</p>
+
+	
+		<ul class="watch-my-stream">
+			<li>Please share <a href="https://www.youtube.com/watch?v=qSy2jUtZjcI">this content</a> with everyone!</li>
+			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
+		</ul>
+	
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_config = function () {
+	        this.page.url = 'http://culture-of-development.com/streams/s0031-js13k-competition-practice-part-4-of-12-adding-sound-effects-to-interactions/';
+	        this.page.identifier = 'http://culture-of-development.com/streams/s0031-js13k-competition-practice-part-4-of-12-adding-sound-effects-to-interactions/';
+	    };
+	    (function() {
+	        var d = document, s = d.createElement('script');
+	        s.src = '//cultureofdevelopment.disqus.com/embed.js';
+	        s.setAttribute('data-timestamp', +new Date());
+	        (d.head || d.body).appendChild(s);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</section>
+		</div>
+	</section>
+	<footer class="page-footer">
+		<div class="container">
+			<nav class="site-nav">
+	<a href="/">about</a>
+	
+	<a href="/blog/">blog</a>
+	
+	<a href="/streams/">streams</a>
+	
+</nav>
+			<p>
+				&copy; 2019 Nick Larsen, cultureofdevelopment.com
+			</p>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-38493266-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>
+</html>

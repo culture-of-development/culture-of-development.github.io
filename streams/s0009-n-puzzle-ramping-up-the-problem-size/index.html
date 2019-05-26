@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+	<meta charset="utf-8">
+	<title>S0009 - N-Puzzle: Ramping up the problem size - Culture of Development</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+	<link rel="manifest" href="/img/site.webmanifest">
+	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="/img/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="container">
+			<a href="/" id="header-logo-link"></a>
+			<div class="h3 title">
+				Culture of Development
+				<small>The Pit of Success</small>
+			</div>
+			<nav class="site-nav">
+	<a href="/">about</a>
+	
+	<a href="/blog/">blog</a>
+	
+	<a href="/streams/">streams</a>
+	
+</nav>
+		</div>
+	</header>
+	<section class="page-content">
+		<div class="container">
+			<h1>S0009 - N-Puzzle: Ramping up the problem size</h1>
+<p class="text-muted">
+    2019-02-01 
+	Nick Larsen
+</p>
+<section class="article">
+	
+		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/CJrC-KVXnx0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<p>Today we started off with the goal of trying to ramp up the problem size for the N-Puzzle problem.  Under our previous implementation, we would have had to go from a state space size of 9! to a statespace size of 16!, or roughly an 8 orders of magnitude increase.  That's a little too baller for where things are right now, so instead I wanted a way to ramp up the problem size a bit less.  To do this, we relaxed the constraint that the board must be square an instead let there be differing height and width.</p>
+<p>This conversion turned out to be a good bit easier than expected and after we were done we ran the full test suite... which highlighted a bug in <code>OpenSet</code>.  Yea, another bug in that thing.  This one turned out to be easier to fix because I had just left out one condition where were not correctly removing states from the set.</p>
+<p>After this we were able to solve the 3x4 puzzle problem with manhattan distance very quickly.  We ramped it right up to one of the easier 4x4 grids and then it did not complete... and eventually we killed it.  We spent some time tooling it to see the output heartbeat and what we noticed was that the speed was quickly dropping off after the first 100,000 or so states made it in the system.  This just became our TODO for next week.</p>
+
+	
+		<ul class="watch-my-stream">
+			<li>Please share <a href="https://www.youtube.com/watch?v=CJrC-KVXnx0">this content</a> with everyone!</li>
+			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
+		</ul>
+	
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_config = function () {
+	        this.page.url = 'http://culture-of-development.com/streams/s0009-n-puzzle-ramping-up-the-problem-size/';
+	        this.page.identifier = 'http://culture-of-development.com/streams/s0009-n-puzzle-ramping-up-the-problem-size/';
+	    };
+	    (function() {
+	        var d = document, s = d.createElement('script');
+	        s.src = '//cultureofdevelopment.disqus.com/embed.js';
+	        s.setAttribute('data-timestamp', +new Date());
+	        (d.head || d.body).appendChild(s);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</section>
+		</div>
+	</section>
+	<footer class="page-footer">
+		<div class="container">
+			<nav class="site-nav">
+	<a href="/">about</a>
+	
+	<a href="/blog/">blog</a>
+	
+	<a href="/streams/">streams</a>
+	
+</nav>
+			<p>
+				&copy; 2019 Nick Larsen, cultureofdevelopment.com
+			</p>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-38493266-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>
+</html>
