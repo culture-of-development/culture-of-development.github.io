@@ -10,8 +10,11 @@
         <span class="text-muted pull-right">
             <%= date(post.date, config.date_format) %> 
         </span>
+        <% if (post.title.match(/^S\d+ - /)) { %>
+            <%= post.title.match(/^S\d+/)[0] %><br />
+        <% } %>
         <a class="post-link" href="<%- url_for(post.path) %>">
-            <%= post.title %>
+            <%= post.title.replace(/^(S\d+) - /, "") %>
         </a>
     </p>
 <% }) %>
