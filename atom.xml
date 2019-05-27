@@ -69,9 +69,16 @@
     <link href="http://culture-of-development.com/streams/s0042-mentorship-monday-cover-letters-and-psuedopolynomial/"/>
     <id>http://culture-of-development.com/streams/s0042-mentorship-monday-cover-letters-and-psuedopolynomial/</id>
     <published>2019-05-20T13:11:28.000Z</published>
-    <updated>2019-05-26T13:11:43.258Z</updated>
+    <updated>2019-05-27T01:06:26.160Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to Mentorship Monday!  This is my new spot for answering <strong>your</strong> questions about what it's like to be a professional developer.  I'm happy to help you with whatever it is you are having trouble with, from technical to organizational, to personal, just tweet me a question and I'll be happy to add your question to the list for the next episode!  Reach me at <a href="https://twitter.com/fody" target="_blank" rel="noopener">fody on twitter</a>.</p><p>This week we covered 2 questions I get asked a ton:</p><ul><li>What does a good cover letter look like?</li><li>I don't get algorithmic complexity, what am I missing?</li></ul><p>My answer to the cover letter stuff is pretty cut and dry at this point because I have written the best way to write a cover letter a few years back (<a href="/blog/the-developer-cover-letter/" title="The Developer Cover Letter">The Developer Cover Letter</a>) and nothing has really changed since then.</p><p>For the algorithmic complexity question I noted that if you think the input size is how many elements there are in some data structure, then you probably have it all wrong, and the correct way to think about it is the number of bits in the input.  The explanation goes on to show that all known solutions to the Fibonnaci number problem are actually exponential time solutions and not linear!</p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to Mentorship Monday!  This is my new spot for answering &lt;strong&gt;your&lt;/strong&gt; questions about what it&#39;s like to be a professiona
+      
     
     </summary>
     
@@ -85,9 +92,16 @@
     <link href="http://culture-of-development.com/streams/s0041-updating-stream-theme-making-a-list-of-what-needs-to-be-done/"/>
     <id>http://culture-of-development.com/streams/s0041-updating-stream-theme-making-a-list-of-what-needs-to-be-done/</id>
     <published>2019-05-15T13:09:36.000Z</published>
-    <updated>2019-05-26T13:10:49.954Z</updated>
+    <updated>2019-05-27T00:46:37.515Z</updated>
+    
+    <content type="html"><![CDATA[<p>Time to up the production value of the stream a bit!  Here's the quick list of things we came up with to improve upon and we'll spend the next few days grinding through as much as we can before it's time to get back to doing some AI and stuff.</p><ul><li>colors:<ul><li>right brain: F2531B</li><li>left brain: 797A7B</li><li>background: 405156</li></ul></li><li>make a new background for all scenes for consistency</li><li>add in some background noise<ul><li>hopefully this only goes to stream, not to me</li><li>consider adaptive background that get louder when im quiet for an extended period</li></ul></li><li>UI<ul><li>last follower</li><li>last subscriber</li><li>cover more of the screen</li><li>keep the chat overlay or not, if yes then make it much easier to read</li></ul></li><li>transitions for scene to scene (not entirely sure what i want here)</li><li>scenes within scenes? (do some research)</li><li>new scenes<ul><li>interview scene with no code (just talking) 2 people</li><li>interview scene with no code (just talking) 3 people</li><li>Mentorship Monday, that's easier to modify</li><li>whiteboard</li></ul></li><li>chat<ul><li>get a chat bot</li></ul></li><li>video<ul><li>lighting</li><li>zooming</li><li>size</li><li>look at chat?</li></ul></li><li>new interactions<ul><li>raids happen</li><li>subscriptions</li><li>etc</li><li>left brain, right brain theme</li></ul></li><li>flip the logo horizontally to make the brains seem more correct<ul><li>update the website with the updated logo</li></ul></li><li>including some stream plugins<ul><li>amazon prime</li><li>closed captioning</li></ul></li></ul><h3>What did we accomplish today?</h3><ul><li>colors:<ul><li>right brain: F2531B</li><li>left brain: 797A7B</li><li>background: 405156</li></ul></li><li>including some stream plugins<ul><li>amazon prime</li><li>closed captioning</li></ul></li><li>video<ul><li>zooming</li><li>lighting</li><li>size</li><li>look at chat?</li></ul></li><li>UI<ul><li>cover more of the screen</li><li>keep the chat overlay or not, if yes then make it much easier to read</li></ul></li></ul><p>Quite the day, and now that we're all done, things already look better.  The hidden bottom bar and the color scheme went a long way toward cleaning things up and the logo behind the video was a nice touch.</p><p>Tomorrow we definitely want to look into nested scenes and see if we can get a lot of the video stuff taken care of so we can spend most of Friday getting a customizable chat bot rolling.  Thanks to everyone who joined and I look forward to see you all tomorrow!</p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;Time to up the production value of the stream a bit!  Here&#39;s the quick list of things we came up with to improve upon and we&#39;ll spend the
+      
     
     </summary>
     
@@ -101,9 +115,16 @@
     <link href="http://culture-of-development.com/streams/s0040-mentorship-monday/"/>
     <id>http://culture-of-development.com/streams/s0040-mentorship-monday/</id>
     <published>2019-05-13T13:05:24.000Z</published>
-    <updated>2019-05-26T13:05:56.962Z</updated>
+    <updated>2019-05-27T00:34:19.268Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to Mentorship Monday!  This is my new spot for answering <strong>your</strong> questions about what it's like to be a professional developer.  I'm happy to help you with whatever it is you are having trouble with, from technical to organizational, to personal, just tweet me a question and I'll be happy to add your question to the list for the next episode!</p><p>This week's episode we went over what mentorship is and how to know what kinds of questions are best for mentorship compared to things you might ask on stackoverflow.com or just looking up on google.  Short and sweet, please drop me a line and I'll be happy to get to your questions as soon as possible!  Reach me at <a href="https://twitter.com/fody" target="_blank" rel="noopener">fody on twitter</a>.</p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to Mentorship Monday!  This is my new spot for answering &lt;strong&gt;your&lt;/strong&gt; questions about what it&#39;s like to be a professiona
+      
     
     </summary>
     
