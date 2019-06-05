@@ -1,12 +1,11 @@
 ---
-title: 'S0048 - Decision trees: prepping for production'
+title: 'S0048 - AI & Chatting - Decision trees: prepping for production'
 author: Nick Larsen
 categories: streams
-youtube_url: 'https://www.youtube.com/watch?v='
-youtube_embed: 'https://www.youtube.com/embed/'
+youtube_url: 'https://www.youtube.com/watch?v=LbxCWP5daNE'
+youtube_embed: 'https://www.youtube.com/embed/LbxCWP5daNE'
 date: 2019-06-04 17:44:33
 ---
-
 
 Right after the stream yesterday I finished up the code to generate the compiled trees and wowee are they fast.  10,000 job/user combinations in ~25 ms.  That's finally within our requirements!  Now it's time to clean this up a bit in preparation for production.
 

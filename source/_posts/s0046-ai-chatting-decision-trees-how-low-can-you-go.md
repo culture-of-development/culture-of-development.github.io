@@ -1,5 +1,5 @@
 ---
-title: 'S0046 - Decision trees: how low can you go?'
+title: 'S0046 - AI & Chatting - Decision trees how low can you go?'
 author: Nick Larsen
 categories: streams
 youtube_url: 'https://www.youtube.com/watch?v=Ged02QfW9uo'

@@ -1,12 +1,11 @@
 ---
-title: 'S0047 - Decision trees: compiled trees'
+title: 'S0047 - AI & Chatting - Decision trees: compiled trees'
 author: Nick Larsen
 categories: streams
-youtube_url: 'https://www.youtube.com/watch?v='
-youtube_embed: 'https://www.youtube.com/embed/'
+youtube_url: 'https://www.youtube.com/watch?v=5KoSbsvPjwQ'
+youtube_embed: 'https://www.youtube.com/embed/5KoSbsvPjwQ'
 date: 2019-06-04 16:43:39
 ---
-
 
 Well after all that work on optimizing for fewest pages touched, turns out it didn't help any noticable amount.  Completely... deflating.
 
