@@ -9,6 +9,11 @@ date: 2019-06-06 12:46:41
 - the goal for the whole project
   - describe the project, show where on the page it is being used
   - describe what we currently have and why it's not keeping up with the times
+  - we need to test it
+- we tried to most simple thing first
+  - keep the model in the language it was developed in
+  - that was attrocious
+  - yea that's not gonna work
 - the requirements for the whole project
   - our goal is not to make a general purpose tool, but make this specific case as fast as possible
   - 5000 jobs
@@ -17,10 +22,6 @@ date: 2019-06-06 12:46:41
   - soft requirement on how much memory it can use, just needs to be as little as possible
 
 ## getting it up and running
-- we tried to most simple thing first
-  - keep the model in the language it was developed in
-  - that was attrocious
-  - yea that's not gonna work
 - switch to c# land
   - parsing the provided model files
   - the most naive possible solution
