@@ -9,11 +9,11 @@ I work on the team at [stackoverflow.com](stackoverflow.com) that deals with the
 
 ![Stack Overflow Job Ads](/img/so-job-ads.PNG)
 
-The goal of my team is to make the model that predicts the likelihood that a user will click on a given job if shown that job.  At any given time there are 5,000 jobs or so on the job board that the current visitor can see, so we calculate the expectation for each job, then we perform a weighted random selection over those values.
+The goal of my team is to make the model that predicts the likelihood that a user will click on a given job if shown that job.  At any given time there are a bunch of jobs on the job board that the current visitor can see, so we calculate the expectation for each job, then we perform a weighted random selection over those values.
 
 The problem we have is that the model needs to be updated from time to time to account for changing market conditions.  Basically, new technologies come out all the time and which kinds of technologies are being used on Stack Overflow changes over time and which kinds of jobs are being listed changes all the time.
 
-In this most recent round of updating the model, we decided to go outside of our typical process of using a [lasso regression](https://en.wikipedia.org/wiki/Lasso_(statistics) and instead decided to try out numerous kinds of other models.  At the end of the day, the best model based on our selection criteria turned out to be a [random forest](https://en.wikipedia.org/wiki/Random_forest).  A random forest is basically a collection of decision trees that all combine to make a prediction.
+In this most recent round of updating the model, we decided to go outside of our typical process of using a [lasso regression](https://en.wikipedia.org/wiki/Lasso_(statistics)) and instead decided to try out numerous kinds of other models.  At the end of the day, the best model based on our selection criteria turned out to be a [random forest](https://en.wikipedia.org/wiki/Random_forest).  A random forest is basically a collection of decision trees that all combine to make a prediction.
 
 You may have heard of decision trees because they are the brunt of one of the biggest jokes in all of AI.
 
@@ -21,7 +21,7 @@ You may have heard of decision trees because they are the brunt of one of the bi
 
 ###### image source: [9gag.com](https://9gag.com/gag/aeMmnPW/if-advanced-ai-was-a-scooby-doo-villain)
 
-But it turns out they are quite powerful after all, especially when you use a lot of them together.  I tend to get a little upset when I see that meme because the interesting part isn't really how they make the predictions, it's in how they are constructed, which is legitimate ML.
+But it turns out they are quite powerful after all, especially when you use a lot of them together, like a random forest.  I tend to get a little upset when I see that meme because the interesting part isn't really how they make the predictions, it's in how they are constructed, which is legitimate ML.
 
 Training a random forest can be quite expensive however, and we were not able to feed it all of our sample data.  Instead it was decided to try a similar model, [XGBoost](https://xgboost.readthedocs.io/en/latest/) which we could feed with much more data in the same amount of time.  This is trained in a totally different manner, i.e. using [boosting](https://en.wikipedia.org/wiki/Boosting_(machine_learning)), however on the prediction side it turns out to be almost exactly the same as a random forest.
 
@@ -29,7 +29,7 @@ So we have a new model, we hope it's going to be good, now we need to run a test
 
 ### Try the easiest thing first
 
-One problem we have had here is that most of our models are trained in the R language and then we have to convert to those models to run in C# which is what we use for pretty much all production stuff here at Stack Overflow.
+One problem we have had here is that most of our models are trained in the [R language](https://www.r-project.org/about.html) and then we have to convert to those models to run in C# which is what we use for pretty much all production stuff here at Stack Overflow.
 
 It has been on our radar for a long time to try to run R in production so we can avoid the step of transfering the model to a new system.  There has been more than one major mistake on account of that transfer and it would also reduce our time to push out new models once we get them from our data scientist.
 
@@ -41,7 +41,7 @@ That's... ummm, not fast.  That's about a 25 millisecond average time to score a
 
 ![Number of jobs on Stack Overflow right now](/img/num-jobs-on-the-board.PNG)
 
-That's how many you can see right now if you live in the United States and you can see how many jobs are available in your area right now by visiting [stackoverflow.com/jobs](stackoverflow.com/jobs).  And if we multiply that with the time it takes to score one job on average, we're looking at `3810 * 25ms = 95,250ms`.  That's a lot of ms to render a job ad.  Too many in fact.  I guess we need to take a look at our overall requirements.
+That's how many you can see right now if you live in the United States and you can see how many jobs are available in your area right now by visiting [stackoverflow.com/jobs](https://stackoverflow.com/jobs).  And if we multiply that with the time it takes to score one job on average, we're looking at `3810 * 25ms = 95,250ms`.  That's a lot of ms to render a job ad.  Too many in fact.  I guess we need to take a look at our overall requirements.
 
 ### The requirements
 
@@ -49,37 +49,39 @@ First off, the number of jobs fluctuates from time to time due to various market
 
 ![Job Ad Request Engine times](/img/ad-request-time.PNG)
 
-Looking at our current ad request times, it looks like the entire job selection process takes about 220 ms.  That's to do all the scoring and choosing of the jobs based on those scores.  I'm not entirely sure how much of that time is the job selection process, but we should give ourselves some buffer here and let's just call it 200 ms.
+Looking at our current ad request times, it looks like the entire job selection process takes about 25 ms on average and roughly 65-70 ms for the 99th percentile.  That's to do all the scoring and choosing of the jobs based on those scores.  I'm not entirely sure how much of that time is the job selection process, but we should give ourselves some buffer here and let's just call it 25 ms to match what we have and we need to keep the 99th percentile under 65 ms.
 
-This application runs on our web tier, the exact same boxes that Stack Overflow and all the other Stack Exchange sites run on.  These boxes are getting slammed like crazy with requests.  On our web tier, pretty much anything in the path of a request needs to be handled in a single threaded manner.  In order to test out something that operates in parallel would be a test all of it's own and is beyond the scope of this project.
+This application runs on our web tier, the exact same boxes that Stack Overflow and all the other Stack Exchange sites run on.  These boxes are getting slammed like crazy with requests.  On our web tier, pretty much anything in the path of a request needs to be handled in a single-threaded manner.  In order to test out something that operates in parallel would be a test all of it's own and is beyond the scope of this project.
 
 And lastly we need to be aware of the memory usage for this application.  The request handling needs to allocate as little memory as possible but there is some leeway here because the boxes themselves run at about 80% memory capacity already.  There are 64 GB of RAM on each of these boxes, and we need to keep some buffer in there, so going to the architecture team to ask for more than a couple gigabytes on each of these boxes is a pretty big ask.  Whatever memory it takes to run a single request, we really need to multiply it times 48 because there are 48 cores on the box.  If we want to stay under say 3 GB, then we have at most 62.5 MB per request.
 
 So in short, the requirements for handling a single request are:
 
 - must score 5,000 jobs for a user
-- must complete in 200 ms
-- must be single threaded
+- must complete in roughly 25 ms, and 99% of requests need to finish in under 65 ms
+- must be single-threaded
 - must use less than roughly 65 MB total
 
 ### Let's stick to our bread and butter
 
-We're much better at C# here than we are at R, especially when it comes to performance.  Additionally the most important thing to do right now is to verify that this new model is an improvement over the old model so building out a pipeline that included R in production was probably a lot of additional work we didn't need to consider doing for this anyway.
+We're much better at C# here than we are at R for performance critical applications.  Additionally the most important thing to do right now is to verify that this new model is an improvement over the old model so building out a pipeline that included R in production was probably a lot of additional work we didn't need to consider doing for this anyway.
 
 So we decided to write this in C# and we went with the most naive possible solution.  Pretty much all the code to run the XGBoost model looks like this:
 
-{% codeblock lang:c %}
+{% codeblock lang:csharp %}
 public sealed class DecisionTree
 {
     public struct DecisionTreeNode
     {
-        public int Value { get; set; }
-        public double FeatureIndex { get; set; }
+        public int FeatureIndex { get; set; }
+        public double Value { get; set; }
         public int TrueBranch { get; set; }
         public int FalseBranch { get; set; }
     }
 
     const int LeafIndex = -1;
+
+    private readonly DecisionTreeNode[] nodes;
 
     public DecisionTree(DecisionTreeNode[] tree)
     {
@@ -100,7 +102,7 @@ public sealed class DecisionTree
 
 public sealed class XGBoost
 {
-    private DecisionTree[] trees;
+    private readonly DecisionTree[] trees;
 
     public XGBoost(DecisionTree[] trees)
     {
@@ -195,4 +197,30 @@ booster[1]
 32:leaf=0.0885346606,cover=1061.10071
 {% raw %}</pre>{% endraw %}
 
-And there are 1,000 of these trees.  Due to the way this model was trained, the missing branch, which you would normally take when a feature is missing, is always the "no" branch.  This is because we replace all values with 0 if they are missing, and all features have a positive value in our problem space.  The gain and cover variables are just output from the model for your information but do not affect the tree at all.  The first number is the index of the line that is referred to by the "yes" and "no" parameters.  The features are numbered 0 through about 840 in our data, so when you see `fXXX` it means feature number XXX in the input.  The input to these, as you can see from the `Evaluate` function is just an array of doubles.
+This snippet shows two trees, delimited by the lines that start with `booster[` and there are 1,000 of these trees.  Due to the way this model was trained, the missing branch, which you would normally take when a feature is missing from the sample, is always the "no" branch.  This is because we replace all values with 0 if they are missing, and all features have a positive value in our problem space.  The gain and cover variables are just output from the model for your information but do not affect the tree at all.  The first number is the index of the line that is referred to by the "yes" and "no" parameters.  The features are numbered 0 through about 840 in our data, so when you see `fXXX` it means feature number XXX in the input.  The input to these, as you can see from the `Evaluate` function is just an array of doubles.
+
+### How close are we?
+
+Let's try it out real fast, and see.  This is just using a simple timer wrapped around running this code with 5000 examples.  One caveat here, make sure you run this in release mode or your times will be wildly different.
+
+> TestXGBoostNaiveTiming - Time taken for 5000 evaluations: 233.8478 ms
+
+Hey that's not so bad, only a factor of about 10 to go.  I should point out here that when you're trying to reach a specific performance goal, the actual machine you're going to be running this on makes a difference.  My dev box gets an update about every other year, and is much more powerful than a lot of our production servers, especially the ones this will be running on.  In an ideal world, we would run this test on the machine we care about, but since we're so far from the goal already, it's not time for that yet.
+
+But wait up, let's not get ahead of ourselves, let's verify this is actually generating the correct values too.  Keep in mind that there are a bunch of samples here that we used for the timing that we can now use to verify it is spitting out the correct values.  These samples, and the expected outputs, were provided to us by our data scientist.
+
+{% codeblock lang:csharp %}
+const int probablity_feature_index = 840;
+foreach(var sample in samples)
+{
+    var actual = model.EvaluateProbability(sample.Value);
+    var expected = sample.Value[probablity_feature_index];
+    Assert.InRange(actual, expected - 1e-06, expected + 1e-06);
+}
+{% endcodeblock %}
+
+And the results of running this test are a pass, so \o/ we're on the right track!
+
+### What's next?
+
+Next time we're going to take a look at some really basic improvements which will net us a fair amount of win.  The first step for designing anything is to get it working correctly, and set a baseline, then these next few things we address will be very common tips that can show some major improvements in your applications with only minor changes.
