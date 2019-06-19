@@ -2,7 +2,7 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
 	<meta charset="utf-8">
-	<title>S0030 - js13k competition practice, part 3 of 12: item interactions, inventory and a win condition - Culture of Development</title>
+	<title>S0048 - AI &amp; Chatting - Decision trees: prepping for production - Culture of Development</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
@@ -37,32 +37,38 @@
 	<section class="page-content">
 		<div class="container">
 			
-	<small>S0030</small>
+	<small>S0048</small>
 
-<h1>js13k competition practice, part 3 of 12: item interactions, inventory and a win condition</h1>
+<h1>AI & Chatting - Decision trees: prepping for production</h1>
 <p class="text-muted">
-    2019-04-12 
+    2019-06-04 
 	Nick Larsen
 </p>
 <section class="article">
 	
-		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/MtN08gejwFg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/LbxCWP5daNE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	
-	<p>We're making solid progress so far and after today it really started to feel like &quot;a game&quot; in the sense that most of the component you would expect for a game are there in some minimal form.  This is also the furtherest I've ever really gotten into a game in which you interact with the environment; most games in my past have been psuedo-games where the computer part doesn't actually have knowledge of the rules of the game, it's more just a board in which you manipulate pieces (think like a chess game that doesn't know when you have won or lost).</p>
-<p>It has become clear to me that the super-ad-hoc way this game has been developing has some serious flaws which we will address at some point before we get to the end.  Most notably when one thing needs to change, everything needs to change.  We have also hard baked in the idea of how rendering happens to most objects which is going to make it a huge task to switch should we decide to move to canvas rendering or something else other than manual DOM manipulation.</p>
-<p>Picking up items was quite a bit of fun.  Moving them from their cell to our inventory was quite a challenge but seeing them disappear from the world was really cool.  Making the winning condition check for items in your inventory also really cool.  Time to start thinking more about how objects interact with other objects in the world.</p>
+	<p>Right after the stream yesterday I finished up the code to generate the compiled trees and wowee are they fast.  10,000 job/user combinations in ~25 ms.  That's finally within our requirements!  Now it's time to clean this up a bit in preparation for production.</p>
+<p>Things we take a look at:</p>
+<ul>
+<li>eliminating essentially all allocations</li>
+<li>reducing memory churn as much as possible</li>
+<li>making a test that more closely mimics production use</li>
+<li>cleaning up the code for readability</li>
+</ul>
+<p>I would also like to give a huge thanks to <a href="https://www.twitch.tv/csharpfritz" target="_blank" rel="noopener">@csharpfritz</a> for the amazing 70+ person raid!  This helped me blow through a few achievements and gave me a good audience to recap the last 2 weeks of work on this project.  Also another huge shout out to everyone who participating in the bit war, especially <a href="https://www.twitch.tv/themichaeljolley" target="_blank" rel="noopener">@theMichaelJolley</a> and <a href="https://www.twitch.tv/cpayette" target="_blank" rel="noopener">@cpayette</a>!  Thanks everyone!</p>
 
 	
 		<ul class="watch-my-stream">
-			<li>Please share <a href="https://www.youtube.com/watch?v=MtN08gejwFg">this content</a> with everyone!</li>
+			<li>Please share <a href="https://www.youtube.com/watch?v=LbxCWP5daNE">this content</a> with everyone!</li>
 			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
 		</ul>
 	
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
 	    var disqus_config = function () {
-	        this.page.url = 'http://culture-of-development.com/streams/s0030-js13k-competition-practice-part-3-of-12-item-interactions-inventory-and-a-win-condition/';
-	        this.page.identifier = 'http://culture-of-development.com/streams/s0030-js13k-competition-practice-part-3-of-12-item-interactions-inventory-and-a-win-condition/';
+	        this.page.url = 'http://culture-of-development.com/streams/s0048-ai-chatting-decision-trees-prepping-for-production/';
+	        this.page.identifier = 'http://culture-of-development.com/streams/s0048-ai-chatting-decision-trees-prepping-for-production/';
 	    };
 	    (function() {
 	        var d = document, s = d.createElement('script');

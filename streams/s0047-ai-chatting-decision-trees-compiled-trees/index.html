@@ -2,7 +2,7 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
 	<meta charset="utf-8">
-	<title>S0030 - js13k competition practice, part 3 of 12: item interactions, inventory and a win condition - Culture of Development</title>
+	<title>S0047 - AI &amp; Chatting - Decision trees: compiled trees - Culture of Development</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
@@ -37,32 +37,38 @@
 	<section class="page-content">
 		<div class="container">
 			
-	<small>S0030</small>
+	<small>S0047</small>
 
-<h1>js13k competition practice, part 3 of 12: item interactions, inventory and a win condition</h1>
+<h1>AI & Chatting - Decision trees: compiled trees</h1>
 <p class="text-muted">
-    2019-04-12 
+    2019-06-04 
 	Nick Larsen
 </p>
 <section class="article">
 	
-		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/MtN08gejwFg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/5KoSbsvPjwQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	
-	<p>We're making solid progress so far and after today it really started to feel like &quot;a game&quot; in the sense that most of the component you would expect for a game are there in some minimal form.  This is also the furtherest I've ever really gotten into a game in which you interact with the environment; most games in my past have been psuedo-games where the computer part doesn't actually have knowledge of the rules of the game, it's more just a board in which you manipulate pieces (think like a chess game that doesn't know when you have won or lost).</p>
-<p>It has become clear to me that the super-ad-hoc way this game has been developing has some serious flaws which we will address at some point before we get to the end.  Most notably when one thing needs to change, everything needs to change.  We have also hard baked in the idea of how rendering happens to most objects which is going to make it a huge task to switch should we decide to move to canvas rendering or something else other than manual DOM manipulation.</p>
-<p>Picking up items was quite a bit of fun.  Moving them from their cell to our inventory was quite a challenge but seeing them disappear from the world was really cool.  Making the winning condition check for items in your inventory also really cool.  Time to start thinking more about how objects interact with other objects in the world.</p>
+	<p>Well after all that work on optimizing for fewest pages touched, turns out it didn't help any noticable amount.  Completely... deflating.</p>
+<p>Of course we're not out of ideas yet, far from it in fact.  TheHugeDahl was extremely thoughtful during the last stream and noted that we could make some changes to the organization of the trees.  One improvement in particular was moving the leaf values up to the parents.  If we can move the leaves to the parents we save a branch of every single tree which should add up to some savings.  But... why not take it one step further.  Lets try code generating functions for each tree and just calling those functions directly.</p>
+<p>Ideally this would have a lot of positive effects:</p>
+<ul>
+<li>it would eliminate the heavyweight trees altogether</li>
+<li>it would eliminate a lot of data cache contention by moving the trees to instruction cache</li>
+<li>and of course we could eliminate those last branches in each path</li>
+</ul>
+<p>One caveat, I have never written code gen using .NET before, so we're going to have to figure that out and luckily there's a library called <a href="https://github.com/kevin-montrose/Sigil" target="_blank" rel="noopener">sigil</a> to help us out.</p>
 
 	
 		<ul class="watch-my-stream">
-			<li>Please share <a href="https://www.youtube.com/watch?v=MtN08gejwFg">this content</a> with everyone!</li>
+			<li>Please share <a href="https://www.youtube.com/watch?v=5KoSbsvPjwQ">this content</a> with everyone!</li>
 			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
 		</ul>
 	
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
 	    var disqus_config = function () {
-	        this.page.url = 'http://culture-of-development.com/streams/s0030-js13k-competition-practice-part-3-of-12-item-interactions-inventory-and-a-win-condition/';
-	        this.page.identifier = 'http://culture-of-development.com/streams/s0030-js13k-competition-practice-part-3-of-12-item-interactions-inventory-and-a-win-condition/';
+	        this.page.url = 'http://culture-of-development.com/streams/s0047-ai-chatting-decision-trees-compiled-trees/';
+	        this.page.identifier = 'http://culture-of-development.com/streams/s0047-ai-chatting-decision-trees-compiled-trees/';
 	    };
 	    (function() {
 	        var d = document, s = d.createElement('script');
