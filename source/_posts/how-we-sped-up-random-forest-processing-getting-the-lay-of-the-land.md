@@ -74,7 +74,7 @@ So we decided to write this in C# and we went with the most naive possible solut
 {% codeblock lang:csharp %}
 public sealed class DecisionTree
 {
-    public struct DecisionTreeNode
+    public class DecisionTreeNode
     {
         public int FeatureIndex { get; set; }
         public double Value { get; set; }
