@@ -37,6 +37,8 @@ So we tried it.  And then we were like, okay, let's see how fast it is.
 
 ![R API times](/img/xgboost-api-time-r.png)
 
+###### image source: [Julia Silge](https://twitter.com/juliasilge)
+
 That's... ummm, not fast.  That's about a 25 millisecond average time to score a _single_ job.  But wait, we have a lot of jobs on the job board at any time.
 
 ![Number of jobs on Stack Overflow right now](/img/num-jobs-on-the-board.PNG)
