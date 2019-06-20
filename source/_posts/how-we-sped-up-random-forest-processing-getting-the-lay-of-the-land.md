@@ -5,11 +5,11 @@ categories: blog
 date: 2019-06-12 12:38:41
 ---
 
-I work on the team at [stackoverflow.com](stackoverflow.com) that deals with the selection of jobs in sidebar ads.  These things:
+I work on the team at [stackoverflow.com](https://stackoverflow.com) that is responsible for job ad selection model.  These things:
 
 ![Stack Overflow Job Ads](/img/so-job-ads.PNG)
 
-The goal of my team is to make the model that predicts the likelihood that a user will click on a given job if shown that job.  At any given time there are a bunch of jobs on the job board that the current visitor can see, so we calculate the expectation for each job, then we perform a weighted random selection over those values.
+This model predicts the likelihood that a user will click on a given job relative to all the other jobs.  At any given time there are a bunch of jobs on the job board that the current visitor can see, so we calculate the expectation for each job, then we perform a weighted random selection over those values.
 
 The problem we have is that the model needs to be updated from time to time to account for changing market conditions.  Basically, new technologies come out all the time and which kinds of technologies are being used on Stack Overflow changes over time and which kinds of jobs are being listed changes all the time.
 
@@ -53,7 +53,9 @@ Looking at our current ad request times, it looks like the entire job selection 
 
 This application runs on our web tier, the exact same boxes that Stack Overflow and all the other Stack Exchange sites run on.  These boxes are getting slammed like crazy with requests.  On our web tier, pretty much anything in the path of a request needs to be handled in a single-threaded manner.  In order to test out something that operates in parallel would be a test all of it's own and is beyond the scope of this project.
 
-And lastly we need to be aware of the memory usage for this application.  The request handling needs to allocate as little memory as possible but there is some leeway here because the boxes themselves run at about 80% memory capacity already.  There are 64 GB of RAM on each of these boxes, and we need to keep some buffer in there, so going to the architecture team to ask for more than a couple gigabytes on each of these boxes is a pretty big ask.  Whatever memory it takes to run a single request, we really need to multiply it times 48 because there are 48 cores on the box.  If we want to stay under say 3 GB, then we have at most 62.5 MB per request.
+We also need to be aware of the memory usage for this application.  The request handling needs to allocate as little memory as possible but there is some leeway here because the boxes themselves run at about 80% memory capacity already.  There are 64 GB of RAM on each of these boxes, and we need to keep some buffer in there, so going to the architecture team to ask for more than a couple gigabytes on each of these boxes is a pretty big ask.  Whatever memory it takes to run a single request, we really need to multiply it times 48 because there are 48 cores on the box.  If we want to stay under say 3 GB, then we have at most 62.5 MB per request.
+
+And lastly, we really only care about making this specific model fast enough to run the test.  It is not necessary to build a general purpose random forest implementation here, just something that can test the model we were given so we can verify if it is an improvement over our old model or not.  It is totally fine to make concessions as necessary to support only this one instance, and if this model turns out to be better than what we currently have, _then_ we might consider generalizing it to support a wider range of model instances.
 
 So in short, the requirements for handling a single request are:
 
@@ -61,6 +63,7 @@ So in short, the requirements for handling a single request are:
 - must complete in roughly 25 ms, and 99% of requests need to finish in under 65 ms
 - must be single-threaded
 - must use less than roughly 65 MB total
+- all tricks are allowed as long as _this one model instance_ works correctly
 
 ### Let's stick to our bread and butter
 
@@ -100,11 +103,11 @@ public sealed class DecisionTree
     }
 }
 
-public sealed class XGBoost
+public sealed class RandomForest
 {
     private readonly DecisionTree[] trees;
 
-    public XGBoost(DecisionTree[] trees)
+    public RandomForest(DecisionTree[] trees)
     {
         this.trees = trees;
     }
@@ -203,26 +206,34 @@ This snippet shows two trees, delimited by the lines that start with `booster[` 
 
 Let's try it out real fast, and see.  This is just using a simple timer wrapped around running this code with 5000 examples.  One caveat here, make sure you run this in release mode or your times will be wildly different.
 
-> TestXGBoostNaiveTiming - Time taken for 5000 evaluations: 233.8478 ms
+> [6/20/19 4:02:34 AM] Time taken for 5000 evaluations: 233.8478 ms
 
-Hey that's not so bad, only a factor of about 10 to go.  I should point out here that when you're trying to reach a specific performance goal, the actual machine you're going to be running this on makes a difference.  My dev box gets an update about every other year, and is much more powerful than a lot of our production servers, especially the ones this will be running on.  In an ideal world, we would run this test on the machine we care about, but since we're so far from the goal already, it's not time for that yet.
+Hey that's not so bad, only a factor of about 10 to go.  I should point out here that when you're trying to reach a specific performance goal, the actual machine you're going to be running this on makes a difference.  My dev box gets an update about every other year, and is much more powerful than a lot of our production servers, especially the ones this will be running on.  In fact if you run this on processors released in the last year or two, you might see times as low as 160 ms, like I did on my laptop which only 4 months old. [obligatory works-on-my-machine badge here]  In an ideal world, we would run this test on the machine we care about, but since we're so far from meeting our requirements already, it's not time for that yet.
 
 But wait up, let's not get ahead of ourselves, let's verify this is actually generating the correct values too.  Keep in mind that there are a bunch of samples here that we used for the timing that we can now use to verify it is spitting out the correct values.  These samples, and the expected outputs, were provided to us by our data scientist.
 
 {% codeblock lang:csharp %}
+RandomForest model; // loaded in test setup
+double[][] samples; // loaded in test setup
 const int probablity_feature_index = 840;
+
 foreach(var sample in samples)
 {
-    var actual = model.EvaluateProbability(sample.Value);
-    var expected = sample.Value[probablity_feature_index];
+    var actual = model.EvaluateProbability(sample);
+    var expected = sample[probablity_feature_index];
     Assert.InRange(actual, expected - 1e-06, expected + 1e-06);
 }
+output.WriteLine("Correctness verified.");
 {% endcodeblock %}
 
-And the results of running this test are a pass, so \o/ we're on the right track!
+> [6/20/19 4:02:34 AM] Correctness verified.
 
-Let's also take a second to realize that the biggest win we're going to see here at all is that moving away from the tooling we are not familiar with, i.e. the R API described above, to something we are much better with, we were able to reduce the time for a single sample evaluation from roughly 25 ms to roughly 0.047 ms.  This is roughly three orders of magnitutude.  I want to be clear, this is not because R is slow, it's because we are not familiar enough with R to write efficient code.  The rest of this entire series is about grinding out as much of that last order of magnitude as possible.
+So \o/ we're on the right track!
+
+Let's also take a second to realize that the biggest win we're going to see here at all is that moving away from the tooling we are not familiar with, i.e. the R API described above, to something we are much better with.  We were able to reduce the time for a single sample evaluation from roughly 25 ms to roughly 0.047 ms which is roughly three orders of magnitutude.  I want to be clear, this is not because _R_ is slow, it's because _we_ are not familiar enough with R to write efficient code.  The rest of this entire series is about grinding out as much of that last order of magnitude as possible.
 
 ### What's next?
 
-Next time we're going to take a look at some really basic improvements which will net us a fair amount of win.  The first step for designing anything is to get it working correctly, and set a baseline, then these next few things we address will be very common tips that can show some major improvements in your applications with only minor changes.
+Next time we're going to take a look at some really basic improvements which will net us a fair amount of win.  The first step for designing anything is to get it working correctly and set a baseline for performance.  These next few things we address will be very common tips that can show some major improvements in your applications with only minor changes.
+
+If you are interested in following along and trying this stuff out for yourself, please clone [the repo](https://github.com/culture-of-development/random-forest-perf-blog) and run the naive tests as shown in the readme.
