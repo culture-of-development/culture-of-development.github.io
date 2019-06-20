@@ -221,6 +221,8 @@ foreach(var sample in samples)
 
 And the results of running this test are a pass, so \o/ we're on the right track!
 
+Let's also take a second to realize that the biggest win we're going to see here at all is that moving away from the tooling we are not familiar with, i.e. the R API described above, to something we are much better with, we were able to reduce the time for a single sample evaluation from roughly 25 ms to roughly 0.047 ms.  This is roughly three orders of magnitutude.  I want to be clear, this is not because R is slow, it's because we are not familiar enough with R to write efficient code.  The rest of this entire series is about grinding out as much of that last order of magnitude as possible.
+
 ### What's next?
 
 Next time we're going to take a look at some really basic improvements which will net us a fair amount of win.  The first step for designing anything is to get it working correctly, and set a baseline, then these next few things we address will be very common tips that can show some major improvements in your applications with only minor changes.
