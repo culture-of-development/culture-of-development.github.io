@@ -60,6 +60,7 @@
 <p>It has been on our radar for a long time to try to run R in production so we can avoid the step of transfering the model to a new system.  There has been more than one major mistake on account of that transfer and it would also reduce our time to push out new models once we get them from our data scientist.</p>
 <p>So we tried it.  And then we were like, okay, let's see how fast it is.</p>
 <p><img src="/img/xgboost-api-time-r.png" alt="R API times"></p>
+<h6>image source: <a href="https://twitter.com/juliasilge" target="_blank" rel="noopener">Julia Silge</a></h6>
 <p>That's... ummm, not fast.  That's about a 25 millisecond average time to score a <em>single</em> job.  But wait, we have a lot of jobs on the job board at any time.</p>
 <p><img src="/img/num-jobs-on-the-board.PNG" alt="Number of jobs on Stack Overflow right now"></p>
 <p>That's how many you can see right now if you live in the United States and you can see how many jobs are available in your area right now by visiting <a href="https://stackoverflow.com/jobs" target="_blank" rel="noopener">stackoverflow.com/jobs</a>.  And if we multiply that with the time it takes to score one job on average, we're looking at <code>3810 * 25ms = 95,250ms</code>.  That's a lot of ms to render a job ad.  Too many in fact.  I guess we need to take a look at our overall requirements.</p>
