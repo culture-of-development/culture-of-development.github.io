@@ -206,9 +206,9 @@ This snippet shows two trees, delimited by the lines that start with `booster[` 
 
 Let's try it out real fast, and see.  This is just using a simple timer wrapped around running this code with 5000 examples.  One caveat here, make sure you run this in release mode or your times will be wildly different.
 
-> [6/20/19 4:02:34 AM] Time taken for 5000 evaluations: 233.8478 ms
+> [6/20/19 4:02:34 AM] Time taken for 5000 evaluations: 319.5548 ms
 
-Hey that's not so bad, only a factor of about 10 to go.  I should point out here that when you're trying to reach a specific performance goal, the actual machine you're going to be running this on makes a difference.  My dev box gets an update about every other year, and is much more powerful than a lot of our production servers, especially the ones this will be running on.  In fact if you run this on processors released in the last year or two, you might see times as low as 160 ms, like I did on my laptop which only 4 months old. [obligatory works-on-my-machine badge here]  In an ideal world, we would run this test on the machine we care about, but since we're so far from meeting our requirements already, it's not time for that yet.
+Hey that's not so bad, only a factor of about 12-13 to go.  I should point out here that when you're trying to reach a specific performance goal, the actual machine you're going to be running this on makes a difference.  My dev box gets an update about every other year, and is much more powerful than a lot of our production servers, especially the ones this will be running on.  In fact if you run this on processors released in the last year or two, you might see times as low as 220 ms, like I did on my laptop which only 4 months old. [obligatory works-on-my-machine badge here]  In an ideal world, we would run this test on the machine we care about, but since we're so far from meeting our requirements already, it's not time for that yet.
 
 But wait up, let's not get ahead of ourselves, let's verify this is actually generating the correct values too.  Keep in mind that there are a bunch of samples here that we used for the timing that we can now use to verify it is spitting out the correct values.  These samples, and the expected outputs, were provided to us by our data scientist.
 
