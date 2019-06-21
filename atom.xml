@@ -40,34 +40,6 @@
   </entry>
   
   <entry>
-    <title>How we sped up decision tree processing</title>
-    <link href="http://culture-of-development.com/blog/how-we-sped-up-decision-tree-processing/"/>
-    <id>http://culture-of-development.com/blog/how-we-sped-up-decision-tree-processing/</id>
-    <published>2019-06-06T16:46:41.000Z</published>
-    <updated>2019-06-13T18:22:03.580Z</updated>
-    
-    <content type="html"><![CDATA[<h2>introduction</h2><ul><li>the goal for the whole project<ul><li>describe the project, show where on the page it is being used</li><li>describe what we currently have and why it's not keeping up with the times</li><li>we need to test it</li></ul></li><li>we tried to most simple thing first<ul><li>keep the model in the language it was developed in</li><li>that was attrocious</li><li>yea that's not gonna work</li></ul></li><li>the requirements for the whole project<ul><li>our goal is not to make a general purpose tool, but make this specific case as fast as possible</li><li>5000 jobs</li><li>99th % at like 85 ms, realistically it's more like 50 ms</li><li>must be single threaded, it's running on the same boxes as everything else that is publicly web facing</li><li>soft requirement on how much memory it can use, just needs to be as little as possible</li></ul></li></ul><h2>getting it up and running</h2><ul><li>switch to c# land<ul><li>parsing the provided model files</li><li>the most naive possible solution<ul><li>show all the necessary code in a snippet</li></ul></li><li>verifying correctness</li></ul></li></ul><h2>performance tuning</h2><h3>the trivial stuff</h3><ul><li>shrinking the representation</li><li>using structs instead of classes for nodes</li><li>putting class fields in the best order</li><li>get rid of linq</li><li>getting fast access to the first node</li></ul><h3>finding out the real (i.e. actual) slow parts</h3><ul><li>get some ideas, like where we think it's slow</li><li>verify those ideas</li><li>do some profiling (simple timers)</li><li>some crazier profiling (visual studio profiler, dotTrace)</li><li>some insane profiling (vtune)</li><li>problems with all these methods</li></ul><h2>the overall problem</h2><ul><li>cache pressure</li><li>how did we decide it was cache pressure?</li></ul><h2>general approaches to fixing it</h2><ul><li>reduce the memory size (hey we already did that once!)</li><li>reduce the working set size</li><li>access data in predictable patterns</li></ul><h2>changes to the decision trees</h2><ul><li>remember we're just trying to solve our specific use case, not general purpose trees</li></ul><h3>approach: reorder the features</h3><ul><li><p>idea is that the features jump all over the place, if we put commonly accessed features close to each other, it should greatly reduce the number of cache pages that we need</p></li><li><p>took the greedy approach</p></li><li><p>describe the evaluation function</p></li><li><p>To parallel comparing sorting/searching algorithms. Introduce it, explain it, show it, why would it work/not work for this scenario : @theHugoDahl</p></li></ul><h3>approach: evaluate all samples for 1 tree at a time</h3><ul><li>take a step back and look at the whole problem, not just optimize the thing the profiler said was slow, but focus on the whole problem</li><li>there were 2 places we loaded from memory, 1 was features, other was jobs, so this is the next likely approach</li><li>also the trees are quite heavy and churning through all that data is expensive, so we should reduce the churn</li><li>guess what it's wayyy faster!</li></ul><h3>approach: compiled trees</h3><ul><li>there is always an extra branch at the end, can we eliminate the extra branch?</li><li>let's code gen a function for each tree to reduce it as much as possible</li><li>this was insanely fast</li><li>guess what it's also got a huge bug<ul><li>the bug that pretty clearly identified it as cache pressure though which really narrowed down the future ideas</li></ul></li></ul><h3>approach: better memory alignment for the trees</h3><ul><li>the trees were stored in objects that were spread out in memory</li><li>what if we put them all close together?</li><li>array of structs to struct of arrays</li><li>can we also get rid of the indexes for the branches because that would eliminate some lookup and shrink the size even more</li><li>this was an actual win</li></ul><h3>approach: is precomputing possible?</h3><ul><li>this is something we had been thinking about all along</li><li>but we tried repeatedly to precompute the jobs, only because these are branches, you now have to create a set of trees for each job which is an asinine amount of memory usage which is beyond our allowance</li><li>instead let's take <em>another</em> step back and look at the whole test, compared to what's going to happen in production</li><li>there's only 1 user, so we can precompute the user then run it for all jobs</li><li>this was another huge win</li></ul><h2>getting ready for production</h2><ul><li>making the decision which algorithm to choose</li><li>eliminating allocations</li><li>reducing memory churn as much as possible</li><li>making a test that more closely mimics production use</li><li>cleaning up the code for readability and documentation</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2&gt;introduction&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;the goal for the whole project
-&lt;ul&gt;
-&lt;li&gt;describe the project, show where on the page it is being used&lt;/li&gt;
-&lt;l
-      
-    
-    </summary>
-    
-      <category term="blog" scheme="http://culture-of-development.com/blog/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>S0048 - AI &amp; Chatting - Decision trees: prepping for production</title>
     <link href="http://culture-of-development.com/streams/s0048-ai-chatting-decision-trees-prepping-for-production/"/>
     <id>http://culture-of-development.com/streams/s0048-ai-chatting-decision-trees-prepping-for-production/</id>
