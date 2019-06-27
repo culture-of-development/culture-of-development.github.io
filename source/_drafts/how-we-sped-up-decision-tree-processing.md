@@ -31,10 +31,10 @@ date: 2019-06-06 12:46:41
 ## performance tuning
 
 ### the trivial stuff
+- get rid of linq
 - shrinking the representation
 - using structs instead of classes for nodes
 - putting class fields in the best order
-- get rid of linq
 - getting fast access to the first node
 
 ### finding out the real (i.e. actual) slow parts
