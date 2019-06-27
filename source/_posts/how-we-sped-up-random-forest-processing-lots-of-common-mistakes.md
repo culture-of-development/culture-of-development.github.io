@@ -88,4 +88,10 @@ In .NET, there are classes, which are reference types, and there are structs, wh
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 {% endraw %}
 
-When creating an array, reference types are stored as an array of references, where as value types are stored directly in the array.
+When creating an array, reference types are stored as an array of references, where as value types are stored directly in the array.  In order to access the data of a reference type, you first have to go to the memory location of the reference, then do what you need with the data there.  Value types on the other hand point directly to the memory location where the data is stored.  The best was I can describe this is with a picture.
+
+TODO: picture of array of reference, picture of array of structs
+
+In the array of classes, the array itself only contains references to the memory locations, and if you want to access them, you need to go look up that memory location before you can use the data in that class.  If we instead switch that class to a struct, then we end up in the situation of the second part of the image above.  In this case, we avoid the extra lookup, and gain some performance.
+
+You can actually see this extra work if you look at the intermediate language (IL) that C# compiles down to when you use the compiler.
