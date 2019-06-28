@@ -239,3 +239,10 @@ Let's also take a second to realize that the biggest win we're going to see here
 Next time we're going to take a look at some really basic improvements which will net us a fair amount of win.  The first step for designing anything is to get it working correctly and set a baseline for performance.  These next few things we address will be very common tips that can show some major improvements in your applications with only minor changes.
 
 If you are interested in following along and trying this stuff out for yourself, please clone [the repo](https://github.com/culture-of-development/random-forest-perf-blog) and run the naive tests as shown in the readme.
+
+---
+
+### How we sped up random forest process series
+
+- [Getting the lay of the land](/blog/how-we-sped-up-random-forest-processing-getting-the-lay-of-the-land/)
+- [Lots of common performance patterns](/blog/how-we-sped-up-random-forest-processing-lots-of-common-performance-patterns/)

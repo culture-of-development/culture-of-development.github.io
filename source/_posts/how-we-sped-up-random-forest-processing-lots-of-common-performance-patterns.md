@@ -5,7 +5,6 @@ categories: blog
 date: 2019-06-27 22:43:18
 ---
 
-
 In [the previous article](/blog/how-we-sped-up-random-forest-processing-getting-the-lay-of-the-land/) we outlined our problem, the major constraints we must adhere to and wrote a straightforward implementation of a random forest evaluator.  We proved the correctness of the implementation and then we set up a naive benchmark to test how much time it was going to take to run 5,000 samples through 1,000 trees, each of a maximum depth of 5 decision nodes.  This currently runs in about 320 ms and we need it to run in about 25 ms.
 
 As a quick reminder, here is a condensed version of the code from the previous article, ignoring most of the boilerplate:
@@ -166,7 +165,9 @@ And there we go.  Better alignment for 4 byte data types, better performance.  5
 
 This last one is a bit of a hack.  We just spent a bunch of time squeezing out chunks of performance from the tree nodes which get used a ton, let's take a step back and see if we can speed up dealing with whole trees.  
 
-Since the trees contain references to variable sized arrays, we wont see much of a win by turning them into structs because we're still going to pay the additional lookup price.  What we can do however is add a field to the trees that is a copy of the first node so that we effectively have the first node right next to the reference in our array of trees.  Essentially, at the same time that we get the reference to all nodes, we also get the full root node of the tree available, and we can start processing the first iteration of the loop while some magic happens in the background to prefetch the first page of memory containing the nodes.
+No matter what, we're going to have to pay the lookup price for the `nodes` array.  What we can do however is add a field to each tree that is a copy of the first node so that we effectively have the first node right next to the reference in our array of trees.  Essentially, at the same time that we get the reference to all nodes, we also get the full root node of the tree available, and we can start processing the first iteration of the loop while some magic{% raw %}<sup>2</sup>{% endraw %} happens in the background to prefetch the first page of memory containing the nodes.
+
+{% raw %}<small><sup>2</sup> It really is magic, but we will discuss it more depth in the fourth installment of this series.<small>{% endraw %}
 
 It should be noted that this only works because our tree node is a struct, and therefore lives right in line on the same memory that has the reference to the first array node.  If the `DecisionTreeNode` was a class, this would not work because it would store a reference to the exact same memory location at the front of the array of all nodes, and we would still eat the latency of that extra lookup.  This also would not work if our work loop in the `Evaluate` method was a tight loop with very few instructions.  Because we're doing a lot of work in here, we get the option to hide the latency of the memory lookup by pulling the useful information at the same time we load the reference to the tree.
 
@@ -229,3 +230,10 @@ Hopefully you'll start to recognize these common patterns in your own work and y
 When you run out of common patterns to exploit, it's time to start pulling out the tools to help you identify the slow parts.  Next time we'll run through some tools which helped us identify the remaining bottlenecks in our code.
 
 If you are interested in following along and trying this stuff out for yourself, please clone [the repo](https://github.com/culture-of-development/random-forest-perf-blog) and run the naive tests as shown in the readme.
+
+---
+
+### How we sped up random forest process series
+
+- [Getting the lay of the land](/blog/how-we-sped-up-random-forest-processing-getting-the-lay-of-the-land/)
+- [Lots of common performance patterns](/blog/how-we-sped-up-random-forest-processing-lots-of-common-performance-patterns/)
