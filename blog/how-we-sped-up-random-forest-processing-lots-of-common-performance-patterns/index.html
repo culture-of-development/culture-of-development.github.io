@@ -102,7 +102,8 @@
 <p>And there we go.  Better alignment for 4 byte data types, better performance.  58.72% total improvement so far.</p>
 <h3>Fast access to the root of each tree</h3>
 <p>This last one is a bit of a hack.  We just spent a bunch of time squeezing out chunks of performance from the tree nodes which get used a ton, let's take a step back and see if we can speed up dealing with whole trees.</p>
-<p>Since the trees contain references to variable sized arrays, we wont see much of a win by turning them into structs because we're still going to pay the additional lookup price.  What we can do however is add a field to the trees that is a copy of the first node so that we effectively have the first node right next to the reference in our array of trees.  Essentially, at the same time that we get the reference to all nodes, we also get the full root node of the tree available, and we can start processing the first iteration of the loop while some magic happens in the background to prefetch the first page of memory containing the nodes.</p>
+<p>No matter what, we're going to have to pay the lookup price for the <code>nodes</code> array.  What we can do however is add a field to each tree that is a copy of the first node so that we effectively have the first node right next to the reference in our array of trees.  Essentially, at the same time that we get the reference to all nodes, we also get the full root node of the tree available, and we can start processing the first iteration of the loop while some magic<sup>2</sup> happens in the background to prefetch the first page of memory containing the nodes.</p>
+<p><small><sup>2</sup> It really is magic, but we will discuss it more depth in the fourth installment of this series.<small></small></small></p>
 <p>It should be noted that this only works because our tree node is a struct, and therefore lives right in line on the same memory that has the reference to the first array node.  If the <code>DecisionTreeNode</code> was a class, this would not work because it would store a reference to the exact same memory location at the front of the array of all nodes, and we would still eat the latency of that extra lookup.  This also would not work if our work loop in the <code>Evaluate</code> method was a tight loop with very few instructions.  Because we're doing a lot of work in here, we get the option to hide the latency of the memory lookup by pulling the useful information at the same time we load the reference to the tree.</p>
 <blockquote>
 <p>[6/28/2019 2:00:50 AM] Time taken for 5000 evaluations: 116.4636 ms</p>
@@ -116,6 +117,12 @@
 <h3>What's next?</h3>
 <p>When you run out of common patterns to exploit, it's time to start pulling out the tools to help you identify the slow parts.  Next time we'll run through some tools which helped us identify the remaining bottlenecks in our code.</p>
 <p>If you are interested in following along and trying this stuff out for yourself, please clone <a href="https://github.com/culture-of-development/random-forest-perf-blog" target="_blank" rel="noopener">the repo</a> and run the naive tests as shown in the readme.</p>
+<hr>
+<h3>How we sped up random forest process series</h3>
+<ul>
+<li><a href="/blog/how-we-sped-up-random-forest-processing-getting-the-lay-of-the-land/">Getting the lay of the land</a></li>
+<li><a href="/blog/how-we-sped-up-random-forest-processing-lots-of-common-performance-patterns/">Lots of common performance patterns</a></li>
+</ul>
 
 	
 	<div id="disqus_thread"></div>
