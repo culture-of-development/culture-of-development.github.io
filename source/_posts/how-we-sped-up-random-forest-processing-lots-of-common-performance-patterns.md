@@ -59,7 +59,7 @@ Usually, as in this example above on line 31, the function argument is passed as
 
 Creating the context for a lambda function is a relatively expensive task.  You won't notice it if you only ever generate a few contexts for a particular lambda, but if you are doing it over and over, the taxes start to add up and in our case we're doing this about 5,000 times per request.  
 
-There are a few ways to solve this problem, but the most straightforward method are to either 1) don't use a lambda function as the delegate parameter to a linq function where it's not necessary, or 2) don't use linq. In this case we do need the context in order to get the `instance` variable, so fix #1 isn't really an option and we should just get rid of our use of linq.
+There are a few ways to solve this problem, but the most straightforward methods are to either 1) don't use a lambda function as the delegate parameter to a linq function where it's not necessary, or 2) don't use linq. In this case we do need the context in order to get the `instance` variable, so fix #1 isn't really an option and we should just get rid of our use of linq.
 
 {% codeblock lang:csharp %}
 public double EvaluateProbability(double[] instance)
@@ -77,7 +77,7 @@ Simple enough.  It's a little harder to read, but that's just how it goes someti
 
 That's a 16.37% reduction in time; that's nothing to shake a stick at.  Let's be really clear when this kind of optimization matters.  When a user visits the site, we need to perform this calculation for roughly 5,000 jobs, and at peak hours we're going to be handling roughly 450 requests per second.  This code gets called _a lot_.
 
-If this were only happening once per request, we wouldn't worry about this kind of optimization because 800 times just isn't that much.  But when you have code that's being called ~2,000,000 times per second, for hours on end, the lambda tax adds up very fast.
+If this were only happening once per request, we wouldn't worry about this kind of optimization because 450 times per second just isn't that much.  But when you have code that's being called ~2,000,000 times per second, for hours on end, the lambda tax adds up very fast.
 
 ### Arrays of classes
 
