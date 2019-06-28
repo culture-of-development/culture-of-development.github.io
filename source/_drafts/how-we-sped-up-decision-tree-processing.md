@@ -32,8 +32,8 @@ date: 2019-06-06 12:46:41
 
 ### the trivial stuff
 - get rid of linq
-- shrinking the representation
 - using structs instead of classes for nodes
+- shrinking the representation
 - putting class fields in the best order
 - getting fast access to the first node
 
