@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+	<meta charset="utf-8">
+	<title>How to prepare for your next interview - Culture of Development</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+	<link rel="manifest" href="/img/site.webmanifest">
+	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="/img/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="container">
+			<a href="/" id="header-logo-link"></a>
+			<div class="h3 title">
+				Culture of Development
+				<small>The Pit of Success</small>
+			</div>
+			<nav class="site-nav">
+	<a href="/">about</a>
+	
+	<a href="/blog/">blog</a>
+	
+	<a href="/streams/">streams</a>
+	
+</nav>
+		</div>
+	</header>
+	<section class="page-content">
+		<div class="container">
+			
+<h1>How to prepare for your next interview</h1>
+<p class="text-muted">
+    2019-08-02 
+	Nick Larsen
+</p>
+<section class="article">
+	
+	<p>Your next interview is coming up and you feel excited, nervous and you are definitely experiencing some notable anxiety that you are not used to.  Interviewing <em>is</em> a huge deal!  You're making a huge life change, you're going to meet a lot of new people, you're going to be focusing on totally new problems and you feel like you're going to have to prove yourself to a bunch of people all over again.  And on top of all that, you're going to have to face some of your demons like coding in front of other people are solving problems on a timer.</p>
+<p><img src="/img/hackerrank-codepair-screenshot1.png" alt="Online coding interview"></p>
+<h6><a href="https://www.hackerrank.com/products/codepair/" target="_blank" rel="noopener">image source</a></h6>
+<p>Largely this anxiety comes from not really knowing what to expect in the interviews and not wanting to be in this situation for very long.  Not wanting to be in this situation for very long is a real concern that almost everyone faces, and unfortunately I don't have a solution for that.  What I do have a solution for is telling you what to expect so that you get an offer you'll be happy with a lot sooner.</p>
+<p>We're going to cover the main topics you are being evaluated on, and give some pointers on how to improve your standing in each area by the end the interview.  First we'll break down the key topics, then we'll explain them in more detail, and at the very end, we'll cover the most common question patterns you will almost certainly be asked.</p>
+<h2>The problem solving process</h2>
+<p><strong>You are being hired to solve problems.</strong>  I cannot reiterate this enough.  You are <em>not</em> here to write code, you are here to <em>solve problems</em>.  Problems can be product related, code related, people related, process related, whatever, your job is to solve problems.  Writing code is just one method for implementing the solution to a problem.  As you are interviewing, the expectation is that you will be writing code to implement solutions, so that's what they are going to test you on, however, it's your problem solving skills that really make the difference between passing the interview or not.  So let's break down the problem solving process and see how all the parts fit together.</p>
+<h3>The problem description</h3>
+<p>Problems are a description of something that needs to be accomplished.  Problems are things like &quot;we need to order all the items in this array by ascending value&quot;.  This is the sorting problem.  There are lots of ways to solve the sorting problem, and you can sort things without a computer as well, for instance alphebetizing medical records in a filing cabinet.  A problem statement is just a description, it does not in any way, shape or form insinuate a specific solution.</p>
+<p>There are lots of problems, but just to highlight a few common problems that you might run into in your work, it's things like:</p>
+<ul>
+<li>we need more customers buying things on our website</li>
+<li>we need to make it easier to find the answers to your questions</li>
+<li>we need identify the toxic content on our website</li>
+</ul>
+<p>If you have ever run into any of these problems in your work, your brain is probably filled with ideas just because you read those problem statements, and that's the point, a problem can have tons of solutions.  It's your job to find a good solution to the problem at hand.</p>
+<h3>The approach</h3>
+<p>An approach is a high-level idea about how to solve a problem.  It does not specify implementation details, it only provides an outline for the key components of a solution.  Coming up with a valid approach is the actual act of solving a problem.  This is why you are not here to code, you are here to solve problems.  You need to come up with valid, working approaches to each problem.  And once you have that, it can be anybody's problem to implement it.</p>
+<p>To continue with the sorting example, an approach is something like &quot;find the lowest value and put it in the first location, then repeat this process on the remaining unsorted elements until all elements are sorted&quot;.  This is a totally valid and working approach.  Again, notice it does not specify a particular algorithm, it's just a general idea about how to solve the problem and it can be implemented in many ways.  This general approach is the basis of numerous sorting algorithms which we'll go through in a moment.</p>
+<p>Once you have an approach, <strong>you have solved the problem</strong>; you have accomplished the primary thing you are being hired to do.  One very common mistake people make here is to &quot;think in code&quot;, which essentially means that you drop down to only consider what tools you are familiar with.  You may have heard the saying &quot;if all you have is a hammer, all the problems start looking like nails&quot;.  If you can't think of a way to solve it using some tool you know then all of a sudden you are stuck.  This is a huge mistake.  It's like trying to fix the shower wall in a bathroom, but the only tool you know how to use is duct tape, so you start describing how to use duct tape to hold the tiles to the wall.  Instead you should describe the approach as attach the tiles to the wall, then you have still solved the problem, and you can worry about the implementation details later.</p>
+<p><img src="/img/duct-tape-fix.jpg" alt="duct tape wall"></p>
+<h6><a href="http://www.startribune.com/top-20-home-inspection-photos-from-2015/364228611/" target="_blank" rel="noopener">image source</a></h6>
+<p>Instead I strongly urge you to <strong>solve all problems like a human, not like a computer</strong>.  Think about if you had that filing cabinet full of medical records and you had to sort it alphabetically, what would you do?  Are you going to come up with the most efficient answer on the first try?  Probably not, but you <em>are</em> going to solve the problem, and once a problem is solved and we have a working solution, we can iterate on it.  If you don't have a working solution, you're busted and you're not getting the job.  Just solve it naively and we'll work through better solutions later on.</p>
+<h3>The technique</h3>
+<p>Techniques are actual implementation details of solution.  This is the point where you start talking about specific algorithms and how you are going to apply them to the data given to you.  As noted above, there are tons of different ways to implement a sort based on finding the smallest value first.  Some of the most common are selection sort, bubble sort and insertion sort but there are plenty of others as well.  There are lots of techniques to implement an approach.  You are well aware, I'm sure, that these are not fast sorting algorithms.  That's not the point, the point is that you solved the problem.</p>
+<p><img src="/img/home-alone-plan.jpg" alt="Home Alone battle plan"></p>
+<h6><a href="https://slate.com/culture/2015/11/home-alone-hit-theaters-25-years-ago-heres-how-they-filmed-its-bonkers-finale.html" target="_blank" rel="noopener">image source</a></h6>
+<p>As you work through the details of your approach and apply the various techniques you need to solve your problem, you might find that they are slow.  At that point, you have a good indication that you need to modify your approach.  In the case of sorting, the approach of repeatedly finding the lowest value essentially boils down to performing local comparisons, i.e. items that are side by side in the array.  If you instead compare items that are far away from each other, then when you swap those you can eliminate multiple inversions at a time.  This is the basis of another large group of sorting algorithms, namely quicksort and merge sort, but again there are others as well.</p>
+<p>This sort of back and forth from problem solving to identifying limitations that lead you to other approaches is a big part of what you learn through first hand experience.  It's okay that you don't come up with the best approach on the first try, again it's always most important that you just have a working solution.  There is a long philosophical conversation to be had here, but the jist of it is that you should just understand that we might come up with better algorithms for any problem tomorrow, even the ones we think are mostly solved today.  So don't worry about trying to come up with the best solution, a working solution is worth 99% of the credit.  Usually you will only have to worry about performance if the max time or amount of memory your algorithm is allowed to use is specified in the problem description.</p>
+<h3>The code</h3>
+<p>The code is pretty straightforward, it's the actual text you write that implements your solution.  I'm not going to say much here because there's only one thing we care about really and that's that you write code that works when you run it.  In an interview, don't worry about writing perfectly styled code so much, just focus on getting to a working solution as quickly as possible.</p>
+<h2>Understanding the key skills</h2>
+<p>Now that you have a good idea of what the problem solving process looks like, let's see how you can highlight the specific skills that companies are looking for.</p>
+<h3>Problem solving skills</h3>
+<p>If it isn't clear yet, you are being hired to solve problems.  Focus on that first; verbally announce an approach before you get start coding on every single problem.  This gives the interviewer an opportunity to ensure your approach is valid and make sure that you are working toward your given approach during your implementation.  When they are convinced this approach will work, then start your coding.</p>
+<p>Another really big point here is that when you announce a valid approach, you are given much more leeway on the coding part of the interview because they know what you are trying to.  When you fail to announce an approach, you are forcing the interviewer to judge your problem solving skills entirely based on the output of your code and whether or not it passes all the test cases.  You can essentially get full credit for problem solving skills by just announcing a valid approach before you start.  Good interviewers will force you to tell your approach before you start coding, but you should make this a habit as you practice for your next interview.</p>
+<p>I also want to stress again to solve the problem like a human during an interview.  It is critical that your interviewer believes that your solution will work so being expressive and easy to understand are critical when explaining your approach.  Cleverness is usually difficult to understand and more tricky to implement so it's generally a good idea to avoid it during an interview.</p>
+<h3>Coding skills</h3>
+<p>Coding skills are the ability to take a given approach and convert it into working code.  This is <em>not</em> problem solving, this is highlighting the techniques you are familiar with and your knowledge of your language of choice.  If you are given the option to choose your own language, <em>always</em> choose the one you are most familiar with and make no exceptions on this point because you will only handicap yourself.  If they tell you what language you have to write in, then it is what it is.</p>
+<p>There's not a lot to say about the coding skills other than can you produce working code in the amount of time you have for the interview or not.  For most companies, this part of the grading is almost entirely binary, you pass or fail.  Style matters very little, but you should still aim to be expressive and parsable.  Expressive code is easy to understand and parsable code makes it easier to figure out which lines of code go with other lines, e.g. ensuring that all the statements within a block have the same indentation.  If your code works, the style doesn't count for much, but when it doesn't work having more expressive and parsable code makes it easier for the interviewer to help you find the trivial mistakes.</p>
+<h3>Debugging skills</h3>
+<p>Debugging is the process of locating the source of an error.  It is not problem solving, it is not coding, it is just detective work and once you identify the source of the problem, then you head back to coding or problem solving land.  This skill is incredibly valuable because getting stuck in an interview is an almost certainty, and debugging is how you get unstuck.</p>
+<p><img src="/img/manyadventures-01.jpg" alt="Winnie the Pooh stuck"></p>
+<h6><a href="https://www.dvdizzy.com/manyadventures-bluray.html" target="_blank" rel="noopener">image source</a></h6>
+<p>There are three primary kinds of getting stuck that require debugging in an interview.  The first is syntax errors and you can identify the source of most of those by looking at the line numbers in the compiler output.  Just go to that line and fix the problem.</p>
+<p>The second is logic errors, this is the most common type of blocking error you run into during an interview.  Debugging these errors is also very simple but no one ever really teaches it, not in school, not in bootcamps and not really on the job either, you just sort of develop a sense for it, but luckily for you, here's primer on how to do it effectively.  First set your expectation.  Each line of code you write has some values going into and it produces some new values.  Find the line of code, one by one, where your expected output for the previous line is violated.  Use print lines after each statement to validate that the current state matches your expectations.  One of them <em>will</em> eventually be different from your expectations and then you are done debugging.  It really is that easy but so many people don't do it that it stands out in an interview.  Use this <strong>methodical</strong> approach to locating the source of logic errors.</p>
+<p>If there is no compiler available, then use a minimal example and walk through your code operation by operation, keeping track of all the variables (and I mean <em>all</em> the variables).  <strong>Do not skip operations!</strong>  This is the most common mistake I see when people are writing code without a compiler; they read only what they <em>expect</em> to happen, and don't track what is <em>actually</em> happening.  This is a very natural thing, and one of the reasons you usually cannot effectively edit your own writing because you have a tendency to read what you intended to write, not what you actually wrote.  Track all the variables, write them down if you have to, and make sure you explicitly say the values out loud going into each statement, especially conditionals like <code>if</code> and <code>for</code> loop conditions.</p>
+<p>The third kind of error you run into is a timeout error.  This happens when you write inefficient code and it runs too slow against larger datasets.  This is a much more difficult error to fix usually because it is a clear indication that your approach is not going to work.  If the output is correct, but it's taking too long, then printing intermediate results is not going to help.  Instead you need to time each line to find the lines that are taking the longest.  <em>Do not guess</em> which lines are slow because unless you are an expert, you will almost certainly be wrong!  Time <em>each</em> line, then when you identify the slow part, consider other approaches that might be faster.</p>
+<p>Debugging skills are critical to your long term success as a developer but they take time to develop.  Don't worry if this is the part you struggle with the most right now, just focus on making small improvements to your process each time you run into a error.</p>
+<p>As the interviewee, debugging can be really frustrating, especially in your first few interviews because you feel like it looks bad that you wrote a bug.  Here's a secret, bugs happen all the time.  In the entire time that you are a developer you will only write bug free code a handful of times per year.  And then in a few weeks or months, someone will come along and the find the bugs for you.  The most important thing to realize when you write a bug in an interview is to not panic.  Just shift out of code writing mode, and shift into debugging mode as seamlessly as possible.  Practicing interview questions is more about mastering this transition than learning to write bug free code.</p>
+<p><img src="/img/drake-debugging.png" alt="Drake says &amp;quot;don't panic when you see an error&amp;quot;"></p>
+<h2>Things you will almost certainly be asked in your first few technical interviews</h2>
+<p>The first thing is you need to practice some technical interview questions before you go into your first few interviews.  There are tons of sites you can do this on, such as <a href="http://leetcode.com/" target="_blank" rel="noopener">leetcode</a>, <a href="https://www.hackerrank.com/" target="_blank" rel="noopener">hacker rank</a>, <a href="https://www.codility.com/" target="_blank" rel="noopener">codility</a>, <a href="https://projecteuler.net/" target="_blank" rel="noopener">project Euler</a> and tons of others.  The best thing about practicing on these sites is that often times companies will use these sites as the first filter to getting a job there, so being familiar with them can help ease that early anxiety.  In addition to that, doing some simple coding right before you get into a technical interview will help you warm up your problem solving skills.</p>
+<p>Next is to learn <a href="/blog/how-to-talk-about-yourself-in-an-interview/">how to talk about yourself in an interview</a>, which I have written about previously, so just read up on that.</p>
+<p>As for the technical questions you will run into, I can't tell you for sure, but you can do a little homework to help you get an idea.  Here are some really common question types which are the basis of tons of interview questions, just worded differently.</p>
+<p>The first is string manipulation.  Just learn all of the string manipulation functions in your language of choice.  This includes regex.  You don't need to be an expert in these things, but you need a working knowledge of them.  I also highly recommend learning common parsing functions, such as how to convert a string to an integer or a double.  While you probably won't have to parse a CSV file as part of your interview, your function will often be given input in string format.  Being prepared to convert it into a workable format for solving the problem will eliminate a lot of time spent looking up documentation.</p>
+<p>The second really common thing is improving the runtime complexity of problems that can be naively solved using nested lists.  This has been written about time and time again, so just go read <a href="https://dev.to/healeycodes/solving-puzzles-with-high-performance-javascript-3o4k" target="_blank" rel="noopener">this really well written example</a>.  The jist is that you preprocess one of the lists into a set or map in order to enable fast lookups.</p>
+<p>And that's really it.  Just to summarize, understand what skills the people interviewing you are looking for, then learn the common problem types, practice practice practice and don't panic when you write bugs during the interview, just focus on locating the source of the error quickly.</p>
+<p>If you have any questions, feel free to reach out, you can find my information on <a href="https://mentors.codingcoach.io/" target="_blank" rel="noopener">mentors.codingcoach.io</a> or post in the comments below or on reddit.</p>
+
+	
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+	    var disqus_config = function () {
+	        this.page.url = 'http://culture-of-development.com/blog/how-to-prepare-for-your-next-interview/';
+	        this.page.identifier = 'http://culture-of-development.com/blog/how-to-prepare-for-your-next-interview/';
+	    };
+	    (function() {
+	        var d = document, s = d.createElement('script');
+	        s.src = '//cultureofdevelopment.disqus.com/embed.js';
+	        s.setAttribute('data-timestamp', +new Date());
+	        (d.head || d.body).appendChild(s);
+	    })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</section>
+		</div>
+	</section>
+	<footer class="page-footer">
+		<div class="container">
+			<nav class="site-nav">
+	<a href="/">about</a>
+	
+	<a href="/blog/">blog</a>
+	
+	<a href="/streams/">streams</a>
+	
+</nav>
+			<p>
+				&copy; 2019 Nick Larsen, cultureofdevelopment.com
+			</p>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script>
+		$(function() {
+			function handleImgExpand(ev) {
+				var imgSrc = $(ev.target).attr("src");
+				if (imgSrc) {
+					window.location.href = imgSrc;
+				}
+			}
+			var imgs = $(".page-content img");
+			imgs.on("click", handleImgExpand);
+		});
+	</script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-38493266-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>
+</html>
