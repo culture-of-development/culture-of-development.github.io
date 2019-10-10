@@ -161,6 +161,16 @@ public struct DecisionTreeNode
 
 And there we go.  Better alignment for 4 byte data types, better performance.  58.72% total improvement so far.
 
+---
+
+### Major Edit
+
+[An awesome visitor to this post](https://github.com/culture-of-development/random-forest-perf-blog/issues/1) pointed out that this performance bump was not due to better alignment of 4 byte values, but was instead due to better cache alignment.  What does that mean exactly?
+
+The C# compiler attempts to help you out with the exact issue described above and adds padding to your struct in order to guarantee alignment of 4 byte values.  So when I thought we had reduced our 20 byte structure to 8 bytes, in fact we had only shrunk it down to 12 bytes.  The reordering of the fields eliminated the need for this padding and achieved the actual 8 bytes struct size.  This results in better cache access and accounts for the majority of the performance bump.
+
+---
+
 ### Fast access to the root of each tree
 
 This last one is a bit of a hack.  We just spent a bunch of time squeezing out chunks of performance from the tree nodes which get used a ton, let's take a step back and see if we can speed up dealing with whole trees.  
