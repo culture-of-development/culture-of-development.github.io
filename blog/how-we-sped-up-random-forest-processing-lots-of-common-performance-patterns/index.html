@@ -100,6 +100,11 @@
 <p>[6/28/2019 1:52:04 AM] Time taken for 5000 evaluations: 133.6665 ms</p>
 </blockquote>
 <p>And there we go.  Better alignment for 4 byte data types, better performance.  58.72% total improvement so far.</p>
+<hr>
+<h3>Major Edit</h3>
+<p><a href="https://github.com/culture-of-development/random-forest-perf-blog/issues/1" target="_blank" rel="noopener">An awesome visitor to this post</a> pointed out that this performance bump was not due to better alignment of 4 byte values, but was instead due to better cache alignment.  What does that mean exactly?</p>
+<p>The C# compiler attempts to help you out with the exact issue described above and adds padding to your struct in order to guarantee alignment of 4 byte values.  So when I thought we had reduced our 20 byte structure to 8 bytes, in fact we had only shrunk it down to 12 bytes.  The reordering of the fields eliminated the need for this padding and achieved the actual 8 bytes struct size.  This results in better cache access and accounts for the majority of the performance bump.</p>
+<hr>
 <h3>Fast access to the root of each tree</h3>
 <p>This last one is a bit of a hack.  We just spent a bunch of time squeezing out chunks of performance from the tree nodes which get used a ton, let's take a step back and see if we can speed up dealing with whole trees.</p>
 <p>No matter what, we're going to have to pay the lookup price for the <code>nodes</code> array.  What we can do however is add a field to each tree that is a copy of the first node so that we effectively have the first node right next to the reference in our array of trees.  Essentially, at the same time that we get the reference to all nodes, we also get the full root node of the tree available, and we can start processing the first iteration of the loop while some magic<sup>2</sup> happens in the background to prefetch the first page of memory containing the nodes.</p>
