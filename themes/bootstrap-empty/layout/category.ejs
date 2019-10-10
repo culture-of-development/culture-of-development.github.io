@@ -4,6 +4,20 @@
 		<a href="/atom.xml" class="feed-link pull-right"></a>
 	<% } %>
 </h1>
+<% if (page.category === "streams") { %>
+<div class="clearfix stream-info">
+    <a href="//livecoders.dev" width="150" class="pull-right livecoderslink"></a>
+    <p>
+        I stream on <a href="<%= config.social.twitch_url %>">twitch.tv/nick_larsen</a> and do mostly coding streams as 
+        part of the <a href="//livecoders.dev">Live Coders team</a>.  My current schedule is:
+        <ul>
+            <li>Wed: Noon-2PM EST</li>
+            <li>Thu: Noon-2PM EST</li>
+            <li>Fri: Noon-Whenever EST</li>
+        </ul>
+    </p>
+</div>
+<% } %>
 <div class="category-list <%- page.category %>">
 <% page.posts.each(function(post){ %>
     <p>
