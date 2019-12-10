@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://culture-of-development.com/"/>
-  <updated>2019-08-02T18:03:06.649Z</updated>
+  <updated>2019-12-10T14:24:01.643Z</updated>
   <id>http://culture-of-development.com/</id>
   
   <author>
@@ -15,6 +15,361 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>S0094 - Happy Monday! building a temperature controller for a new homebrewing fermentation chamber</title>
+    <link href="http://culture-of-development.com/streams/s0094-happy-monday-building-a-temperature-controller-for-a-new-homebrewing-fermentation-chamber.md/"/>
+    <id>http://culture-of-development.com/streams/s0094-happy-monday-building-a-temperature-controller-for-a-new-homebrewing-fermentation-chamber.md/</id>
+    <published>2019-12-10T02:55:22.000Z</published>
+    <updated>2019-12-10T14:24:01.643Z</updated>
+    
+    <content type="html"><![CDATA[<h2>Today's Supporters</h2><h3>Followers</h3><ul><li>12/9/2019 4:52:27 PM: spaztasticonetwothree</li></ul><h3>Hosts</h3><ul><li>12/9/2019 3:00:01 PM: <a href="//twitch.tv/Zombchicken">Zombchicken</a> hosted!</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2&gt;Today&#39;s Supporters&lt;/h2&gt;
+&lt;h3&gt;Followers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;12/9/2019 4:52:27 PM: spaztasticonetwothree&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Hosts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;12/9/
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0093 - Happy Wednesday! starting something new for the holidays </title>
+    <link href="http://culture-of-development.com/streams/s0093-happy-wednesday-starting-something-new-for-the-holidays.md/"/>
+    <id>http://culture-of-development.com/streams/s0093-happy-wednesday-starting-something-new-for-the-holidays.md/</id>
+    <published>2019-12-05T02:55:22.000Z</published>
+    <updated>2019-12-10T14:12:00.888Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0092 - Happy Friday! finishing up blazor app for our MCTS othello AI </title>
+    <link href="http://culture-of-development.com/streams/s0092-happy-friday-finishing-up-blazor-app-for-our-mcts-othello-ai.md/"/>
+    <id>http://culture-of-development.com/streams/s0092-happy-friday-finishing-up-blazor-app-for-our-mcts-othello-ai.md/</id>
+    <published>2019-11-23T02:55:22.000Z</published>
+    <updated>2019-12-10T14:12:12.096Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0091 - Happy Thursday! gaming this afternoon </title>
+    <link href="http://culture-of-development.com/streams/s0091-happy-thursday-gaming-this-afternoon.md/"/>
+    <id>http://culture-of-development.com/streams/s0091-happy-thursday-gaming-this-afternoon.md/</id>
+    <published>2019-11-15T02:55:22.000Z</published>
+    <updated>2019-12-10T14:12:23.972Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0090 - Happy Wednesday! putting a windows GUI on the Othello game we built </title>
+    <link href="http://culture-of-development.com/streams/s0090-happy-wednesday-putting-a-windows-gui-on-the-othello-game-we-built.md/"/>
+    <id>http://culture-of-development.com/streams/s0090-happy-wednesday-putting-a-windows-gui-on-the-othello-game-we-built.md/</id>
+    <published>2019-11-14T02:55:22.000Z</published>
+    <updated>2019-12-10T14:12:33.038Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0089 - Happy Friday! designing game model for Othello to use for designing game AI </title>
+    <link href="http://culture-of-development.com/streams/s0089-happy-friday-designing-game-model-for-othello-to-use-for-designing-game-ai.md/"/>
+    <id>http://culture-of-development.com/streams/s0089-happy-friday-designing-game-model-for-othello-to-use-for-designing-game-ai.md/</id>
+    <published>2019-11-09T02:55:22.000Z</published>
+    <updated>2019-12-10T14:12:42.347Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0088 - Happy Friday! designing game model for Othello to use for designing game AI </title>
+    <link href="http://culture-of-development.com/streams/s0088-happy-friday-designing-game-model-for-othello-to-use-for-designing-game-ai.md/"/>
+    <id>http://culture-of-development.com/streams/s0088-happy-friday-designing-game-model-for-othello-to-use-for-designing-game-ai.md/</id>
+    <published>2019-11-09T01:55:22.000Z</published>
+    <updated>2019-12-10T14:13:36.615Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0087 - Happy Thursday! Processing audio on a raspberry pi </title>
+    <link href="http://culture-of-development.com/streams/s0087-happy-wednesday-processing-audio-on-a-raspberry-pi.md/"/>
+    <id>http://culture-of-development.com/streams/s0087-happy-wednesday-processing-audio-on-a-raspberry-pi.md/</id>
+    <published>2019-11-08T02:55:22.000Z</published>
+    <updated>2019-12-10T14:14:10.768Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0086 - Happy Wednesday! Processing audio on a raspberry pi </title>
+    <link href="http://culture-of-development.com/streams/s0086-happy-wednesday-processing-audio-on-a-raspberry-pi.md/"/>
+    <id>http://culture-of-development.com/streams/s0086-happy-wednesday-processing-audio-on-a-raspberry-pi.md/</id>
+    <published>2019-11-07T02:55:22.000Z</published>
+    <updated>2019-12-10T14:14:19.849Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0085 - Happy Friday! making a stream deck plugin to tweet your current stream title </title>
+    <link href="http://culture-of-development.com/streams/s0085-happy-friday-making-a-stream-deck-plugin-to-tweet-your-current-stream-title.md/"/>
+    <id>http://culture-of-development.com/streams/s0085-happy-friday-making-a-stream-deck-plugin-to-tweet-your-current-stream-title.md/</id>
+    <published>2019-10-31T01:55:22.000Z</published>
+    <updated>2019-12-10T14:14:57.041Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0084 - Happy Friday! making a stream deck plugin to tweet your current stream title </title>
+    <link href="http://culture-of-development.com/streams/s0084-happy-friday-making-a-stream-deck-plugin-to-tweet-your-current-stream-title.md/"/>
+    <id>http://culture-of-development.com/streams/s0084-happy-friday-making-a-stream-deck-plugin-to-tweet-your-current-stream-title.md/</id>
+    <published>2019-10-26T01:55:22.000Z</published>
+    <updated>2019-12-10T14:15:15.623Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0083 - Happy Thursday! making a stream deck plugin to tweet your current stream title </title>
+    <link href="http://culture-of-development.com/streams/s0083-happy-thursday-making-a-stream-deck-plugin-to-tweet-your-current-stream-title.md/"/>
+    <id>http://culture-of-development.com/streams/s0083-happy-thursday-making-a-stream-deck-plugin-to-tweet-your-current-stream-title.md/</id>
+    <published>2019-10-25T01:55:22.000Z</published>
+    <updated>2019-12-10T14:15:26.553Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0082 - Happy Wednesday! collecting a dataset of dogs barking for an ML project </title>
+    <link href="http://culture-of-development.com/streams/s0082-happy-wednesday-collecting-a-dataset-of-dogs-barking-for-an-ml-project.md/"/>
+    <id>http://culture-of-development.com/streams/s0082-happy-wednesday-collecting-a-dataset-of-dogs-barking-for-an-ml-project.md/</id>
+    <published>2019-10-24T01:55:22.000Z</published>
+    <updated>2019-12-10T14:15:34.949Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0081 - Happy Wednesday! collecting a dataset of dogs barking for an ML project </title>
+    <link href="http://culture-of-development.com/streams/s0081-happy-wednesday-collecting-a-dataset-of-dogs-barking-for-an-ml-project.md/"/>
+    <id>http://culture-of-development.com/streams/s0081-happy-wednesday-collecting-a-dataset-of-dogs-barking-for-an-ml-project.md/</id>
+    <published>2019-10-24T00:55:22.000Z</published>
+    <updated>2019-12-10T14:15:48.709Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0079 - building out features of stream chat bot </title>
+    <link href="http://culture-of-development.com/streams/s0079-building-out-features-of-stream-chat-bot.md/"/>
+    <id>http://culture-of-development.com/streams/s0079-building-out-features-of-stream-chat-bot.md/</id>
+    <published>2019-10-19T01:55:22.000Z</published>
+    <updated>2019-12-10T14:24:17.149Z</updated>
+    
+    <content type="html"><![CDATA[<h2>Today's Supporters</h2><h3>Followers</h3><ul><li>10/18/2019 6:01:47 PM: hectorhsc</li><li>10/18/2019 6:05:16 PM: JohnCallaway</li><li>10/18/2019 6:11:58 PM: ciaranbruen</li></ul><h3>Raids</h3><ul><li>10/18/2019 5:57:23 PM: <a href="//twitch.tv/zerratar">zerratar</a> raided with 31 viewers!</li><li>10/18/2019 5:59:57 PM: <a href="//twitch.tv/ardalis">ardalis</a> raided with 14 viewers!</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2&gt;Today&#39;s Supporters&lt;/h2&gt;
+&lt;h3&gt;Followers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;10/18/2019 6:01:47 PM: hectorhsc&lt;/li&gt;
+&lt;li&gt;10/18/2019 6:05:16 PM: JohnCallaway&lt;/li&gt;
+&lt;
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0080 - Friday funday! monte-carlo tic tac toe game </title>
+    <link href="http://culture-of-development.com/streams/s0080-friday-funday-monte-carlo-tic-tac-toe-game.md/"/>
+    <id>http://culture-of-development.com/streams/s0080-friday-funday-monte-carlo-tic-tac-toe-game.md/</id>
+    <published>2019-10-19T01:55:22.000Z</published>
+    <updated>2019-12-10T14:15:58.447Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0078 - chat bot and stream notes bot </title>
+    <link href="http://culture-of-development.com/streams/s0078-chat-bot-and-stream-notes-bot.md/"/>
+    <id>http://culture-of-development.com/streams/s0078-chat-bot-and-stream-notes-bot.md/</id>
+    <published>2019-10-18T01:55:22.000Z</published>
+    <updated>2019-12-10T14:22:26.684Z</updated>
+    
+    <content type="html"><![CDATA[<h2>Today's Supporters</h2><h3>Cheers</h3><ul><li>10/17/2019 4:10:49 PM: mholloway24 cheered with 50 bits!</li><li>10/17/2019 4:10:51 PM: cpayette cheered with 200 bits!</li></ul><h3>Hosts</h3><ul><li>10/17/2019 5:34:30 PM: <a href="//twitch.tv/CopperBeardy">CopperBeardy</a> hosted!</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2&gt;Today&#39;s Supporters&lt;/h2&gt;
+&lt;h3&gt;Cheers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;10/17/2019 4:10:49 PM: mholloway24 cheered with 50 bits!&lt;/li&gt;
+&lt;li&gt;10/17/2019 4:10:51 PM
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0077 - automatic stream notes features getting added to the chat bot </title>
+    <link href="http://culture-of-development.com/streams/s0077-automatic-stream-notes-features-getting-added-to-the-chat-bot.md/"/>
+    <id>http://culture-of-development.com/streams/s0077-automatic-stream-notes-features-getting-added-to-the-chat-bot.md/</id>
+    <published>2019-10-17T01:55:22.000Z</published>
+    <updated>2019-12-10T14:16:37.262Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0076 - automatic stream notes features getting added to the chat bot </title>
+    <link href="http://culture-of-development.com/streams/s0076-automatic-stream-notes-features-getting-added-to-the-chat-bot.md/"/>
+    <id>http://culture-of-development.com/streams/s0076-automatic-stream-notes-features-getting-added-to-the-chat-bot.md/</id>
+    <published>2019-10-12T01:55:22.000Z</published>
+    <updated>2019-12-10T14:25:12.487Z</updated>
+    
+    <content type="html"><![CDATA[<h2>Today's Supporters</h2><h3>Cheers</h3><ul><li>10/11/2019 6:58:07 PM: tbdgamer cheered with 50 bits!</li></ul><h3>Hosts</h3><ul><li>10/11/2019 5:12:10 PM: tbdgamer hosted!</li><li>10/11/2019 5:42:25 PM: Zombchicken hosted!</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2&gt;Today&#39;s Supporters&lt;/h2&gt;
+&lt;h3&gt;Cheers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;10/11/2019 6:58:07 PM: tbdgamer cheered with 50 bits!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Hosts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;l
+      
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>How to prepare for your next interview</title>
@@ -35,6 +390,390 @@
     </summary>
     
       <category term="blog" scheme="http://culture-of-development.com/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0075 - finally making a twitch chat bot </title>
+    <link href="http://culture-of-development.com/streams/s0075-finally-making-a-twitch-chat-bot.md/"/>
+    <id>http://culture-of-development.com/streams/s0075-finally-making-a-twitch-chat-bot.md/</id>
+    <published>2019-07-26T01:55:22.000Z</published>
+    <updated>2019-12-10T14:19:37.190Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0074 - Game Night!  Hearthstone Heroic Uldum </title>
+    <link href="http://culture-of-development.com/streams/s0074-game-night--hearthstone-heroic-uldum.md/"/>
+    <id>http://culture-of-development.com/streams/s0074-game-night--hearthstone-heroic-uldum.md/</id>
+    <published>2019-07-25T01:55:22.000Z</published>
+    <updated>2019-12-10T14:19:31.741Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0073 - AI &amp; Chatting </title>
+    <link href="http://culture-of-development.com/streams/s0073-ai-chatting.md/"/>
+    <id>http://culture-of-development.com/streams/s0073-ai-chatting.md/</id>
+    <published>2019-07-24T01:55:22.000Z</published>
+    <updated>2019-12-10T14:19:26.972Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0072 - AI &amp; Chatting </title>
+    <link href="http://culture-of-development.com/streams/s0072-ai-chatting.md/"/>
+    <id>http://culture-of-development.com/streams/s0072-ai-chatting.md/</id>
+    <published>2019-07-23T01:55:22.000Z</published>
+    <updated>2019-12-10T14:19:21.831Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0071 - AI &amp; Chatting </title>
+    <link href="http://culture-of-development.com/streams/s0071-ai-chatting.md/"/>
+    <id>http://culture-of-development.com/streams/s0071-ai-chatting.md/</id>
+    <published>2019-07-22T01:55:22.000Z</published>
+    <updated>2019-12-10T14:19:16.583Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0070 - JS13K games making competition day 10 of 15 </title>
+    <link href="http://culture-of-development.com/streams/s0070-js13k-games-making-competition-day-10-of-15.md/"/>
+    <id>http://culture-of-development.com/streams/s0070-js13k-games-making-competition-day-10-of-15.md/</id>
+    <published>2019-07-21T01:55:22.000Z</published>
+    <updated>2019-12-10T14:19:10.979Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0069 - JS13K games making competition </title>
+    <link href="http://culture-of-development.com/streams/s0069-js13k-games-making-competition.md/"/>
+    <id>http://culture-of-development.com/streams/s0069-js13k-games-making-competition.md/</id>
+    <published>2019-07-20T01:55:22.000Z</published>
+    <updated>2019-12-10T14:19:05.136Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0068 - JS13K games making competition </title>
+    <link href="http://culture-of-development.com/streams/s0068-js13k-games-making-competition.md/"/>
+    <id>http://culture-of-development.com/streams/s0068-js13k-games-making-competition.md/</id>
+    <published>2019-07-19T01:55:22.000Z</published>
+    <updated>2019-12-10T14:18:58.943Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0067 - JS13K games making competition </title>
+    <link href="http://culture-of-development.com/streams/s0067-js13k-games-making-competition.md/"/>
+    <id>http://culture-of-development.com/streams/s0067-js13k-games-making-competition.md/</id>
+    <published>2019-07-18T01:55:22.000Z</published>
+    <updated>2019-12-10T14:18:52.560Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0066 - JS13K games making competition </title>
+    <link href="http://culture-of-development.com/streams/s0066-js13k-games-making-competition.md/"/>
+    <id>http://culture-of-development.com/streams/s0066-js13k-games-making-competition.md/</id>
+    <published>2019-07-17T01:55:22.000Z</published>
+    <updated>2019-12-10T14:18:43.943Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0065 - JS13K games making competition </title>
+    <link href="http://culture-of-development.com/streams/s0065-js13k-games-making-competition.md/"/>
+    <id>http://culture-of-development.com/streams/s0065-js13k-games-making-competition.md/</id>
+    <published>2019-07-16T01:55:22.000Z</published>
+    <updated>2019-12-10T14:18:37.957Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0064 - JS13K games making competition </title>
+    <link href="http://culture-of-development.com/streams/s0064-js13k-games-making-competition.md/"/>
+    <id>http://culture-of-development.com/streams/s0064-js13k-games-making-competition.md/</id>
+    <published>2019-07-15T01:55:22.000Z</published>
+    <updated>2019-12-10T14:18:32.745Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0063 - JS13K games making competition </title>
+    <link href="http://culture-of-development.com/streams/s0063-js13k-games-making-competition.md/"/>
+    <id>http://culture-of-development.com/streams/s0063-js13k-games-making-competition.md/</id>
+    <published>2019-07-14T01:55:22.000Z</published>
+    <updated>2019-12-10T14:18:27.877Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0062 - JS13K games making competition </title>
+    <link href="http://culture-of-development.com/streams/s0062-js13k-games-making-competition.md/"/>
+    <id>http://culture-of-development.com/streams/s0062-js13k-games-making-competition.md/</id>
+    <published>2019-07-13T01:55:22.000Z</published>
+    <updated>2019-12-10T14:18:23.324Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0061 - NP Complete Programming Competition </title>
+    <link href="http://culture-of-development.com/streams/s0061-np-complete-programming-competition.md/"/>
+    <id>http://culture-of-development.com/streams/s0061-np-complete-programming-competition.md/</id>
+    <published>2019-07-12T01:55:22.000Z</published>
+    <updated>2019-12-10T14:18:18.980Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0060 - NP Complete Programming Competition </title>
+    <link href="http://culture-of-development.com/streams/s0060-np-complete-programming-competition.md/"/>
+    <id>http://culture-of-development.com/streams/s0060-np-complete-programming-competition.md/</id>
+    <published>2019-07-11T01:55:22.000Z</published>
+    <updated>2019-12-10T14:18:12.713Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0059 - Technical Interview Prep Blogging </title>
+    <link href="http://culture-of-development.com/streams/s0059-technical-interview-prep-blogging.md/"/>
+    <id>http://culture-of-development.com/streams/s0059-technical-interview-prep-blogging.md/</id>
+    <published>2019-07-10T01:55:22.000Z</published>
+    <updated>2019-12-10T14:18:07.812Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0058 - Technical Interview Prep Blogging </title>
+    <link href="http://culture-of-development.com/streams/s0058-technical-interview-prep-blogging.md/"/>
+    <id>http://culture-of-development.com/streams/s0058-technical-interview-prep-blogging.md/</id>
+    <published>2019-07-09T01:55:22.000Z</published>
+    <updated>2019-12-10T14:18:02.148Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0057 - Technical Interview Prep Blogging </title>
+    <link href="http://culture-of-development.com/streams/s0057-technical-interview-prep-blogging.md/"/>
+    <id>http://culture-of-development.com/streams/s0057-technical-interview-prep-blogging.md/</id>
+    <published>2019-07-07T01:55:22.000Z</published>
+    <updated>2019-12-10T14:17:57.150Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0056 - Stream themeing </title>
+    <link href="http://culture-of-development.com/streams/s0056-stream-themeing.md/"/>
+    <id>http://culture-of-development.com/streams/s0056-stream-themeing.md/</id>
+    <published>2019-07-06T01:55:22.000Z</published>
+    <updated>2019-12-10T14:17:51.463Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0055 - AI &amp; Chatting - Interviewing Juan Rodriguez </title>
+    <link href="http://culture-of-development.com/streams/s0055-ai-chatting-interviewing-juan-rodriguez.md/"/>
+    <id>http://culture-of-development.com/streams/s0055-ai-chatting-interviewing-juan-rodriguez.md/</id>
+    <published>2019-07-05T01:55:22.000Z</published>
+    <updated>2019-12-10T14:17:45.669Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0054 - AI &amp; Chatting - Monte Carlo Tree Search </title>
+    <link href="http://culture-of-development.com/streams/s0054-ai-chatting-monte-carlo-tree-search.md/"/>
+    <id>http://culture-of-development.com/streams/s0054-ai-chatting-monte-carlo-tree-search.md/</id>
+    <published>2019-07-04T01:55:22.000Z</published>
+    <updated>2019-12-10T14:17:39.934Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0053 - Mentorship Monday - How to get ready for that next interview </title>
+    <link href="http://culture-of-development.com/streams/s0053-mentorship-monday-how-to-get-ready-for-that-next-interview.md/"/>
+    <id>http://culture-of-development.com/streams/s0053-mentorship-monday-how-to-get-ready-for-that-next-interview.md/</id>
+    <published>2019-07-03T01:55:22.000Z</published>
+    <updated>2019-12-10T14:17:33.937Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>S0052 - AI &amp; Chatting - Writing Stories </title>
+    <link href="http://culture-of-development.com/streams/s0052-ai-chatting-writing-stories.md/"/>
+    <id>http://culture-of-development.com/streams/s0052-ai-chatting-writing-stories.md/</id>
+    <published>2019-07-02T01:55:22.000Z</published>
+    <updated>2019-12-10T14:17:25.998Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="streams" scheme="http://culture-of-development.com/streams/"/>
     
     
   </entry>
@@ -1164,7 +1903,7 @@
     <link href="http://culture-of-development.com/streams/s0002-fast-matrix-multiplication-attempt-1/"/>
     <id>http://culture-of-development.com/streams/s0002-fast-matrix-multiplication-attempt-1/</id>
     <published>2019-01-18T01:40:32.000Z</published>
-    <updated>2019-05-26T13:28:15.173Z</updated>
+    <updated>2019-10-11T18:37:58.538Z</updated>
     
     <content type="html"><![CDATA[<p>Today I took a stab at showing how writing some processor cache aware code can vastly improve the speed of matrix multiplication in .NET, only it didn't.  I'm still not sure why but watch the utter surprise on my face as it happens live!</p><p>I plan to revisit this in the future, but for the time being check out <a href="https://akkadia.org/drepper/cpumemory.pdf" target="_blank" rel="noopener">this paper</a> where I learned most of what I know on this topic.  Perhaps some of those ideas are outdated?  We'll find out as we explore this futher in the future, but for now we'll move on to other topics.</p><p>One big thing I noticed today is that the stream got a lot more interesting when it switched from &quot;me trying to teach stuff&quot; to &quot;me trying to learn stuff&quot; so I think starting next week I'm going to change the way I frame these sessions into me learning something new every day.</p>]]></content>
     
