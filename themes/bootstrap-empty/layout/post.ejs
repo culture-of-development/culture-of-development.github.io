@@ -10,12 +10,22 @@
 	<% if (page.youtube_embed) { %>
 		<iframe class="stream-embed" width="720" height="405" src="<%= page.youtube_embed %>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	<% } %>
+	<% if (page.streamvid_embed) { %>
+		<iframe class="stream-embed" width="720" height="405" src="<%= page.streamvid_embed %>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<% } %>
 	<%- page.content %>
 	<% if (page.youtube_embed) { %>
 		<ul class="watch-my-stream">
 			<li>Please share <a href="<%= page.youtube_url %>">this content</a> with everyone!</li>
 			<li><a href="<%= config.social.twitch_url %>">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
 		</ul>
+	<% } %>
+	<% if (page.categories.data[0].name == 'mentorship') { %>
+		<div class="watch-my-stream">
+			If you are currently looking for a mentor I'd be happy to help!  Please reach out to
+			me by <a href='mailto:<%= config.social.mentorship_email %>'>email</a> with your specific questions
+			and I'll get back to you as soon as possible!
+		</div>
 	<% } %>
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">

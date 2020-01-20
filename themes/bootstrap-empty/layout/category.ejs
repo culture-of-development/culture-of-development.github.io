@@ -18,6 +18,24 @@
     </p>
 </div>
 <% } %>
+<% if (page.category === "mentorship") { %>
+<div class="clearfix stream-info">
+    <p>
+        I believe a healthy career requires mentorship, so I mentor a couple dozen people per year
+        and I try to have at least one mentor myself at all times.
+    </p>
+    <p>
+        Here are the real questions and answers from my mentorship sessions.  
+        I hope you take away that there is value in mentorship, and
+        that looking for a mentor of your own can provide you personalized perspectives which can
+        speed up your understanding of complex topics.
+    </p>
+    <p>
+        I'm also happy to mentor you!  If you would like some mentorship, please feel free to reach
+        out to me by <a href='mailto:<%= config.social.mentorship_email %>'>email</a> with your specific questions.
+    </p>
+</div>
+<% } %>
 <div class="category-list <%- page.category %>">
 <% page.posts.each(function(post){ %>
     <p>
