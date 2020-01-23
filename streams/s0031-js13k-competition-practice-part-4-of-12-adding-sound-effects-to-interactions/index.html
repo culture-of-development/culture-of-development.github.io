@@ -31,6 +31,8 @@
 	
 	<a href="/streams/">streams</a>
 	
+	<a href="/mentorship/">mentorship</a>
+	
 </nav>
 		</div>
 	</header>
@@ -48,6 +50,7 @@
 	
 		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/qSy2jUtZjcI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	
+	
 	<p>This stream was at an unusual time because I unexpectedly have to leave this weekend and don't want to get too far behind on the one month aspect of this practice.</p>
 <p>Today we worked exclusively on adding sound effects to interactions using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API" target="_blank" rel="noopener">web audio api</a>.  There are essentially two ways to incorporate audio, either from a buffer of recorded audio data, or by manipulating a source wave from an oscillator.  Recorded audio gets to be quite large depending on the sample rate used to record the audio (recording 1s of uncompressed audio at 44k samples/sec eats up 44 kb) so the eventual audio we use will almost certainly be generated from an oscillator.</p>
 <p>In looking at how js13k projects incorporate interesting audio from past years, I've noticed that many of them generate sound, but record it to a buffer, and then play the buffer on demand instead of doing all the calculations to generate the audio waves repeatedly.  This helps a lot with performance and also simplifies the playing code a fair amount.  Since we're going to be playing from buffers anyway later on, I decided for this first iteration to just record some audio and then load it up in the browser, focusing mostly on getting the sound effects to trigger at the right times.</p>
@@ -58,6 +61,7 @@
 			<li>Please share <a href="https://www.youtube.com/watch?v=qSy2jUtZjcI">this content</a> with everyone!</li>
 			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
 		</ul>
+	
 	
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
@@ -85,9 +89,11 @@
 	
 	<a href="/streams/">streams</a>
 	
+	<a href="/mentorship/">mentorship</a>
+	
 </nav>
 			<p>
-				&copy; 2019 Nick Larsen, cultureofdevelopment.com
+				&copy; 2020 Nick Larsen, cultureofdevelopment.com
 			</p>
 		</div>
 	</footer>

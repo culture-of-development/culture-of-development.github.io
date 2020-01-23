@@ -31,6 +31,8 @@
 	
 	<a href="/streams/">streams</a>
 	
+	<a href="/mentorship/">mentorship</a>
+	
 </nav>
 		</div>
 	</header>
@@ -48,6 +50,7 @@
 	
 		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/jMXf-VFwPJI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	
+	
 	<p>For the next couple weeks we get to work on stuff for my primary job!  Essentially we have come up with a new model for estimating the click likelihood of job ad on Stack Overflow.  The model was trained up using the <a href="https://xgboost.readthedocs.io/en/latest/" target="_blank" rel="noopener">XGBoost</a> R package.  It is a boosting method over the top of decision trees.  On the prediction side this model acts exactly like a random forest, i.e. a bunch of decision trees that all vote on the correct answer, which in this case is whether or not the person will click on this job.  The only difference is that instead of doing it as a classification problem, it instead works more like a regression problem, calculating a probability as the output instead of a binary yes/no answer.</p>
 <p>Initially we decided to try making an API in R to support this model which saves us the trouble of converting the model to another language and dealing with bugs along the way.  After some quick testing we realized that was going to be wayyyyyy to slow, like 10-100 ms <em>per job prediction</em>!  There are thousands of jobs that have to be predicted on each request, so this is definitely not going to work.</p>
 <p>Our task is this:</p>
@@ -64,6 +67,7 @@
 			<li>Please share <a href="https://www.youtube.com/watch?v=jMXf-VFwPJI">this content</a> with everyone!</li>
 			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
 		</ul>
+	
 	
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
@@ -91,9 +95,11 @@
 	
 	<a href="/streams/">streams</a>
 	
+	<a href="/mentorship/">mentorship</a>
+	
 </nav>
 			<p>
-				&copy; 2019 Nick Larsen, cultureofdevelopment.com
+				&copy; 2020 Nick Larsen, cultureofdevelopment.com
 			</p>
 		</div>
 	</footer>

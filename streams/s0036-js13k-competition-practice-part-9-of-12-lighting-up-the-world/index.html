@@ -31,6 +31,8 @@
 	
 	<a href="/streams/">streams</a>
 	
+	<a href="/mentorship/">mentorship</a>
+	
 </nav>
 		</div>
 	</header>
@@ -48,6 +50,7 @@
 	
 		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/tmkBz8HAW5U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	
+	
 	<p>Today's big goal was to get the lighting done.  The last critical element of the story is that it's dark in this office and you have to look around.  Around the windows there should be some dim, ambient lighting and there is a flashlight you can find that will make the area around you light up as well.  And don't forget that light should respect walls as well.  Prior to today, I had absolutely no idea how I was going to achieve any of these goals.</p>
 <p>First things first, just make it dark.  First idea was to just put a giant div over the whole thing and have the background be all black, except make it transparent where there was light.  Unfortunately I could not figure out how to do this using multiple backgrounds with CSS, and I didn't want to have one super huge mega image covering the whole board because I felt like that would cause significant resource issues.  The image alone would have been over 10 MB and it would have been manually redrawn on nearly every move.</p>
 <p>My second thought was to just have set levels of light that were available, and do a cell by cell lighting.  I decided to roll with it.  We ran into some CSS issues with the walls, which were set directly on the cell itself.  Instead I moved the walls to their own layer, nested inside of each cell and appended an additional layer for the lights on each cell.  This appears to work and boom, we have some darkness on top of everything.</p>
@@ -59,6 +62,7 @@
 			<li>Please share <a href="https://www.youtube.com/watch?v=tmkBz8HAW5U">this content</a> with everyone!</li>
 			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
 		</ul>
+	
 	
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
@@ -86,9 +90,11 @@
 	
 	<a href="/streams/">streams</a>
 	
+	<a href="/mentorship/">mentorship</a>
+	
 </nav>
 			<p>
-				&copy; 2019 Nick Larsen, cultureofdevelopment.com
+				&copy; 2020 Nick Larsen, cultureofdevelopment.com
 			</p>
 		</div>
 	</footer>

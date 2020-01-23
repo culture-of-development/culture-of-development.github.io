@@ -31,6 +31,8 @@
 	
 	<a href="/streams/">streams</a>
 	
+	<a href="/mentorship/">mentorship</a>
+	
 </nav>
 		</div>
 	</header>
@@ -48,6 +50,7 @@
 	
 		<iframe class="stream-embed" width="720" height="405" src="https://www.youtube.com/embed/CJrC-KVXnx0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	
+	
 	<p>Today we started off with the goal of trying to ramp up the problem size for the N-Puzzle problem.  Under our previous implementation, we would have had to go from a state space size of 9! to a statespace size of 16!, or roughly an 8 orders of magnitude increase.  That's a little too baller for where things are right now, so instead I wanted a way to ramp up the problem size a bit less.  To do this, we relaxed the constraint that the board must be square an instead let there be differing height and width.</p>
 <p>This conversion turned out to be a good bit easier than expected and after we were done we ran the full test suite... which highlighted a bug in <code>OpenSet</code>.  Yea, another bug in that thing.  This one turned out to be easier to fix because I had just left out one condition where were not correctly removing states from the set.</p>
 <p>After this we were able to solve the 3x4 puzzle problem with manhattan distance very quickly.  We ramped it right up to one of the easier 4x4 grids and then it did not complete... and eventually we killed it.  We spent some time tooling it to see the output heartbeat and what we noticed was that the speed was quickly dropping off after the first 100,000 or so states made it in the system.  This just became our TODO for next week.</p>
@@ -57,6 +60,7 @@
 			<li>Please share <a href="https://www.youtube.com/watch?v=CJrC-KVXnx0">this content</a> with everyone!</li>
 			<li><a href="https://www.twitch.tv/nick_larsen">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
 		</ul>
+	
 	
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
@@ -84,9 +88,11 @@
 	
 	<a href="/streams/">streams</a>
 	
+	<a href="/mentorship/">mentorship</a>
+	
 </nav>
 			<p>
-				&copy; 2019 Nick Larsen, cultureofdevelopment.com
+				&copy; 2020 Nick Larsen, cultureofdevelopment.com
 			</p>
 		</div>
 	</footer>
