@@ -20,7 +20,7 @@
 			<li><a href="<%= config.social.twitch_url %>">Watch the stream live</a> Wed, Thur, Fri from 12 to 2PM EST.</li>
 		</ul>
 	<% } %>
-	<% if (page.categories.data[0].name == 'mentorship') { %>
+	<% if (page.categories && page.categories.data[0].name == 'mentorship') { %>
 		<div class="watch-my-stream">
 			If you are currently looking for a mentor I'd be happy to help!  Please reach out to
 			me by <a href='mailto:<%= config.social.mentorship_email %>'>email</a> with your specific questions
