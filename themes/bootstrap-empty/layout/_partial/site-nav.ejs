@@ -3,5 +3,5 @@
 	<% site.categories.each(function(category){ %>
 	<a href="<%= url_for(category.path) %>"><%- category.name %></a>
 	<% }) %>
-	<a href="<%= url_for("unstuck-info", {relative:false}) %>">UNSTUCK</a>
+	<a href="<%= url_for("unstuck-book", {relative:false}) %>">UNSTUCK</a>
 </nav>
