@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://culture-of-development.com/"/>
-  <updated>2020-03-13T02:11:19.192Z</updated>
+  <updated>2020-03-15T12:58:50.056Z</updated>
   <id>http://culture-of-development.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>What are the top skills someone needs to lead effectively?</title>
+    <link href="http://culture-of-development.com/mentorship/what-are-the-top-skills-someone-needs-to-lead-effectively/"/>
+    <id>http://culture-of-development.com/mentorship/what-are-the-top-skills-someone-needs-to-lead-effectively/</id>
+    <published>2020-03-15T12:54:17.000Z</published>
+    <updated>2020-03-15T12:58:50.056Z</updated>
+    
+    <content type="html"><![CDATA[<h2>Dear Nick</h2><p>I've also been thinking a lot about effective leadership- how I can be a better leader to get things done, what that really looks like, ect. I'm sure there's a billion articles and books all about it, but in your opinion, what are the top skills someone needs to lead effectively? Is there any difference between leadership in tech roles vs non-tech? Haha, I feel like that's a huge question, but I wanted to ask anyway.</p><hr><h2>Dear Cameron</h2><p>For me being an effective leader is 2 primary qualities, an unrelenting focus on the goal and being an empathy enforcer.</p><p>An unrelenting focus on the goal means being completely results driven.  For every single dispute that comes up, every single question the leader asks ties directly back to the goal.  Leaders often don't even need to make decisions, they just need to be the guide so that everyone around them can make good decisions.  They might set the north star, or it might be given to them, but then they make sure everyone keeps heading in that direction.  A completely utilitarian person is a bad leader when their focus is narrow, which leads to...</p><p>Being an empathy enforcer means making everyone feel like they matter, that their work is critical to the success of the team.  It means understanding the real problems and making people feel, deep down, that solving those problems will make people's lives better.  When someone starts acting in the best interest of a few, the leader reminds them of the larger picture, and when someone acts in the interest of the majority, the leader reminds them of the pain they bring to the minority.  Empathy enforcers care much more about other people's success than their own.</p><p>One last note, everyone has a tendency to compare themselves to others.  If you find yourself in (or assume) a leadership role, it can often be challenging to provide feedback to other people who you deem are at least as good as you in something.  They are better coders then you are, what you can say to make them a better coder than they already are?  They are better at working with marketing than you are, what could you possible say that could help them interact better?  Leaders always give feedback, always.  Saying you're doing great is non-actionable and is a sign that you don't know what the person is actually doing.  When someone asks you for feedback about something, at the very least, start asking them questions.  Your job is to give them a way to improve that's meaningful to their career, not yours.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2&gt;Dear Nick&lt;/h2&gt;
+&lt;p&gt;I&#39;ve also been thinking a lot about effective leadership- how I can be a better leader to get things done, what that r
+      
+    
+    </summary>
+    
+      <category term="mentorship" scheme="http://culture-of-development.com/mentorship/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Striking a balance between under/over representing your skills in an interview</title>
